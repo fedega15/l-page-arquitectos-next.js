@@ -1,0 +1,84 @@
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    user-select: none;
+    transition: all ease-in-out 0.3s;
+}
+
+header nav {
+    width: 100%;
+    max-width: var(max-width);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 25px;
+}
+
+header .logo {
+    font-size: 1.6rem;
+    color: var(--main);
+    font-weight: 900;
+}
+
+header .logo {
+    color: rgb(40, 40, 70);
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li a {
+    font-size:  1.6rem;
+    margin: 0 15px;
+    color: var(--secondary);
+    transition: all ease 0.3s;
+    text-transform: capitalize;
+}
+
+header ul li a:is(:hover, .active) {
+    color: rgb(40, 40, 70);
+}
+
+header nav .menu_btn {
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--main);
+    display: none;
+}
+
+@media (max-width:840px) {
+    header nav{
+        justify-content: space-between;
+    }
+    header ul {
+        position: absolute;
+        top: 80%;
+        left: 0;
+        background:var(--bg-main);
+        display: block;
+        width: 100%;
+        box-shadow: 2px 20px 30px var(--shadow-color);
+        transition: all ease-in-out 0.3s;
+        height: 0px;
+        overflow:hidden;
+    }
+
+    header ul li a{
+        display: block;
+        padding: 20px;
+        border-bottom: 1px solid var( --border-color);
+    }
+
+    
+header nav .menu_btn {
+    display: block ;
+
+}
+}
