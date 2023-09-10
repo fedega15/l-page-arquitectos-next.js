@@ -24,7 +24,7 @@ const galeria = [
     price: 1.2,
   },
   {
-    id: 4,
+    id: 3,
     proyect: "Productos",
     name: "Productos",
     img: "/g4.png",
@@ -34,7 +34,7 @@ const galeria = [
     price: 1.2,
   },
   {
-    id: 5,
+    id: 4,
     proyect: "Edificios",
     name: "Edificios",
     img: "/g5.png",
@@ -44,7 +44,7 @@ const galeria = [
     price: 1.2,
   },
   {
-    id: 6,
+    id: 5,
     proyect: "Muebles",
     name: "Muebles",
     img: "/g6.png",
@@ -54,7 +54,7 @@ const galeria = [
     price: 1.2,
   },
   {
-    id: 7,
+    id: 6,
     proyect: "Interiores",
     name: "Interories",
     img: "/g7.png",
