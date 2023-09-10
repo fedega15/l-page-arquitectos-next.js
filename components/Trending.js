@@ -75,8 +75,8 @@ const trends = [
   },
   {
     id: 7,
-    proyect: "Muebles",
-    name: "Muebles",
+    proyect: "Interories",
+    name: "Interiores",
     img: "/p7.png",
     activites: 10,
     places: 12,
