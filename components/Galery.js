@@ -56,7 +56,7 @@ const galeria = [
   {
     id: 7,
     proyect: "Interiores",
-    name: "Muebles",
+    name: "Interories",
     img: "/g7.png",
     activites: 10,
     places: 12,
