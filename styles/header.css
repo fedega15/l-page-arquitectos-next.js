@@ -19,6 +19,8 @@ header nav {
 }
 
 header .logo {
+    justify-content: flex-start;
+    left: 5px;   
     font-size: 1.6rem;
     color: var(--main);
     font-weight: 900;
@@ -36,7 +38,8 @@ header ul{
 
 header ul li a {
     font-size:  1.6rem;
-    margin: 0 15px;
+    justify-content: space-between;
+    margin:19px ;
     color: var(--secondary);
     transition: all ease 0.3s;
     text-transform: capitalize;
@@ -71,8 +74,9 @@ header nav .menu_btn {
     }
 
     header ul li a{
+      
         display: block;
-        padding: 20px;
+        padding: 7px;
         border-bottom: 1px solid var( --border-color);
     }
 

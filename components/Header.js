@@ -4,13 +4,12 @@ import { useEffect, useState } from "react";
 import "../styles/header.css";
 
 const categories = [
-  { name: "Home", link: "#" },
-  { name: "galery", link: "#galery" },
-  { name: "Proyectos", link: "#proyectos" },
-  { name: "Contacto", link: "#contacto" },
-  { name: "Testimonios", link: "#testimonios" },
-];
 
+  { name: "Inicio", link: "#" },
+  { name: "Galeria", link: "#galery" },
+  { name: "Contacto", link: "#contacto" },
+];  {/*     { name: "Proyectos", link: "#proyectos" } */}
+{/* { name: "Testimonios", link: "#testimonios" } */}
 const Header = () => {
   const [visible, setVisible] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
