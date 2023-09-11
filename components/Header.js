@@ -5,9 +5,9 @@ import "../styles/header.css";
 
 const categories = [
 
-  { name: "Inicio", link: "#" },
-  { name: "Galeria", link: "#galery" },
-  { name: "Contacto", link: "#contacto" },
+  { name: "Inicio", link: "/" },
+  { name: "Galeria", link: "/#galery" },
+  { name: "Contacto", link: "/#contacto" },
 ];  {/*     { name: "Proyectos", link: "#proyectos" } */}
 {/* { name: "Testimonios", link: "#testimonios" } */}
 const Header = () => {

@@ -1,17 +1,19 @@
 import React from "react";
 import "../styles/galery.css";
 import Image from "next/image";
+import Link from 'next/link';
 
 const galeria = [
   {
     id: 1,
-    proyect: "Exibichion de arte",
+    proyect: "Exibicion de arte",
     name: "Exibichion de arte",
     img: "/g1.png",
     activites: 10,
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Exibicion"
   },
   {
     id: 2,
@@ -22,6 +24,7 @@ const galeria = [
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Moda"
   },
   {
     id: 3,
@@ -32,6 +35,7 @@ const galeria = [
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Productos"
   },
   {
     id: 4,
@@ -42,6 +46,7 @@ const galeria = [
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Edificios"
   },
   {
     id: 5,
@@ -52,6 +57,7 @@ const galeria = [
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Muebles"
   },
   {
     id: 6,
@@ -62,6 +68,7 @@ const galeria = [
     places: 12,
     days: "1week",
     price: 1.2,
+    link:"/Interiores"
   },
 ];
 const Galery = () => {
@@ -77,6 +84,7 @@ const Galery = () => {
 
       <div className="grid">
         {galeria.map((galeria, index) => (
+          <a key={galeria.id}href={galeria.link} className="active" >
           <div className={`card card-${index}`}  key={galeria.id}>
             <Image
               src={galeria.img}
@@ -91,13 +99,14 @@ const Galery = () => {
               </span>
               <div className="group">
                 <div className="text">
-                  <strong>{galeria.name}</strong>
+                <strong>{galeria.name}</strong>
                   <span><i className="fas fa-map-marker-alt"></i>{galeria.places}</span>
                 </div>
                 <span className="price">${galeria.price}</span>
               </div>
             </div>
           </div>
+          </a>
         ))}
       </div>
     </section>
