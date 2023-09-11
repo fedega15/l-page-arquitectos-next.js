@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="box">
             <strong>LINKS</strong>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#galery">Galeria</a></li>
+                <li><a href="/#home">Home</a></li>
+                <li><a href="/#galery">Galeria</a></li>
               {/*   <li><a href="#proyectos">Proyectos</a></li> */}
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/#contacto">Contacto</a></li>
             </ul>
         </div>
         <div className="box">

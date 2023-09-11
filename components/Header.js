@@ -39,7 +39,7 @@ const Header = () => {
     >
       <nav>
         <a href="#" className="logo">
-          <i className="fa-solid fa-person-hiking"></i> travel
+          <i className="fa-solid fas fa-compass"></i> SSA
         </a>
 
         <div className="menu_btn" onClick={ () => setShowMenu(value => !value)}>

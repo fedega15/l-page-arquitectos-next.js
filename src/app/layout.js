@@ -10,7 +10,7 @@ const inter = Poppins({
 });
 
 export const metadata = {
-  title: "Estudio de arquitectos",
+  title: "SSA-Arquitectos",
   description:
     "Somos un grupo de arquitectos apasionados por nuestra profesion",
 };

@@ -98,6 +98,39 @@ const galeria = [
     year: 2022,
     link:"/Interiores"
   },
+  {
+    id: 9,
+    proyect: "Interiores",
+    name: "FLIGHT565",
+    img: "/e8.png",
+    activites: 10,
+    places: 12,
+    days: "1week",
+    year: 2022,
+    link:"/Interiores"
+  },
+  {
+    id: 10,
+    proyect: "Interiores",
+    name: "FLIGHT565",
+    img: "/e8.png",
+    activites: 10,
+    places: 12,
+    days: "1week",
+    year: 2022,
+    link:"/Interiores"
+  },
+  {
+    id: 11,
+    proyect: "Interiores",
+    name: "FLIGHT565",
+    img: "/e8.png",
+    activites: 10,
+    places: 12,
+    days: "1week",
+    year: 2022,
+    link:"/Interiores"
+  },
 ];
 
 const page = () => {
@@ -126,7 +159,7 @@ const page = () => {
               </span>
               <div className='group'>
                 <div >
-                  <span  className='text'> <h3><i className="fas fa-map-marker-alt"></i>{galeria.ubi}</h3></span> 
+                  <span  className='text'> <h3><i className="fas fa-map-marker-alt">  </i> - {galeria.ubi}</h3></span> 
                   <h3 className="text">{galeria.year}</h3>
                 </div>
               </div>
