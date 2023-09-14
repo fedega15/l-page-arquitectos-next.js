@@ -66,7 +66,7 @@ const Header = () => {
             style={{
               background:
                 "linear-gradient(180deg, rgba(0, 0, 0, 5) 0%, rgba(54, 54, 54, 0.6) 500%)",
-              height: showMenu ? 650 : 0,
+              height: showMenu ? 950 : 0,
             }}
           >
             <i
