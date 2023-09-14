@@ -1,6 +1,6 @@
 :root {
-  --margin: 70px auto;
-  --max-width: 1200px;
+  --margin: -10px auto; /* ACA ESTOY SACANDO EL 70PX */
+  --max-width: 100%; /* ACA ESTOY SACANDO 1200PX CAMBIANDO POR 100% */
   --max-width-sm: 1000px;
 
   --rgb:50,50,50;

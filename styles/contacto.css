@@ -10,8 +10,10 @@
 }
 
 #contacto .text{
+    position: relative;
+    top:100px;
     flex: 1;
-    min-width: 400px;
+    min-width:400px;
 }
 
 #contacto form{
@@ -52,6 +54,7 @@
  }
 
  #contacto .img-container {
+    
     flex: 1 ;
     min-width: 300px;
  }

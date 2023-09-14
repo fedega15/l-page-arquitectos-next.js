@@ -1,0 +1,67 @@
+#testimonios {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: var(--margin);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:25px;
+}
+
+#testimonios .img-container{
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    top: 20px;
+}
+
+#testimonios .slider{
+    position: relative;
+    top: 120px;
+    flex: 1;
+    min-width: 400px;
+}
+
+#testimonios .card{
+    background: #fff;
+    width: 100%;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 20px;
+    box-shadow: 2px 20px 30px var(--shadow-color);
+}
+
+#testimonios .avatar {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background:var(--secondary);
+}
+
+#testimonios .text {
+    flex: 1;
+    min-width: 200px;
+}
+#testimonios .text i{
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+#testimonios .text p{
+    color: #696;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin: 5px 0 15px 0;
+}
+#testimonios .text strong{
+    color: #363636;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+}   
