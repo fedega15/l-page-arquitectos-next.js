@@ -71,7 +71,7 @@ const Header = () => {
           >
             <i
               className="fa-solid fa-xmark"
-              style={{ position: "relative", left: "230px", top:"15px", color:"rgb(8, 243, 27)"}}
+              style={{ position: "relative", left: "150px", top:"15px", color:"rgb(8, 243, 27)" }}
             ></i>
             {categories.map((category) => (
               <li key={category.name}>
