@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/exibicion.css";
+import "../../../styles/exhibicion.css";
 import Image from "next/image";
 
 const galeria = [
