@@ -6,14 +6,14 @@ import Link from 'next/link';
 const galeria = [
   {
     id: 1,
-    proyect: "EXIBICION",
-    name: "EXIBICION",
+    proyect: "EXHIBICION",
+    name: "EXHIBICION",
     img: "/g1.png",
     activites: 10,
     places: 200,
     days: "1week",
     price: 1.2,
-    link:"/Exibicion"
+    link:"/Exhibicion"
   },
   {
     id: 2,
