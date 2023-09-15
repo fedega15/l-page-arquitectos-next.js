@@ -5,9 +5,9 @@ import Image from "next/image";
 const page = () => {
   return (
     <section id="contacto">
-      <div className="text">
+      <div className="text-1">
         <div className="img-container">
-          <h2>Nuestras oficinas estan en </h2>
+          <h2>Nuestras oficinas </h2>
 
           <h1>Santa Fe 2144, 3D</h1>
           <Image src="/map.png" alt="sub" width={488} height={482} border={2} />
@@ -29,8 +29,10 @@ const page = () => {
           </button>
         </form>
       </div>
+      <div className="text">
       <div className="img-container">
         <Image src="/sub.png" alt="sub" width={488} height={482} />
+      </div>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ const categories = [
   { name: "Trabajos", link: "/#galery" },
   { name: "Acerca de", link: "/Acerca" },
   { name: "Contacto", link: "/Contacto" },
-  { name: "Testimonios", link: "/Testimonios" },
+  { name: "Novedades", link: "/Novedades" },
 ];
 {
   /*     { name: "Proyectos", link: "#proyectos" } */
@@ -71,7 +71,7 @@ const Header = () => {
           >
             <i
               className="fa-solid fa-xmark"
-              style={{ position: "absolute", right: "0" }}
+              style={{ position: "relative", left: "230px", top:"15px", color:"rgb(8, 243, 27)"}}
             ></i>
             {categories.map((category) => (
               <li key={category.name}>

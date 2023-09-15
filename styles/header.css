@@ -46,11 +46,11 @@ header ul li a {
   color: white;
 }
 header ul li a:is(:hover) {
-  color:  rgb(192, 63, 138);
+  color:  rgb(8, 243, 27);
 }
 .menu-d:is(:hover, .active) {
-  color: wheat;
-    background-color:  rgb(192, 63, 138);
+  color: rgb(20, 20, 20);
+    background-color:  rgb(8, 243, 27);
 }
 .menu-d {
     width: 90px;
@@ -76,7 +76,7 @@ header nav .menu_btn {
   color: rgb(243, 237, 237);
 }
 .redes:hover {
-  color: rgb(192, 63, 138);
+  color: rgb(8, 243, 27);
 }
 
 /* esto tenia arriba lo modifique para que quede menu hamburgesa
@@ -167,7 +167,7 @@ header nav .menu_btn {
     color: rgb(243, 237, 237);
   }
   .redes:hover {
-    color: rgb(192, 63, 138);
+    color: rgb(8, 243, 27);
   }
 }
 
