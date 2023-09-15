@@ -5,7 +5,7 @@ import Image from "next/image";
 const galeria = [
   {
     id: 1,
-    proyect: "Exibicion de arte",
+    proyect: "Exhibicion de arte",
     name: "SONICO",
     ubi: "galeria de arte sidney",
     img: "/e1.png",
