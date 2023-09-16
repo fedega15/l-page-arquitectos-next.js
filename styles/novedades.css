@@ -55,7 +55,7 @@
   gap: 20px;
   box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
 }
-  width: 100px;
+  width: 80px;
   min-width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -99,14 +99,5 @@
   #testimonios .cards-container {
     flex-grow: initial; /* Restaura el comportamiento predeterminado de crecimiento */
   }
-  #testimonios .card {
-    width: 100%; /* Ancho completo del contenedor de cards */
-    padding: 30px;
-    border: 0.2px solid var(--border-color);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
-    margin-bottom: 5x;
-  }
+
 }
