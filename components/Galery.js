@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/galery.css";
 import Image from "next/image";
-import Link from 'next/link';
+import Link from "next/link";
 
 const galeria = [
   {
@@ -13,7 +13,7 @@ const galeria = [
     places: 200,
     days: "1week",
     price: 1.2,
-    link:"/Exhibicion"
+    link: "/Exhibicion",
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const galeria = [
     places: 32,
     days: "1week",
     price: 1.2,
-    link:"/Moda"
+    link: "/Moda",
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ const galeria = [
     places: 54,
     days: "1week",
     price: 1.2,
-    link:"/Productos"
+    link: "/Productos",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const galeria = [
     places: 132,
     days: "1week",
     price: 1.2,
-    link:"/Edificios"
+    link: "/Edificios",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ const galeria = [
     places: 46,
     days: "1week",
     price: 1.2,
-    link:"/Muebles"
+    link: "/Muebles",
   },
   {
     id: 6,
@@ -68,13 +68,13 @@ const galeria = [
     places: 244,
     days: "1week",
     price: 1.2,
-    link:"/Interiores"
+    link: "/Interiores",
   },
 ];
 const Galery = () => {
   return (
     <section id="galery">
-   {/*    <div className="heading">
+      {/*    <div className="heading">
         <h2>Galeria</h2>
         <p>
           En esta galeria encontraras nuestros disntintos enfoques de
@@ -82,30 +82,34 @@ const Galery = () => {
         </p>
       </div> */}
 
-        <div className="grid">
-          {galeria.map((galeria, index) => (
-            <a key={galeria.id} href={galeria.link} className={`active card card-${index}`}  >
-            <div className={`card card-${index}`}  key={galeria.id}>
+      <div className="grid">
+        {galeria.map((galeria, index) => (
+          <a
+            key={galeria.id}
+            href={galeria.link}
+            className={`active card card-${index}`}
+          >
+            <div className={`card card-${index}`} key={galeria.id}>
               <Image
                 src={galeria.img}
                 alt={galeria.img}
                 width={600}
                 height={600}
               />
-            <div className="box">
-              <span className="star">
-             {/*    <i className="fa-solid fa-star"></i>
+              <div className="box">
+                <span className="star">
+                  {/*    <i className="fa-solid fa-star"></i>
                 {galeria.activites} */}
-              </span>
-              <div className="group">
-                <div className="text">
-                <strong>{galeria.name}</strong>
-                  <span>{galeria.places}  Poyectos</span>
+                </span>
+                <div className="group">
+                  <div className="text">
+                    <strong>{galeria.name}</strong>
+                    <span>{galeria.places} Poyectos</span>
+                  </div>
+                  {/* <span className="price">${galeria.price}</span> */}
                 </div>
-                {/* <span className="price">${galeria.price}</span> */}
               </div>
             </div>
-          </div>
           </a>
         ))}
       </div>
