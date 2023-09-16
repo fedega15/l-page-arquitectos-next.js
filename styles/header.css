@@ -178,15 +178,15 @@ header nav .menu_btn {
 
   header .box-redes {
     margin-left: 15px;
-    top:  40  0px;
+    top:600px;
   }
   .redes {
     
     display: inline-block;
-    padding-left: 7px;
+    padding-left: 4px;
     margin-right: 3px; 
     font-size:25px;
-    top: 220px;
+    top: 250px;
     position: relative;
     color: rgb(243, 237, 237);
   }
