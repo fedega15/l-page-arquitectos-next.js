@@ -3,78 +3,104 @@
     max-width: var(--max-width);
     margin: var(--margin);
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    gap:25px;
-}
-
-#testimonios .img-container{
-    flex: 1;
-    min-width: 300px;
-    position: relative;
-    top: -90px;
-}
-
-#testimonios .slider{
-    position: relative;
-    top: 120px;
-    flex: 1;
-    min-width: 400px;
-}
-
-#testimonios .card{
-    background: #fff;
-    width: 100%;
-    padding: 30px;
-    border: 1px solid var(--border-color);
+    gap: 25px;
+    padding-top: 100px;
+  }
+  
+  /* Estilo para el contenedor que agrupa la letra y las cards */
+  #testimonios .letter-card {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    width: 60%;
+    margin-bottom: -100px; /* Espacio entre grupos */
+  }
+  
+  /* Estilo para la letra del alfabeto */
+  #testimonios .letter {
+    font-size: 22rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Texto en negrita */
+    margin-right: 100px; /* Espacio entre la letra y las cards */
+    width: 220px;
+  }
+  
+  /* Estilo para el contenedor de las cards */
+  #testimonios .cards-container {
+    display: flex;
+    flex-direction: column; /* Alinea las cards una debajo de la otra */
+    gap: 20px; /* Espacio entre las cards */
+    flex-grow: 1; /* Ocupa todo el espacio disponible */
+  }
+  
+  /* Estilo para la card (sin cambios en su estructura) */
+  #testimonios .card {
+    width: 100%; /* Ancho completo del contenedor de cards */
+    padding: 30px;
+    border: 0.2px solid var(--border-color);
+    display: flex;
+    align-items: center;
     gap: 20px;
-    box-shadow: 2px 20px 30px var(--shadow-color);
-}
-
-#testimonios .avatar {
+    box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
+  }
+  #testimonios .card:hover{
+    background: greenyellow;
+    width: 100%; /* Ancho completo del contenedor de cards */
+    padding: 30px;
+    border: 0.2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
+  }
+  
+  #testimonios .avatar {
     width: 100px;
     min-width: 100px;
     height: 100px;
     border-radius: 50%;
     overflow: hidden;
-    background:var(--secondary);
-}
-
-#testimonios .text {
+    background: var(--secondary);
+  }
+  
+  #testimonios .text {
     flex: 1;
     min-width: 200px;
-}
-#testimonios .text i{
+  }
+  #testimonios .text i {
     color: var(--primary);
     font-size: 1.3rem;
-}
-#testimonios .text p{
+  }
+  #testimonios .text p {
     color: #696;
     font-size: 0.9rem;
     letter-spacing: 1px;
     margin: 5px 0 15px 0;
-}
-#testimonios .text strong{
+  }
+  #testimonios .text strong {
     color: #363636;
     font-weight: 700;
     letter-spacing: 1px;
-
-}
-@media (max-width: 450px){
-    #testimonios .slider,
-    #testimonios .img-container{
-        min-width: 200px;
-        
+  }
+  
+  /* Media query para pantallas pequeñas (ejemplo: ancho máximo de 768px) */
+  @media (max-width: 768px) {
+    #testimonios .letter-card {
+      flex-direction: column; /* Cambia a una disposición de columna */
+      align-items: flex-start;
     }
-    #testimonios .img-container{
-        flex: 1;
-        min-width: 300px;
-        position: relative;
-        top: 110px;
+  
+    #testimonios .letter {
+      margin-right: 0; /* Elimina el espacio entre la letra y las cards */
+      margin-bottom: 10px; /* Agrega espacio entre la letra y las cards en dispositivos móviles */
+      font-size: 2rem;
     }
- }   
+  
+    #testimonios .cards-container {
+      flex-grow: initial; /* Restaura el comportamiento predeterminado de crecimiento */
+    }
+  
+    #testimonios .card {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+    }
+  }
+  

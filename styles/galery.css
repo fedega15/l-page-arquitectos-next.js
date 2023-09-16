@@ -70,6 +70,9 @@
 #galery .group .text strong:hover{
     color: rgb(241, 233, 233);
 }
+#galery .group .text-1 strong:hover{
+    color: rgb(241, 233, 233);
+}
 
 
 #galery .box {
@@ -122,6 +125,16 @@
     align-items: flex-end;
     color: #fff;
 }
+#galery .box .text, .group {
+    display: block;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  #galery .card:hover .box .text, .group {
+    opacity: 1;
+    transform: translateX(0);
+  }
 
 #galery .group .text strong{
     display: block;
@@ -132,7 +145,23 @@
     color: #000;
     font-weight: 200000;
 }
+#galery .group .text-1 strong{
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 200000;
+}
 #galery .group .text span{
+    font-size: 0.8rem;
+    color: #000;
+    font-weight: 200000;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+#galery .group .text-1 span{
     font-size: 0.8rem;
     color: #000;
     font-weight: 200000;

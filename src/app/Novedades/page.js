@@ -7,55 +7,79 @@ const testimonials = [
     id: 1,
     name: "Ecosistema",
     avatar: "/tmiembro.jpg",
-    text: "Diseño de mobiliario con materiales reciclados ",
+    text: "Argemtina - Rosario ",
   },
   {
-    id: 1,
+    id: 2,
     name: "Diseño industrial ",
     avatar: "/tmiembro1.jpg",
-    text: "Te mostramos cómo combinar los materiales, los muebles perfectos y la forma de usar el color para conseguir sentirte como en un loft urbano de diseño.",
+    text: "Bolivia - La Paz",
   },
   {
-    id: 1,
-    name: "Equipamiento de baño",
+    id: 3,
+    name: "Baño",
     avatar: "/tmiembro3.jpg",
-    text: "Hemos desarrollado a lo largo de los años una extensa gama de acabados para todas nuestras líneas de griferías y accesorios de baño, cocina y el jardín.",
+    text: "Argentina - La Plata",
   },
   {
-    id: 1,
+    id: 4,
     name: "Arquitectura movil",
     avatar: "/tmiembro2.jpg",
-    text: "Oficina móvil que se adapte a la dinámica nómade que requiere un estudio que proyecta, dirige y construye y que, a su vez, acompañe las distintas etapas de un proyecto: desde el primer contacto con el cliente hasta la entrega final de obra",
+    text: "Brazil- Rio de Janeiro",
+  },
+  {
+    id: 4,
+    name: "Arquitectura movil",
+    avatar: "/tmiembro2.jpg",
+    text: "EE UU - Oklahoma",
   },
 ];
 
+testimonials.sort((a, b) => a.name.localeCompare(b.name));
+
+const groupedTestimonials = {};
+
+// Agrupa los testimonios por letra inicial
+testimonials.forEach((testimonial) => {
+  const initialLetter = testimonial.name.charAt(0).toUpperCase();
+  if (!groupedTestimonials[initialLetter]) {
+    groupedTestimonials[initialLetter] = [];
+  }
+  groupedTestimonials[initialLetter].push(testimonial);
+});
 const page = () => {
   return (
     <section id="testimonios">
-      <div className="img-container">
-        <Image src="/t1.png" alt="t1" width={488} height={482} />
-      </div>
+      <hr></hr>
       <div className="slider">
         <h2>Proyectos y novedades</h2>
         <p>
-          {" "}
-          En esta seccion encontraraas nuestras investigaciones inovaciones y
-          nuevos enfoques
+          En esta sección encontrarás nuestras investigaciones, innovaciones y
+          nuevos enfoques.
         </p>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="card">
-            <div className="text">
-              <i className="fas fa-quote-left"></i>
-              <p>{testimonial.text}</p>
-              <strong>{testimonial.name}</strong>
-            </div>
-            <div className="avatar">
-              <Image
-                src={testimonial.avatar}
-                alt="t1"
-                width={488}
-                height={482}
-              />
+        {Object.keys(groupedTestimonials).map((letter) => (
+          <div key={letter} className="letter-card">
+            <div className="letter">{letter}</div>
+            <div className="cards-container">
+              <hr></hr>
+              {groupedTestimonials[letter].map((testimonial) => (
+                <div key={testimonial.id} className="card">
+                  <hr></hr>
+                  <div className="text">
+                    <i className="fas fa-quote-left"></i>
+                    <strong>{testimonial.name}</strong>
+                    <p>{testimonial.text}</p>
+                  </div>
+                  <div className="avatar">
+                    <Image
+                      src={testimonial.avatar}
+                      alt="t1"
+                      width={100}
+                      height={100}
+                    />
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         ))}

@@ -106,6 +106,7 @@ const Galery = () => {
                     <strong>{galeria.name}</strong>
                     <span>{galeria.places} Poyectos</span>
                   </div>
+                 
                   {/* <span className="price">${galeria.price}</span> */}
                 </div>
               </div>

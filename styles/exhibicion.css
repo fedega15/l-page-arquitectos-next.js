@@ -5,13 +5,17 @@
     overflow: hidden;
 }
 /* Initially hide the .text within .box */
-#galery .box .text, .group{
-    display: none;
+#galery .box .text, .group {
+    display: block;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
   
   /* Show the .text within .box on card hover */
-  #galery .card:hover .box .text,.group {
-    display: block;
+  #galery .card:hover .box .text, .group {
+    opacity: 1;
+    transform: translateX(0);
   }
 #galery .grid{
     width: 100%;
