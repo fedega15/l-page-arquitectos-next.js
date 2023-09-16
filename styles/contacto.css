@@ -25,7 +25,7 @@
 }
 
 #testimonios .card{
-    background: #d6d0d0;
+    background: #f3e4b3;
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -41,7 +41,18 @@
 #testimonios .img-container img:hover {
     transform: scale(1.08);
 }
-
+#testimonios .redes {
+    display: inline-block;
+    padding-left: 55px; /* Hacer que los elementos <a> sean en línea */
+    margin-right: 35px; /* Espacio entre elementos <a> */
+    font-size: 25px;
+    top:0px;
+    position: relative;
+    color: rgb(32, 30, 30);
+  }
+  #testimonios      .redes:hover {
+    color: rgb(8, 243, 27);
+  }
 #testimonios .img-container img{
     transition: all linear 0.5s;
 }
@@ -89,4 +100,17 @@
         min-width: 200px;
         
     }
+    
+#testimonios .redes {
+    display: inline-block;
+    padding-left: 35px; /* Hacer que los elementos <a> sean en línea */
+    margin-right: 15px; /* Espacio entre elementos <a> */
+    font-size: 15px;
+    top:0px;
+    position: relative;
+    color: rgb(32, 30, 30);
+  }
+  #testimonios      .redes:hover {
+    color: rgb(8, 243, 27);
+  }
  }   
