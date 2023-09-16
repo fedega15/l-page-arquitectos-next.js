@@ -55,10 +55,10 @@
   gap: 20px;
   box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
 }
-  width: 80px;
-  min-width: 100px;
+  width: 70px;
+  min-width: 70px;
   height: 100px;
-  border-radius: 50%;
+  border-radius: 60%;
   overflow: hidden;
   background: var(--secondary);
 }
