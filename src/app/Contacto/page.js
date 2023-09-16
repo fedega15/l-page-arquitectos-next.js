@@ -30,7 +30,6 @@ const page = () => {
       </div>
       <div className="slider">
         <h2>Escanea nuestros QR</h2>
-       
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
             <div className="text">

@@ -71,8 +71,9 @@ const Header = () => {
           >
             <i
               className="fa-solid fa-xmark"
-              style={{ position: "relative", left: "150px", top:"15px", color:"rgb(8, 243, 27)" }}
+              style={{ position: "relative", left: "0px", top:"0px", color:"rgb(8, 243, 27)" }}
             ></i>
+            <div className="box-li">
             {categories.map((category) => (
               <li key={category.name}>
                 <a href={category.link} className="active">
@@ -80,7 +81,10 @@ const Header = () => {
                 </a>
               </li>
             ))}
-            <div>
+            </div>
+           
+            <div className="box-redes">
+            
             <a href="https://www.instagram.com/fedegalassi_/" className="redes" ><i className="fa-brands fa-instagram"></i></a>
             <a href="https://wa.link/d08xt8" className="redes" ><i class="fa-brands fa-whatsapp"></i></a>
             <a href="https://www.instagram.com/fedegalassi_/" className="redes" ><i className="fa-brands fa-linkedin"></i></a>

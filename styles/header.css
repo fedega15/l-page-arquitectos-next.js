@@ -41,9 +41,12 @@ header ul {
 header ul li a {
   font-size: x-large;
   display: block;
-  padding: 10px;
+  margin-left: 10px;
   border-bottom: 1px solid var(--border-color);
   color: white;
+  font-family:  Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";;
+  font-size: 50px;
+  font-weight: 400;
 }
 header ul li a:is(:hover) {
   color:  rgb(8, 243, 27);
@@ -66,12 +69,20 @@ header nav .menu_btn {
   color: var(--main);
   display: block;
 }
+header .box-redes {
+  margin-left: 25px;
+  top:  200px;
+}
+header .box-li {
+  margin-top: 25px;
+  margin-left: 10px;
+}
 .redes {
   display: inline-block;
-  padding-left: 15px; /* Hacer que los elementos <a> sean en línea */
+  padding-left: 4px; /* Hacer que los elementos <a> sean en línea */
   margin-right: 15px; /* Espacio entre elementos <a> */
   font-size: 25px;
-  top: 330px;
+  top: 130px;
   position: relative;
   color: rgb(243, 237, 237);
 }
@@ -151,10 +162,23 @@ header nav .menu_btn {
     padding: 7px;
     border-bottom: 1px solid var(--border-color);
     color: white;
+    margin-top: 0px;
+    margin-left: 0px;
+    font-size: 30px;
   }
 
   header nav .menu_btn {
     display: block;
+  }
+
+  header .box-li {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  header .box-redes {
+    margin-left: 15px;
+    top:  200px;
   }
   .redes {
     
@@ -162,7 +186,7 @@ header nav .menu_btn {
     padding-left: 7px;
     margin-right: 3px; 
     font-size:25px;
-    top: 330px;
+    top: 180px;
     position: relative;
     color: rgb(243, 237, 237);
   }
@@ -170,4 +194,6 @@ header nav .menu_btn {
     color: rgb(8, 243, 27);
   }
 }
+
+
 
