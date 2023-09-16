@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import "../styles/trending.css";
 import Image from "next/image";
@@ -104,18 +104,18 @@ const Trending = () => {
           className="img-container"
           breakpoints={{
             800: {
-                slidesPerView:2,
-                spaceBetween:10
+              slidesPerView: 2,
+              spaceBetween: 10,
             },
             1100: {
-                slidesPerView:3,
-                spaceBetween:20
-            }
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
           }}
         >
           {trends.map((trend) => (
             <SwiperSlide key={trend.id}>
-              <div className="card" >
+              <div className="card">
                 <div className="title">
                   <span>
                     <i className="fas fa-map-marker"></i>

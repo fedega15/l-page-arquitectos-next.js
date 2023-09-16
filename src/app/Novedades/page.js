@@ -61,10 +61,8 @@ const page = () => {
           <div key={letter} className="letter-card">
             <div className="letter">{letter}</div>
             <div className="cards-container">
-              <hr></hr>
               {groupedTestimonials[letter].map((testimonial) => (
                 <div key={testimonial.id} className="card">
-                  <hr></hr>
                   <div className="text">
                     <i className="fas fa-quote-left"></i>
                     <strong>{testimonial.name}</strong>

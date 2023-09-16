@@ -71,25 +71,51 @@ const Header = () => {
           >
             <i
               className="fa-solid fa-xmark"
-              style={{ position: "relative", left: "0px", top:"0px", color:"rgb(8, 243, 27)" }}
+              style={{
+                position: "relative",
+                left: "0px",
+                top: "0px",
+                color: "rgb(8, 243, 27)",
+              }}
             ></i>
             <div className="box-li">
-            {categories.map((category) => (
-              <li key={category.name}>
-                <a href={category.link} className="active">
-                  {category.name}
-                </a>
-              </li>
-            ))}
+              {categories.map((category) => (
+                <li key={category.name}>
+                  <a href={category.link} className="active">
+                    {category.name}
+                  </a>
+                </li>
+              ))}
             </div>
-           
+
             <div className="box-redes">
-            
-            <a href="https://www.instagram.com/fedegalassi_/" className="redes" ><i className="fa-brands fa-instagram"></i></a>
-            <a href="https://wa.link/d08xt8" className="redes" ><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/fedegalassi_/" className="redes" ><i className="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/fedegalassi_/" className="redes" ><i className="fa-brands fa-facebook-messenger"></i></a>
-            <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79" className="redes" ><i className="fa-solid fa-location-dot"></i> </a>
+              <a
+                href="https://www.instagram.com/fedegalassi_/"
+                className="redes"
+              >
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://wa.link/d08xt8" className="redes">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fedegalassi_/"
+                className="redes"
+              >
+                <i className="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/fedegalassi_/"
+                className="redes"
+              >
+                <i className="fa-brands fa-facebook-messenger"></i>
+              </a>
+              <a
+                href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79"
+                className="redes"
+              >
+                <i className="fa-solid fa-location-dot"></i>{" "}
+              </a>
             </div>
           </ul>
         </div>
