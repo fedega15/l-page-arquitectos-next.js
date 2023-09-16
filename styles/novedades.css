@@ -30,18 +30,11 @@
   flex-direction: column; /* Alinea las cards una debajo de la otra */
   gap: 20px; /* Espacio entre las cards */
   flex-grow: 1; /* Ocupa todo el espacio disponible */
+  margin-bottom: 100px;
 }
 
 /* Estilo para la card (sin cambios en su estructura) */
-#testimonios .card {
-  width: 100%; /* Ancho completo del contenedor de cards */
-  padding: 30px;
-  border: 0.2px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
-}
+
 #testimonios .card:hover {
   background: greenyellow;
   width: 100%; /* Ancho completo del contenedor de cards */
@@ -53,7 +46,15 @@
   box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
 }
 
-#testimonios .avatar {
+#testimonios .avatar {#testimonios .card {
+  width: 100%; /* Ancho completo del contenedor de cards */
+  padding: 30px;
+  border: 0.2px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
+}
   width: 100px;
   min-width: 100px;
   height: 100px;
@@ -98,8 +99,14 @@
   #testimonios .cards-container {
     flex-grow: initial; /* Restaura el comportamiento predeterminado de crecimiento */
   }
-
   #testimonios .card {
-    width: 100%; /* Ancho completo en dispositivos móviles */
+    width: 100%; /* Ancho completo del contenedor de cards */
+    padding: 30px;
+    border: 0.2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
+    margin-bottom: 5x;
   }
 }
