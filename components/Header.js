@@ -75,7 +75,7 @@ const Header = () => {
                 position: "relative",
                 left: "0px",
                 top: "0px",
-                color: "rgb(8, 243, 27)",
+                color: "greenyellow",
               }}
             ></i>
             <div className="box-li">

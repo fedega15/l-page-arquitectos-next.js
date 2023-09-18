@@ -39,21 +39,22 @@ header ul {
 }
 
 header ul li a {
-  font-size: x-large;
+  padding: 10px;
   display: block;
-  margin-left: 10px;
+  margin-left: 5px;
+  margin-top: 15px;
   border-bottom: 1px solid var(--border-color);
   color: white;
-  font-family:  Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", "sans serif";;
-  font-size: 50px;
-  font-weight: 400;
+  font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
+  text-transform: uppercase;
+  font-size: xx-large;
 }
 header ul li a:is(:hover) {
-  color:  rgb(8, 243, 27);
+  color:  greenyellow;
 }
 .menu-d:is(:hover, .active) {
   color: rgb(20, 20, 20);
-    background-color:  rgb(8, 243, 27);
+    background-color: greenyellow;
 }
 .menu-d {
     width: 90px;
@@ -87,7 +88,7 @@ header .box-li {
   color: rgb(243, 237, 237);
 }
 .redes:hover {
-  color: rgb(8, 243, 27);
+  color: greenyellow;
 }
 
 /* esto tenia arriba lo modifique para que quede menu hamburgesa
@@ -159,12 +160,26 @@ header nav .menu_btn {
 
   header ul li a {
     display: block;
-    padding: 7px;
+    padding: 15px;
     border-bottom: 1px solid var(--border-color);
     color: white;
     margin-top: 0px;
     margin-left: 0px;
-    font-size: 30px;
+    font-size: 25px;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-variant-alternates: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.85;
+    font-family: "Titling Gothic Skyline", Arial, Helvetica, sans-serif;
   }
 
   header nav .menu_btn {
@@ -191,7 +206,7 @@ header nav .menu_btn {
     color: rgb(243, 237, 237);
   }
   .redes:hover {
-    color: rgb(8, 243, 27);
+    color: greenyellow;
   }
 }
 
