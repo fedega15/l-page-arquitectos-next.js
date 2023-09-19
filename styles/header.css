@@ -142,7 +142,7 @@ header nav .menu_btn {
 } */
 
 
-@media (min-width: 1080px) {
+@media (min-width: 1150px) {
   header nav {
     justify-content: space-between;
   }
@@ -201,7 +201,7 @@ header nav .menu_btn {
 
 
 
-@media (max-width: 1080px) {
+@media (max-width: 1150px) {
   header nav {
     justify-content: space-between;
   }
@@ -266,7 +266,7 @@ header ul li a {
     right: 0;
     background: var(--bg-main);
     display: block;
-    width: 40%;
+    width: 50%;
     box-shadow: 2px 20px 30px var(--shadow-color);
     transition: all ease-in-out 0.3s;
     height: 0px;
