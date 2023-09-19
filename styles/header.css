@@ -41,14 +41,15 @@ header ul {
 header ul li a {
   padding: 10px;
   display: block;
-  margin-left: 5px;
+  margin-left: 40px;
   margin-top: 15px;
   border-bottom: 1px solid var(--border-color);
   color: white;
   font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
   text-transform: uppercase;
-  font-size: xx-large;
+  font-size: x-large;
 }
+
 header ul li a:is(:hover) {
   color:  greenyellow;
 }
@@ -141,7 +142,7 @@ header nav .menu_btn {
 } */
 
 
-@media (max-width: 840px) {
+@media (min-width: 1080px) {
   header nav {
     justify-content: space-between;
   }
@@ -151,36 +152,137 @@ header nav .menu_btn {
     right: 0;
     background: var(--bg-main);
     display: block;
-    width: 50%;
+    width: 20%;
     box-shadow: 2px 20px 30px var(--shadow-color);
     transition: all ease-in-out 0.3s;
     height: 0px;
     overflow: hidden;
   }
-
   header ul li a {
+    padding: 10px;
     display: block;
-    padding: 15px;
+    margin-left: 25px;
+    margin-top: 15px;
     border-bottom: 1px solid var(--border-color);
     color: white;
-    margin-top: 0px;
-    margin-left: 0px;
-    font-size: 25px;
-    font-style: normal;
-    font-variant-caps: normal;
-    font-variant-ligatures: normal;
-    font-variant-numeric: normal;
-    font-variant-east-asian: normal;
-    font-variant-alternates: normal;
-    font-kerning: auto;
-    font-optical-sizing: auto;
-    font-feature-settings: normal;
-    font-variation-settings: normal;
-    font-weight: normal;
-    font-stretch: normal;
-    line-height: 0.85;
-    font-family: "Titling Gothic Skyline", Arial, Helvetica, sans-serif;
+    font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
+    text-transform: uppercase;
+    font-size: x-large;
   }
+
+  header nav .menu_btn {
+    display: block;
+  }
+
+  header .box-li {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  header .box-redes {
+    margin-left: 15px;
+    top:600px;
+  }
+  .redes {
+    
+    display: inline-block;
+    padding-left: 17px;
+    margin-right: 3px; 
+    font-size:25px;
+    top: 250px;
+    position: relative;
+    color: rgb(243, 237, 237);
+  }
+  .redes:hover {
+    color: greenyellow;
+  }
+}
+
+
+
+
+@media (max-width: 1080px) {
+  header nav {
+    justify-content: space-between;
+  }
+  header ul {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    background: var(--bg-main);
+    display: block;
+    width: 25%;
+    box-shadow: 2px 20px 30px var(--shadow-color);
+    transition: all ease-in-out 0.3s;
+    height: 0px;
+    overflow: hidden;
+  }
+header ul li a {
+  padding: 10px;
+  display: block;
+  margin-left: 2px;
+  margin-top: 15px;
+  border-bottom: 1px solid var(--border-color);
+  color: white;
+  font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
+  text-transform: uppercase;
+  font-size: large;
+}
+
+  header nav .menu_btn {
+    display: block;
+  }
+
+  header .box-li {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  header .box-redes {
+    margin-left: 15px;
+    top:600px;
+  }
+  .redes {
+    
+    display: inline-block;
+    padding-left: 4px;
+    margin-right: 3px; 
+    font-size:25px;
+    top: 250px;
+    position: relative;
+    color: rgb(243, 237, 237);
+  }
+  .redes:hover {
+    color: greenyellow;
+  }
+}
+@media (max-width: 666px) {
+  header nav {
+    justify-content: space-between;
+  }
+  header ul {
+    position: absolute;
+    top: 0%;
+    right: 0;
+    background: var(--bg-main);
+    display: block;
+    width: 40%;
+    box-shadow: 2px 20px 30px var(--shadow-color);
+    transition: all ease-in-out 0.3s;
+    height: 0px;
+    overflow: hidden;
+  }
+header ul li a {
+  padding-top: 10px;
+  display: block;
+  
+  margin-top: 15px;
+  border-bottom: 1px solid var(--border-color);
+  color: white;
+  font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
+  text-transform: uppercase;
+  font-size: large;
+}
 
   header nav .menu_btn {
     display: block;

@@ -11,7 +11,7 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Diseño industrial ",
+    name: "conferencias",
     avatar: "/tmiembro1.jpg",
     text: "Bolivia - La Paz",
   },
@@ -23,15 +23,45 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Arquitectura movil",
+    name: "Diseño de Exposiciones / Instalaciones de Arte",
     avatar: "/tmiembro2.jpg",
     text: "Brazil- Rio de Janeiro",
   },
   {
-    id: 4,
-    name: "Arquitectura movil",
+    id: 5,
+    name: "Superficies arquitectónic",
     avatar: "/tmiembro2.jpg",
     text: "EE UU - Oklahoma",
+  },
+  {
+    id: 6,
+    name: "Gráfico / Marca",
+    avatar: "/tmiembro2.jpg",
+    text: "Alaska",
+  },
+  {
+    id: 5,
+    name: "Diseño industrial",
+    avatar: "/tmiembro2.jpg",
+    text: "Rusia",
+  },
+  {
+    id: 5,
+    name: "Interiores / Diseño de edificios",
+    avatar: "/tmiembro2.jpg",
+    text: "España - Barcelona",
+  },
+  {
+    id: 5,
+    name: "Concursos",
+    avatar: "/tmiembro2.jpg",
+    text: "Palma de Mayorca",
+  },
+  {
+    id: 5,
+    name: "Pluralismo",
+    avatar: "/tmiembro2.jpg",
+    text: "Ibiza",
   },
 ];
 
