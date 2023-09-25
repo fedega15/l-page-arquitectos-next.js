@@ -127,7 +127,15 @@
     
     #galery .card {
       width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho de su contenedor */
-      height: auto; /* Ajustar la altura automáticamente */
+      height: 200px; /* Ajustar la altura automáticamente */
+    }
+    #galery .cont {
+     width: 310px;
+     margin-left: -80px
+    }
+    #galery .heading {
+     width: 300px;
+     margin-left: -80px
     }
   }
   
