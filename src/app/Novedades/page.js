@@ -94,7 +94,7 @@ const page = () => {
           ))}
         </div>
       </div>
-      <div className="slider">
+      {/* <div className="slider">
         <h1> Links rapidos:
             <a>asdasdasd</a>
             <a>asdasdasd</a>
@@ -103,7 +103,7 @@ const page = () => {
             <a>asdasdasd</a>
         </h1>
 
-      </div>
+      </div> */}
     </section>
   );
 };
