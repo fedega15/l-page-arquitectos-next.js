@@ -4,10 +4,11 @@ import { useEffect, useState } from "react";
 import "../styles/header.css";
 
 const categories = [
-  { name: "Trabajos", link: "/#galery" },
-  { name: "Acerca de", link: "/Acerca" },
+  { name: "Proyectos", link: "/#galery" },
+  { name: "Servicios", link: "/Servicios" },
+  { name: "Contenido", link: "/Novedades" },
+  { name: "Nosotros", link: "/Acerca" },
   { name: "Contacto", link: "/Contacto" },
-  { name: "Novedades", link: "/Novedades" },
 ];
 {
   /*     { name: "Proyectos", link: "#proyectos" } */
@@ -88,7 +89,6 @@ const Header = () => {
               ))}
             </div>
 
-            <div className="box-redes">
               <a
                 href="https://www.instagram.com/fedegalassi_/"
                 className="redes"
@@ -116,7 +116,6 @@ const Header = () => {
               >
                 <i className="fa-solid fa-location-dot"></i>{" "}
               </a>
-            </div>
           </ul>
         </div>
       </nav>

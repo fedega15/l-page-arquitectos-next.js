@@ -64,53 +64,45 @@ const testimonials = [
     text: "Ibiza",
   },
 ];
-
-testimonials.sort((a, b) => a.name.localeCompare(b.name));
-
-const groupedTestimonials = {};
-
-// Agrupa los testimonios por letra inicial
-testimonials.forEach((testimonial) => {
-  const initialLetter = testimonial.name.charAt(0).toUpperCase();
-  if (!groupedTestimonials[initialLetter]) {
-    groupedTestimonials[initialLetter] = [];
-  }
-  groupedTestimonials[initialLetter].push(testimonial);
-});
 const page = () => {
   return (
     <section id="testimonios">
       <hr></hr>
       <div className="slider">
-        <h2>Proyectos y novedades</h2>
+        <h2>Proyectos y investigaciones</h2>
         <p>
           En esta sección encontrarás nuestras investigaciones, innovaciones y
           nuevos enfoques.
         </p>
-        {Object.keys(groupedTestimonials).map((letter) => (
-          <div key={letter} className="letter-card">
-            <div className="letter">{letter}</div>
-            <div className="cards-container">
-              {groupedTestimonials[letter].map((testimonial) => (
-                <div key={testimonial.id} className="card">
-                  <div className="text">
-                    <i className="fas fa-quote-left"></i>
-                    <strong>{testimonial.name}</strong>
-                    <p>{testimonial.text}</p>
-                  </div>
-                  <div className="avatar">
-                    <Image
-                      src={testimonial.avatar}
-                      alt="t1"
-                      width={100}
-                      height={100}
-                    />
-                  </div>
-                </div>
-              ))}
+        <div className="cards-container">
+          {testimonials.map((testimonial) => (
+            <div key={testimonial.id} className="card">
+              <div className="text">
+                <i className="fas fa-quote-left"></i>
+                <strong>{testimonial.name}</strong>
+                <p>{testimonial.text}</p>
+              </div>
+              <div className="avatar">
+                <Image
+                  src={testimonial.avatar}
+                  alt="t1"
+                  width={100}
+                  height={100}
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+      </div>
+      <div className="slider">
+        <h1> Links rapidos:
+            <a>asdasdasd</a>
+            <a>asdasdasd</a>
+            <a>asdasdasd</a>
+            <a>asdasdasd</a>
+            <a>asdasdasd</a>
+        </h1>
+
       </div>
     </section>
   );

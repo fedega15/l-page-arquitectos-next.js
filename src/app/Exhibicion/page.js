@@ -1,11 +1,11 @@
 import React from "react";
-import "../../../styles/exhibicion.css";
+import "../../../styles/exhibicion.css"
 import Image from "next/image";
 
-const galeria = [
+export const galeria = [
   {
     id: 1,
-    proyect: "Exhibicion de arte",
+    proyect: "Exibicion de arte",
     name: "SONICO",
     ubi: "galeria de arte sidney",
     img: "/e1.png",
@@ -145,7 +145,7 @@ const page = () => {
 
       <div className="grid">
         {galeria.map((galeria, index) => (
-          <a key={galeria.id} href={galeria.link} className="active">
+          <a key={galeria.id} href={`/photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
               <Image
                 src={galeria.img}

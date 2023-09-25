@@ -1,13 +1,12 @@
 import React from "react";
 import "../styles/galery.css";
 import Image from "next/image";
-import Link from "next/link";
 
 const galeria = [
   {
     id: 1,
-    proyect: "EXHIBICION",
-    name: "EXHIBICION",
+    proyect: "ARQUITECTURA",
+    name: "ARQUITECTURA",
     img: "/g1.png",
     activites: 10,
     places: 200,
@@ -17,8 +16,8 @@ const galeria = [
   },
   {
     id: 2,
-    proyect: "MODA",
-    name: "MODA",
+    proyect: "MOBILE DESIGN",
+    name: "MOBILE DESIGN",
     img: "/g2.png",
     activites: 10,
     places: 32,
@@ -28,8 +27,8 @@ const galeria = [
   },
   {
     id: 3,
-    proyect: "PRODUCTOS",
-    name: "PRODUCTOS",
+    proyect: "RECYCLABLE FURNITURE",
+    name: "RECYCLABLE FURNITURE",
     img: "/g4.png",
     activites: 23,
     places: 54,
@@ -39,8 +38,8 @@ const galeria = [
   },
   {
     id: 4,
-    proyect: "EDIFICIOS",
-    name: "EDIFICIOS",
+    proyect: "CONCURSOS",
+    name: "CONCURSOS",
     img: "/g5.png",
     activites: 1450,
     places: 132,
@@ -50,8 +49,8 @@ const galeria = [
   },
   {
     id: 5,
-    proyect: "MUEBLES",
-    name: "MUEBLES",
+    proyect: "DISEÑO MOBILIARIO",
+    name: "DISEÑO MOBILIARIO",
     img: "/g6.png",
     activites: 45,
     places: 46,
@@ -61,8 +60,8 @@ const galeria = [
   },
   {
     id: 6,
-    proyect: "INTERIORES",
-    name: "INTERIORES",
+    proyect: "ARQUITECTURA MODULAR",
+    name: "ARQUITECTURA MODULAR",
     img: "/g7.png",
     activites: 70,
     places: 244,
@@ -74,14 +73,6 @@ const galeria = [
 const Galery = () => {
   return (
     <section id="galery">
-      {/*    <div className="heading">
-        <h2>Galeria</h2>
-        <p>
-          En esta galeria encontraras nuestros disntintos enfoques de
-          arquitectura en los cuale trabajamos
-        </p>
-      </div> */}
-
       <div className="grid">
         {galeria.map((galeria, index) => (
           <a
@@ -106,8 +97,6 @@ const Galery = () => {
                     <strong>{galeria.name}</strong>
                     <span>{galeria.places} Poyectos</span>
                   </div>
-                 
-                  {/* <span className="price">${galeria.price}</span> */}
                 </div>
               </div>
             </div>

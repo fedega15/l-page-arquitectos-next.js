@@ -2,13 +2,18 @@ import React from "react";
 import "../../../styles/exhibicion.css"
 import Image from "next/image";
 
-const galeria = [
+export const galeria = [
   {
     id: 1,
     proyect: "Exibicion de arte",
     name: "SONICO",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
     ubi: "galeria de arte sidney",
     img: "/e1.png",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -21,6 +26,11 @@ const galeria = [
     name: "APAGAR",
     ubi: "galeria de arte auckland",
     img: "/e2.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -33,6 +43,11 @@ const galeria = [
     name: "TOTEM",
     ubi: "galeria de arte dobrazil",
     img: "/e3.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -45,6 +60,11 @@ const galeria = [
     name: "LARI",
     ubi: "galeria de arte otawa",
     img: "/e4.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -57,6 +77,11 @@ const galeria = [
     name: "MR & MS",
     ubi: "galeria de arte japon",
     img: "/e5.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -69,6 +94,11 @@ const galeria = [
     name: "MUNDO",
     ubi: "galeria de arte rusia",
     img: "/e6.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -81,6 +111,11 @@ const galeria = [
     name: "ROUND",
     ubi: "galeria de arte crespo",
     img: "/e7.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -92,6 +127,11 @@ const galeria = [
     proyect: "Interiores",
     name: "FLIGHT565",
     img: "/e8.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -103,6 +143,11 @@ const galeria = [
     proyect: "Interiores",
     name: "FLIGHT565",
     img: "/e8.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -114,6 +159,11 @@ const galeria = [
     proyect: "Interiores",
     name: "FLIGHT565",
     img: "/e8.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -125,6 +175,11 @@ const galeria = [
     proyect: "Interiores",
     name: "FLIGHT565",
     img: "/e8.png",
+    descripcion:"  ¿Dónde fue creada la arquitectura Arquitectura: todo lo que debes saber de esta disciplina ... El concepto arquitectura proviene del latín architectura que, a su vez, tiene origen en el griego, y puede definirse como el arte y la técnica de proyectar y construir edificios para satisfacer lasnecesidades del ser humano, a través de la forma, la funcionalidad y los preceptos estéticos.Cuándo fue creada la arquitecturaPrincipios de la arquitecturaunque ya en el año 7.000 A.C ya surgieron los primeros monumentos, la arquitectura, como tal, no se empieza a considerar hasta la edad griega. Desde entonces, se puede percibir una evolución totalmente visible, gracias a que aún siguen vigentes los estilos arquitectónicos más antiguos",
+    photo1:"/photo1.jpg",
+    photo2:"/photo2.jpg",
+    photo3:"/photo3.jpg",
+    photo4:"/photo4.jpg",
     activites: 10,
     places: 12,
     days: "1week",
@@ -136,16 +191,9 @@ const galeria = [
 const page = () => {
   return (
     <section id="galery">
-      {/*     <div className="heading">
-        <h2>Exibicon de arte</h2>
-        <p>
-          En esta galeria encontraras nuestras demostraciones de arte
-        </p>
-      </div> */}
-
       <div className="grid">
         {galeria.map((galeria, index) => (
-          <a key={galeria.id} href={galeria.link} className="active">
+          <a key={galeria.id} href={`/photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
               <Image
                 src={galeria.img}

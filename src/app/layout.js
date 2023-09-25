@@ -1,3 +1,4 @@
+import Footer1 from "../../components/Footer1";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../styles/globals.css"
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header/>
         {children}
+      {/*  <Footer1/>  */}
         {/* <Footer/> */}
       </body>
     </html>
