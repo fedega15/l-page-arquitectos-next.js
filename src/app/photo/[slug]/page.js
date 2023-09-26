@@ -12,7 +12,7 @@ const PhotoPage = ({params: { slug }}) => {
           <div className="slider">
             <h2>{galeria[slug].name}</h2>
             <h1>{galeria[slug].ubi}</h1>
-            <p>
+            <p className='crossed-lines'>
               	{galeria[slug].descripcion}
             </p>
           </div>
@@ -25,6 +25,7 @@ const PhotoPage = ({params: { slug }}) => {
             </a>
           </div>
           <div className="img-container">
+          <div className="line-bottom-right"></div>
             <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
               <Image   src={galeria[slug].photo3}alt="sub" width={458} height={452} border={2} />
             </a>
@@ -32,7 +33,6 @@ const PhotoPage = ({params: { slug }}) => {
               <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2} />
             </a>
           </div>
-          
         </section>
   )
 }
