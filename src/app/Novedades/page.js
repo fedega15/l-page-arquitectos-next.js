@@ -67,13 +67,16 @@ const testimonials = [
 const page = () => {
   return (
     <section id="testimonios">
-      <hr></hr>
+      <div className="heading">
+        <h2>CONTENIDO EXTRA</h2>
+      </div> 
+      <div className="horizontal-line"></div>
       <div className="slider">
-        <h2>Proyectos y investigaciones</h2>
+        {/* <h2>Proyectos y investigaciones</h2>
         <p>
           En esta sección encontrarás nuestras investigaciones, innovaciones y
           nuevos enfoques.
-        </p>
+        </p> */}
         <div className="cards-container">
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="card">

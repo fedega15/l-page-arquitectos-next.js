@@ -1,133 +1,125 @@
 #testimonios {
-    width: 90%;
-    max-width: var(--max-width);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap:25px;
-    padding-left: 75px;
+  width: 90%;
+  max-width: var(--max-width);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding-left: 75px;
 }
 
-#testimonios .img-container{
-    flex: 1;
-    min-width: 200px;
-    position: relative;
-    top: 100px;
-    padding-bottom: 80px;
+#testimonios .img-container {
+  flex: 1;
+  min-width: 200px;
+  position: relative;
+  top: 100px;
+  padding-bottom: 80px;
 }
 
-#testimonios .slider{
-    position: relative;
-    top:20px;
-    flex: 1;
-    min-width: 400px;
-    padding-left: 15px;
+#testimonios .slider {
+  position: relative;
+  top: 20px;
+  flex: 1;
+  min-width: 400px;
+  padding-left: 15px;
 }
 
-#testimonios .card{
-    background: #019b21;
-    width: 100%;
-    padding: 10px;
-    border: 1px solid var(--border-color);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    gap: 20px;
-    box-shadow: 2px 20px 30px var(--shadow-color);
-    border-radius: 2%;
-    margin-bottom: 10px;
+#testimonios .card {
+  background: #019b21;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 20px;
+  box-shadow: 2px 20px 30px var(--shadow-color);
+  border-radius: 2%;
+  margin-bottom: 10px;
 }
 #testimonios .img-container img:hover {
-    transform: scale(1.08);
+  transform: scale(1.08);
 }
 #testimonios .redes {
-    display: inline-block;
-    padding-left: 45px; /* Hacer que los elementos <a> sean en línea */
-    margin-right: 35px; /* Espacio entre elementos <a> */
-    font-size: 25px;
-    top:0px;
-    position: relative;
-    color: rgb(32, 30, 30);
-  }
-#testimonios .svg i{
-    position: absolute;
-    right: 2px;
-    top: 2px;
-    font-size: xxx-large;
-    color:#019b21;
-    transition: transform 0.3s ease
-  }
-#testimonios .svg:hover i{
-    transform: rotate(90deg)
-    
-  }
-  #testimonios      .redes:hover {
-    color:#019b21;
-  }
-#testimonios .img-container img{
-    margin-top: 20px;
-    transition: all linear 0.5s;
+  display: inline-block;
+  padding-left: 45px; /* Hacer que los elementos <a> sean en línea */
+  margin-right: 35px; /* Espacio entre elementos <a> */
+  font-size: 25px;
+  top: 0px;
+  position: relative;
+  color: rgb(32, 30, 30);
+}
+#testimonios .svg i {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  font-size: xxx-large;
+  color: #019b21;
+  transition: transform 0.3s ease;
+}
+#testimonios .svg:hover i {
+  transform: rotate(90deg);
+}
+#testimonios .redes:hover {
+  color: #019b21;
+}
+#testimonios .img-container img {
+  margin-top: 20px;
+  transition: all linear 0.5s;
 }
 
 #testimonios .avatar {
-    width: 100px;
-    min-width: 100px;
-    height: 100px;
-    border-radius: 30%;
-    overflow: hidden;
-    background:var(--secondary);
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  overflow: hidden;
+  background: var(--secondary);
 }
 
 #testimonios .text {
-    flex: 1;
+  flex: 1;
+  min-width: 200px;
+  align-items: self-start;
+  justify-content: first baseline;
+}
+#testimonios .text i {
+  color: black;
+  font-size: 1.2rem;
+}
+
+#testimonios .text p {
+  color: rgb(8, 8, 8);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+#testimonios .text strong {
+  color: #363636;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+@media (max-width: 1288px) {
+  #testimonios .slider,
+  #testimonios .img-container {
     min-width: 200px;
-    align-items: self-start;
-    justify-content:first baseline;
-}
-#testimonios .text i{
-    
-    color: black;
-    font-size: 1.2rem;
-   
-}
+    margin-left: -62px;
+  }
+  #testimonios .map {
+    width: 330px;
+  }
 
-#testimonios .text p{
-    color: rgb(8, 8, 8);
-    font-size: 0.9rem;
-    letter-spacing: 1px;
- 
-}
-#testimonios .text strong{
-    color: #363636;
-    font-weight: 700;
-    letter-spacing: 1px;
-
-}
-@media (max-width: 1288px){
-    #testimonios .slider,
-    #testimonios .img-container{
-        min-width: 200px;
-        margin-left: -62px;
-    }
-    #testimonios .map{
-       width: 330px;
-       padding-top: 10px;
-        
-    }
-
-    
-#testimonios .redes {
+  #testimonios .redes {
     display: inline-block;
     padding-left: 30px; /* Hacer que los elementos <a> sean en línea */
     margin-right: 6px; /* Espacio entre elementos <a> */
     font-size: 20px;
-    top:0px;
+    top: 0px;
     position: relative;
     color: rgb(43, 40, 40);
   }
-  #testimonios      .redes:hover {
-    color:#019b21;
+  #testimonios .redes:hover {
+    color: #019b21;
   }
- }   
+}

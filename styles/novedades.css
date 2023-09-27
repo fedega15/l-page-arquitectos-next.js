@@ -7,6 +7,23 @@
   gap: 25px;
   padding-top: 100px;
 }
+#testimonios  h2 { 
+  width: 105%;
+ 
+}
+#testimonios  .heading { 
+  width: 2.3%;
+  background-color: #019b21;
+}
+.horizontal-line {
+  position: relative;
+  top: -25px;
+  left: 27px;
+  height: 2px;
+  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
+  background-color: #019b21; /* Color verde */
+  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
+}
 
 #testimonios .letter-card {
   display: flex;
@@ -100,5 +117,22 @@
 
   #testimonios .cards-container {
     margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
+  }
+  #testimonios  h2 { 
+    width: 105%;
+   
+  }
+  #testimonios  .heading { 
+    width: 10%;
+    background-color: #019b21;
+  }
+  .horizontal-line {
+    height: 2px;
+    position: relative;
+    top: 112px;
+    left: -56px;
+    width: 75%; /* La línea ocupará todo el ancho de la pantalla */
+    background-color: #019b21; /* Color verde */
+    z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
   }
 }
