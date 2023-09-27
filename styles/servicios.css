@@ -1,141 +1,166 @@
 #galery {
-    width: 100%;
-    max-width: var(--max-width);
-    margin: var(--margin);
-    overflow: hidden;
-    padding: 100px ;
-    padding-bottom: 400px;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: var(--margin);
+  overflow: hidden;
+  padding: 100px;
+  padding-bottom: 400px;
 }
+#galery  h2 { 
+  width: 105%;
+ 
+}
+#galery  .heading { 
+  width: 2.5%;
+  background-color: #019b21;
+}
+.horizontal-line {
+  height: 2px;
+  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
+  background-color: #019b21; /* Color verde */
+  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
+}
+
+
+
+
 /* Initially hide the .text within .box */
-#galery .box .text, .group {
-    display: block;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  }
-  
-  /* Show the .text within .box on card hover */
-  #galery .card:hover .box .text, .group {
-    opacity: 1;
-    transform: translateX(0);
-  }
-#galery .grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr ));
-    grid-auto-rows: 280px;
-    grid-auto-flow: dense;
-    grid-gap: 3px;
-    margin: 40px 0;
+#galery .box .text,
+.group {
+  display: block;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-#galery .card{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position:relative;
-    user-select: none;
-    cursor: pointer;
-    margin-right: 20px;
-    padding: 10px;
+/* Show the .text within .box on card hover */
+#galery .card:hover .box .text,
+.group {
+  opacity: 1;
+  transform: translateX(0);
+}
+#galery .grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 280px;
+  grid-auto-flow: dense;
+  grid-gap: 3px;
+  margin: 40px 0;
 }
 
-#galery .card img{
-    transition: all linear 0.5s;
+#galery .card {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 30px;
 }
 
-#galery .card:hover img{
-    transform: scale(1.1);
+#galery .card img {
+  transition: all linear 0.5s;
+}
 
-
+#galery .card:hover img {
+  transform: scale(1.1);
 }
 
 #galery .card-1 {
-    grid-row:1 / span 2;
-    
+  grid-row: 1 / span 2;
 }
 #galery .card-3 {
-    grid-column: span 2;
-
+  grid-column: span 2;
 }
 
 #galery .box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding: 15px;
-   /*   background: linear-gradient(180deg,rgba(170, 164, 164, 0.6) 0%,rgba(54, 54, 54, 0.6) 100%);} */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 15px;
+  /*   background: linear-gradient(180deg,rgba(170, 164, 164, 0.6) 0%,rgba(54, 54, 54, 0.6) 100%);} */
 }
 #galery .card:hover .box {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 5) 0%, rgba(54, 54, 54, 0.6) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 5) 0%,
+    rgba(54, 54, 54, 0.6) 100%
+  );
 }
-#galery .star{
-    background: #fff;
-    color: #333;
-    border-radius: 10px;
-    width: 55px;
-    height: 25px;
-    font-size: 0.8rem;
-    font-weight: 500;
-    text-align: center;
-    line-height: 25px;
-    box-shadow: 2px 20px 30px var(--shadow-color);
+#galery .cont h1 {
+    width: 300px;
+  text-align: center; /* Centrar el texto horizontalmente */
+  background-color: #019b21; /* Fondo verde */
+  border-radius: 10px 0 10px 0; /* Redondear las dos esquinas superiores */
+  padding:5px; /* Agregar espacio alrededor del texto */
+  margin-left: 40px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
 }
-
-#galery  .star i{
-    color: var(--primary);
-}
-#galery .group {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: #fff;
-}
-
-#galery .group .text strong{
-    display: block;
-    font-size: 1.6rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-}
-#galery .group .text span{
-    font-size: 0.8rem;
-    color: #e6e6e6;
-    font-weight: 500;
-    letter-spacing: 1px;
-    text-transform: capitalize;
-}
-
-#galery .group .price{
-    font-size: 1.3rem;
-    font-weight: 700;
-}
-@media (max-width: 1058px) {
-    #galery .grid {
-      grid-template-columns: 1fr; /* Hacer que las tarjetas se apilen verticalmente en pantallas más pequeñas */
-      grid-auto-rows: auto; /* Ajustar la altura automáticamente */
-      grid-gap: 20px; /* Agregar espacio entre las tarjetas en pantallas más pequeñas */
-    }
-    
-    #galery .card {
-      width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho de su contenedor */
-      height: 200px; /* Ajustar la altura automáticamente */
-    }
-    #galery .cont {
-     width: 310px;
-     margin-left: -80px
-    }
-    #galery .heading {
-     width: 300px;
-     margin-left: -80px
-    }
+#galery .cont p {
+    width: 300px; /* Define el ancho deseado para el elemento <p> */
+    margin-left: 40px; /* Opcional: ajusta el margen izquierdo según tu diseño */
   }
-  
+
+
+
+
+
+@media (max-width: 1058px) {
+  #galery .grid {
+    grid-template-columns: 1fr; /* Hacer que las tarjetas se apilen verticalmente en pantallas más pequeñas */
+    grid-auto-rows: auto; /* Ajustar la altura automáticamente */
+    grid-gap: 20px; /* Agregar espacio entre las tarjetas en pantallas más pequeñas */
+  }
+
+  #galery .card {
+    width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho de su contenedor */
+    height: 200px; /* Ajustar la altura automáticamente */
+  }
+  #galery .cont {
+    width: 310px;
+    margin-left: -80px;
+  }
+  #galery .heading {
+    width: 300px;
+    margin-left: -80px;
+  }
+  #galery .cont h1 {
+    width: 300px;
+  text-align: center; /* Centrar el texto horizontalmente */
+  background-color: #019b21; /* Fondo verde */
+  border-radius: 10px 0 10px 0; /* Redondear las dos esquinas superiores */
+  padding:5px; /* Agregar espacio alrededor del texto */
+  margin-left: 8px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#galery .cont p {
+  width: 300px; /* Define el ancho deseado para el elemento <p> */
+  margin-left: 15px; /* Opcional: ajusta el margen izquierdo según tu diseño */
+}
+#galery  h2 { 
+  width: 105%;
+ 
+}
+#galery  .heading { 
+  width: 18%;
+  background-color: #019b21;
+}
+.horizontal-line {
+  height: 2px;
+  position: relative;
+  left: -80px;
+  width: 120%; /* La línea ocupará todo el ancho de la pantalla */
+  background-color: #019b21; /* Color verde */
+  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
+}
+}

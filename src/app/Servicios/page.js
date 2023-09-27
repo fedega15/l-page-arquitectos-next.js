@@ -54,7 +54,7 @@ const page = () => {
       <div className="heading">
         <h2>QUE HACEMOS</h2>
       </div> 
-
+      <div className="horizontal-line"></div>
       <div className="grid">
         {galeria.map((galeria, index) => (
           <div className="cont" key={galeria.id}> 

@@ -8,6 +8,7 @@ const categories = [
   { name: "Servicios", link: "/Servicios" },
   { name: "Contenido", link: "/Novedades" },
   { name: "Nosotros", link: "/Acerca" },
+  { name: "Estudio", link: "/Estudio" },
   { name: "Contacto", link: "/Contacto" },
 ];
 {
@@ -76,7 +77,7 @@ const Header = () => {
                 position: "relative",
                 left: "0px",
                 top: "0px",
-                color: "greenyellow",
+                color: "#019b21",
               }}
             ></i>
             <div className="box-li">

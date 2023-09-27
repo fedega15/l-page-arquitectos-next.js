@@ -6,13 +6,14 @@
     align-items: center;
     flex-wrap: wrap;
     gap:25px;
+    padding-left: 75px;
 }
 
 #testimonios .img-container{
     flex: 1;
     min-width: 200px;
     position: relative;
-    top: 130px;
+    top: 100px;
     padding-bottom: 80px;
 }
 
@@ -21,10 +22,11 @@
     top:20px;
     flex: 1;
     min-width: 400px;
+    padding-left: 15px;
 }
 
 #testimonios .card{
-    background: greenyellow;
+    background: #019b21;
     width: 100%;
     padding: 10px;
     border: 1px solid var(--border-color);
@@ -42,7 +44,7 @@
 }
 #testimonios .redes {
     display: inline-block;
-    padding-left: 55px; /* Hacer que los elementos <a> sean en línea */
+    padding-left: 45px; /* Hacer que los elementos <a> sean en línea */
     margin-right: 35px; /* Espacio entre elementos <a> */
     font-size: 25px;
     top:0px;
@@ -54,7 +56,7 @@
     right: 2px;
     top: 2px;
     font-size: xxx-large;
-    color: rgb(8, 243, 27);
+    color:#019b21;
     transition: transform 0.3s ease
   }
 #testimonios .svg:hover i{
@@ -62,9 +64,10 @@
     
   }
   #testimonios      .redes:hover {
-    color: rgb(8, 243, 27);
+    color:#019b21;
   }
 #testimonios .img-container img{
+    margin-top: 20px;
     transition: all linear 0.5s;
 }
 
@@ -106,19 +109,25 @@
     #testimonios .slider,
     #testimonios .img-container{
         min-width: 200px;
+        margin-left: -62px;
+    }
+    #testimonios .map{
+       width: 330px;
+       padding-top: 10px;
         
     }
+
     
 #testimonios .redes {
     display: inline-block;
-    padding-left: 20px; /* Hacer que los elementos <a> sean en línea */
-    margin-right: 2px; /* Espacio entre elementos <a> */
+    padding-left: 30px; /* Hacer que los elementos <a> sean en línea */
+    margin-right: 6px; /* Espacio entre elementos <a> */
     font-size: 20px;
     top:0px;
     position: relative;
     color: rgb(43, 40, 40);
   }
   #testimonios      .redes:hover {
-    color: rgb(8, 243, 27);
+    color:#019b21;
   }
  }   

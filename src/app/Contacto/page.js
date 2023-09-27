@@ -26,7 +26,7 @@ const page = () => {
         <h2>Nuestras oficinas </h2>
         <h1>Santa Fe 2144, 3D</h1>
         <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-          <Image src="/map.png" alt="sub" width={458} height={452} border={2} />
+        <iframe className="map" src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F" width="540" height="480"></iframe>
         </a>
       </div>
       <div className="slider">
