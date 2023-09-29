@@ -151,7 +151,7 @@
   }
 
   #testimonios .map {
-    width: 100%;
+    width: 90%;
     margin-left: 3px;
     height: 400px;
   }
@@ -167,5 +167,22 @@
   }
   #testimonios .redes:hover {
     color: #019b21;
+  }
+  #testimonios  .heading { 
+    width: 30px;
+    background-color: #019b21;
+  }
+  .horizontal-line {
+    height: 2px;
+    position: relative;
+    top:0px;
+    left:0px;
+    width: 75%; /* La línea ocupará todo el ancho de la pantalla */
+    background-color: #019b21; /* Color verde */
+  }
+  
+  #testimonios .img-container  h1 { 
+    width: 92%;
+   
   }
 }

@@ -26,7 +26,7 @@ const page = () => {
           <h2>NUESTRAS OFICINAS</h2>
         </div>
         <div className="horizontal-line"></div>
-        <h1>Santa Fe 2144, Piso 3D. Rosario</h1>
+        <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
         <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
           <iframe
             className="map"
