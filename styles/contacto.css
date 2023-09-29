@@ -145,13 +145,13 @@
     margin-left: -66px;
   }
   #testimonios .img-container {
-    min-width: 400px;
+    min-width: 320px;
     margin-left: -42px;
     flex-direction: column; 
   }
 
   #testimonios .map {
-    width: 90%;
+    width: 95%;
     margin-left: 3px;
     height: 400px;
   }
