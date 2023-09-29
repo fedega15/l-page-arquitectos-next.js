@@ -5,10 +5,10 @@ import "../styles/header.css";
 
 const categories = [
   { name: "Proyectos", link: "/#galery" },
+  { name: "Estudio", link: "/Estudio" },
   { name: "Servicios", link: "/Servicios" },
   { name: "Contenido", link: "/Novedades" },
   { name: "Nosotros", link: "/Acerca" },
-  { name: "Estudio", link: "/Estudio" },
   { name: "Contacto", link: "/Contacto" },
 ];
 {

@@ -5,24 +5,24 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  padding-top: 100px;
+  padding-top: 110px;
+  margin-left: 75px;
 }
 #testimonios  h2 { 
   width: 105%;
  
 }
 #testimonios  .heading { 
-  width: 2.3%;
+  width: 30px;
   background-color: #019b21;
 }
 .horizontal-line {
   position: relative;
   top: -25px;
-  left: 27px;
+  left: 0px;
   height: 2px;
   width: 100%; /* La línea ocupará todo el ancho de la pantalla */
   background-color: #019b21; /* Color verde */
-  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
 }
 
 #testimonios .letter-card {
@@ -48,22 +48,20 @@
 }
 
 #testimonios .card {
-  width: 100%;
-  padding: 20px; /* Ajusta el relleno según tu preferencia */
-  border: 1px solid var(--border-color);
+  width: 26.8%;
+  padding-left:10px; /* Ajusta el relleno según tu preferencia */
+  border: 3px solid black;
   display: flex;
   align-items: center;
   gap: 20px;
   box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
-  background: greenyellow;
   height: 200px;
 }
-
+/* 
 #testimonios .card:hover {
-  background: rgb(178, 241, 96);
   transform: scale(1.08);
 
-}
+} */
 
 #testimonios .img-container{
   flex: 1;
@@ -73,15 +71,14 @@
   padding-bottom: 80px;
 }
 #testimonios .avatar {
-  width: 120px; /* Ajusta el tamaño del avatar según tu preferencia */
-  height: 80px; /* Ajusta el tamaño del avatar según tu preferencia */
-  border-radius: 10%;
-  overflow: hidden;
-  background: var(--secondary);
-}
+  width:25.5%; /* Ajusta el tamaño del avatar según tu preferencia */
+  height: 180px; /* Ajusta el tamaño del avatar según tu preferencia */
+  margin-bottom: 100px;
+  }
 
 #testimonios .text {
   flex: 1;
+  width: 100px;
 }
 
 #testimonios .text i {
@@ -104,10 +101,20 @@
 
 /* Media query para pantallas pequeñas */
 @media (max-width: 540px) {
+  #testimonios {
+    margin-left: 20px;
+  }
   #testimonios .letter-card {
     flex-direction: column;
     align-items: flex-start;
   }
+  #testimonios .avatar {
+    width: 300px; /* Ajusta el tamaño del avatar según tu preferencia */
+    height: 180px; /* Ajusta el tamaño del avatar según tu preferencia */
+    }
+  #testimonios .text {
+    
+    }
 
   #testimonios .letter {
     margin-right: 0;
@@ -122,17 +129,26 @@
     width: 105%;
    
   }
+  #testimonios .card {
+    width: 106%;
+    padding-left:10px; /* Ajusta el relleno según tu preferencia */
+    border: 3px solid black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
+    height: 200px;
+  }
   #testimonios  .heading { 
-    width: 10%;
+    width: 30px;
     background-color: #019b21;
   }
   .horizontal-line {
     height: 2px;
     position: relative;
     top: 112px;
-    left: -56px;
+    left:-50px;
     width: 75%; /* La línea ocupará todo el ancho de la pantalla */
     background-color: #019b21; /* Color verde */
-    z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
   }
 }

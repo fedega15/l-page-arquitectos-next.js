@@ -3,7 +3,8 @@
   max-width: var(--max-width);
   margin: var(--margin);
   overflow: hidden;
-  padding: 100px;
+  padding: 110px;
+  margin-left: -35px;
   padding-bottom: 400px;
 }
 #galery  h2 { 
@@ -11,14 +12,14 @@
  
 }
 #galery  .heading { 
-  width: 2.5%;
+  width: 30px;
   background-color: #019b21;
 }
 .horizontal-line {
   height: 2px;
   width: 100%; /* La línea ocupará todo el ancho de la pantalla */
   background-color: #019b21; /* Color verde */
-  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
+
 }
 
 
@@ -111,10 +112,10 @@
   }
 
 
-
-
-
-@media (max-width: 1058px) {
+@media (max-width: 540px) {
+  #galery {
+    margin-left: 0px;
+  }
   #galery .grid {
     grid-template-columns: 1fr; /* Hacer que las tarjetas se apilen verticalmente en pantallas más pequeñas */
     grid-auto-rows: auto; /* Ajustar la altura automáticamente */
@@ -152,15 +153,15 @@
  
 }
 #galery  .heading { 
-  width: 18%;
+  width: 30px;
   background-color: #019b21;
 }
 .horizontal-line {
   height: 2px;
   position: relative;
+  top: 0px;
   left: -80px;
-  width: 120%; /* La línea ocupará todo el ancho de la pantalla */
+  width: 180%; /* La línea ocupará todo el ancho de la pantalla */
   background-color: #019b21; /* Color verde */
-  z-index: 9999; /* Asegura que la línea esté por encima de otros elementos */
 }
 }

@@ -1,0 +1,57 @@
+    .slider1 {
+        height: 250px;
+        margin: auto;
+        position: relative;
+        width: 105%;
+        overflow: hidden;
+    }
+    .slider-container {
+        overflow-x: auto;
+    }
+    .slider-track {
+        display: flex;
+        width: calc(250px * 18); /* 7 es el número de imágenes que deseas mostrar a la vez */
+        animation: scroll 29s linear infinite;
+    }
+    /* Mantén la animación de keyframes para el scroll automático */
+    @keyframes scroll {
+        0% {
+        transform: translateX(0);
+        }
+        100% {
+        transform: translateX(calc(-250px * 9));
+        }
+    }
+    /* Nuevas reglas para detener la animación al hacer hover */
+    .slider-container:hover .slider-track {
+        animation-play-state: paused;
+    }
+    .slide {
+        height: 270px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        padding:20px;
+        perspective: 100px;
+    }
+    img {
+        width: 100%;
+        transition: transform 1s;
+    }
+    img:hover {
+    transform: translateZ(20px);
+    }
+    /* sombras */
+    .slider1::before {
+        left: 0;
+        top: 0;
+    }
+    .slider1::after{
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+    }
+    /* hover */
+    @media (max-width: 540px) {
+        
+    }

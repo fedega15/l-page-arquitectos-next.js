@@ -6,36 +6,46 @@ import Link from "next/link";
 const testimonials = [
   {
     id: 1,
-    text: "Telefono de contacto y whatsapp: 3364689065" ,
+    text: "Telefono de contacto y whatsapp: 3364689065",
     avatar: "/w2.png",
-    link:"//wa.link/d08xt8"
+    link: "//wa.link/d08xt8",
   },
   {
     id: 1,
     text: "Mail de contacto: santiagosemino@ssaestudio.com ",
     avatar: "/w2.png",
-    link:"//mailto:federico.galassi9@gmail.com    "
+    link: "//mailto:federico.galassi9@gmail.com    ",
   },
 ];
 
 const page = () => {
   return (
     <section id="testimonios">
-      
       <div className="img-container">
-        <h2>Nuestras oficinas </h2>
-        <h1>Santa Fe 2144, 3D</h1>
+        <div className="heading">
+          <h2>NUESTRAS OFICINAS</h2>
+        </div>
+        <div className="horizontal-line"></div>
+        <h1>Santa Fe 2144, Piso 3D. Rosario</h1>
         <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-        <iframe className="map" src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F" width="540" height="480"></iframe>
+          <iframe
+            className="map"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F"
+          
+          ></iframe>
         </a>
       </div>
-      <div className="slider">
-        <h2>Informacion de contacto</h2>
+      < div className="slider">
+        <div className="heading">
+          <h2>CONTACTANOS</h2>
+        </div>
+        <div className="horizontal-line-2"></div>
+        {/*   <h2>Informacion de contacto</h2> */}
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
             <div className="text">
-              <Link  href={testimonial.link}  >
-              {testimonial.text} <i className={testimonial.icon}></i>
+              <Link href={testimonial.link}>
+                {testimonial.text} <i className={testimonial.icon}></i>
               </Link>
               <strong>{testimonial.name} </strong>
             </div>
@@ -50,7 +60,7 @@ const page = () => {
             </div>
           </div>
         ))}
-        <div> 
+        <div>
           <a href="https://www.instagram.com/fedegalassi_/" className="redes">
             <i className="fa-brands fa-instagram"></i>
           </a>
@@ -66,7 +76,7 @@ const page = () => {
           <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79" className="redes">
             <i className="fa-solid fa-location-dot"></i>{" "}
           </a>
-        </div> 
+        </div>
       </div>
     </section>
   );

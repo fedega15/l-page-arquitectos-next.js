@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import "../../../styles/novedades.css";
+import Slider from "../../../components/Slider";
 
 const testimonials = [
   {
@@ -78,6 +79,9 @@ const page = () => {
           nuevos enfoques.
         </p> */}
         <div className="cards-container">
+        <div className="avatar">
+                <Slider/>
+              </div>
           {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="card">
               <div className="text">
@@ -85,14 +89,7 @@ const page = () => {
                 <strong>{testimonial.name}</strong>
                 <p>{testimonial.text}</p>
               </div>
-              <div className="avatar">
-                <Image
-                  src={testimonial.avatar}
-                  alt="t1"
-                  width={100}
-                  height={100}
-                />
-              </div>
+             
             </div>
           ))}
         </div>

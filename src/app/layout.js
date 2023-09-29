@@ -3,6 +3,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../styles/globals.css"
 import { Poppins } from "next/font/google";
+import Slider from "../../components/Slider";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
         {children}
       {/*  <Footer1/>  */}
         {/* <Footer/> */}
+       {/*  <Slider/> */}
       </body>
     </html>
   );

@@ -9,6 +9,32 @@
   padding-left: 75px;
 }
 
+
+#testimonios  h2 { 
+  width: 105%;
+ 
+}
+#testimonios  .heading { 
+  width: 30px;
+  background-color: #019b21;
+}
+.horizontal-line {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
+  background-color: #019b21; /* Color verde */
+}
+.horizontal-line-2 {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 2px;
+  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
+  background-color: #019b21; /* Color verde */
+}
+
 #testimonios .img-container {
   flex: 1;
   min-width: 200px;
@@ -19,14 +45,15 @@
 
 #testimonios .slider {
   position: relative;
-  top: 20px;
+  top: 62px;
   flex: 1;
   min-width: 400px;
-  padding-left: 15px;
+  padding-left: 25px;
 }
 
 #testimonios .card {
-  background: #019b21;
+  background: #404741;
+  color: white;
   width: 100%;
   padding: 10px;
   border: 1px solid var(--border-color);
@@ -38,6 +65,7 @@
   box-shadow: 2px 20px 30px var(--shadow-color);
   border-radius: 2%;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 #testimonios .img-container img:hover {
   transform: scale(1.08);
@@ -100,14 +128,32 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
-@media (max-width: 1288px) {
-  #testimonios .slider,
-  #testimonios .img-container {
-    min-width: 200px;
-    margin-left: -62px;
-  }
+
   #testimonios .map {
-    width: 330px;
+    width: 100%;
+    margin-left: 3px;
+    height: 500px;
+  }
+@media (max-width: 888px) {
+  #testimonios {
+    flex-direction: column; /* Cambiar a disposición en columna en pantallas más pequeñas */
+    align-items: center; /* Centrar elementos en pantallas más pequeñas */
+    padding-left: 70px; /* Reducir el espacio a la izquierda en pantallas más pequeñas */
+  }
+  #testimonios .slider{
+    min-width: 200px;
+    margin-left: -66px;
+  }
+  #testimonios .img-container {
+    min-width: 400px;
+    margin-left: -42px;
+    flex-direction: column; 
+  }
+
+  #testimonios .map {
+    width: 100%;
+    margin-left: 3px;
+    height: 400px;
   }
 
   #testimonios .redes {
