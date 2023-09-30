@@ -193,7 +193,7 @@ const page = () => {
     <section id="galery">
       <div className="grid">
         {galeria.map((galeria, index) => (
-          <a key={galeria.id} href={`/photo/${index}`} className="active">
+          <a key={galeria.id} href={`/Concurso-photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
               <Image
                 src={galeria.img}

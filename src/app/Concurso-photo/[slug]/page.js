@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { galeria } from '@/app/Edificios/page'
+import { galeria } from '@/app/Concursos/page'
 import React from "react";
 import "../../../../styles/photopage.css"
 

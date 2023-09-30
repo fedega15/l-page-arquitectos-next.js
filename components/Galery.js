@@ -35,6 +35,7 @@ const galeria = [
     days: "1week",
     price: 1.2,
     link: "/Productos",
+
   },
   {
     id: 4,
@@ -45,7 +46,7 @@ const galeria = [
     places: 132,
     days: "1week",
     price: 1.2,
-    link: "/Edificios",
+    link: "/Concursos",
   },
   {
     id: 5,
