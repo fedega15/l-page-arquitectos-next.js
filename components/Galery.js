@@ -5,9 +5,9 @@ import Image from "next/image";
 const galeria = [
   {
     id: 1,
-    proyect: "ARQUITECTURA",
-    name: "ARQUITECTURA",
-    img: "/g1.png",
+    proyect: "MOBILE DESIGN",
+    name: "MOBILE DESIGN",
+    img: "/g2.png",
     activites: 10,
     places: 200,
     days: "1week",
@@ -16,9 +16,9 @@ const galeria = [
   },
   {
     id: 2,
-    proyect: "MOBILE DESIGN",
-    name: "MOBILE DESIGN",
-    img: "/g2.png",
+    proyect: "ARQUITECTURA",
+    name: "ARQUITECTURA",
+    img: "/g1.png",
     activites: 10,
     places: 32,
     days: "1week",
@@ -69,6 +69,7 @@ const galeria = [
     price: 1.2,
     link: "/Interiores",
   },
+
 ];
 const Galery = () => {
   return (
