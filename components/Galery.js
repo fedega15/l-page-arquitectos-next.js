@@ -12,7 +12,7 @@ const galeria = [
     places: 200,
     days: "1week",
     price: 1.2,
-    link: "/Exhibicion",
+    link: "/MobileDesigne",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const galeria = [
     places: 32,
     days: "1week",
     price: 1.2,
-    link: "/Moda",
+    link: "/Arquitectura",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const galeria = [
     places: 54,
     days: "1week",
     price: 1.2,
-    link: "/Productos",
+    link: "/RecyclableForniture",
 
   },
   {
@@ -57,7 +57,7 @@ const galeria = [
     places: 46,
     days: "1week",
     price: 1.2,
-    link: "/Muebles",
+    link: "/Mobiliario",
   },
   {
     id: 6,
@@ -68,7 +68,7 @@ const galeria = [
     places: 244,
     days: "1week",
     price: 1.2,
-    link: "/Interiores",
+    link: "/Modular",
   },
 
 ];
