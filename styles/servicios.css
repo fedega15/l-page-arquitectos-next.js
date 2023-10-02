@@ -1,10 +1,8 @@
 #galery {
   width: 100%;
   max-width: var(--max-width);
-  margin: var(--margin);
   overflow: hidden;
   padding: 110px;
-  margin-left: -35px;
   padding-bottom: 400px;
   background-color: #e0d9d9;
 }

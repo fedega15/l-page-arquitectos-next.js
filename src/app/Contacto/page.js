@@ -21,11 +21,12 @@ const testimonials = [
 const page = () => {
   return (
     <section id="testimonios">
-      <div className="img-container">
         <div className="heading">
-          <h2>NUESTRAS OFICINAS</h2>
+          <h1>CONTACTO</h1>
+          <div className="horizontal-line-2"></div>
         </div>
-        <div className="horizontal-line"></div>
+       
+      <div className="img-container">
         <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
         <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
           <iframe
@@ -36,11 +37,6 @@ const page = () => {
         </a>
       </div>
       < div className="slider">
-        <div className="heading">
-          <h2>CONTACTANOS</h2>
-        </div>
-        <div className="horizontal-line-2"></div>
-        {/*   <h2>Informacion de contacto</h2> */}
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
             <div className="text">

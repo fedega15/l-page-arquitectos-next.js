@@ -1,58 +1,57 @@
 #testimonios {
-  width: 90%;
+  width: 100%;
   max-width: var(--max-width);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   gap: 25px;
-  padding-left: 75px;
+  padding-left: 110px;
+  background-color: #e0d9d9;
 }
 
-
-#testimonios  h2 { 
+#testimonios h1 {
   width: 105%;
- 
 }
-#testimonios  .heading { 
-  width: 30px;
-  background-color: #019b21;
+
+#testimonios .heading {
+  width: 100%;
+  text-align: start;
 }
-.horizontal-line {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  height: 2px;
-  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
-  background-color: #019b21; /* Color verde */
+
+#testimonios .heading h1 {
+  margin-top: 110px;
+  font: 120px/1 'Titling Gothic Skyline', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 900;
+  color: rgb(255, 252, 252);
 }
+
 .horizontal-line-2 {
-  position: relative;
-  top: 0px;
-  left: 0px;
+  margin-top: 20px;
   height: 2px;
-  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
-  background-color: #019b21; /* Color verde */
+  width: 20%;
+  background-color: #019b21;
 }
 
 #testimonios .img-container {
   flex: 1;
   min-width: 200px;
   position: relative;
-  top: 100px;
-  padding-bottom: 80px;
 }
 
 #testimonios .slider {
   position: relative;
-  top: 62px;
+  top: -80px;
   flex: 1;
   min-width: 400px;
   padding-left: 25px;
+  margin-right: 60px;
 }
 
 #testimonios .card {
-  background: #404741;
+  background: #404741;  
   color: white;
   width: 100%;
   padding: 10px;
@@ -143,10 +142,14 @@
   #testimonios .slider{
     min-width: 200px;
     margin-left: -66px;
+    margin-right: 66px;
+    margin-top: 80px;
   }
   #testimonios .img-container {
+    margin-top: 100px;
     min-width: 320px;
     margin-left: -42px;
+    margin-right: 66px;
     flex-direction: column; 
   }
 
@@ -168,19 +171,27 @@
   #testimonios .redes:hover {
     color: #019b21;
   }
-  #testimonios  .heading { 
-    width: 30px;
-    background-color: #019b21;
-  }
-  .horizontal-line {
-    height: 2px;
-    position: relative;
-    top:0px;
-    left:0px;
-    width: 75%; /* La línea ocupará todo el ancho de la pantalla */
-    background-color: #019b21; /* Color verde */
-  }
   
+  .horizontal-line-2 {
+    margin-top: 20px;
+    height: 2px;
+    width: 40%;
+    background-color: #019b21;
+    margin-left: -60px;
+  }
+  #testimonios .heading {
+    
+    width: 100%;
+    text-align: start;
+    height: 100px;
+  }
+
+  #testimonios .heading h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-left: -60px;
+  }
+
   #testimonios .img-container  h1 { 
     width: 92%;
    
