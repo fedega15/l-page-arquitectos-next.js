@@ -6,162 +6,113 @@
   padding: 110px;
   margin-left: -35px;
   padding-bottom: 400px;
+  background-color: #e0d9d9;
 }
-#galery  h2 { 
+
+#galery h1 {
   width: 105%;
- 
 }
-#galery  .heading { 
-  width: 30px;
-  background-color: #019b21;
+
+#galery .heading {
+  width: 100%; /* Cambia el ancho a 100% para ocupar todo el ancho en pantallas pequeñas */
+  text-align: start; /* Centra el texto en todas las pantallas */
 }
+
+#galery .heading h1 {
+  font: 120px/1 'Titling Gothic Skyline', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 900;
+  color: rgb(255, 252, 252);
+}
+
 .horizontal-line {
   height: 2px;
-  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
-  background-color: #019b21; /* Color verde */
-
+  width: 100%;
+  background-color: #019b21;
 }
 
-
-
-
-/* Initially hide the .text within .box */
-#galery .box .text,
-.group {
-  display: block;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.horizontal-line-2 {
+  margin-bottom: 20px;
+  height: 2px;
+  width: 50%;
+  background-color: #019b21;
 }
 
-/* Show the .text within .box on card hover */
-#galery .card:hover .box .text,
-.group {
-  opacity: 1;
-  transform: translateX(0);
-}
 #galery .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-auto-rows: 280px;
-  grid-auto-flow: dense;
-  grid-gap: 3px;
-  margin: 40px 0;
+  grid-gap: 20px; /* Espacio entre cada fila */
 }
 
-#galery .card {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  user-select: none;
-  cursor: pointer;
-  margin-right: 20px;
-  padding: 30px;
+#galery .cont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  grid-gap: 20px; /* Espacio entre las columnas */
 }
 
-#galery .card img {
-  transition: all linear 0.5s;
+#galery .item {
+  padding: 20px;
 }
 
-#galery .card:hover img {
-  transform: scale(1.1);
+#galery .item h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-#galery .card-1 {
-  grid-row: 1 / span 2;
-}
-#galery .card-3 {
-  grid-column: span 2;
+#galery .item p {
+  font-size: 14px;
 }
 
-#galery .box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 15px;
-  /*   background: linear-gradient(180deg,rgba(170, 164, 164, 0.6) 0%,rgba(54, 54, 54, 0.6) 100%);} */
+#galery .link-destacado {
+  color: #019b21;
+  text-decoration: none;
+  font-weight: bold;
 }
-#galery .card:hover .box {
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 5) 0%,
-    rgba(54, 54, 54, 0.6) 100%
-  );
-}
-#galery .cont h1 {
-    width: 300px;
-  text-align: center; /* Centrar el texto horizontalmente */
-  background-color: #019b21; /* Fondo verde */
-  border-radius: 10px 0 10px 0; /* Redondear las dos esquinas superiores */
-  padding:5px; /* Agregar espacio alrededor del texto */
-  margin-left: 40px;
-  color: white;
-  font-family:Arial, Helvetica, sans-serif;
-}
-#galery .cont p {
-    width: 300px; /* Define el ancho deseado para el elemento <p> */
-    margin-left: 40px; /* Opcional: ajusta el margen izquierdo según tu diseño */
-  }
 
-
-@media (max-width: 540px) {
+@media (max-width: 768px) {
   #galery {
-    margin-left: 0px;
-  }
-  #galery .grid {
-    grid-template-columns: 1fr; /* Hacer que las tarjetas se apilen verticalmente en pantallas más pequeñas */
-    grid-auto-rows: auto; /* Ajustar la altura automáticamente */
-    grid-gap: 20px; /* Agregar espacio entre las tarjetas en pantallas más pequeñas */
+    padding: 40px; /* Reduce el espacio de relleno en pantallas pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo */
+    padding-bottom: 100px; /* Reduce el espacio inferior */
   }
 
-  #galery .card {
-    width: 100%; /* Asegurar que las tarjetas ocupen todo el ancho de su contenedor */
-    height: 200px; /* Ajustar la altura automáticamente */
-  }
-  #galery .cont {
-    width: 310px;
-    margin-left: -80px;
-  }
   #galery .heading {
-    width: 300px;
-    margin-left: -80px;
+    position: relative;
+    top: 40px;
+    width: 100%; /* Haz que el título ocupe todo el ancho */
+    text-align: center; /* Centra el título en pantallas pequeñas */
+    height: 100px; /* Ajusta la altura automáticamente */
   }
-  #galery .cont h1 {
-    width: 300px;
-  text-align: center; /* Centrar el texto horizontalmente */
-  background-color: #019b21; /* Fondo verde */
-  border-radius: 10px 0 10px 0; /* Redondear las dos esquinas superiores */
-  padding:5px; /* Agregar espacio alrededor del texto */
-  margin-left: 8px;
-  color: white;
-  font-family:Arial, Helvetica, sans-serif;
-}
-#galery .cont p {
-  width: 300px; /* Define el ancho deseado para el elemento <p> */
-  margin-left: 15px; /* Opcional: ajusta el margen izquierdo según tu diseño */
-}
-#galery  h2 { 
-  width: 105%;
- 
-}
-#galery  .heading { 
-  width: 30px;
-  background-color: #019b21;
-}
-.horizontal-line {
-  height: 2px;
-  position: relative;
-  top: 0px;
-  left: -80px;
-  width: 180%; /* La línea ocupará todo el ancho de la pantalla */
-  background-color: #019b21; /* Color verde */
-}
+
+  #galery .heading h1 {
+    font-size: 50px; /* Ajusta el tamaño de fuente para el título en pantallas pequeñas */
+    line-height: 1.2; /* Ajusta la altura de línea */
+  }
+
+  .horizontal-line {
+    margin: 20px 0; /* Agrega espacio entre la línea y el contenido */
+  }
+
+  #galery .grid {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+  }
+
+  #galery .cont {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-gap: 10px; /* Reduce el espacio entre elementos */
+  }
+
+  #galery .item {
+    padding: 10px; /* Reduce el espacio de relleno de los elementos */
+  }
+
+  #galery .item h1 {
+    font-size: 16px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+  }
+
+  #galery .item p {
+    font-size: 12px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
+  }
 }
