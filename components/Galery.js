@@ -90,7 +90,8 @@ const Galery = () => {
                 height={600}
               />
               <div className="box">
-                <span className="star">
+              <span className="star">
+                {galeria.name === "ARQUITECTURA" && <button>↑</button>}
                   {/*    <i className="fa-solid fa-star"></i>
                 {galeria.activites} */}
                 </span>
