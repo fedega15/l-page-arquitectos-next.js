@@ -7,7 +7,7 @@ const categories = [
   { name: "Proyectos", link: "/#galery" },
   { name: "Estudio", link: "/Estudio" },
   { name: "Servicios", link: "/Servicios" },
-  { name: "Contenido", link: "/Novedades" },
+  { name: "Eventos", link: "/Novedades" },
   { name: "Nosotros", link: "/Acerca" },
   { name: "Contacto", link: "/Contacto" },
 ];
@@ -97,7 +97,7 @@ const Header = () => {
                 <i className="fa-brands fa-instagram"></i>
               </a>
               <a href="https://wa.link/d08xt8" className="redes">
-                <i class="fa-brands fa-whatsapp"></i>
+                <i className="fa-brands fa-whatsapp"></i>
               </a>
               <a
                 href="https://www.instagram.com/fedegalassi_/"

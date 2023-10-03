@@ -59,6 +59,7 @@
   height: 2px;
   width: 20%;
   background-color: #019b21;
+  margin-left: 20px;
 }
 
 #testimonios .img-container {
@@ -169,20 +170,19 @@
     animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
   }
   #testimonios {
-    flex-direction: column; /* Cambiar a disposición en columna en pantallas más pequeñas */
     align-items: start; /* Centrar elementos en pantallas más pequeñas */
     padding-left: 70px; /* Reducir el espacio a la izquierda en pantallas más pequeñas */
   }
   #testimonios .slider{
     min-width: 200px;
-    margin-left: -66px;
+    margin-left: -46px;
     margin-right: 66px;
     margin-top: 80px;
   }
   #testimonios .img-container {
     margin-top: 100px;
     min-width: 320px;
-    margin-left: -42px;
+    margin-left: -12px;
     margin-right: 66px;
     flex-direction: column; 
   }
@@ -195,7 +195,7 @@
 
   #testimonios .redes {
     display: inline-block;
-    padding-left: 30px; /* Hacer que los elementos <a> sean en línea */
+    padding-left: 22px; /* Hacer que los elementos <a> sean en línea */
     margin-right: 6px; /* Espacio entre elementos <a> */
     font-size: 20px;
     top: 0px;

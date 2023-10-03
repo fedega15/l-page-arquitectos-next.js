@@ -1,28 +1,78 @@
 #testimonios {
-  width: 90%;
+  width: 100%;
   max-width: var(--max-width);
-  margin: var(--margin);
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   padding-top: 110px;
-  margin-left: 75px;
+  background-color: #e0d9d9;
+
 }
-#testimonios  h2 { 
+
+#galery .main__action {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  z-index: 999; /* Asegura que el botón esté sobre otros elementos */
+  animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
+}
+
+.main__scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; /* Ajusta la posición derecha según tu preferencia */
+  z-index: 999; /* Asegura que el botón esté sobre otros elementos */
+  animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
+}
+/* ... Otros estilos ... */
+
+/* Animate scroll icon */
+@keyframes scroll-down {
+  0%, 100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+
+  35% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+}
+
+#testimonios h1 {
   width: 105%;
- 
 }
-#testimonios  .heading { 
-  width: 30px;
-  background-color: #019b21;
+#testimonios .slider {
+  margin-left: 80px;
 }
-.horizontal-line {
-  position: relative;
-  top: -25px;
-  left: 0px;
+
+#testimonios .heading {
+  margin-left: 110px;
+  width: 100%; /* Cambia el ancho a 100% para ocupar todo el ancho en pantallas pequeñas */
+  text-align: start; /* Centra el texto en todas las pantallas */
+}
+
+#testimonios .heading h1 {
+  font: 120px/1 'Titling Gothic Skyline', Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-weight: 900;
+  color: rgb(255, 252, 252);
+  margin-bottom: 20px;
+}
+
+
+#testimonios .horizontal-line-2 {
+  margin-bottom: 20px;
   height: 2px;
-  width: 100%; /* La línea ocupará todo el ancho de la pantalla */
-  background-color: #019b21; /* Color verde */
+  width: 13%;
+  background-color: #019b21;
+  margin-left: 20px;
 }
 
 #testimonios .letter-card {
@@ -102,7 +152,11 @@
 /* Media query para pantallas pequeñas */
 @media (max-width: 540px) {
   #testimonios {
-    margin-left: 20px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #testimonios .slider{
+    margin-left: 30px;
   }
   #testimonios .letter-card {
     flex-direction: column;
@@ -112,12 +166,7 @@
     width: 300px; /* Ajusta el tamaño del avatar según tu preferencia */
     height: 180px; /* Ajusta el tamaño del avatar según tu preferencia */
     }
-  #testimonios .text {
-    
-    }
-
   #testimonios .letter {
-    margin-right: 0;
     margin-bottom: 10px;
     font-size: 1.5rem; /* Ajusta el tamaño de la letra para dispositivos móviles */
   }
@@ -126,12 +175,20 @@
     margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
   }
   #testimonios  h2 { 
-    width: 105%;
+    width: 100%;
    
   }
   
+.main__scroll {
+  position: fixed;
+  bottom: 20px;
+  right: 0px; /* Ajusta la posición derecha según tu preferencia */
+  z-index: 999; /* Asegura que el botón esté sobre otros elementos */
+  animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
+}
+  
   #testimonios .card {
-    width: 106%;
+    width: 100%;
     padding-left:10px; /* Ajusta el relleno según tu preferencia */
     border: 3px solid black;
     display: flex;
@@ -140,16 +197,23 @@
     box-shadow: 0.2px 0.2px 0.2px var(--shadow-color);
     height: 200px;
   }
-  #testimonios  .heading { 
-    width: 30px;
-    background-color: #019b21;
-  }
-  .horizontal-line {
-    height: 2px;
+  #testimonios .heading {
     position: relative;
-    top: 112px;
-    left:-50px;
-    width: 75%; /* La línea ocupará todo el ancho de la pantalla */
-    background-color: #019b21; /* Color verde */
+    top: 80px;
+    width: 90%; /* Haz que el título ocupe todo el ancho */
+    text-align: center; /* Centra el título en pantallas pequeñas */
+    height: 100px; /* Ajusta la altura automáticamente */
+    margin-bottom: 60px;
+    margin-left: 0px
+  }
+
+  #testimonios .heading h1 {
+    font-size: 50px; /* Ajusta el tamaño de fuente para el título en pantallas pequeñas */
+    line-height: 1.2; /* Ajusta la altura de línea */
+  }
+
+  #testimonios .horizontal-line-2  {
+    margin: -10px 50px;
+    width: 40%; /* Agrega espacio entre la línea y el contenido */
   }
 }
