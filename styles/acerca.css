@@ -164,6 +164,7 @@
     padding: 40px;
     margin-left: 0;
     padding-bottom: 100px;
+    padding-top: 85px;
   }
   
 #galery .main__action {
@@ -184,7 +185,6 @@
 }
   #galery .heading {
     position: relative;
-    top: 40px;
     width: 100%;
     text-align: center;
     height: 100px;
@@ -197,10 +197,11 @@
 
   .card {
     width: 275px;
-    margin-left: 0px;
+    margin-left: -12px;
     margin-bottom: 20px;
   }
   .studio-info {
+    margin-left: -13px;
     flex-direction: column; /* Cambia la dirección de la fila a columna */
     align-items: flex-start; /* Alinea los elementos al principio */
   }
@@ -211,6 +212,7 @@
   }
 
   .studio-images {
+    margin-left: 15px;
     flex-direction: column; /* Cambia la dirección de las imágenes a columna */
   }
 

@@ -106,8 +106,9 @@
   }
 
   #galery .heading {
+    margin-left: 0px;
     position: relative;
-    top: 40px;
+    top: 46px;
     width: 100%; /* Haz que el título ocupe todo el ancho */
     text-align: center; /* Centra el título en pantallas pequeñas */
     height: 100px; /* Ajusta la altura automáticamente */
@@ -127,6 +128,7 @@
   }
 
   #galery .cont {
+    margin-left: -5px;
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
     grid-gap: 10px; /* Reduce el espacio entre elementos */
   }

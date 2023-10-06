@@ -220,7 +220,6 @@ const Page = () => {
           <span class="main__scroll-text">Scroll</span>
         </a>
       </div>
-      <br />
 
       <section className="grid" id="prensa">
         <motion.div
