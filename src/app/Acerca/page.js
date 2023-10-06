@@ -70,6 +70,44 @@ export const galeria = [
 ];
 
 const Page = () => {
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Cuando la página se carga completamente, establece isLoaded a true
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+    });
+
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(true);
+      });
+    };
+  }, []);
+
+  const [isLoaded, setIsLoaded] = useState(false);
+  const textAnimationControls = useAnimation();
+
+  useEffect(() => {
+    // Cuando isLoaded es true o el scroll es menor al umbral, activa la animación del texto
+    if (isLoaded || scrollY < 200) {
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    } else {
+      textAnimationControls.start({ x: -100, opacity: 0 });
+    }
+  }, [isLoaded, scrollY, textAnimationControls]);
+
   const nosotrosTitleControls = useAnimation();
   const equipoTitleControls = useAnimation();
   const prensaTitleControls = useAnimation();
@@ -82,6 +120,25 @@ const Page = () => {
     setWindowWidth(window.innerWidth);
   };
 
+  useEffect(() => {
+    // Cuando la página se carga completamente, establece isLoaded a true
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+    });
+
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(true);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
+    // Cuando isLoaded es true, activa la animación del texto
+    if (isLoaded) {
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    }
+  }, [isLoaded, textAnimationControls]);
   // Agrega un listener para el cambio de tamaño de la ventana
   useEffect(() => {
     window.addEventListener("resize", handleResize);
@@ -97,7 +154,7 @@ const Page = () => {
     const documentHeight = document.body.scrollHeight;
 
     // Ajusta los umbrales en función del ancho de la ventana
-    let equipoThreshold = 600;
+    let equipoThreshold = 300;
     let prensaThreshold = 1050;
     if (windowWidth <= 768) {
       // Si el ancho de la ventana es menor o igual a 768px (dispositivos móviles), ajusta los umbrales
@@ -137,8 +194,8 @@ const Page = () => {
   return (
     <section id="galery">
       <motion.div
-        initial={{ x: 0, opacity: 1 }}
-        animate={nosotrosTitleControls}
+        initial={{ x: -100, opacity: 0 }}
+        animate={textAnimationControls}
         transition={{ duration: 0.5 }}
         className="heading"
       >
@@ -219,7 +276,7 @@ const Page = () => {
           <span class="main__scroll-text">Scroll</span>
         </a>
       </div>
-          <hr></hr>
+      <hr></hr>
       <section className="grid" id="prensa">
         <motion.div
           className="heading"
