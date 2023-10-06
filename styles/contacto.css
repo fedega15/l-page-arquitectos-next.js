@@ -153,7 +153,35 @@
     height: 500px;
   }
 @media (max-width: 888px) {
-  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Espacio entre cada elemento de testimonio */
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px; /* Espacio entre el icono y el texto */
+  }
+
+  .text {
+    padding-left:  72px; /* Ajusta este valor según tus necesidades */
+    text-align: center;
+  }
+
+}
   #testimonios .text {
     flex: 1;
     min-width: 200px;
@@ -182,7 +210,7 @@
   #testimonios .img-container {
     margin-top: 100px;
     min-width: 320px;
-    margin-left: -12px;
+    margin-left: 0px;
     margin-right: 66px;
     flex-direction: column; 
   }
@@ -208,7 +236,7 @@
   
   #testimonios  .horizontal-line-2 {
     height: 2px;
-    width: 45%;
+    width: 48%;
     background-color: #019b21;
     margin-left: -50px;
     position: relative;
@@ -236,4 +264,3 @@
     width: 92%;
    
   }
-}

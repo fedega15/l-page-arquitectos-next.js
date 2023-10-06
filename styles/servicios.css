@@ -92,9 +92,10 @@
 
 @media (max-width: 768px) {
   #galery {
-    padding: 40px; /* Reduce el espacio de relleno en pantallas pequeñas */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    padding-bottom: 100px; /* Reduce el espacio inferior */
+    padding: 40px;
+    margin-left: 0;
+    padding-bottom: 100px;
+    padding-top: 84px;
   }
   
   #galery .main__action {
@@ -105,22 +106,27 @@
     animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
   }
 
-  #galery .heading {
+  #galery  .horizontal-line-2 {
+    height: 2px;
+    width: 48%;
+    background-color: #019b21;
     margin-left: 0px;
     position: relative;
-    top: 46px;
-    width: 100%; /* Haz que el título ocupe todo el ancho */
-    text-align: center; /* Centra el título en pantallas pequeñas */
-    height: 100px; /* Ajusta la altura automáticamente */
+    margin-top: -40px;
+  }
+  #galery .heading {
+    
+    width: 100%;
+    text-align: start;
+    height: 100px;
+    position: relative;
+
   }
 
   #galery .heading h1 {
-    font-size: 50px; /* Ajusta el tamaño de fuente para el título en pantallas pequeñas */
-    line-height: 1.2; /* Ajusta la altura de línea */
-  }
+    font-size: 50px;
+    line-height: 1.2;
 
-  .horizontal-line {
-    margin: 20px 0; /* Agrega espacio entre la línea y el contenido */
   }
 
   #galery .grid {

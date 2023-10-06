@@ -70,18 +70,17 @@ export const galeria = [
 ];
 
 const Page = () => {
-
   const nosotrosTitleControls = useAnimation();
   const equipoTitleControls = useAnimation();
   const prensaTitleControls = useAnimation();
-  const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
 
   // Configura la animación inicial cuando se monta el componente
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
-
-
 
   // Agrega un listener para el cambio de tamaño de la ventana
   useEffect(() => {
@@ -174,7 +173,7 @@ const Page = () => {
           ))}
         </div>
       </div>
-            <hr></hr>
+      <hr></hr>
       <section className="grid" id="equipo">
         <motion.div
           className="heading"
@@ -220,7 +219,7 @@ const Page = () => {
           <span class="main__scroll-text">Scroll</span>
         </a>
       </div>
-
+          <hr></hr>
       <section className="grid" id="prensa">
         <motion.div
           className="heading"
