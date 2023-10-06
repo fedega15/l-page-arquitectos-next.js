@@ -78,20 +78,13 @@
 }
 
 #testimonios .card {
-  background: #404741;  
-  color: white;
+  color: rgb(43, 37, 37);
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--border-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap-reverse;
-  gap: 20px;
-  box-shadow: 2px 20px 30px var(--shadow-color);
   border-radius: 2%;
-  margin-bottom: 10px;
-  margin-top: 20px;
 }
 #testimonios .img-container img:hover {
   transform: scale(1.08);
@@ -127,10 +120,9 @@
 #testimonios .avatar {
   width: 100px;
   min-width: 100px;
-  height: 100px;
+  height: 30px;
   border-radius: 30%;
   overflow: hidden;
-  background: var(--secondary);
 }
 
 #testimonios .text {
@@ -162,6 +154,14 @@
   }
 @media (max-width: 888px) {
   
+  #testimonios .text {
+    flex: 1;
+    min-width: 200px;
+    text-align: start;
+    align-items: self-start;
+    margin-left: -30px;
+    font-size: 12px;
+  }
   #testimonios .main__action {
     position: fixed;
     bottom: 20px;
@@ -195,8 +195,8 @@
 
   #testimonios .redes {
     display: inline-block;
-    padding-left: 22px; /* Hacer que los elementos <a> sean en línea */
-    margin-right: 6px; /* Espacio entre elementos <a> */
+    padding-left: 0px; /* Hacer que los elementos <a> sean en línea */
+    margin-right: 3px; /* Espacio entre elementos <a> */
     font-size: 20px;
     top: 0px;
     position: relative;
@@ -219,7 +219,7 @@
     width: 100%;
     text-align: start;
     height: 100px;
-    margin-left: 30px;
+    margin-left: 3px;
     position: relative;
     top: -30px;
   }

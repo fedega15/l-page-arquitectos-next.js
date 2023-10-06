@@ -3,22 +3,12 @@ import "../styles/galery.css";
 import Image from "next/image";
 
 const galeria = [
+
   {
     id: 1,
-    proyect: "MOBILE DESIGN",
-    name: "MOBILE DESIGN",
-    img: "/g2.png",
-    activites: 10,
-    places: 200,
-    days: "1week",
-    price: 1.2,
-    link: "/MobileDesigne",
-  },
-  {
-    id: 2,
     proyect: "ARQUITECTURA",
     name: "ARQUITECTURA",
-    img: "/g1.png",
+    img:  "/g5.png",  
     activites: 10,
     places: 32,
     days: "1week",
@@ -26,10 +16,22 @@ const galeria = [
     link: "/Arquitectura",
   },
   {
+    id: 4,
+    proyect: "DISEÑO MOBILIARIO",
+    name: "DISEÑO MOBILIARIO",
+    img: "/g4.png",
+    activites: 1450,
+    places: 132,
+    days: "1week",
+    price: 1.2,
+    link: "/Concursos",
+  },
+  {
     id: 3,
     proyect: "RECYCLABLE FURNITURE",
     name: "RECYCLABLE FURNITURE",
-    img: "/g4.png",
+   
+    img: "/g1.jpg",
     activites: 23,
     places: 54,
     days: "1week",
@@ -39,20 +41,22 @@ const galeria = [
   },
   {
     id: 4,
-    proyect: "CONCURSOS",
-    name: "CONCURSOS",
-    img: "/g5.png",
-    activites: 1450,
-    places: 132,
+    proyect: "MOBILE DESIGN",
+    name: "MOBILE DESIGN",
+  img:  "/g2.png", 
+    activites: 10,
+    places: 200,
     days: "1week",
     price: 1.2,
-    link: "/Concursos",
+    link: "/MobileDesigne",
   },
+  
   {
+    proyect: "ARQUITECTURA MODULAR",
+    name: "ARQUITECTURA MODULAR",
+    img: "/g7.png",
     id: 5,
-    proyect: "DISEÑO MOBILIARIO",
-    name: "DISEÑO MOBILIARIO",
-    img: "/g6.png",
+   
     activites: 45,
     places: 46,
     days: "1week",
@@ -61,9 +65,10 @@ const galeria = [
   },
   {
     id: 6,
-    proyect: "ARQUITECTURA MODULAR",
-    name: "ARQUITECTURA MODULAR",
-    img: "/g7.png",
+  
+    img: "/g6.jpg",
+    proyect: "CONCURSOS",
+    name: "CONCURSOS",
     activites: 70,
     places: 244,
     days: "1week",
@@ -88,10 +93,11 @@ const Galery = () => {
                 alt={galeria.img}
                 width={600}
                 height={600}
+                className="imagen-galeria"
               />
               <div className="box">
               <span className="star">
-                {galeria.name === "ARQUITECTURA" && <button><i class="fa-solid fa-hand-pointer"></i></button>}
+               {/*  {galeria.name === "ARQUITECTURA" && <button><i class="fa-solid fa-hand-pointer"></i></button>} */}
                   {/*    <i className="fa-solid fa-star"></i>
                 {galeria.activites} */}
                 </span>

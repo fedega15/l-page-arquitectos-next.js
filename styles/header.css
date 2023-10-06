@@ -141,7 +141,10 @@ header nav .menu_btn {
     display: none;
 } */
 
-
+.logo {
+margin-top: -20px;
+margin-bottom: -20px;
+}
 @media (min-width: 1150px) {
   header nav {
     justify-content: space-between;
@@ -152,7 +155,7 @@ header nav .menu_btn {
     right: 0;
     background: var(--bg-main);
     display: block;
-    width: 20%;
+    width: 15%;
     box-shadow: 2px 20px 30px var(--shadow-color);
     transition: all ease-in-out 0.3s;
     height: 0px;
@@ -176,7 +179,7 @@ header nav .menu_btn {
 
   header .box-li {
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 
   header .box-redes {
@@ -185,10 +188,10 @@ header nav .menu_btn {
   }
   .redes {
     display: inline-block;
-    padding-left: 22px;
+    padding-left: 12px;
     margin-right: 5px; 
     font-size:25px;
-    top: 100px;
+    top: 260px;
     position: relative;
     color: rgb(241, 227, 227);
   }
@@ -210,7 +213,7 @@ header nav .menu_btn {
     right: 0;
     background: var(--bg-main);
     display: block;
-    width: 25%;
+    width: 20%;
     box-shadow: 2px 20px 30px var(--shadow-color);
     transition: all ease-in-out 0.3s;
     height: 0px;
@@ -265,7 +268,7 @@ header ul li a {
     right: 0;
     background: var(--bg-main);
     display: block;
-    width: 50%;
+    width: 45%;
     box-shadow: 2px 20px 30px var(--shadow-color);
     transition: all ease-in-out 0.3s;
     height: 0px;

@@ -2,12 +2,11 @@
 import { useEffect, useState } from "react";
 
 import "../styles/header.css";
+import Image from "next/image";
 
 const categories = [
   { name: "Proyectos", link: "/#galery" },
-  { name: "Estudio", link: "/Estudio" },
   { name: "Servicios", link: "/Servicios" },
-  { name: "Eventos", link: "/Novedades" },
   { name: "Nosotros", link: "/Acerca" },
   { name: "Contacto", link: "/Contacto" },
 ];
@@ -49,7 +48,13 @@ const Header = () => {
     >
       <nav>
         <a href="/" className="logo">
-          <i className="fa-solid fas fa-compass"></i> SSA
+          <Image
+          src= "/mineral.png"
+          alt="minerales"
+          width={120}
+          height={50}
+          className="logo"
+          />
         </a>
 
         <div
@@ -90,15 +95,15 @@ const Header = () => {
               ))}
             </div>
 
-              <a
+            {/*   <a
                 href="https://www.instagram.com/fedegalassi_/"
                 className="redes"
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="https://wa.link/d08xt8" className="redes">
+               <a href="https://wa.link/d08xt8" className="redes">
                 <i className="fa-brands fa-whatsapp"></i>
-              </a>
+              </a> 
               <a
                 href="https://www.instagram.com/fedegalassi_/"
                 className="redes"
@@ -116,7 +121,7 @@ const Header = () => {
                 className="redes"
               >
                 <i className="fa-solid fa-location-dot"></i>{" "}
-              </a>
+              </a>  */}
           </ul>
         </div>
       </nav>

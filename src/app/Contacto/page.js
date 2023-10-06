@@ -6,15 +6,43 @@ import Link from "next/link";
 const testimonials = [
   {
     id: 1,
-    text: "Telefono de contacto y whatsapp: 3364689065",
+    text: "santiagosemino@ssaestudio.com ",
     avatar: "/w2.png",
-    link: "//wa.link/d08xt8",
+    link: "//mailto:federico.galassi9@gmail.com",
+    href:"//mailto:federico.galassi9@gmail.com",
+    icon:"fa fa-envelope"
   },
   {
-    id: 1,
-    text: "Mail de contacto: santiagosemino@ssaestudio.com ",
+    id: 2,
+    text: "3364689065",
     avatar: "/w2.png",
-    link: "//mailto:federico.galassi9@gmail.com    ",
+    link: "//wa.link/d08xt8",
+    href:"https://wa.link/d08xt8",
+    icon:"fa-brands fa-whatsapp"
+  },
+  {
+    id: 3,
+    text: "Linkedin",
+    avatar: "/w2.png",
+    link: "//https://www.linkedin.com/feed/",
+    href:"//https://www.linkedin.com/feed/",
+    icon:"fa-brands fa-linkedin"
+  },
+  {
+    id: 4,
+    text: "Instagram",
+    avatar: "/w2.png",
+    link: "//mailto:federico.galassi9@gmail.com",
+    href:"//mailto:federico.galassi9@gmail.com",
+    icon:"fa-brands fa-instagram"
+  },
+  {
+    id: 4,
+    text: "Facebook",
+    avatar: "/w2.png",
+    link: "//mailto:federico.galassi9@gmail.com",
+    href:"//mailto:federico.galassi9@gmail.com",
+    icon:"fa-brands fa-facebook-messenger"
   },
 ];
 
@@ -40,64 +68,23 @@ const page = () => {
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
             <div className="text">
+            <a href={testimonial.href} className="redes">
+            <i class={testimonial.icon}></i>
+          </a>
               <Link href={testimonial.link}>
-                {testimonial.text} <i className={testimonial.icon}></i>
+               <strong>{testimonial.text}</strong> <i ></i>
               </Link>
               <strong>{testimonial.name} </strong>
             </div>
 
             <div className="avatar">
-              <Image
-                src={testimonial.avatar}
-                alt="w1"
-                width={488}
-                height={482}
-              />
+    
             </div>
           </div>
         ))}
-        <div>
-          <a href="https://www.instagram.com/fedegalassi_/" className="redes">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://wa.link/d08xt8" className="redes">
-            <i class="fa-brands fa-whatsapp"></i>
-          </a>
-          <a href="https://www.instagram.com/fedegalassi_/" className="redes">
-            <i className="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://www.instagram.com/fedegalassi_/" className="redes">
-            <i className="fa-brands fa-facebook-messenger"></i>
-          </a>
-          <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79" className="redes">
-            <i className="fa-solid fa-location-dot"></i>{" "}
-          </a>
-        </div>
+      
       </div>
-      <div class="main__action">
-        <a class="main__scroll" href="#">
-          <div class="main__scroll-box">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
-                fill="rgba(28,28,30,1)"
-              ></path>
-            </svg>
-          </div>
-          <div class="main__scroll-box">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
-                fill="rgba(28,28,30,1)"
-              ></path>
-            </svg>
-          </div>
-
-          <span class="main__scroll-text">Scroll</span>
-        </a>
-      </div>
+     
     </section>
   );
 };
