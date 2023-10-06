@@ -102,7 +102,7 @@ const Page = () => {
     let prensaThreshold = 1050;
     if (windowWidth <= 768) {
       // Si el ancho de la ventana es menor o igual a 768px (dispositivos móviles), ajusta los umbrales
-      equipoThreshold = 1100;
+      equipoThreshold = 990;
       prensaThreshold = 3700;
     }
 
