@@ -22,7 +22,7 @@ const testimonials = [
   },
   {
     id: 3,
-    text: "",
+    text: "Linkedin",
     avatar: "/w2.png",
     link: "//https://www.linkedin.com/feed/",
     href:"//https://www.linkedin.com/feed/",
@@ -30,7 +30,7 @@ const testimonials = [
   },
   {
     id: 4,
-    text: "",
+    text: "Instagram",
     avatar: "/w2.png",
     link: "//mailto:federico.galassi9@gmail.com",
     href:"//mailto:federico.galassi9@gmail.com",
@@ -38,7 +38,7 @@ const testimonials = [
   },
   {
     id: 4,
-    text: "",
+    text: "Facebook",
     avatar: "/w2.png",
     link: "//mailto:federico.galassi9@gmail.com",
     href:"//mailto:federico.galassi9@gmail.com",
@@ -64,30 +64,26 @@ const page = () => {
           ></iframe>
         </a>
       </div>
-      <div className="slider">
-  {testimonials.map((testimonial) => (
-    <div key={testimonial.id} className="card">
-      <div className="content">
-        <div className="icon-container">
-          <a href={testimonial.href} className="redes">
-            <i className={testimonial.icon}></i>
+      < div className="slider">
+        {testimonials.map((testimonial) => (
+          <div key={testimonial.id} className="card">
+            <div className="text">
+            <a href={testimonial.href} className="redes">
+            <i class={testimonial.icon}></i>
           </a>
-        </div>
-        <div className="text">
-          <Link href={testimonial.link}>
-            <strong>{testimonial.text}</strong> <i></i>
-          </Link>
-          <strong>{testimonial.name}</strong>
-        </div>
+              <Link href={testimonial.link}>
+               <strong>{testimonial.text}</strong> <i ></i>
+              </Link>
+              <strong>{testimonial.name} </strong>
+            </div>
+
+            <div className="avatar">
+    
+            </div>
+          </div>
+        ))}
+      
       </div>
-      <div className="avatar"></div>
-    </div>
-  ))}
-</div>
-
-
-
-
      
     </section>
   );
