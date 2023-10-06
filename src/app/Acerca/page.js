@@ -4,7 +4,7 @@ import "../../../styles/acerca.css";
 import Image from "next/image";
 import Card from "../../../components/Card";
 import { motion, useAnimation } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const galeria = [
   {
@@ -73,6 +73,7 @@ const Page = () => {
   const nosotrosTitleControls = useAnimation();
   const equipoTitleControls = useAnimation();
   const prensaTitleControls = useAnimation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   // Configura la animación inicial cuando se monta el componente
   useEffect(() => {
@@ -81,43 +82,56 @@ const Page = () => {
     prensaTitleControls.start({ x: 0, opacity: 1 });
   }, [nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
 
+  // Maneja el evento de cambio de tamaño de la ventana
+  const handleResize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+
+  // Agrega un listener para el cambio de tamaño de la ventana
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   // Maneja el evento de scroll
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.body.scrollHeight;
 
+    // Ajusta los umbrales en función del ancho de la ventana
+    let equipoThreshold = 600;
+    let prensaThreshold = 1050;
+    if (windowWidth <= 768) {
+      // Si el ancho de la ventana es menor o igual a 768px (dispositivos móviles), ajusta los umbrales
+      equipoThreshold = 1400;
+      prensaThreshold = 4100;
+    }
+
     // Para la sección "NOSOTROS"
-    if (scrollY <= 0) {
-      // Si el usuario está arriba de todo, muestra "NOSOTROS"
-      nosotrosTitleControls.start({ x: 0, opacity: 1 });
-    } else if (scrollY >= documentHeight - windowHeight) {
-      // Si el usuario está al final de la página, muestra "NOSOTROS"
+    if (scrollY <= 0 || scrollY >= documentHeight - windowHeight) {
       nosotrosTitleControls.start({ x: 0, opacity: 1 });
     } else if (scrollY >= 200) {
-      // Si el usuario ha superado el umbral de 200, oculta "NOSOTROS"
       nosotrosTitleControls.start({ x: -100, opacity: 0 });
     }
 
     // Para la sección "EQUIPO"
-    // Ajusta el valor 500 según sea necesario
-    if (scrollY >= 400 && scrollY < 850) {
-      // Si el usuario ha superado el umbral de 600 pero no ha llegado a 1050, muestra "EQUIPO"
+    if (scrollY >= equipoThreshold && scrollY < prensaThreshold) {
       equipoTitleControls.start({ x: 0, opacity: 1 });
     } else {
-      // Si el usuario ha superado el umbral de 1050 o está en cualquier otro lugar, oculta "EQUIPO"
       equipoTitleControls.start({ x: -100, opacity: 0 });
     }
+
     // Para la sección "PRENSA"
-    // Ajusta el valor según sea necesario
-    if (scrollY >= 1050) {
+    if (scrollY >= prensaThreshold) {
       prensaTitleControls.start({ x: 0, opacity: 1 });
     } else {
       prensaTitleControls.start({ x: -100, opacity: 0 });
     }
   };
 
-  // Agrega un listener de scroll cuando el componente se monta
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
