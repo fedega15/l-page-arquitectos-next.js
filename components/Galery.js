@@ -79,6 +79,7 @@ const galeria = [
 ];
 const Galery = () => {
   return (
+    <div className="wrapper">
     <section id="galery">
       <div className="grid">
         {galeria.map((galeria, index) => (
@@ -113,6 +114,7 @@ const Galery = () => {
         ))}
       </div>
     </section>
+    </div>
   );
 };
 

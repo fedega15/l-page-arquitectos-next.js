@@ -1,7 +1,10 @@
+"use client";
 import React from "react";
 import "../../../styles/acerca.css";
 import Image from "next/image";
 import Card from "../../../components/Card";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect } from "react";
 
 export const galeria = [
   {
@@ -67,13 +70,72 @@ export const galeria = [
 ];
 
 const Page = () => {
-  
+  const nosotrosTitleControls = useAnimation();
+  const equipoTitleControls = useAnimation();
+  const prensaTitleControls = useAnimation();
+
+  // Configura la animación inicial cuando se monta el componente
+  useEffect(() => {
+    nosotrosTitleControls.start({ x: 0, opacity: 1 });
+    equipoTitleControls.start({ x: 0, opacity: 1 });
+    prensaTitleControls.start({ x: 0, opacity: 1 });
+  }, [nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
+
+  // Maneja el evento de scroll
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.body.scrollHeight;
+
+    // Para la sección "NOSOTROS"
+    if (scrollY <= 0) {
+      // Si el usuario está arriba de todo, muestra "NOSOTROS"
+      nosotrosTitleControls.start({ x: 0, opacity: 1 });
+    } else if (scrollY >= documentHeight - windowHeight) {
+      // Si el usuario está al final de la página, muestra "NOSOTROS"
+      nosotrosTitleControls.start({ x: 0, opacity: 1 });
+    } else if (scrollY >= 200) {
+      // Si el usuario ha superado el umbral de 200, oculta "NOSOTROS"
+      nosotrosTitleControls.start({ x: -100, opacity: 0 });
+    }
+
+    // Para la sección "EQUIPO"
+    // Ajusta el valor 500 según sea necesario
+    if (scrollY >= 400 && scrollY < 850) {
+      // Si el usuario ha superado el umbral de 600 pero no ha llegado a 1050, muestra "EQUIPO"
+      equipoTitleControls.start({ x: 0, opacity: 1 });
+    } else {
+      // Si el usuario ha superado el umbral de 1050 o está en cualquier otro lugar, oculta "EQUIPO"
+      equipoTitleControls.start({ x: -100, opacity: 0 });
+    }
+    // Para la sección "PRENSA"
+    // Ajusta el valor según sea necesario
+    if (scrollY >= 1050) {
+      prensaTitleControls.start({ x: 0, opacity: 1 });
+    } else {
+      prensaTitleControls.start({ x: -100, opacity: 0 });
+    }
+  };
+
+  // Agrega un listener de scroll cuando el componente se monta
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
+
   return (
     <section id="galery">
-      <div className="heading">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={nosotrosTitleControls}
+        transition={{ duration: 0.5 }}
+        className="heading"
+      >
         <h1>NOSOTROS</h1>
         <div className="horizontal-line-2"></div>
-      </div>
+      </motion.div>
       <div className="studio-info">
         <div className="studio-description">
           <h2>Estudio SSA</h2>
@@ -102,12 +164,17 @@ const Page = () => {
           ))}
         </div>
       </div>
-      
+
       <section className="grid" id="equipo">
-        <div className="heading">
+        <motion.div
+          className="heading"
+          initial={{ x: -100, opacity: 0 }}
+          animate={equipoTitleControls}
+          transition={{ duration: 0.5 }}
+        >
           <h1>EQUIPO</h1>
           <div className="horizontal-line-2"></div>
-        </div>
+        </motion.div>
         {galeria.map((proyecto) => (
           <div className="cont" key={proyecto.id}>
             <Card
@@ -144,34 +211,40 @@ const Page = () => {
         </a>
       </div>
       <br />
+
       <section className="grid" id="prensa">
-      <div className="heading">
-        <h1>PRENSA</h1>
-        <div className="horizontal-line-2"></div>
-      </div>
-      <div className="press-section">
-        <div className="press-article">
-          <h2>Título del artículo de prensa 1</h2>
-          <p>Descripción o contenido del artículo de prensa 1.</p>
-          <a href="#prensa" className="press-link">
-            Leer más
-          </a>
+        <motion.div
+          className="heading"
+          initial={{ x: -100, opacity: 0 }}
+          animate={prensaTitleControls}
+          transition={{ duration: 0.5 }}
+        >
+          <h1>PRENSA</h1>
+          <div className="horizontal-line-2"></div>
+        </motion.div>
+        <div className="press-section">
+          <div className="press-article">
+            <h2>Título del artículo de prensa 1</h2>
+            <p>Descripción o contenido del artículo de prensa 1.</p>
+            <a href="#prensa" className="press-link">
+              Leer más
+            </a>
+          </div>
+          <div className="press-article">
+            <h2>Título del artículo de prensa 2</h2>
+            <p>Descripción o contenido del artículo de prensa 2.</p>
+            <a href="#galery" className="press-link">
+              Leer más
+            </a>
+          </div>
+          <div className="press-article">
+            <h2>Título del artículo de prensa 3</h2>
+            <p>Descripción o contenido del artículo de prensa 3.</p>
+            <a href="#equipo" className="press-link">
+              Leer más
+            </a>
+          </div>
         </div>
-        <div className="press-article">
-          <h2>Título del artículo de prensa 2</h2>
-          <p>Descripción o contenido del artículo de prensa 2.</p>
-          <a href="#galery" className="press-link">
-            Leer más
-          </a>
-        </div>
-        <div className="press-article">
-          <h2>Título del artículo de prensa 3</h2>
-          <p>Descripción o contenido del artículo de prensa 3.</p>
-          <a href="#equipo" className="press-link">
-            Leer más
-          </a>
-        </div>
-      </div>
       </section>
     </section>
   );
