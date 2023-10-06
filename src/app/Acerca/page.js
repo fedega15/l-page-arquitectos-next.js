@@ -77,19 +77,11 @@ const Page = () => {
   const [windowWidth, setWindowWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
 
   // Configura la animación inicial cuando se monta el componente
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      // Agrega el listener de cambio de tamaño de la ventana solo si window está definido
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }
-  }, []);
-  // Maneja el evento de cambio de tamaño de la ventana
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
+
+
 
   // Agrega un listener para el cambio de tamaño de la ventana
   useEffect(() => {
@@ -110,8 +102,8 @@ const Page = () => {
     let prensaThreshold = 1050;
     if (windowWidth <= 768) {
       // Si el ancho de la ventana es menor o igual a 768px (dispositivos móviles), ajusta los umbrales
-      equipoThreshold = 1400;
-      prensaThreshold = 4100;
+      equipoThreshold = 1100;
+      prensaThreshold = 3700;
     }
 
     // Para la sección "NOSOTROS"
@@ -146,7 +138,7 @@ const Page = () => {
   return (
     <section id="galery">
       <motion.div
-        initial={{ x: -100, opacity: 0 }}
+        initial={{ x: 0, opacity: 1 }}
         animate={nosotrosTitleControls}
         transition={{ duration: 0.5 }}
         className="heading"
