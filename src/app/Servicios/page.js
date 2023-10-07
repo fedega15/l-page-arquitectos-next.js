@@ -1,7 +1,8 @@
-import React from "react";
+"use client";
 import "../../../styles/servicios.css";
 import Image from "next/image";
-
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 export const galeria = [
   {
     id: 1,
@@ -39,11 +40,67 @@ export const galeria = [
 ];
 
 const Page = () => {
+  
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  const [isLoaded, setIsLoaded] = useState(false); // Estado para controlar si la página se ha cargado
+  const textAnimationControls = useAnimation();
+
+  useEffect(() => {
+    // Cuando la página se carga completamente, establece isLoaded a true
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+    });
+
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(true);
+      });
+    };
+  }, []);
+
+  useEffect(() => {
+    // Cuando isLoaded es true, activa la animación del texto
+    if (isLoaded) {
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    }
+  }, [isLoaded, textAnimationControls]);
+
+  useEffect(() => {
+    // Define el umbral de desplazamiento en el que deseas aplicar la animación
+    const scrollThreshold = 200; // Ajusta esto según tus necesidades
+
+    // Aplica la animación al elemento de texto
+    if (scrollY >= scrollThreshold) {
+      textAnimationControls.start({ x: -100, opacity: 0 });
+    } else {
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    }
+  }, [scrollY, textAnimationControls]);
+
   return (
     <section id="galery">
-      <div className="heading">
-        <h1>SERVICIOS</h1>
-      </div>
+   <motion.div className="heading"initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
+          animate={textAnimationControls} // Aplica la animación al h1
+      >
+        <h1
+ 
+        >
+          SERVICIOS
+        </h1>
+      </motion.div>
       <div className="grid">
         {galeria.map((proyecto, index) => (
           <div className="cont" key={proyecto.id}>

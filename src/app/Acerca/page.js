@@ -70,7 +70,9 @@ export const galeria = [
 ];
 
 const Page = () => {
+
   const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -80,6 +82,23 @@ const Page = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  
+  const [isLoaded, setIsLoaded] = useState(false);
+  const textAnimationControls = useAnimation();
+
+ 
+  useEffect(() => {
+    // Cuando la página se carga completamente, establece isLoaded a true
+    window.addEventListener("load", () => {
+      setIsLoaded(true);
+    });
+
+    return () => {
+      window.removeEventListener("load", () => {
+        setIsLoaded(true);
+      });
     };
   }, []);
 
@@ -96,8 +115,6 @@ const Page = () => {
     };
   }, []);
 
-  const [isLoaded, setIsLoaded] = useState(false);
-  const textAnimationControls = useAnimation();
 
   useEffect(() => {
     // Cuando isLoaded es true o el scroll es menor al umbral, activa la animación del texto
@@ -120,18 +137,6 @@ const Page = () => {
     setWindowWidth(window.innerWidth);
   };
 
-  useEffect(() => {
-    // Cuando la página se carga completamente, establece isLoaded a true
-    window.addEventListener("load", () => {
-      setIsLoaded(true);
-    });
-
-    return () => {
-      window.removeEventListener("load", () => {
-        setIsLoaded(true);
-      });
-    };
-  }, []);
 
   useEffect(() => {
     // Cuando isLoaded es true, activa la animación del texto

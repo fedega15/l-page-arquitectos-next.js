@@ -49,21 +49,7 @@ const testimonials = [
 ];
 
 const Page = () => {
-  const headingVariants = {
-    hidden: {
-      opacity: 0,
-      x: -100, // Desplaza hacia la izquierda inicialmente
-    },
-    visible: {
-      opacity: 1,
-      x: 0, // Se desplaza a su posición original
-      transition: {
-        delay: 0.5, // Retraso en la animación al cargar el componente
-        duration: 0.5, // Duración de la animación
-        type: "spring", // Tipo de animación (puedes ajustar esto)
-      },
-    },
-  };
+  
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -77,6 +63,7 @@ const Page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   const [isLoaded, setIsLoaded] = useState(false); // Estado para controlar si la página se ha cargado
   const textAnimationControls = useAnimation();
 
@@ -114,16 +101,17 @@ const Page = () => {
 
   return (
     <section id="testimonios">
-      <div className="heading">
-        <motion.h1
-          initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
+      <motion.div className="heading"initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
           animate={textAnimationControls} // Aplica la animación al h1
+      >
+        <h1
+ 
         >
           CONTACTO
-        </motion.h1>
+        </h1>
 
         <div className="horizontal-line-2"></div>
-      </div>
+      </motion.div>
 
       <div className="img-container">
         <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
