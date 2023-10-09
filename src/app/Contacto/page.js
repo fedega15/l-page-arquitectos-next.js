@@ -39,7 +39,7 @@ const testimonials = [
     icon: "fa-brands fa-instagram",
   },
   {
-    id: 4,
+    id: 5,
     text: "Facebook",
     avatar: "/w2.png",
     link: "//mailto:federico.galassi9@gmail.com",
@@ -101,12 +101,14 @@ const Page = () => {
 
   return (
     <section id="testimonios">
-      <motion.div className="heading"initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
-          animate={textAnimationControls} // Aplica la animación al h1
+      <motion.div 
+      className="heading"
+      transition={{ duration: 0.5 }}
+      initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
+      animate={textAnimationControls} // Aplica la animación al h1
+      
       >
-        <h1
- 
-        >
+        <h1>
           CONTACTO
         </h1>
 
@@ -127,7 +129,7 @@ const Page = () => {
           <div key={testimonial.id} className="card">
             <div className="text">
               <a href={testimonial.href} className="redes">
-                <i class={testimonial.icon}></i>
+                <i className={testimonial.icon}></i>
               </a>
               <Link href={testimonial.link}>
                 <strong>{testimonial.text}</strong> <i></i>

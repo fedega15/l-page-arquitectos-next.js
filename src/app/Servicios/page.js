@@ -92,14 +92,19 @@ const Page = () => {
 
   return (
     <section id="galery">
-   <motion.div className="heading"initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
-          animate={textAnimationControls} // Aplica la animación al h1
+   <motion.div 
+   className="heading"
+   initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
+    animate={textAnimationControls} // Aplica la animación al h1
+    transition={{ duration: 0.5 }}
+
       >
         <h1
  
         >
           SERVICIOS
         </h1>
+        
       </motion.div>
       <div className="grid">
         {galeria.map((proyecto, index) => (
@@ -124,6 +129,7 @@ const Page = () => {
               </ul>
             </div>
           </div>
+          
         ))}
       </div>
       

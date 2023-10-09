@@ -134,10 +134,11 @@
     #galery .group .text strong{
         display: block;
         font-size: 3rem;
-        font-weight: 700;
+        font-weight: 900;
         letter-spacing: 1px;
         text-transform: capitalize;
         color: #f8f2f2;
+       
         
     }
     #galery .group .text span{
@@ -166,11 +167,10 @@
         #galery .group .text strong{
             display: block;
             font-size: 2.5rem;
-            font-weight: 700;
+            font-weight: 900;
             letter-spacing: 1px;
             text-transform: capitalize;
             color: #f7eeee;
-            font-weight: 200000;
         }
         
     }

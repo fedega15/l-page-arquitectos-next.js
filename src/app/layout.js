@@ -6,9 +6,9 @@ import { Poppins } from "next/font/google";
 import Slider from "../../components/Slider";
 
 const inter = Poppins({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["300", "400", "500", "600", "700", "800"],
+  subsets: ["latin-ext"],
+  style: ["italic"],
+  weight: ["300", "400", "500", "600", "700", "800", "900",  ],
 });
 
 export const metadata = {

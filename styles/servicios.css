@@ -1,4 +1,5 @@
 #galery {
+  
   width: 100%;
   max-width: var(--max-width);
   overflow: hidden;
@@ -52,6 +53,13 @@
 }
 
 
+#galery .horizontal-line {
+  margin-top: 20px;
+  height: 2px;
+  width: 20%;
+  background-color: #019b21;
+  margin-left: 20px;
+}
 #galery .horizontal-line-2 {
   margin-bottom: 20px;
   height: 2px;

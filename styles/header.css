@@ -6,6 +6,10 @@ header {
   z-index: 100;
   user-select: none;
   transition: all ease-in-out 0.3s;
+  font-weight: 900; 
+  line-height: 1.5; 
+  text-transform: uppercase;
+  
 }
 header nav {
   justify-content: space-between;
@@ -164,13 +168,13 @@ margin-bottom: -20px;
   header ul li a {
     padding: 10px;
     display: block;
-    margin-left: 25px;
+    margin-left: 15px;
     margin-top: 15px;
     border-bottom: 1px solid var(--border-color);
     color: white;
-    font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
+    font-weight: 900; 
+    line-height: 1.5; 
     text-transform: uppercase;
-    font-size: x-large;
   }
 
   header nav .menu_btn {
