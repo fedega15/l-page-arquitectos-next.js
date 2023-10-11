@@ -304,7 +304,7 @@ const Page = () => {
             <h2>Título del artículo de prensa 2</h2>
             <p>Descripción o contenido del artículo de prensa 2.</p>
             <a href="#galery" className="press-link">
-              Leer más
+              Leer máss
             </a>
           </div>
           <div className="press-article">
