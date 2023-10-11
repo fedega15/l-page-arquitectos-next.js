@@ -18,7 +18,7 @@ export const galeria = [
   {
     id: 2,
     image: "/card1.jpg",
-    estudio: "/2gf.jpg",
+    estudio: "/photo2.jpg",
     name: "Agostina Selzer",
     rol: "[Diseño / Renders]",
     descripcion: "Departamento Arquitectura",
