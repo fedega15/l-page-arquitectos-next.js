@@ -95,7 +95,7 @@ const Header = () => {
               ))}
             </div>
 
-            {/*   <a
+              <a
                 href="https://www.instagram.com/fedegalassi_/"
                 className="redes"
               >
@@ -121,7 +121,7 @@ const Header = () => {
                 className="redes"
               >
                 <i className="fa-solid fa-location-dot"></i>{" "}
-              </a>  */}
+              </a>  
           </ul>
         </div>
       </nav>
