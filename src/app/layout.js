@@ -2,13 +2,13 @@ import Footer1 from "../../components/Footer1";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import "../../styles/globals.css"
-import { Roboto } from "next/font/google"
+import { Outfit } from "next/font/google"
 import Slider from "../../components/Slider";
 
-const inter = Roboto({
+const inter = Outfit({
   subsets: ["latin-ext"],
   style: ["normal"],
-  weight: ["300", "400", "500", "700", "900",  ],
+  weight: ["300", "400", "500", "700",  ],
 });
 
 export const metadata = {

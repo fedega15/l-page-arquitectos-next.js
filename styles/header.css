@@ -49,7 +49,6 @@ header ul li a {
   margin-top: 15px;
   border-bottom: 1px solid var(--border-color);
   color: white;
-  font-family: 'Titling Gothic Skyline',Arial,Helvetica,sans-serif;;
   text-transform: uppercase;
   font-size: x-large;
 }
@@ -166,15 +165,16 @@ margin-bottom: -20px;
     overflow: hidden;
   }
   header ul li a {
-    padding: 10px;
+    padding: 5px;
     display: block;
     margin-left: 15px;
     margin-top: 15px;
     border-bottom: 1px solid var(--border-color);
     color: white;
     font-weight: 900; 
-    line-height: 1.5; 
-    text-transform: uppercase;
+    font-size: 30px
+    
+    
   }
 
   header nav .menu_btn {

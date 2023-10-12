@@ -44,15 +44,15 @@
   width: 100%;
   text-align: start;
 }
-
 #testimonios .heading h1 {
   margin-top: 110px;
-  font: 120px/1 'Titling Gothic Skyline', Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  white-space: nowrap;
+  font-size: 120px;
   font-weight: 900;
   color: rgb(255, 252, 252);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
+
+
 
 .horizontal-line-2 {
   margin-top: 20px;
@@ -153,15 +153,18 @@
     height: 500px;
   }
 @media (max-width: 888px) {
-  
   #testimonios .text {
-    flex: 1;
-    min-width: 200px;
-    text-align: start;
-    align-items: self-start;
-    margin-left: -30px;
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-left: -30px; /* Añade un margen izquierdo para separar el icono del texto */
     font-size: 12px;
   }
+
+  #testimonios .text a {
+    margin-right: 20px; /* Añade un margen derecho entre el icono y el texto */
+    
+  }
+
   #testimonios .main__action {
     position: fixed;
     bottom: 20px;
