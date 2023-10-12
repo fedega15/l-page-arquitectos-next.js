@@ -70,6 +70,20 @@ export const galeria = [
 ];
 
 const Page = () => {
+   const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+      console.log(setScrollPosition)
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const [scrollY, setScrollY] = useState(0);
 
@@ -257,30 +271,30 @@ const Page = () => {
           </div>
         ))}
       </section>
-      <div class="main__action">
-        <a class="main__scroll" href="#">
-          <div class="main__scroll-box">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
-                fill="rgba(28,28,30,1)"
-              ></path>
-            </svg>
-          </div>
-          <div class="main__scroll-box">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
-                fill="rgba(28,28,30,1)"
-              ></path>
-            </svg>
-          </div>
+      <div className="main__action">
+  <a className="main__scroll" href="#">
+    <div className="main__scroll-box">
+      {scrollPosition === 0 ? (
+        /* Renderiza el icono cuando el scroll es igual a cero */
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm0 14.414-5.707-5.707 1.414-1.414 4.293 4.293 4.293-4.293 1.414 1.414z" fill="rgb(0,0,0)"/></svg>
+        </svg>
+        
+      ) : (
+        /* Renderiza otro icono cuando el scroll no es igual a cero */
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none"></path>
+          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm4.293 12.707-4.293-4.293-4.293 4.293-1.414-1.414 5.707-5.707 5.707 5.707z" fill="rgb(0,0,0)"/></svg>
+        </svg>
+      )}
+    </div>
+    {scrollPosition === 0 ? (
+    <span className="main__scroll-text">Go down </span>) : (<span className="main__scroll-text">Click up!</span>
+    )}
+  </a>
+</div>
 
-          <span class="main__scroll-text">Scroll</span>
-        </a>
-      </div>
       <hr></hr>
       <section className="grid" id="prensa">
         <motion.div

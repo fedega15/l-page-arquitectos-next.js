@@ -96,7 +96,7 @@ const Header = () => {
             </div>
 
               <a
-                href="https://www.instagram.com/fedegalassi_/"
+                href="//www.instagram.com/ssa_estudio/"
                 className="redes"
               >
                 <i className="fa-brands fa-instagram"></i>
@@ -105,13 +105,13 @@ const Header = () => {
                 <i className="fa-brands fa-whatsapp"></i>
               </a> 
               <a
-                href="https://www.instagram.com/fedegalassi_/"
+                href="//www.linkedin.com/in/santiago-semino-arquitectos-60406218b/"
                 className="redes"
               >
                 <i className="fa-brands fa-linkedin"></i>
               </a>
               <a
-                href="https://www.instagram.com/fedegalassi_/"
+                href="//www.facebook.com/ssaestudio?locale=es_LA"
                 className="redes"
               >
                 <i className="fa-brands fa-facebook-messenger"></i>
