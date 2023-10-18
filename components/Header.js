@@ -102,7 +102,7 @@ const Header = () => {
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
-               <a href="https://wa.link/d08xt8" className="redes">
+               <a href="//wa.link/a6w9de" className="redes">
                 <i className="fa-brands fa-whatsapp"></i>
               </a> 
               <a
