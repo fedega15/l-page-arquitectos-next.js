@@ -10,7 +10,7 @@
 #galery .main__action {
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 20px;
   z-index: 0; /* Asegura que el botón esté sobre otros elementos */
   animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
 }

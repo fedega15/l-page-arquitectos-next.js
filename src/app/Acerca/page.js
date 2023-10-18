@@ -277,8 +277,8 @@ const Page = () => {
       {scrollPosition === 0 ? (
         /* Renderiza el icono cuando el scroll es igual a cero */
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm0 14.414-5.707-5.707 1.414-1.414 4.293 4.293 4.293-4.293 1.414 1.414z" fill="rgb(0,0,0)"/></svg>
+          {/* <path d="M0 0h24v24H0z" fill="none"></path>
+          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm0 14.414-5.707-5.707 1.414-1.414 4.293 4.293 4.293-4.293 1.414 1.414z" fill="rgb(0,0,0)"/></svg> */}
         </svg>
         
       ) : (
@@ -290,7 +290,7 @@ const Page = () => {
       )}
     </div>
     {scrollPosition === 0 ? (
-    <span className="main__scroll-text">Go down </span>) : (<span className="main__scroll-text">Click up!</span>
+    <span className="main__scroll-text"></span>) : (<span className="main__scroll-text">Click up!</span>
     )}
   </a>
 </div>

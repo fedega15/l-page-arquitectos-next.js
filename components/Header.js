@@ -41,9 +41,9 @@ const Header = () => {
       style={{
         background:
           visible || showMenu
-            ? "linear-gradient(180deg,rgba(170, 164, 164, 0.6) 0%,rgba(54, 54, 54, 0.6) 100%)"
+            ? "transparent"
             : "transparent" /* ACA CAMBIE var(--bg-main) POR EL PRIMER TRANSPARENT */,
-        boxShadow: visible ? "2px 20px 30px var(--shadow-color)" : "none",
+        boxShadow: visible ? "none" : "none",
       }}
     >
       <nav>
@@ -52,8 +52,9 @@ const Header = () => {
           src= "/mineral.png"
           alt="minerales"
           width={120}
-          height={50}
+          height={60}
           className="logo"
+          background="red"
           />
         </a>
 
@@ -73,14 +74,14 @@ const Header = () => {
             style={{
               background:
                 "linear-gradient(180deg, rgba(0, 0, 0, 5) 0%, rgba(54, 54, 54, 0.6) 500%)",
-              height: showMenu ? 950 : 0,
+              height: showMenu ? 415 : 0,
             }}
           >
             <i
               className="fa-solid fa-xmark"
               style={{
                 position: "relative",
-                left: "0px",
+                left: "10px",
                 top: "0px",
                 color: "#019b21",
               }}

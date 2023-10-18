@@ -9,7 +9,7 @@ const galeria = [
     name: "Arquitectura",
     img: "/g5.jpg",
     activites: 10,
-    places: 32,
+   /*  places: 32, */
     days: "1week",
     price: 1.2,
     link: "/Arquitectura",
@@ -21,7 +21,7 @@ const galeria = [
 
     img: "/g6.jpg",
     activites: 1450,
-    places: 132,
+    /* places: 132, */
     days: "1week",
     price: 1.2,
     link: "/Concursos",
@@ -29,10 +29,10 @@ const galeria = [
   {
     id: 3,
     proyect: "DISEÑO MOBILIARIO",
-    name: "Diseño Mobiliario",
+    name: "Mobiliario/Objetos",
     img: "/g1.jpg",
     activites: 23,
-    places: 54,
+   /*  places: 54, */
     days: "1week",
     price: 1.2,
     link: "/RecyclableForniture",
@@ -43,22 +43,22 @@ const galeria = [
     name: "Arquitectura Modular",
     img: "/g7.jpg",
     activites: 10,
-    places: 200,
+    /* places: 200, */
     days: "1week",
     price: 1.2,
-    link: "/MobileDesigne",
+    link: "/Mobiliario",
   },
   {
-    proyect: "MOBILE DESIGN",
-    name: "Mobile Design",
+    proyect: "MOBILE",
+    name: "Mobile ",
     
     img: "/g2.jpg",
     id: 5,
     activites: 45,
-    places: 46,
+    /* places: 46, */
     days: "1week",
     price: 1.2,
-    link: "/Mobiliario",
+    link: "/MobileDesigne",
   },
  
 ];
@@ -90,7 +90,7 @@ const Galery = () => {
                   <div className="group">
                     <div className="text">
                       <strong>{galeria.name}</strong>
-                      <span>{galeria.places} Poyectos</span>
+                      <span>{galeria.places}  </span>
                     </div>
                   </div>
                 </div>
