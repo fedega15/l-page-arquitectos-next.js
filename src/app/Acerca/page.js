@@ -12,23 +12,23 @@ export const galeria = [
     image: "/card1.jpg",
     estudio: "/serv3.jpg",
     name: "Santiago Semmino",
-    rol: "[Socio Fundador/ Arquitecto]",
+    rol: "[Arquitecto]",
     descripcion: "Departamento Arquitectura",
   },
   {
     id: 2,
     image: "/card1.jpg",
     estudio: "/photo2.jpg",
-    name: "Agostina Selzer",
-    rol: "[Diseño / Renders]",
+    name: "Fernando Fola",
+    rol: "[Maestro mayor de obras]",
     descripcion: "Departamento Arquitectura",
   },
   {
     id: 3,
     image: "/card1.jpg",
     estudio: "/bn1.jpg",
-    name: "Agostina Selzer",
-    rol: "[Diseño / Renders]",
+    name: "Jeremias Nolli",
+    rol: "[Maestro mayor de obras]",
     descripcion: "Departamento Arquitectura",
   },
   {
@@ -42,40 +42,40 @@ export const galeria = [
   {
     id: 5,
     image: "/card1.jpg",
-    name: "Federico Galassi",
-    rol: "[Socio Fundador/ Arquitecto]",
+    name: "LUCIA SANCHEZ",
+    rol: "[Arquitecta]",
     descripcion: "Departamento Arquitectura",
   },
   {
     image: "/card1.jpg",
     id: 6,
-    name: "Federico Galassi",
-    rol: "[Socio Fundador/ Arquitecto]",
-    descripcion: "Departamento Arquitectura",
+    name: "Agostina Selzer ",
+    rol: "[Diseñadora]",
+    descripcion: "Departamento Diseño",
   },
   {
     image: "/card1.jpg",
     id: 7,
-    name: "Federico Galassi",
-    rol: "[Socio Fundador/ Arquitecto]",
-    descripcion: "Departamento Arquitectura",
+    name: "Luisina Viglione ",
+    rol: "[Administracion]",
+    descripcion: "Departamento Adminsitrativo",
   },
   {
     image: "/card1.jpg",
     id: 8,
     name: "Federico Galassi",
-    rol: "[Socio Fundador/ Arquitecto]",
-    descripcion: "Departamento Arquitectura",
+    rol: "[Desarrollador Web]",
+    descripcion: "Departamento Tecnologia",
   },
 ];
 
 const Page = () => {
-   const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       setScrollPosition(window.scrollY);
-      console.log(setScrollPosition)
+      console.log(setScrollPosition);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -98,11 +98,10 @@ const Page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   const [isLoaded, setIsLoaded] = useState(false);
   const textAnimationControls = useAnimation();
 
- 
   useEffect(() => {
     // Cuando la página se carga completamente, establece isLoaded a true
     window.addEventListener("load", () => {
@@ -128,7 +127,6 @@ const Page = () => {
       });
     };
   }, []);
-
 
   useEffect(() => {
     // Cuando isLoaded es true o el scroll es menor al umbral, activa la animación del texto
@@ -150,7 +148,6 @@ const Page = () => {
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
-
 
   useEffect(() => {
     // Cuando isLoaded es true, activa la animación del texto
@@ -225,14 +222,18 @@ const Page = () => {
         <div className="studio-description">
           <h2>Estudio SSA</h2>
           <p>
-            arquitectura como herramienta para otorgar a sus clientes verdaderos
-            productos de confort, sosteniendo costos competitivos. No buscamos
-            insertarnos dentro de un contexto que consideramos en su mayoría
-            obsoleto, sino romper el degradado mercado inmobiliario local,
-            bregando por elevar su calidad. Nos interesa tener un impacto
-            positivo en la ciudad que construimos, entendiendo a la arquitectura
-            como una herramienta de transformación que afecta a la sociedad en
-            su conjunto
+            Somos un equipo interdisciplinario enfocado en el diseño y la
+            arquitectura, con dedicación a proyectos de todo tipo de escala,
+            diseño de mobiliario, objetos, sistemas modulares, y con activa
+            participación a concursos nacionales e internacionales. Nuestra
+            oficina está impulsada por jóvenes arquitectos, ingenieros,
+            interioristas, diseñadores gráficos, industriales que diseñan y
+            desarrollan conjuntamente proyectos desde los primeros bocetos hasta
+            la supervisión final en obra. En nuestro proceso de trabajo aparece
+            el diseño sustentable como eje principal de nuestros proyectos. El
+            estudio de los nuevos sistemas de construcción, la transformación y
+            evolución de las ciudades, la innovación tecnológica, y el diseño
+            eficiente es lo que nos motiva a seguir creciendo.
           </p>
         </div>
         <div className="studio-images">
@@ -272,28 +273,38 @@ const Page = () => {
         ))}
       </section>
       <div className="main__action">
-  <a className="main__scroll" href="#">
-    <div className="main__scroll-box">
-      {scrollPosition === 0 ? (
-        /* Renderiza el icono cuando el scroll es igual a cero */
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          {/* <path d="M0 0h24v24H0z" fill="none"></path>
+        <a className="main__scroll" href="#">
+          <div className="main__scroll-box">
+            {scrollPosition === 0 ? (
+              /* Renderiza el icono cuando el scroll es igual a cero */
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                {/* <path d="M0 0h24v24H0z" fill="none"></path>
           <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm0 14.414-5.707-5.707 1.414-1.414 4.293 4.293 4.293-4.293 1.414 1.414z" fill="rgb(0,0,0)"/></svg> */}
-        </svg>
-        
-      ) : (
-        /* Renderiza otro icono cuando el scroll no es igual a cero */
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path d="M0 0h24v24H0z" fill="none"></path>
-          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm4.293 12.707-4.293-4.293-4.293 4.293-1.414-1.414 5.707-5.707 5.707 5.707z" fill="rgb(0,0,0)"/></svg>
-        </svg>
-      )}
-    </div>
-    {scrollPosition === 0 ? (
-    <span className="main__scroll-text"></span>) : (<span className="main__scroll-text">Click up!</span>
-    )}
-  </a>
-</div>
+              </svg>
+            ) : (
+              /* Renderiza otro icono cuando el scroll no es igual a cero */
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <svg
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm4.293 12.707-4.293-4.293-4.293 4.293-1.414-1.414 5.707-5.707 5.707 5.707z"
+                    fill="rgb(0,0,0)"
+                  />
+                </svg>
+              </svg>
+            )}
+          </div>
+          {scrollPosition === 0 ? (
+            <span className="main__scroll-text"></span>
+          ) : (
+            <span className="main__scroll-text">Click up!</span>
+          )}
+        </a>
+      </div>
 
       <hr></hr>
       <section className="grid" id="prensa">

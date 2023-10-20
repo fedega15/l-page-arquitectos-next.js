@@ -6,7 +6,7 @@ import { motion, useAnimation } from "framer-motion";
 export const galeria = [
   {
     id: 1,
-    name: "Interiores / Diseño de edificios",
+    name: "Proyectos de Arquitectura",
     links: [
       { name: "Hotel Nhow Berlín", link: "/ASD4" },
       { name: "Fun Factory Múnich", link: "/ASD5" },
@@ -17,7 +17,7 @@ export const galeria = [
   },
   {
     id: 2,
-    name: "Diseño industrial",
+    name: "Diseño de Mobiliario",
     links: [
       { name: "Hotel Nhow Berlín", link: "/ASD4" },
       { name: "Fun Factory Múnich", link: "/ASD5" },
@@ -28,7 +28,18 @@ export const galeria = [
   },
   {
     id: 3,
-    name: "Gráfico / Marca",
+    name: "Diseño de Estructuras modulares",
+    links: [
+      { name: "Hotel Nhow Berlín", link: "/ASD4" },
+      { name: "Fun Factory Múnich", link: "/ASD5" },
+      { name: "kado", link: "/ASD6" },
+    ],
+    descripcion:
+      "Nos especializamos en patronaje, estampado, branding y dirección creativa. Nuestros clientes trabajan directamente con el equipo creativo en una variedad de proyectos, lo que permite no incumplir plazos ni realizar trabajos en el extranjero. Producimos diseños que ayudan a crear o revitalizar marcas que se destacan a través de una variedad de medios impresos y otros. Dependiendo de la naturaleza del proyecto, la gráfica se entrelaza en el diseño del producto y del interior. Tenemos la capacidad de diseñar un proyecto bajo un mismo techo, lo que permite un proceso más fluido y un diseño holístico..",
+  },
+  {
+    id: 4,
+    name: "Gestion y Planificacion de Obras",
     links: [
       { name: "Hotel Nhow Berlín", link: "/ASD4" },
       { name: "Fun Factory Múnich", link: "/ASD5" },

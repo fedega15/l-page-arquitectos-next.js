@@ -8,6 +8,7 @@ const categories = [
   { name: "Proyectos", link: "/#galery" },
   { name: "Servicios", link: "/Servicios" },
   { name: "Nosotros", link: "/Acerca" },
+  { name: "Prensa", link: "/Prensa" },
   { name: "Contacto", link: "/Contacto" },
 ];
 {
@@ -74,7 +75,7 @@ const Header = () => {
             style={{
               background:
                 "linear-gradient(180deg, rgba(0, 0, 0, 5) 0%, rgba(54, 54, 54, 0.6) 500%)",
-              height: showMenu ? 415 : 0,
+              height: showMenu ? 465 : 0,
             }}
           >
             <i
