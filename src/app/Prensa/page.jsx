@@ -144,16 +144,16 @@ const Page = () => {
       
   
        
-        <section className="grid" id="prensa">
+        <section className="grid" id="galery">
           <motion.div
-            className="heading"
-            initial={{ x: -100, opacity: 0 }}
-            animate={prensaTitleControls}
-            transition={{ duration: 0.5 }}
-          >
-            <h1>PRENSA</h1>
-            <div className="horizontal-line-2"></div>
-          </motion.div>
+        initial={{ x: -100, opacity: 0 }}
+        animate={textAnimationControls}
+        transition={{ duration: 0.5 }}
+        className="heading"
+      >
+        <h1>PRENSA</h1>
+        <div className="horizontal-line-2"></div>
+      </motion.div>
           <div className="press-section">
             <div className="press-article">
               <h2>Título del artículo de prensa 1</h2>

@@ -3,6 +3,7 @@ import "../../../styles/servicios.css";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+
 export const galeria = [
   {
     id: 1,

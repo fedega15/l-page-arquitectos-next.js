@@ -48,14 +48,13 @@ const Header = () => {
       }}
     >
       <nav>
-        <a href="/" className="logo">
+      <a href="/" className="logo">
           <Image
           src= "/mineral.png"
           alt="minerales"
-          width={120}
-          height={60}
+          width={160}
+          height={100}
           className="logo"
-          background="red"
           />
         </a>
 
@@ -63,6 +62,7 @@ const Header = () => {
           className="menu_btn"
           onClick={() => setShowMenu((value) => !value)}
         >
+          
           {showMenu ? (
             <i></i>
           ) : (

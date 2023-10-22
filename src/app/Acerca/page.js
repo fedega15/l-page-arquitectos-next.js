@@ -31,43 +31,133 @@ export const galeria = [
     rol: "[Maestro mayor de obras]",
     descripcion: "Departamento Arquitectura",
   },
+  
   {
     id: 4,
     image: "/card1.jpg",
-    estudio: "/serv2.jpg",
-    name: "Federico Galassi",
-    rol: "[Socio Fundador/ Arquitecto]",
-    descripcion: "Departamento Arquitectura",
-  },
-  {
-    id: 5,
-    image: "/card1.jpg",
-    name: "LUCIA SANCHEZ",
+    name: "Lucia Sanchez",
     rol: "[Arquitecta]",
     descripcion: "Departamento Arquitectura",
   },
   {
     image: "/card1.jpg",
-    id: 6,
+    id: 5,
     name: "Agostina Selzer ",
     rol: "[Diseñadora]",
     descripcion: "Departamento Diseño",
   },
   {
     image: "/card1.jpg",
-    id: 7,
+    id: 6,
     name: "Luisina Viglione ",
     rol: "[Administracion]",
     descripcion: "Departamento Adminsitrativo",
   },
   {
     image: "/card1.jpg",
-    id: 8,
+    id: 7,
     name: "Federico Galassi",
     rol: "[Desarrollador Web]",
     descripcion: "Departamento Tecnologia",
   },
 ];
+export const colab = [
+  {
+    id: 1,
+    name: "GUILLERMINA GARCIA CASSIS",
+  },
+  {
+    id: 3,
+    name: "CARLA PAONE ",
+  },
+  {
+    id: 4,
+    name: "GERMAN CARDONATO",
+  },
+  {
+    id: 5,
+    name: "EMILIANO ESMORES",
+  },
+  {
+    id: 6,
+    name: "MAURO CANULLO ",
+  },
+  {
+    id: 7,
+    name: "JULIETA VERON",
+  },
+  {
+    id: 8,
+    name: "FRANCO TOPA",
+  },
+  {
+    id: 9,
+    name: "LEANDRO HERRERA",
+  },
+  {
+    id: 10,
+    name: "MANUEL BARBIERI",
+  },
+  {
+    id: 11,
+    name: "BELEN PEPE",
+  },
+  {
+    id: 12,
+    name: "CECILIA MAZZA",
+  },
+  {
+    id: 13,
+    name: "IGNACIO GALOPPO",
+  },
+  {
+    id: 14,
+    name: "EUGENIA VALVASON",
+  },
+  {
+    id: 15,
+    name: "VARINIA MATEO",
+  },
+  {
+    id: 16,
+    name: "DULCE SCALDINI",
+  },
+]
+
+export const colaboradores = [
+  {
+    id: 1,
+    name: "Ing. OMAR NORRIS",
+  },
+  {
+    id: 3,
+    name: "Ing. RITA CAMPODÓNICO ",
+  },
+  {
+    id: 4,
+    name: "Ing. FERNANDO",
+  },
+  {
+    id: 5,
+    name: "Renders YAMILA BALEANI",
+  },
+  {
+    id: 6,
+    name: "Renders MAXI VELAZQUEZ ",
+  },
+  {
+    id: 7,
+    name: "Dis Industrial ALEJANDRO ALFANO",
+  },
+  {
+    id: 8,
+    name: "Dis Industrial MAURICIO MARINUCCI",
+  },
+  {
+    id: 9,
+    name: "Gestión Municipal JORGELINA SELLE",
+  },
+]
 
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -314,32 +404,39 @@ const Page = () => {
           animate={prensaTitleControls}
           transition={{ duration: 0.5 }}
         >
-          <h1>PRENSA</h1>
+          <h1>COLAB</h1>
           <div className="horizontal-line-2"></div>
         </motion.div>
-        <div className="press-section">
-          <div className="press-article">
-            <h2>Título del artículo de prensa 1</h2>
-            <p>Descripción o contenido del artículo de prensa 1.</p>
-            <a href="#prensa" className="press-link">
-              Leer más
-            </a>
+        <div className="grid1">
+       
+          <div className="cont1" >
+            <div className="item">
+              <h1>Colaboradores </h1>
+              <ul>
+                {colaboradores.map((enlace, i) => (
+                  <li key={i}>
+                    <p href={enlace.name} className="link-destacado">
+                      {enlace.name}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="item">
+              <h1>Han colaborado con nosotros desde 2014 </h1>
+              <ul>
+                {colab.map((enlace, i) => (
+                  <li key={i}>
+                    <p href={enlace.name} className="link-destacado">
+                      {enlace.name}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div className="press-article">
-            <h2>Título del artículo de prensa 2</h2>
-            <p>Descripción o contenido del artículo de prensa 2.</p>
-            <a href="#galery" className="press-link">
-              Leer máss
-            </a>
-          </div>
-          <div className="press-article">
-            <h2>Título del artículo de prensa 3</h2>
-            <p>Descripción o contenido del artículo de prensa 3.</p>
-            <a href="#equipo" className="press-link">
-              Leer más
-            </a>
-          </div>
-        </div>
+      
+      </div>
       </section>
     </section>
   );

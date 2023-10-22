@@ -17,19 +17,18 @@ header nav {
   max-width: var(max-width);
   display: flex;
   align-items: center;
-  padding: 15px 25px;
+  padding: 10px 25px;
 }
 header .logo {
-  width: 100px;
-  height: 39px;
-  margin-top:0px;
-  margin-bottom: -6px;
+  width: 140px;
+  height: 42px;
+  margin-top:5px;
+  margin-bottom: 19px;
   justify-content: flex-start;
   left: 0px;
   font-size: 1.2rem;
   color:black;
   font-weight: 700;
-  background: whitesmoke;
 }
 
 header ul {

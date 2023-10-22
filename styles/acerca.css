@@ -158,6 +158,38 @@
   font-size: 14px;
 }
 
+#galery .grid1 {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px; /* Espacio entre cada fila */
+}
+
+#galery .cont1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+  grid-gap: 0px; /* Espacio entre las columnas */
+}
+
+#galery .item {
+  padding: 20px;
+  margin-right: 200px;
+}
+
+#galery .item h1 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#galery .item p {
+  font-size: 14px;
+}
+
+#galery .link-destacado {
+  color: #019b21;
+  text-decoration: none;
+  font-weight: bold;
+}
+
 @media (max-width: 768px) {
   #galery {
     padding: 40px;
@@ -224,4 +256,27 @@
     text-align: left; /* Alinea el encabezado a la izquierda */
   }
 
+  #galery .grid1 {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+  }
+
+  #galery .cont1 {
+    margin-left: -5px;
+    grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    grid-gap: 0px; /* Reduce el espacio entre elementos */
+  }
+
+  #galery .item {
+    width: 100%;
+    padding: 10px; /* Reduce el espacio de relleno de los elementos */
+  }
+
+  #galery .item h1 {
+    font-size: 16px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+  }
+
+  #galery .item p {
+    font-size: 12px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
+  }
 }
