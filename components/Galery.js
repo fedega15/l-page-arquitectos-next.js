@@ -29,7 +29,7 @@ const galeria = [
   {
     id: 3,
     proyect: "DISEÑO MOBILIARIO",
-    name: "Mobiliario/Objetos",
+    name: "Mobiliario",
     img: "/g1.jpg",
     activites: 23,
    /*  places: 54, */
@@ -40,7 +40,7 @@ const galeria = [
   {
     id: 4,
     proyect: "ARQUITECTURA MODULAR",
-    name: "Arquitectura Modular",
+    name: "Modulos",
     img: "/g7.jpg",
     activites: 10,
     /* places: 200, */

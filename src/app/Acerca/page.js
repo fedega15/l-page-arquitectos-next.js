@@ -25,7 +25,7 @@ export const galeria = [
   },
   {
     id: 3,
-    image: "/card3.jpg",
+    image: "/card2.jpg",
     estudio: "/bn1.jpg",
     name: "Jeremias Nolli",
     rol: "[Maestro mayor de obras]",
@@ -36,7 +36,7 @@ export const galeria = [
     id: 4,
     image: "/card2.jpg",
     name: "Lucia Sanchez",
-    estudio: "/0s1.jpg",
+    estudio: "/01.jpg",
     rol: "[Arquitecta]",
     descripcion: "Departamento Arquitectura",
   },

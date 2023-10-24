@@ -75,7 +75,7 @@ const Header = () => {
             style={{
               background:
                 "linear-gradient(180deg, rgba(0, 0, 0, 5) 0%, rgba(54, 54, 54, 0.6) 500%)",
-              height: showMenu ? 465 : 0,
+              height: showMenu ? 475 : 0,
             }}
           >
             <i
@@ -84,7 +84,7 @@ const Header = () => {
                 position: "relative",
                 left: "10px",
                 top: "0px",
-                color: "#019b21",
+               
               }}
             ></i>
             <div className="box-li">
