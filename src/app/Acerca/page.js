@@ -36,7 +36,7 @@ export const galeria = [
     id: 4,
     image: "/card2.jpg",
     name: "Lucia Sanchez",
-    estudio: "/01.jpg",
+    estudio: "/0s1.jpg",
     rol: "[Arquitecta]",
     descripcion: "Departamento Arquitectura",
   },

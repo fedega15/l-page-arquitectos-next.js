@@ -154,29 +154,47 @@ const Page = () => {
         <h1>PRENSA</h1>
         <div className="horizontal-line-2"></div>
       </motion.div>
-          <div className="press-section">
+      <br />
             <div className="press-article">
-              <h2>Título del artículo de prensa 1</h2>
-              <p>Descripción o contenido del artículo de prensa 1.</p>
-              <a href="#prensa" className="press-link">
-                Leer más
-              </a>
-            </div>
-            <div className="press-article">
-              <h2>Título del artículo de prensa 2</h2>
-              <p>Descripción o contenido del artículo de prensa 2.</p>
+              <h2>JORNADA DE CONSTRUCCIÓN SUSTENTABLE - U.T.N.</h2>
+              <p>CHARLA</p>
+              <h5>Junio 2016</h5>
               <a href="#galery" className="press-link">
                 Leer máss
               </a>
             </div>
             <div className="press-article">
-              <h2>Título del artículo de prensa 3</h2>
-              <p>Descripción o contenido del artículo de prensa 3.</p>
-              <a href="#equipo" className="press-link">
+              <h2>REVISTA NOTICIAS</h2>
+              <p>NOTA</p>
+              <h5>Agosto 2019</h5>
+              <a href="https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml" className="press-link">
                 Leer más
               </a>
             </div>
-          </div>
+            <div className="press-article">
+              <h2>D.Y. PATIL UNIVERSITY (PUNE, INDIA)</h2>
+              <p>LECTURE</p>
+              <h5>MAYO 2020</h5>
+              <a href="https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view" className="press-link">
+                Leer más
+              </a>
+            </div>
+            <div className="press-article">
+              <h2>TERRENOS Y QUINTAS</h2>
+              <p>NOTA</p>
+              <h5>MARZO 2023</h5>
+              <a href="https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/" className="press-link">
+                Leer más
+              </a>
+            </div>
+            <div className="press-article">
+              <h2>MUNDO CONSTRUCCION</h2>
+              <p>ENTREVISTA</p>
+              <h5>JUNIO 2023</h5>
+              <a href="https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ" className="press-link">
+                Leer más
+              </a>
+            </div>
         </section>
       
     );
