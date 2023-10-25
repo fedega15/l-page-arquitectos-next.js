@@ -87,6 +87,42 @@ export const colab = [
     id: 7,
     name: "JULIETA VERON",
   },
+  {
+    id: 8,
+    name: "FRANCO TOPA",
+  },
+  {
+    id: 9,
+    name: "LEANDRO HERRERA",
+  },
+  {
+    id: 10,
+    name: "MANUEL BARBIERI",
+  },
+  {
+    id: 11,
+    name: "BELEN PEPE",
+  },
+  {
+    id: 12,
+    name: "CECILIA MAZZA",
+  },
+  {
+    id: 13,
+    name: "IGNACIO GALOPPO",
+  },
+  {
+    id: 14,
+    name: "EUGENIA VALVASON",
+  },
+  {
+    id: 15,
+    name: "VARINIA MATEO",
+  },
+  {
+    id: 16,
+    name: "DULCE SCALDINI",
+  },
   
 ];
 export const colab1 = [
@@ -370,7 +406,7 @@ const Page = () => {
                   </li>
                 ))}
               </ul>
-              <h5 className="h5">Han colaborado con nosotros desde 2014 </h5> 
+             {/*  <h5 className="h5">Han colaborado con nosotros desde 2014 </h5> 
               <ul>
                 {colab.map((enlace, i) => (
                   <li key={i}>
@@ -379,9 +415,9 @@ const Page = () => {
                     </p>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
-        {/*     <div className="item">
+           <div className="item">
             <h5>Han colaborado con nosotros desde 2014 </h5> 
               <ul>
                 {colab.map((enlace, i) => (
@@ -392,7 +428,7 @@ const Page = () => {
                   </li>
                 ))}
               </ul>
-            </div> */}
+            </div> 
             
           </div>
         </div>

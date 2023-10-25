@@ -3,146 +3,114 @@ import "../../../styles/acerca.css";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 const Page = () => {
-    const [scrollPosition, setScrollPosition] = useState(0);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        setScrollPosition(window.scrollY);
-        console.log(setScrollPosition);
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    const [scrollY, setScrollY] = useState(0);
-  
-    useEffect(() => {
-      const handleScroll = () => {
-        setScrollY(window.scrollY);
-      };
-  
-      window.addEventListener("scroll", handleScroll);
-  
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
-  
-    const [isLoaded, setIsLoaded] = useState(false);
-    const textAnimationControls = useAnimation();
-  
-    useEffect(() => {
-      // Cuando la página se carga completamente, establece isLoaded a true
-      window.addEventListener("load", () => {
-        setIsLoaded(true);
-      });
-  
-      return () => {
-        window.removeEventListener("load", () => {
-          setIsLoaded(true);
-        });
-      };
-    }, []);
-  
-    useEffect(() => {
-      // Cuando la página se carga completamente, establece isLoaded a true
-      window.addEventListener("load", () => {
-        setIsLoaded(true);
-      });
-  
-      return () => {
-        window.removeEventListener("load", () => {
-          setIsLoaded(true);
-        });
-      };
-    }, []);
-  
-    useEffect(() => {
-      // Cuando isLoaded es true o el scroll es menor al umbral, activa la animación del texto
-      if (isLoaded || scrollY < 200) {
-        textAnimationControls.start({ x: 0, opacity: 1 });
-      } else {
-        textAnimationControls.start({ x: -100, opacity: 0 });
-      }
-    }, [isLoaded, scrollY, textAnimationControls]);
-  
-    const nosotrosTitleControls = useAnimation();
-    const equipoTitleControls = useAnimation();
-    const prensaTitleControls = useAnimation();
-    const [windowWidth, setWindowWidth] = useState(
-      typeof window !== "undefined" ? window.innerWidth : 0
-    );
-  
-    // Configura la animación inicial cuando se monta el componente
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const textAnimationControls = useAnimation();
+  const nosotrosTitleControls = useAnimation();
+  const equipoTitleControls = useAnimation();
+  const prensaTitleControls = useAnimation();
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  // Efecto para manejar el scroll de la página
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+      setScrollPosition(window.scrollY); // Si necesitas seguir rastreando la posición de desplazamiento
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Efecto para manejar la carga completa de la página
+  useEffect(() => {
+    const handleLoad = () => {
+      setIsLoaded(true);
+    };
+
+    window.addEventListener("load", handleLoad);
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+    };
+  }, []);
+
+  // Efecto para manejar la animación del texto
+  useEffect(() => {
+    const scrollThreshold = 200; // Umbral de desplazamiento
+
+    if (isLoaded) {
+      // Cuando la página se carga completamente
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    } else if (scrollY < scrollThreshold) {
+      // Cuando el scroll es menor al umbral
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    } else {
+      textAnimationControls.start({ x: -100, opacity: 0 });
+    }
+  }, [isLoaded, scrollY, textAnimationControls]);
+
+  // Efecto para manejar el redimensionamiento de la ventana
+  useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
-  
-    useEffect(() => {
-      // Cuando isLoaded es true, activa la animación del texto
-      if (isLoaded) {
-        textAnimationControls.start({ x: 0, opacity: 1 });
-      }
-    }, [isLoaded, textAnimationControls]);
-    // Agrega un listener para el cambio de tamaño de la ventana
-    useEffect(() => {
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
-  
-    // Maneja el evento de scroll
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  // Efecto para manejar el evento de scroll específico para la sección "PRENSA"
+  useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const windowHeight = window.innerHeight;
       const documentHeight = document.body.scrollHeight;
-  
-      // Ajusta los umbrales en función del ancho de la ventana
+
       let equipoThreshold = 300;
       let prensaThreshold = 1050;
+
       if (windowWidth <= 768) {
-        // Si el ancho de la ventana es menor o igual a 768px (dispositivos móviles), ajusta los umbrales
         equipoThreshold = 990;
         prensaThreshold = 3700;
       }
-  
-      // Para la sección "NOSOTROS"
+
       if (scrollY <= 0 || scrollY >= documentHeight - windowHeight) {
         nosotrosTitleControls.start({ x: 0, opacity: 1 });
       } else if (scrollY >= 200) {
         nosotrosTitleControls.start({ x: -100, opacity: 0 });
       }
-  
-      // Para la sección "EQUIPO"
+
       if (scrollY >= equipoThreshold && scrollY < prensaThreshold) {
         equipoTitleControls.start({ x: 0, opacity: 1 });
       } else {
         equipoTitleControls.start({ x: -100, opacity: 0 });
       }
-  
-      // Para la sección "PRENSA"
+
       if (scrollY >= prensaThreshold) {
         prensaTitleControls.start({ x: 0, opacity: 1 });
       } else {
         prensaTitleControls.start({ x: -100, opacity: 0 });
       }
     };
-  
-    useEffect(() => {
-      window.addEventListener("scroll", handleScroll);
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, [nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
-  
-    return (
-      
-  
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [windowWidth, scrollY, nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
+
+  return (
        
         <section className="grid" id="galery">
           <motion.div
