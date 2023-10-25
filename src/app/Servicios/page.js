@@ -94,6 +94,7 @@ export const galeria = [
   
 ];
 const Page = () => {
+  
   const [scrollY, setScrollY] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false); // Estado para controlar si la página se ha cargado
   const textAnimationControls = useAnimation();
@@ -115,6 +116,8 @@ const Page = () => {
       window.removeEventListener("load", handleLoad);
     };
   }, []);
+  
+  const [showMoreItems, setShowMoreItems] = useState({}); // Estado para controlar qué elementos se muestran
 
   // Define el umbral de desplazamiento en el que deseas aplicar la animación
   const scrollThreshold = 200; // Ajusta esto según tus necesidades
@@ -130,6 +133,12 @@ const Page = () => {
     }
   }, [isLoaded, scrollY, textAnimationControls]);
 
+  const toggleShowMore = (itemId) => {
+    setShowMoreItems((prevItems) => ({
+      ...prevItems,
+      [itemId]: !prevItems[itemId],
+    }));
+  };
   return (
     <section id="galery">
       <motion.div
@@ -149,10 +158,17 @@ const Page = () => {
             </div>
             <div className="item">
               <p>{proyecto.descripcion}</p>
-              <p>{proyecto.descripcion1}</p>
-              <p>{proyecto.descripcion2}</p>
-              <p>{proyecto.descripcion3}</p>
-              <p>{proyecto.descripcion4}</p>
+              {showMoreItems[proyecto.id] ? (
+                <div>
+                  <p>{proyecto.descripcion1}</p>
+                  <p>{proyecto.descripcion2}</p>
+                  <p>{proyecto.descripcion3}</p>
+                  <p>{proyecto.descripcion4}</p>
+                </div>
+              ) : null}
+              <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>
+                {showMoreItems[proyecto.id] ? "Leer Menos" : "Leer Más"}
+              </button>
             </div>
             <div className="item">
               <h1>Links Destacados:</h1>

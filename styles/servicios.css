@@ -34,7 +34,9 @@
     opacity: 0;
   }
 }
-
+.btn {
+  color: #019b21;
+}
 #galery h1 {
   width: 105%;
 }
