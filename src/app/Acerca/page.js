@@ -87,19 +87,17 @@ export const colab = [
     id: 7,
     name: "JULIETA VERON",
   },
-  {
-    id: 8,
-    name: "FRANCO TOPA",
-  },
-  {
-    id: 9,
-    name: "LEANDRO HERRERA",
-  },
   
 ];
 export const colab1 = [
-
-
+{
+  id: 8,
+  name: "FRANCO TOPA",
+},
+{
+  id: 9,
+  name: "LEANDRO HERRERA",
+},
 {
   id: 10,
   name: "MANUEL BARBIERI",
@@ -348,22 +346,21 @@ const Page = () => {
 
       <hr></hr>
       <section className="grid" id="prensa">
-        {/* <motion.div
+        <motion.div
           className="heading"
           initial={{ x: -100, opacity: 0 }}
           animate={prensaTitleControls}
           transition={{ duration: 0.5 }}
         >
-          <h1>COLAB</h1>
+          <h1>ASESORES</h1>
           <div className="horizontal-line-2"></div>
-        </motion.div> */}
+        </motion.div> 
 
-        <h1 className="asd" > Colaboradores a lo largo de nuestra trayectoria</h1>
-        <div className="horizontal-line-2"></div>
+       {/*  <h1 > Colaboradores a lo largo de nuestra trayectoria</h1> */}
         <div className="grid1">
           <div className="cont1">
             <div className="item">
-            {/*   <h1>Colaboradores </h1> */}
+             <h1>Asesores </h1> 
               <ul>
                 {colaboradores.map((enlace, i) => (
                   <li key={i}>
@@ -373,9 +370,7 @@ const Page = () => {
                   </li>
                 ))}
               </ul>
-            </div>
-            <div className="item">
-              {/* <h1>Han colaborado con nosotros desde 2014 </h1> */}
+              <h5 className="h5">Han colaborado con nosotros desde 2014 </h5> 
               <ul>
                 {colab.map((enlace, i) => (
                   <li key={i}>
@@ -386,10 +381,10 @@ const Page = () => {
                 ))}
               </ul>
             </div>
-            <div className="item">
-              {/* <h1>Han colaborado con nosotros desde 2014 </h1> */}
+        {/*     <div className="item">
+            <h5>Han colaborado con nosotros desde 2014 </h5> 
               <ul>
-                {colab1.map((enlace, i) => (
+                {colab.map((enlace, i) => (
                   <li key={i}>
                     <p href={enlace.name} className="link-destacado">
                       {enlace.name}
@@ -397,7 +392,8 @@ const Page = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
+            
           </div>
         </div>
       </section>

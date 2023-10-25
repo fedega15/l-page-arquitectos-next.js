@@ -50,6 +50,10 @@
   color: rgb(255, 252, 252);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
+.h5 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .asd{
   font-size: 25px;
   font-weight: 900;
@@ -192,7 +196,7 @@
 }
 
 #galery .link-destacado {
-  color: #292525;
+  color: #fcf9f9;
   text-decoration: none;
   font-weight: bold;
 }
