@@ -49,9 +49,11 @@ const testimonials = [
 ];
 
 const Page = () => {
-  
   const [scrollY, setScrollY] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const textAnimationControls = useAnimation();
 
+  // Efecto para manejar el scroll de la página
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -63,41 +65,31 @@ const Page = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
-  const [isLoaded, setIsLoaded] = useState(false); // Estado para controlar si la página se ha cargado
-  const textAnimationControls = useAnimation();
 
+  // Efecto para manejar la carga completa de la página
   useEffect(() => {
-    // Cuando la página se carga completamente, establece isLoaded a true
-    window.addEventListener("load", () => {
+    const handleLoad = () => {
       setIsLoaded(true);
-    });
+    };
+
+    window.addEventListener("load", handleLoad);
 
     return () => {
-      window.removeEventListener("load", () => {
-        setIsLoaded(true);
-      });
+      window.removeEventListener("load", handleLoad);
     };
   }, []);
 
-  useEffect(() => {
-    // Cuando isLoaded es true, activa la animación del texto
-    if (isLoaded) {
-      textAnimationControls.start({ x: 0, opacity: 1 });
-    }
-  }, [isLoaded, textAnimationControls]);
-
+  // Efecto para manejar la animación del texto
   useEffect(() => {
     // Define el umbral de desplazamiento en el que deseas aplicar la animación
     const scrollThreshold = 200; // Ajusta esto según tus necesidades
 
-    // Aplica la animación al elemento de texto
-    if (scrollY >= scrollThreshold) {
+    if (isLoaded && scrollY >= scrollThreshold) {
       textAnimationControls.start({ x: -100, opacity: 0 });
     } else {
       textAnimationControls.start({ x: 0, opacity: 1 });
     }
-  }, [scrollY, textAnimationControls]);
+  }, [scrollY, isLoaded, textAnimationControls]);
 
   return (
     <section id="testimonios">

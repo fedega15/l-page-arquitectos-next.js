@@ -50,6 +50,12 @@
   color: rgb(255, 252, 252);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
+.asd{
+  font-size: 25px;
+  font-weight: 900;
+  color: rgb(255, 252, 252);
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
 
 #galery .horizontal-line-2 {
   margin-top: 20px;
@@ -166,13 +172,14 @@
 
 #galery .cont1 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 3 columnas iguales */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
   grid-gap: 0px; /* Espacio entre las columnas */
 }
 
 #galery .item {
-  padding: 20px;
-  margin-right: 200px;
+  padding: 5px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 #galery .item h1 {
@@ -185,7 +192,7 @@
 }
 
 #galery .link-destacado {
-  color: #019b21;
+  color: #292525;
   text-decoration: none;
   font-weight: bold;
 }
