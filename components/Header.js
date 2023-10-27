@@ -53,7 +53,7 @@ const Header = () => {
           src= "/mineral.png"
           alt="minerales"
           width={160}
-          height={100}
+          height={50}
           className="logo"
           />
         </a>

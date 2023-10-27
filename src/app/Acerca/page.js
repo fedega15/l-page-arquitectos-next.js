@@ -65,136 +65,98 @@ export const galeria = [
 export const colab = [
   {
     id: 1,
-    name: "GUILLERMINA GARCIA CASSIS",
+    name: "Guillermina Garcia Cassis",
   },
   {
     id: 3,
-    name: "CARLA PAONE ",
+    name: "Carla Paone ",
   },
   {
     id: 4,
-    name: "GERMAN CARDONATO",
+    name: "German Cardonato",
   },
   {
     id: 5,
-    name: "EMILIANO ESMORES",
+    name: "Emiliano Esmores",
   },
   {
     id: 6,
-    name: "MAURO CANULLO ",
+    name: "Mauro Canullo ",
   },
   {
     id: 7,
-    name: "JULIETA VERON",
+    name: "Julieta Veron",
   },
   {
     id: 8,
-    name: "FRANCO TOPA",
+    name: "Franco Topa",
   },
   {
     id: 9,
-    name: "LEANDRO HERRERA",
+    name: "Leandro Herrera",
   },
   {
     id: 10,
-    name: "MANUEL BARBIERI",
+    name: "Manuel Barbieri",
   },
   {
     id: 11,
-    name: "BELEN PEPE",
+    name: "Belen Pepe",
   },
   {
     id: 12,
-    name: "CECILIA MAZZA",
+    name: "Cecilia Mazza",
   },
   {
     id: 13,
-    name: "IGNACIO GALOPPO",
+    name: "Ignacio Galoppo",
   },
   {
     id: 14,
-    name: "EUGENIA VALVASON",
+    name: "Eugenia Valvason",
   },
   {
     id: 15,
-    name: "VARINIA MATEO",
+    name: "Varinia Mateo",
   },
   {
     id: 16,
-    name: "DULCE SCALDINI",
+    name: "Dulce Scaldini",
   },
   
-];
-export const colab1 = [
-{
-  id: 8,
-  name: "FRANCO TOPA",
-},
-{
-  id: 9,
-  name: "LEANDRO HERRERA",
-},
-{
-  id: 10,
-  name: "MANUEL BARBIERI",
-},
-{
-  id: 11,
-  name: "BELEN PEPE",
-},
-{
-  id: 12,
-  name: "CECILIA MAZZA",
-},
-{
-  id: 13,
-  name: "IGNACIO GALOPPO",
-},
-{
-  id: 14,
-  name: "EUGENIA VALVASON",
-},
-{
-  id: 15,
-  name: "VARINIA MATEO",
-},
-{
-  id: 16,
-  name: "DULCE SCALDINI",
-},
 ];
 export const colaboradores = [
   {
     id: 1,
-    name: "Ing. OMAR NORRIS",
+    name: "Ing. Omar Norris",
   },
   {
     id: 3,
-    name: "Ing. RITA CAMPODÓNICO ",
+    name: "Ing. Rita Campodónico ",
   },
   {
     id: 4,
-    name: "Ing. FERNANDO",
+    name: "Ing. Fernando",
   },
   {
     id: 5,
-    name: "Renders YAMILA BALEANI",
+    name: "Renders - Yamila Baleani",
   },
   {
     id: 6,
-    name: "Renders MAXI VELAZQUEZ ",
+    name: "Renders - Maxi Velazques ",
   },
   {
     id: 7,
-    name: "Dis Industrial ALEJANDRO ALFANO",
+    name: "Dis Industrial - Alejandro Alfano",
   },
   {
     id: 8,
-    name: "Dis Industrial MAURICIO MARINUCCI",
+    name: "Dis Industrial - Mauricio Marinucci",
   },
   {
     id: 9,
-    name: "Gestión Municipal JORGELINA SELLE",
+    name: "Gestión Municipal - Jorgelina Selle",
   },
 ];
 const Page = () => {
@@ -400,9 +362,9 @@ const Page = () => {
               <ul>
                 {colaboradores.map((enlace, i) => (
                   <li key={i}>
-                    <p href={enlace.name} className="link-destacado">
+                    <span href={enlace.name} >
                       {enlace.name}
-                    </p>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -418,13 +380,16 @@ const Page = () => {
               </ul> */}
             </div>
            <div className="item">
+            
             <h5>Han colaborado con nosotros desde 2014 </h5> 
+            <br>
+            </br>
               <ul>
                 {colab.map((enlace, i) => (
                   <li key={i}>
-                    <p href={enlace.name} className="link-destacado">
+                    <span href={enlace.name} >
                       {enlace.name}
-                    </p>
+                    </span>
                   </li>
                 ))}
               </ul>

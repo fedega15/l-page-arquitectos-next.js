@@ -123,6 +123,7 @@ const Page = () => {
         <div className="horizontal-line-2"></div>
       </motion.div>
       <br />
+      <div className="press-grid">
             <div className="press-article">
               <h2>JORNADA DE CONSTRUCCIÓN SUSTENTABLE - U.T.N.</h2>
               <p>CHARLA</p>
@@ -162,6 +163,7 @@ const Page = () => {
               <a href="https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ" className="press-link">
                 Leer más
               </a>
+            </div>
             </div>
         </section>
       
