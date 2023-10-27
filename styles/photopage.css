@@ -1,13 +1,15 @@
 #testimonios {
-  width: 90%;
-  max-width: var(--max-width);
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 0px;
   padding-left: 40px;
   padding-top: 20px;
+    background-color: #e0d9d9;   
+   height: 800px;
+    
 }
 
 #testimonios .img-container {
@@ -16,13 +18,17 @@
   width: 100px;
   position: relative;
   margin-bottom: 150px;
+  margin-top: -180px;
+  margin-right: 25px;
 }
 
 #testimonios .slider {
   position: relative;
-  top: 80px;
+  top: -20px;
   flex: 1;
   min-width: 400px;
+  margin-left: 50px;
+
   
 }
 #testimonios .slider h1, h2 {
@@ -35,6 +41,7 @@
     display: inline-block;
     padding-left: 30px; /* Ajusta el espaciado de la línea desde el texto */
     padding-bottom: 30px; /* Ajusta el espaciado de la línea desde el texto */
+    width: 270px;
   }
   
   #testimonios .slider .crossed-lines::before,
@@ -118,6 +125,7 @@
 }
 #testimonios .img-container img {
   transition: all linear 0.5s;
+  margin-bottom: 25px;
 }
 
 #testimonios .avatar {
