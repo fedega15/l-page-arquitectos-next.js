@@ -1,6 +1,7 @@
 'use client'
 import "../../../styles/acerca.css";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -139,6 +140,7 @@ const Page = () => {
               <a href="https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml" className="press-link">
                 Leer más
               </a>
+              <Image className="img2" src="/e1.png" alt="Descripción de la imagen" width={50}  height={50}/>
             </div>
             <div className="press-article">
               <h2>D.Y. PATIL UNIVERSITY (PUNE, INDIA)</h2>
