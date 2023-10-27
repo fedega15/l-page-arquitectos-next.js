@@ -181,7 +181,7 @@
 
   #testimonios .slider {
     position: relative;
-    top: 0px;
+    top: -40px;
     flex: 1;
     min-width: 400px;
     margin-left: 0px;
