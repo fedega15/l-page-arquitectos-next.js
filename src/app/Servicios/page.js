@@ -148,12 +148,13 @@ const Page = () => {
         transition={{ duration: 0.5 }}
       >
         <h1>SERVICIOS</h1>
+        <div className="horizontal-line-2"></div>
       </motion.div>
       <div className="grid">
         {galeria.map((proyecto, index) => (
           <div className="cont" key={proyecto.id}>
             <div className="item">
-              <div className="horizontal-line-2"></div>
+              <hr/>
               <h2>{proyecto.name}</h2>
             </div>
             <div className="item">

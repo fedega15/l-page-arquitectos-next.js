@@ -56,11 +56,12 @@
 
 
 .horizontal-line-2 {
-  margin-top: 20px;
+  margin-top: 10px;
   height: 2px;
   width: 20%;
   background-color: #019b21;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 
 #testimonios .img-container {
