@@ -50,6 +50,9 @@
   color: rgb(255, 252, 252);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
+.span {
+  font-size: 14px;
+}
 .h5 {
   margin-top: 20px;
   margin-bottom: 20px;

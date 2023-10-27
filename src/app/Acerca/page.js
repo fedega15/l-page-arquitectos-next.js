@@ -362,7 +362,7 @@ const Page = () => {
               <ul>
                 {colaboradores.map((enlace, i) => (
                   <li key={i}>
-                    <span href={enlace.name} >
+                    <span className="span" href={enlace.name} >
                       {enlace.name}
                     </span>
                   </li>
@@ -387,7 +387,7 @@ const Page = () => {
               <ul>
                 {colab.map((enlace, i) => (
                   <li key={i}>
-                    <span href={enlace.name} >
+                    <span className="span" href={enlace.name} >
                       {enlace.name}
                     </span>
                   </li>
