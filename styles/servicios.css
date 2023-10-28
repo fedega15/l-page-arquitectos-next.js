@@ -107,6 +107,7 @@
   #galery {
     padding: 40px;
     margin-left: 0;
+    padding-left:12%;
     padding-bottom: 100px;
     padding-top: 84px;
   }
@@ -133,6 +134,7 @@
     text-align: start;
     height: 100px;
     position: relative;
+    margin-top: 25px;
 
   }
 

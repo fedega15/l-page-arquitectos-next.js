@@ -65,11 +65,11 @@ header ul li a:hover {
 .menu-d {
     width: 90px;
     height:45px ;
-    background-color: white;
+    background-color: rgb(250, 243, 243);
     color: black;
     font-size: large;
-    margin-right: 40px;
-    margin-top: 20px;
+    margin-right: 17px;
+    margin-top: 12px;
     
 }
 header ul i:hover {
@@ -157,7 +157,7 @@ margin-bottom: -20px;
 }
 @media (min-width: 1150px) {
   header ul i:hover {
-    color: green; /* Cambia el color a verde al hacer hover */
+    color: rgb(128, 0, 75); /* Cambia el color a verde al hacer hover */
   }
   header nav {
     justify-content: space-between;
