@@ -64,12 +64,12 @@ header ul li a:hover {
 }
 .menu-d {
     width: 90px;
-    height:45px ;
+    height:39px ;
     background-color: rgb(250, 243, 243);
     color: black;
     font-size: large;
     margin-right: 17px;
-    margin-top: 12px;
+    margin-top: 8px;
     
 }
 header ul i:hover {

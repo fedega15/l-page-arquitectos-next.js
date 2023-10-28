@@ -123,7 +123,6 @@ export const colab = [
     id: 16,
     name: "Dulce Scaldini",
   },
-  
 ];
 export const colaboradores = [
   {
@@ -232,7 +231,14 @@ const Page = () => {
       window.removeEventListener("load", handleLoad);
       window.removeEventListener("resize", handleResize);
     };
-  }, [scrollY,windowWidth,textAnimationControls,nosotrosTitleControls,equipoTitleControls,prensaTitleControls,]);
+  }, [
+    scrollY,
+    windowWidth,
+    textAnimationControls,
+    nosotrosTitleControls,
+    equipoTitleControls,
+    prensaTitleControls,
+  ]);
 
   // Efecto para manejar animaciones de texto
   useEffect(() => {
@@ -352,49 +358,35 @@ const Page = () => {
         >
           <h1>ASESORES</h1>
           <div className="horizontal-line-2"></div>
-        </motion.div> 
+        </motion.div>
 
-       {/*  <h1 > Colaboradores a lo largo de nuestra trayectoria</h1> */}
+        {/*  <h1 > Colaboradores a lo largo de nuestra trayectoria</h1> */}
         <div className="grid1">
           <div className="cont1">
             <div className="item">
-             <h1>Asesores </h1> 
+              <h3>Asesores </h3>
               <ul>
                 {colaboradores.map((enlace, i) => (
                   <li key={i}>
-                    <span className="span" href={enlace.name} >
-                      {enlace.name}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-             {/*  <h5 className="h5">Han colaborado con nosotros desde 2014 </h5> 
-              <ul>
-                {colab.map((enlace, i) => (
-                  <li key={i}>
-                    <p href={enlace.name} className="link-destacado">
+                    <p className="span" href={enlace.name}>
                       {enlace.name}
                     </p>
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </div>
-           <div className="item">
-            
-            <h5>Han colaborado con nosotros desde 2014 </h5> 
-            <br>
-            </br>
+            <div className="item">
+              <span>Han colaborado con nosotros desde 2014 </span>
               <ul>
                 {colab.map((enlace, i) => (
                   <li key={i}>
-                    <span className="span" href={enlace.name} >
+                    <p className="span" href={enlace.name}>
                       {enlace.name}
-                    </span>
+                    </p>
                   </li>
                 ))}
               </ul>
-            </div> 
-            
+            </div>
           </div>
         </div>
       </section>

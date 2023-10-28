@@ -4,7 +4,7 @@
   max-width: var(--max-width);
   overflow: hidden;
   padding: 110px;
-  padding-bottom: 400px;
+  padding-bottom: 100px;
   background-color: #e0d9d9;
 }/* Estilos para el botón de scroll */
 
@@ -107,7 +107,6 @@
   #galery {
     padding: 40px;
     margin-left: 0;
-    padding-left:12%;
     padding-bottom: 100px;
     padding-top: 84px;
   }
@@ -134,7 +133,7 @@
     text-align: start;
     height: 100px;
     position: relative;
-    margin-top: 25px;
+    margin-top: 25x;
 
   }
 
