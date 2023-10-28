@@ -80,8 +80,8 @@
 
 #galery .cont {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  grid-gap: 20px; /* Espacio entre las columnas */
+  grid-template-columns: repeat(3, 400px); /* 3 columnas iguales */
+  grid-gap: 40px; /* Espacio entre las columnas */
 }
 
 #galery .item {

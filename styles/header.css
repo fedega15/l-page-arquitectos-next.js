@@ -192,6 +192,17 @@ header ul i:hover{
   header nav .menu_btn {
     display: block;
   }
+  
+.menu-d {
+  width: 90px;
+  height:45px ;
+  background-color: rgb(250, 243, 243);
+  color: black;
+  font-size: large;
+  margin-right:17px;
+  margin-top: 8px;
+  
+}
 
   header .box-li {
     margin-top: 15px;
