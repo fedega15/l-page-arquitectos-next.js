@@ -154,7 +154,6 @@ const Page = () => {
         {galeria.map((proyecto, index) => (
           <div className="cont" key={proyecto.id}>
             <div className="item">
-              <hr/>
               <h2>{proyecto.name}</h2>
             </div>
             <div className="item">
@@ -170,6 +169,7 @@ const Page = () => {
               <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>
                 {showMoreItems[proyecto.id] ? "Leer Menos" : "Leer Más"}
               </button>
+              
             </div>
             <div className="item">
               <h1>Links Destacados:</h1>
@@ -183,6 +183,8 @@ const Page = () => {
                 ))}
               </ul>
             </div>
+            <hr/>
+
           </div>
         ))}
       </div>

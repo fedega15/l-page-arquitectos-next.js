@@ -225,6 +225,16 @@
     height: 120px;
     margin-top: -64px;
   }
+  
+#galery .grid {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* Cambia a flex-wrap para envolver las tarjetas */
+  justify-content: flex-start;
+  gap: 5px; /* Espacio entre las tarjetas */
+  margin-left: 0px;
+}
   #galery .press-grid {
     top: -50px;
     position: relative;
