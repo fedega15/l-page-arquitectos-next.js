@@ -132,7 +132,7 @@ const Page = () => {
       <div className="press-grid">
         <div className="press-article">
           <Image
-            src="/e1.png"
+            src="/photo3.jpg"
             alt="Descripción de la imagen"
             width={200}
             height={200}
@@ -156,7 +156,7 @@ const Page = () => {
         </div>
         <div className="press-article">
           <Image
-            src="/e1.png"
+            src="/serv1.jpg"
             alt="Descripción de la imagen"
             width={200}
             height={200}
@@ -184,7 +184,7 @@ const Page = () => {
         </div>
         <div className="press-article">
           <Image
-            src="/e1.png"
+            src="/serv2.jpg"
             alt="Descripción de la imagen"
             width={200}
             height={200}
@@ -212,7 +212,7 @@ const Page = () => {
         </div>
         <div className="press-article">
           <Image
-            src="/e1.png"
+            src="/serv3.jpg"
             alt="Descripción de la imagen"
             width={200}
             height={200}
@@ -240,7 +240,7 @@ const Page = () => {
         </div>
         <div className="press-article">
           <Image
-            src="/e1.png"
+            src="/photo2.jpg"
             alt="Descripción de la imagen"
             width={200}
             height={200}
