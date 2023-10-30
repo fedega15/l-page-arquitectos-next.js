@@ -139,7 +139,7 @@ const Page = () => {
           />
           <div className="article-header">
             <div className="date">
-              <span className="date-number">23</span>
+              <span className="date-number">11</span>
               <span className="date-number2">Junio </span>
               <span className="date-number3">2016 </span>
             </div>
@@ -163,7 +163,7 @@ const Page = () => {
           />
           <div className="article-header">
             <div className="date">
-              <span className="date-number">23</span>
+              <span className="date-number">28</span>
               <span className="date-number2">Agosto </span>
               <span className="date-number3">2019 </span>
             </div>
@@ -191,7 +191,7 @@ const Page = () => {
           />
           <div className="article-header">
             <div className="date">
-              <span className="date-number">23</span>
+              <span className="date-number">26</span>
               <span className="date-number2">Mayo </span>
               <span className="date-number3">2020 </span>
             </div>
@@ -219,7 +219,7 @@ const Page = () => {
           />
           <div className="article-header">
             <div className="date">
-              <span className="date-number">23</span>
+              <span className="date-number">16</span>
               <span className="date-number2">Marzo </span>
               <span className="date-number3">2023 </span>
             </div>
@@ -247,7 +247,7 @@ const Page = () => {
           />
           <div className="article-header">
             <div className="date">
-              <span className="date-number">23</span>
+              <span className="date-number">30</span>
               <span className="date-number2">Junio </span>
               <span className="date-number3">2023 </span>
             </div>
