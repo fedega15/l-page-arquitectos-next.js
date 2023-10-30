@@ -176,9 +176,15 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
-}.article-header {
+}
+.article-header {
   display: flex;
   align-items: center; /* Centra verticalmente los elementos */
+}
+
+.article-content {
+  flex: 1; /* El contenido se expandirá para ocupar el espacio restante */
+  margin-right: 20px; /* Espacio entre el contenido y el enlace "Leer más" */
 }
 
 .date {

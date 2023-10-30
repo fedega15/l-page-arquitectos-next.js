@@ -3,6 +3,55 @@ import "../../../styles/acerca.css";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+
+
+export const galeria = [
+  { 
+    img:"/serv1.jpg",
+    number:11,
+    mes: "Junio",
+    año: 2016,
+    title: " Construcción Sustentable U.T.N.",
+    tipo:"CHARLA",
+    enlace: "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml"
+  },
+  { 
+    img:"/photo3.jpg",
+    number:28,
+    mes: "Agosto",
+    año: 2019,
+    title: " Revista Noticias",
+    tipo:"NOTA",
+    enlace: "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml"
+  },
+  { 
+    img:"/serv2.jpg",
+    number:26,
+    mes: "Mayo",
+    año: 2020,
+    title: " D.Y Patil University (Pune,INDIA)",
+    tipo:"LECTURE",
+    enlace: "https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view"
+  },
+  { 
+    img:"/serv3.jpg",
+    number:16,
+    mes: "Marzo",
+    año: 2023,
+    title: "Terrenos y Quintas ",
+    tipo:"NOTA",
+    enlace: "https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/"
+  },
+  { 
+    img:"/photo2.jpg",
+    number:30,
+    mes: "Junio",
+    año: 2023,
+    title: "Mundo Construcción",
+    tipo:"ENTREVISTA",
+    enlace: "https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ"
+  },
+]
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollY, setScrollY] = useState(0);
@@ -130,142 +179,36 @@ const Page = () => {
       </motion.div>
       <br />
       <div className="press-grid">
-        <div className="press-article">
-          <Image
-            src="/photo3.jpg"
-            alt="Descripción de la imagen"
-            width={200}
-            height={200}
-          />
-          <div className="article-header">
-            <div className="date">
-              <span className="date-number">11</span>
-              <span className="date-number2">Junio </span>
-              <span className="date-number3">2016 </span>
-            </div>
-            <div>
-              <span>Construccion Sustentable U.T.N. </span>
-              <p>
-                CHARLA -{" "}
-                <a href="#galery"  target="_blank" className="press-link">
-                  Leer más
-                </a>
-              </p>
-            </div>
-          </div>
+      {galeria.map((galeria, i) => (
+      <div key={i} className="press-article">
+      <Image
+        src={galeria.img}
+        alt={galeria.img}
+        width={200}
+        height={200}
+      />
+      <div className="article-header">
+        <div className="date">
+          <span className="date-number">{galeria.number}</span>
+          <span className="date-number2">{galeria.mes} </span>
+          <span className="date-number3">{galeria.año} </span>
         </div>
-        <div className="press-article">
-          <Image
-            src="/serv1.jpg"
-            alt="Descripción de la imagen"
-            width={200}
-            height={200}
-          />
-          <div className="article-header">
-            <div className="date">
-              <span className="date-number">28</span>
-              <span className="date-number2">Agosto </span>
-              <span className="date-number3">2019 </span>
-            </div>
-            <div>
-              <span>Revista Noticias</span>
-              <p>
-                NOTA -{" "}
-                <a
-                target="_blank"
-                  href="https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml"
-                  className="press-link"
-                >
-                  Leer más
-                </a>
-              </p>
-            </div>
-          </div>
+        <div className="article-content">
+          <h2>{galeria.title}</h2>
+          <p>{galeria.tipo}</p>
+
+          <a
+            target="_blank"
+            href={galeria.enlace}
+            className="press-link"
+          >
+            Leer más
+          </a>
         </div>
-        <div className="press-article">
-          <Image
-            src="/serv2.jpg"
-            alt="Descripción de la imagen"
-            width={200}
-            height={200}
-          />
-          <div className="article-header">
-            <div className="date">
-              <span className="date-number">26</span>
-              <span className="date-number2">Mayo </span>
-              <span className="date-number3">2020 </span>
-            </div>
-            <div>
-              <span>D.Y. Patil University - (PUNE, INDIA)</span>
-              <p>
-                LECTURE -{" "}
-                <a
-                 target="_blank"
-                  href="https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view"
-                  className="press-link"
-                >
-                  Leer más
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="press-article">
-          <Image
-            src="/serv3.jpg"
-            alt="Descripción de la imagen"
-            width={200}
-            height={200}
-          />
-          <div className="article-header">
-            <div className="date">
-              <span className="date-number">16</span>
-              <span className="date-number2">Marzo </span>
-              <span className="date-number3">2023 </span>
-            </div>
-            <div>
-              <span>Terrenos y Quintas</span>
-              <p>
-                NOTA -{" "}
-                <a
-                 target="_blank"
-                  href="https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/"
-                  className="press-link"
-                >
-                  Leer más
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="press-article">
-          <Image
-            src="/photo2.jpg"
-            alt="Descripción de la imagen"
-            width={200}
-            height={200}
-          />
-          <div className="article-header">
-            <div className="date">
-              <span className="date-number">30</span>
-              <span className="date-number2">Junio </span>
-              <span className="date-number3">2023 </span>
-            </div>
-            <div>
-              <span>Mundo Construccion</span>
-              <p>
-                ENTREVISTA-{" "}
-                <a
-                 target="_blank"
-                  href="https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ"
-                  className="press-link"
-                >
-                  Leer más
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
+      </div>
+    </div>
+          ))}
+        
       </div>
     </section>
   );
