@@ -142,30 +142,33 @@
 
 
 .press-article {
-  margin-left: 20px;
   flex-basis: calc(33.33% - 20px); /* Ancho de cada artículo de prensa (1/3) */
-  padding: 20px;
-  background-color: #f5f5f5;
+  padding: 0px;
   border-radius: 10px;
   margin-bottom: 20px; /* Espacio inferior entre artículos de prensa */
   text-align: left;
   width: 95%;
+  margin-bottom: 50px;
   
 }
 #galery .press-grid {
   display: grid;
   grid-template-columns: repeat(3,2fr); /* 2 columnas iguales */
-  grid-gap: 20px; /* Espacio entre cada artículo */
+  grid-gap: 2px; /* Espacio entre cada artículo */
   margin-top: 40px; /* Espacio superior para la sección de prensa */
 }
-.press-article h2 {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
+
+
 
 .press-article p {
   font-size: 14px;
   margin-bottom: 10px;
+}
+
+.press-article img {
+  max-width: 350px; 
+  height: 200px;/* Ajusta el ancho máximo de la imagen según tus preferencias */
+  margin-right: 0px; /* Agrega un margen derecho entre la imagen y el contenido */
 }
 
 .press-link {
@@ -173,6 +176,42 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 14px;
+}.article-header {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.date {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column; /* Coloca los elementos en columna */
+  align-items: start; /* Centra los elementos horizontalmente */
+}
+
+.date-number {
+  font-size: 54px; /* Tamaño del número de fecha */
+  margin-bottom: -20px;
+}
+
+.date-number2 {
+  margin-top: 5px;
+  margin-left: 0px;
+  font-size: 24px; /* Tamaño del mes */
+}
+.date-number3 {
+
+  margin-left: 0px;
+  font-size: 14px; /* Tamaño del mes */
+}
+
+.press-article h2 {
+  font-size: 18px; /* Tamaño del título */
+  margin-bottom: 5px; /* Espacio entre el título y la descripción */
+}
+
+.press-article p {
+  font-size: 14px; /* Tamaño de la descripción */
+  margin-bottom: 10px; /* Espacio entre la descripción y el enlace */
 }
 
 #galery .grid1 {
@@ -238,13 +277,13 @@
   #galery .press-grid {
     top: -50px;
     position: relative;
-    margin-left: -20px;
+    margin-left: 0px;
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
   }
   .press-article {
   
-    padding: 10px;
-    background-color: #f5f5f5;
+   
+    /* background-color: #f5f5f5; */
     border-radius: 10px;
     margin-bottom: 20px; /* Espacio inferior entre artículos de prensa */
     text-align: left;

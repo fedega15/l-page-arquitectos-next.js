@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import "../../../styles/acerca.css";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
@@ -109,12 +109,17 @@ const Page = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [windowWidth, scrollY, nosotrosTitleControls, equipoTitleControls, prensaTitleControls]);
+  }, [
+    windowWidth,
+    scrollY,
+    nosotrosTitleControls,
+    equipoTitleControls,
+    prensaTitleControls,
+  ]);
 
   return (
-       
-        <section className="grid" id="galery">
-          <motion.div
+    <section className="grid" id="galery">
+      <motion.div
         initial={{ x: -100, opacity: 0 }}
         animate={textAnimationControls}
         transition={{ duration: 0.5 }}
@@ -125,51 +130,145 @@ const Page = () => {
       </motion.div>
       <br />
       <div className="press-grid">
-            <div className="press-article">
-              <h2>JORNADA DE CONSTRUCCIÓN SUSTENTABLE - U.T.N.</h2>
-              <p>CHARLA</p>
-              <h5>Junio 2016</h5>
-              <a href="#galery" className="press-link">
-                Leer máss
-              </a>
+        <div className="press-article">
+          <Image
+            src="/e1.png"
+            alt="Descripción de la imagen"
+            width={200}
+            height={200}
+          />
+          <div className="article-header">
+            <div className="date">
+              <span className="date-number">23</span>
+              <span className="date-number2">Junio </span>
+              <span className="date-number3">2016 </span>
             </div>
-            <div className="press-article">
-              <h2>REVISTA NOTICIAS</h2>
-              <p>NOTA</p>
-              <h5>Agosto 2019</h5>
-              <a href="https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml" className="press-link">
-                Leer más
-              </a>
-              <Image className="img2" src="/e1.png" alt="Descripción de la imagen" width={50}  height={50}/>
+            <div>
+              <span>Construccion Sustentable U.T.N. </span>
+              <p>
+                CHARLA -{" "}
+                <a href="#galery"  target="_blank" className="press-link">
+                  Leer más
+                </a>
+              </p>
             </div>
-            <div className="press-article">
-              <h2>D.Y. PATIL UNIVERSITY (PUNE, INDIA)</h2>
-              <p>LECTURE</p>
-              <h5>MAYO 2020</h5>
-              <a href="https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view" className="press-link">
-                Leer más
-              </a>
+          </div>
+        </div>
+        <div className="press-article">
+          <Image
+            src="/e1.png"
+            alt="Descripción de la imagen"
+            width={200}
+            height={200}
+          />
+          <div className="article-header">
+            <div className="date">
+              <span className="date-number">23</span>
+              <span className="date-number2">Agosto </span>
+              <span className="date-number3">2019 </span>
             </div>
-            <div className="press-article">
-              <h2>TERRENOS Y QUINTAS</h2>
-              <p>NOTA</p>
-              <h5>MARZO 2023</h5>
-              <a href="https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/" className="press-link">
-                Leer más
-              </a>
+            <div>
+              <span>Revista Noticias</span>
+              <p>
+                NOTA -{" "}
+                <a
+                target="_blank"
+                  href="https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml"
+                  className="press-link"
+                >
+                  Leer más
+                </a>
+              </p>
             </div>
-            <div className="press-article">
-              <h2>MUNDO CONSTRUCCION</h2>
-              <p>ENTREVISTA</p>
-              <h5>JUNIO 2023</h5>
-              <a href="https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ" className="press-link">
-                Leer más
-              </a>
+          </div>
+        </div>
+        <div className="press-article">
+          <Image
+            src="/e1.png"
+            alt="Descripción de la imagen"
+            width={200}
+            height={200}
+          />
+          <div className="article-header">
+            <div className="date">
+              <span className="date-number">23</span>
+              <span className="date-number2">Mayo </span>
+              <span className="date-number3">2020 </span>
             </div>
+            <div>
+              <span>D.Y. Patil University - (PUNE, INDIA)</span>
+              <p>
+                LECTURE -{" "}
+                <a
+                 target="_blank"
+                  href="https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view"
+                  className="press-link"
+                >
+                  Leer más
+                </a>
+              </p>
             </div>
-        </section>
-      
-    );
-  };
-  
-  export default Page;
+          </div>
+        </div>
+        <div className="press-article">
+          <Image
+            src="/e1.png"
+            alt="Descripción de la imagen"
+            width={200}
+            height={200}
+          />
+          <div className="article-header">
+            <div className="date">
+              <span className="date-number">23</span>
+              <span className="date-number2">Marzo </span>
+              <span className="date-number3">2023 </span>
+            </div>
+            <div>
+              <span>Terrenos y Quintas</span>
+              <p>
+                NOTA -{" "}
+                <a
+                 target="_blank"
+                  href="https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/"
+                  className="press-link"
+                >
+                  Leer más
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="press-article">
+          <Image
+            src="/e1.png"
+            alt="Descripción de la imagen"
+            width={200}
+            height={200}
+          />
+          <div className="article-header">
+            <div className="date">
+              <span className="date-number">23</span>
+              <span className="date-number2">Junio </span>
+              <span className="date-number3">2023 </span>
+            </div>
+            <div>
+              <span>Mundo Construccion</span>
+              <p>
+                ENTREVISTA-{" "}
+                <a
+                 target="_blank"
+                  href="https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ"
+                  className="press-link"
+                >
+                  Leer más
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Page;
