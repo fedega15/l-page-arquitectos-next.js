@@ -28,7 +28,7 @@ export const galeria = [
     number:26,
     mes: "Mayo",
     año: 2020,
-    title: " D.Y Patil University (Pune,INDIA)",
+    title: "D.Y Patil University (Pune-India)",
     tipo:"LECTURE",
     enlace: "https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view"
   },
