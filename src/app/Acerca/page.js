@@ -1,21 +1,27 @@
 "use client";
-import React from "react";
-import "../../../styles/acerca.css";
-import Image from "next/image";
-import Card from "../../../components/Card";
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
-import {galeria, colab, colaboradores} from "../../../components/data"
 
+import { useEffect, useState,React } from "react";
+//Animation
+import {useAnimation } from "framer-motion";
+//Styles
+import "../../../styles/acerca.css";
+// Data
+import { galeria, colab, colaboradores } from "../../../components/data";
+//componentes
+import Heading from "../../../components/nosotros/Heading";
+import {TeamMembers , StudioImages, StudioDescription , Advisors ,} from "../../../components/nosotros/NosotrosComponent";
 
 const Page = () => {
+  //states
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
+  //animation
   const textAnimationControls = useAnimation();
   const nosotrosTitleControls = useAnimation();
   const equipoTitleControls = useAnimation();
   const prensaTitleControls = useAnimation();
+  //animation state
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
@@ -81,14 +87,8 @@ const Page = () => {
       window.removeEventListener("load", handleLoad);
       window.removeEventListener("resize", handleResize);
     };
-  }, [
-    scrollY,
-    windowWidth,
-    textAnimationControls,
-    nosotrosTitleControls,
-    equipoTitleControls,
-    prensaTitleControls,
-  ]);
+  }, [scrollY, windowWidth,textAnimationControls,nosotrosTitleControls,equipoTitleControls,prensaTitleControls,
+      ]);
 
   // Efecto para manejar animaciones de texto
   useEffect(() => {
@@ -101,110 +101,20 @@ const Page = () => {
 
   return (
     <section id="galery">
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        animate={textAnimationControls}
-        transition={{ duration: 0.5 }}
-        className="heading"
-      >
-        <h1>NOSOTROS</h1>
-        <div className="horizontal-line-2"></div>
-      </motion.div>
+      <Heading title="NOSOTROS" animationControls={textAnimationControls} />
       <div className="studio-info">
-        <div className="studio-description">
-          <h2>Estudio SSA</h2>
-          <p>
-            Somos un equipo interdisciplinario enfocado en el diseño y la
-            arquitectura, con dedicación a proyectos de todo tipo de escala,
-            diseño de mobiliario, objetos, sistemas modulares, y con activa
-            participación a concursos nacionales e internacionales. Nuestra
-            oficina está impulsada por jóvenes arquitectos, ingenieros,
-            interioristas, diseñadores gráficos, industriales que diseñan y
-            desarrollan conjuntamente proyectos desde los primeros bocetos hasta
-            la supervisión final en obra. En nuestro proceso de trabajo aparece
-            el diseño sustentable como eje principal de nuestros proyectos. El
-            estudio de los nuevos sistemas de construcción, la transformación y
-            evolución de las ciudades, la innovación tecnológica, y el diseño
-            eficiente es lo que nos motiva a seguir creciendo.
-          </p>
-        </div>
-        <div className="studio-images">
-          {galeria.slice(0, 4).map((proyecto) => (
-            <div className="studio-image" key={proyecto.id}>
-              <Image
-                src={proyecto.estudio}
-                alt={proyecto.name}
-                className="card-image"
-                width={600} // Tamaño más grande
-                height={400} // Tamaño más grande
-              />
-            </div>
-          ))}
-        </div>
+        <StudioDescription />
+        <StudioImages galeria={galeria} />
       </div>
-      <hr></hr>
-      <section className="grid" id="equipo">
-        <motion.div
-          className="heading"
-          initial={{ x: -100, opacity: 0 }}
-          animate={equipoTitleControls}
-          transition={{ duration: 0.5 }}
-        >
-          <h1>EQUIPO</h1>
-          <div className="horizontal-line-2"></div>
-        </motion.div>
-        {galeria.map((proyecto) => (
-          <div className="cont" key={proyecto.id}>
-            <Card
-              image={proyecto.image}
-              name={proyecto.name}
-              rol={proyecto.rol}
-              descripcion={proyecto.descripcion}
-            />
-          </div>
-        ))}
-      </section>
-
-      <hr></hr>
-      <section className="grid" id="prensa">
-        <motion.div
-          className="heading"
-          initial={{ x: -100, opacity: 0 }}
-          animate={prensaTitleControls}
-          transition={{ duration: 0.5 }}
-        >
-          <h1>ASESORES</h1>
-          <div className="horizontal-line-2"></div>
-        </motion.div>
-        <div className="grid1">
-          <div className="cont1">
-            <div className="item">
-              <h3>Asesores </h3>
-              <ul>
-                {colaboradores.map((enlace, i) => (
-                  <li key={i}>
-                    <p className="span" href={enlace.name}>
-                      {enlace.name}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="item">
-              <span>Han colaborado con nosotros desde 2014 </span>
-              <ul>
-                {colab.map((enlace, i) => (
-                  <li key={i}>
-                    <p className="span" href={enlace.name}>
-                      {enlace.name}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TeamMembers
+        galeria={galeria}
+        equipoTitleControls={equipoTitleControls}
+      />
+      <Advisors
+        colaboradores={colaboradores}
+        colab={colab}
+        prensaTitleControls={prensaTitleControls}
+      />
     </section>
   );
 };
