@@ -186,6 +186,7 @@
 .article-content {
   flex: 1; /* El contenido se expandirá para ocupar el espacio restante */
   margin-right: 20px; /* Espacio entre el contenido y el enlace "Leer más" */
+  margin-top: 10px;
 }
 
 .date {
@@ -286,15 +287,18 @@
     position: relative;
     margin-left: 0px;
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+
+  }
+  .article-content {
+    width: 100%;
   }
   .press-article {
-  
-   
     /* background-color: #f5f5f5; */
-    border-radius: 10px;
     margin-bottom: 20px; /* Espacio inferior entre artículos de prensa */
     text-align: left;
     width: 95%;
+    
+    
   }
   #galery .main__action {
     position: fixed;
