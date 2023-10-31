@@ -4,49 +4,7 @@ import React, { useEffect, useState } from "react";
 import "../../../styles/contacto.css";
 import Link from "next/link";
 import { motion, useAnimation } from "framer-motion";
-
-const testimonials = [
-  {
-    id: 1,
-    text: "santiagosemino@ssaestudio.com ",
-    avatar: "/w2.png",
-    link: "//mailto:federico.galassi9@gmail.com",
-    href: "//mailto:federico.galassi9@gmail.com",
-    icon: "fa fa-envelope",
-  },
-  {
-    id: 2,
-    text: " 54-3416622170 ",
-    avatar: "/w2.png",
-    link: "//wa.link/a6w9de",
-    href: "//wa.link/a6w9de",
-    icon: "fa-brands fa-whatsapp",
-  },
-  {
-    id: 3,
-    text: "Linkedin",
-    avatar: "/w2.png",
-    link: "//www.linkedin.com/in/santiago-semino-arquitectos-60406218b/",
-    href: "//www.linkedin.com/in/santiago-semino-arquitectos-60406218b/",
-    icon: "fa-brands fa-linkedin",
-  },
-  {
-    id: 4,
-    text: "Instagram",
-    avatar: "/w2.png",
-    link: "//www.instagram.com/ssa_estudio/",
-    href: "//www.instagram.com/ssa_estudio/",
-    icon: "fa-brands fa-instagram",
-  },
-  {
-    id: 5,
-    text: "Facebook",
-    avatar: "/w2.png",
-    link: "//www.facebook.com/ssaestudio?locale=es_LA",
-    href: "//www.facebook.com/ssaestudio?locale=es_LA",
-    icon: "fa-brands fa-facebook-messenger",
-  },
-];
+import { testimonials } from "../../../components/data";
 
 const Page = () => {
   const [scrollY, setScrollY] = useState(0);

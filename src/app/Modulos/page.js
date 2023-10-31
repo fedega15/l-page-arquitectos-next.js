@@ -1,16 +1,23 @@
 import React from "react";
 import "../../../styles/exhibicion.css"
 import Image from "next/image";
-import { concursos } from "../../../components/data";
+import { modulos } from "../../../components/data";
 
-export const galeria = concursos
+export const galeria = modulos
 
 const page = () => {
   return (
     <section id="galery">
+      {/*     <div className="heading">
+        <h2>Exibicon de arte</h2>
+        <p>
+          En esta galeria encontraras nuestras demostraciones de arte
+        </p>
+      </div> */}
+
       <div className="grid">
-        {concursos.map((galeria, index) => (
-          <a key={galeria.id} href={`/Concursos-photo/${index}`} className="active">
+        {modulos.map((galeria, index) => (
+          <a key={galeria.id} href={`/Modulos-photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
               <Image
                 src={galeria.img}

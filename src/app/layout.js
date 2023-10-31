@@ -1,9 +1,7 @@
-import Footer1 from "../../components/Footer1";
-import Footer from "../../components/Footer";
+
 import Header from "../../components/Header";
 import "../../styles/globals.css"
 import { Outfit } from "next/font/google"
-import Slider from "../../components/Slider";
 
 const inter = Outfit({
   subsets: ["latin-ext"],
@@ -33,9 +31,6 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Header/>
         {children}
-      {/*  <Footer1/>  */}
-        {/* <Footer/> */}
-       {/*  <Slider/> */}
       </body>
     </html>
   );

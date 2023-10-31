@@ -3,59 +3,9 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Prensa from "../../../components/Prensa";
 import "../../../styles/acerca.css";
+import { prensa } from "../../../components/data";
 
-export const galeria = [
-  {
-    img: "/serv1.jpg",
-    number: 11,
-    mes: "Junio",
-    año: 2016,
-    title: " Construcción Sustentable U.T.N.",
-    tipo: "CHARLA",
-    enlace:
-      "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
-  },
-  {
-    img: "/photo3.jpg",
-    number: 28,
-    mes: "Agosto",
-    año: 2019,
-    title: " Revista Noticias",
-    tipo: "NOTA",
-    enlace:
-      "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
-  },
-  {
-    img: "/serv2.jpg",
-    number: 26,
-    mes: "Mayo",
-    año: 2020,
-    title: "D.Y Patil University (Pune-India)",
-    tipo: "LECTURE",
-    enlace:
-      "https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view",
-  },
-  {
-    img: "/serv3.jpg",
-    number: 16,
-    mes: "Marzo",
-    año: 2023,
-    title: "Terrenos y Quintas ",
-    tipo: "NOTA",
-    enlace:
-      "https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/",
-  },
-  {
-    img: "/photo2.jpg",
-    number: 30,
-    mes: "Junio",
-    año: 2023,
-    title: "Mundo Construcción",
-    tipo: "ENTREVISTA",
-    enlace:
-      "https://open.spotify.com/episode/3JjW62ePXmv7W1ATY3r4nk?si=Ev-5LthNRx-3NDiOGf3TaQ",
-  },
-];
+
 const Page = () => {
   const [scrollY, setScrollY] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -112,7 +62,7 @@ const Page = () => {
       </motion.div>
       <br />
       <div className="press-grid">
-        {galeria.map((galeria, i) => (
+        {prensa.map((galeria, i) => (
           <div key={i} className="press-article">
             <Prensa
               img={galeria.img}

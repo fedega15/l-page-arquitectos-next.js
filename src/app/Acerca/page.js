@@ -5,159 +5,9 @@ import Image from "next/image";
 import Card from "../../../components/Card";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
+import {galeria, colab, colaboradores} from "../../../components/data"
 
-export const galeria = [
-  {
-    id: 1,
-    image: "/card1.jpg",
-    estudio: "/serv3.jpg",
-    name: "Santiago Semmino",
-    rol: "[Arquitecto]",
-    descripcion: "Departamento Arquitectura",
-  },
-  {
-    id: 2,
-    image: "/card1.jpg",
-    estudio: "/photo2.jpg",
-    name: "Fernando Fola",
-    rol: "[Maestro mayor de obras]",
-    descripcion: "Departamento Arquitectura",
-  },
-  {
-    id: 3,
-    image: "/card2.jpg",
-    estudio: "/bn1.jpg",
-    name: "Jeremias Nolli",
-    rol: "[Maestro mayor de obras]",
-    descripcion: "Departamento Arquitectura",
-  },
 
-  {
-    id: 4,
-    image: "/card2.jpg",
-    name: "Lucia Sanchez",
-    estudio: "/01.jpg",
-    rol: "[Arquitecta]",
-    descripcion: "Departamento Arquitectura",
-  },
-  {
-    image: "/card5.jpg",
-    id: 5,
-    name: "Agostina Selzer ",
-    rol: "[Diseñadora]",
-    descripcion: "Departamento Diseño",
-  },
-  {
-    image: "/card1.jpg",
-    id: 6,
-    name: "Luisina Viglione ",
-    rol: "[Administracion]",
-    descripcion: "Departamento Adminsitrativo",
-  },
-  {
-    image: "/card1.jpg",
-    id: 7,
-    name: "Federico Galassi",
-    rol: "[Desarrollador Web]",
-    descripcion: "Departamento Tecnologia",
-  },
-];
-export const colab = [
-  {
-    id: 1,
-    name: "Guillermina Garcia Cassis",
-  },
-  {
-    id: 3,
-    name: "Carla Paone ",
-  },
-  {
-    id: 4,
-    name: "German Cardonato",
-  },
-  {
-    id: 5,
-    name: "Emiliano Esmores",
-  },
-  {
-    id: 6,
-    name: "Mauro Canullo ",
-  },
-  {
-    id: 7,
-    name: "Julieta Veron",
-  },
-  {
-    id: 8,
-    name: "Franco Topa",
-  },
-  {
-    id: 9,
-    name: "Leandro Herrera",
-  },
-  {
-    id: 10,
-    name: "Manuel Barbieri",
-  },
-  {
-    id: 11,
-    name: "Belen Pepe",
-  },
-  {
-    id: 12,
-    name: "Cecilia Mazza",
-  },
-  {
-    id: 13,
-    name: "Ignacio Galoppo",
-  },
-  {
-    id: 14,
-    name: "Eugenia Valvason",
-  },
-  {
-    id: 15,
-    name: "Varinia Mateo",
-  },
-  {
-    id: 16,
-    name: "Dulce Scaldini",
-  },
-];
-export const colaboradores = [
-  {
-    id: 1,
-    name: "Ing. Omar Norris",
-  },
-  {
-    id: 3,
-    name: "Ing. Rita Campodónico ",
-  },
-  {
-    id: 4,
-    name: "Ing. Fernando",
-  },
-  {
-    id: 5,
-    name: "Renders - Yamila Baleani",
-  },
-  {
-    id: 6,
-    name: "Renders - Maxi Velazques ",
-  },
-  {
-    id: 7,
-    name: "Dis Industrial - Alejandro Alfano",
-  },
-  {
-    id: 8,
-    name: "Dis Industrial - Mauricio Marinucci",
-  },
-  {
-    id: 9,
-    name: "Gestión Municipal - Jorgelina Selle",
-  },
-];
 const Page = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollY, setScrollY] = useState(0);
@@ -314,39 +164,6 @@ const Page = () => {
           </div>
         ))}
       </section>
-      <div className="main__action">
-        <a className="main__scroll" href="#">
-          <div className="main__scroll-box">
-            {scrollPosition === 0 ? (
-              /* Renderiza el icono cuando el scroll es igual a cero */
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                {/* <path d="M0 0h24v24H0z" fill="none"></path>
-          <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm0 14.414-5.707-5.707 1.414-1.414 4.293 4.293 4.293-4.293 1.414 1.414z" fill="rgb(0,0,0)"/></svg> */}
-              </svg>
-            ) : (
-              /* Renderiza otro icono cuando el scroll no es igual a cero */
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <svg
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="m12 2c-5.514 0-10 4.486-10 10s4.486 10 10 10 10-4.486 10-10-4.486-10-10-10zm4.293 12.707-4.293-4.293-4.293 4.293-1.414-1.414 5.707-5.707 5.707 5.707z"
-                    fill="rgb(0,0,0)"
-                  />
-                </svg>
-              </svg>
-            )}
-          </div>
-          {scrollPosition === 0 ? (
-            <span className="main__scroll-text"></span>
-          ) : (
-            <span className="main__scroll-text">Click up!</span>
-          )}
-        </a>
-      </div>
 
       <hr></hr>
       <section className="grid" id="prensa">
@@ -359,8 +176,6 @@ const Page = () => {
           <h1>ASESORES</h1>
           <div className="horizontal-line-2"></div>
         </motion.div>
-
-        {/*  <h1 > Colaboradores a lo largo de nuestra trayectoria</h1> */}
         <div className="grid1">
           <div className="cont1">
             <div className="item">
