@@ -155,7 +155,8 @@
   display: grid;
   grid-template-columns: repeat(3,2fr); /* 2 columnas iguales */
   grid-gap: 2px; /* Espacio entre cada artículo */
-  margin-top: 40px; /* Espacio superior para la sección de prensa */
+  margin-top: 0px; /* Espacio superior para la sección de prensa */
+  margin-left: 10px;
 }
 
 
