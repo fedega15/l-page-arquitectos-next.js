@@ -1,9 +1,8 @@
-"use client";
-import "../../../styles/acerca.css";
+"use client"
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
+import "../../../styles/acerca.css";
 
 export const galeria = [
   { 
@@ -53,22 +52,13 @@ export const galeria = [
   },
 ]
 const Page = () => {
-  const [scrollPosition, setScrollPosition] = useState(0);
   const [scrollY, setScrollY] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
-  const textAnimationControls = useAnimation();
-  const nosotrosTitleControls = useAnimation();
-  const equipoTitleControls = useAnimation();
-  const prensaTitleControls = useAnimation();
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
 
   // Efecto para manejar el scroll de la página
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
-      setScrollPosition(window.scrollY); // Si necesitas seguir rastreando la posición de desplazamiento
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -91,80 +81,19 @@ const Page = () => {
     };
   }, []);
 
-  // Efecto para manejar la animación del texto
-  useEffect(() => {
-    const scrollThreshold = 200; // Umbral de desplazamiento
+  const textAnimationControls = useAnimation();
 
-    if (isLoaded) {
-      // Cuando la página se carga completamente
-      textAnimationControls.start({ x: 0, opacity: 1 });
-    } else if (scrollY < scrollThreshold) {
-      // Cuando el scroll es menor al umbral
-      textAnimationControls.start({ x: 0, opacity: 1 });
-    } else {
+  useEffect(() => {
+    // Define the scroll threshold where you want to apply the animation
+    const scrollThreshold = 200; // Adjust this threshold as needed
+  
+    if (scrollY >= scrollThreshold) {
       textAnimationControls.start({ x: -100, opacity: 0 });
+    } else {
+      textAnimationControls.start({ x: 0, opacity: 1 });
     }
-  }, [isLoaded, scrollY, textAnimationControls]);
+  }, [scrollY, textAnimationControls]);
 
-  // Efecto para manejar el redimensionamiento de la ventana
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  // Efecto para manejar el evento de scroll específico para la sección "PRENSA"
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.body.scrollHeight;
-
-      let equipoThreshold = 300;
-      let prensaThreshold = 1050;
-
-      if (windowWidth <= 768) {
-        equipoThreshold = 990;
-        prensaThreshold = 3700;
-      }
-
-      if (scrollY <= 0 || scrollY >= documentHeight - windowHeight) {
-        nosotrosTitleControls.start({ x: 0, opacity: 1 });
-      } else if (scrollY >= 200) {
-        nosotrosTitleControls.start({ x: -100, opacity: 0 });
-      }
-
-      if (scrollY >= equipoThreshold && scrollY < prensaThreshold) {
-        equipoTitleControls.start({ x: 0, opacity: 1 });
-      } else {
-        equipoTitleControls.start({ x: -100, opacity: 0 });
-      }
-
-      if (scrollY >= prensaThreshold) {
-        prensaTitleControls.start({ x: 0, opacity: 1 });
-      } else {
-        prensaTitleControls.start({ x: -100, opacity: 0 });
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [
-    windowWidth,
-    scrollY,
-    nosotrosTitleControls,
-    equipoTitleControls,
-    prensaTitleControls,
-  ]);
 
   return (
     <section className="grid" id="galery">

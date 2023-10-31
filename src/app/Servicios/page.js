@@ -96,26 +96,46 @@ export const galeria = [
 const Page = () => {
   
   const [scrollY, setScrollY] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false); // Estado para controlar si la página se ha cargado
-  const textAnimationControls = useAnimation();
+  const [isLoaded, setIsLoaded] = useState(false);
 
+  // Efecto para manejar el scroll de la página
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // Efecto para manejar la carga completa de la página
+  useEffect(() => {
     const handleLoad = () => {
       setIsLoaded(true);
     };
 
-    window.addEventListener("scroll", handleScroll);
     window.addEventListener("load", handleLoad);
 
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("load", handleLoad);
     };
   }, []);
+
+  const textAnimationControls = useAnimation();
+
+  useEffect(() => {
+    // Define the scroll threshold where you want to apply the animation
+    const scrollThreshold = 200; // Adjust this threshold as needed
+  
+    if (scrollY >= scrollThreshold) {
+      textAnimationControls.start({ x: -100, opacity: 0 });
+    } else {
+      textAnimationControls.start({ x: 0, opacity: 1 });
+    }
+  }, [scrollY, textAnimationControls]);
   
   const [showMoreItems, setShowMoreItems] = useState({}); // Estado para controlar qué elementos se muestran
 
