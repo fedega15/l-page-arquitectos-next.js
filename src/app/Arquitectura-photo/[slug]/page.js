@@ -1,3 +1,4 @@
+"use client"
 import Image from 'next/image'
 /* import { galeria } from '@/app/Arquitectura/page' */
 import React from "react";
