@@ -20,27 +20,27 @@ const page = () => {
     <section id="galery">
       <div className="grid">
         {arquitecturaData.map((galeria, index) => (
-          <a key={galeria.id} href={`/Arquitectura-photo/${index}`} className="active">
+          <a key={arquitecturaData.id} href={`/Arquitectura-photo/${index}`} className="active">
             <div className={`card card-${index}`} >
               <Image
-                src={galeria.img}
-                alt={galeria.img}
+                src={arquitecturaData.img}
+                alt={arquitecturaData.img}
                 width={600}
                 height={600}
               />
-              <div className="box" key={galeria.id}>
+              <div className="box" key={arquitecturaData.id}>
                 <span className="text"></span>
                 <div className="group">
                   <div>
                     <span className="text">
-                    <strong>{galeria.name}</strong>
+                    <strong>{arquitecturaData.name}</strong>
                       {" "}
                       <h3>
                         <i className="fas fa-map-marker-alt"> </i> -{" "}
-                        {galeria.ubi}
+                        {arquitecturaData.ubi}
                       </h3>
                     </span>
-                    <h3 className="text">{galeria.year} </h3>
+                    <h3 className="text">{arquitecturaData.year} </h3>
                   </div>
                 </div>
               </div>
