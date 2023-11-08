@@ -1,46 +1,43 @@
-"use client"
-import { useEffect, useState } from "react";
-import Image from "next/image";
-import { fetchArquitecturaData } from "../../../lib/dataFetcher"; 
+import React from "react";
 import "../../../styles/exhibicion.css"
+import Image from "next/image";
+import { Arquitectura } from "../../../components/data";
 
+export const galeria = Arquitectura
 
-const Page = () => {
-  const [arquitecturaData, setArquitecturaData] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const data = await fetchArquitecturaData();
-      setArquitecturaData(data);
-    }
-    fetchData();
-  }, []);
-
+const page = () => {
   return (
     <section id="galery">
+      {/*     <div className="heading">
+        <h2>Exibicon de arte</h2>
+        <p>
+          En esta galeria encontraras nuestras demostraciones de arte
+        </p>
+      </div> */}
+
       <div className="grid">
-        {arquitecturaData.map((galeria, index) => (
-          <a key={arquitecturaData.id} href={`/Arquitectura-photo/${index}`} className="active">
-            <div className={`card card-${index}`} >
+        {Arquitectura.map((galeria, index) => (
+          <a key={galeria.id} href={`/Arquitectura-photo/${index}`} className="active">
+            <div className={`card card-${index}`} key={Arquitectura.id}>
               <Image
-                src={arquitecturaData.img}
-                alt={arquitecturaData.img}
+                src={galeria.img}
+                alt={galeria.img}
                 width={600}
                 height={600}
               />
-              <div className="box" key={arquitecturaData.id}>
+              <div className="box" key={galeria.id}>
                 <span className="text"></span>
                 <div className="group">
                   <div>
                     <span className="text">
-                    <strong>{arquitecturaData.name}</strong>
+                    <strong>{galeria.name}</strong>
                       {" "}
                       <h3>
                         <i className="fas fa-map-marker-alt"> </i> -{" "}
-                        {arquitecturaData.ubi}
+                        {galeria.ubi}
                       </h3>
                     </span>
-                    <h3 className="text">{arquitecturaData.year} </h3>
+                    <h3 className="text">{galeria.year} </h3>
                   </div>
                 </div>
               </div>
@@ -52,4 +49,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
