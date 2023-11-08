@@ -1,26 +1,17 @@
 "use client"
 import "../styles/galery.css";
 import Image from "next/image";
-/* import { galery } from "./data"; */
+import { galery } from "./data"; 
 import React, { useEffect, useState } from "react";
-import { fetchGaleryData } from "../lib/dataFetcher";
 
 const Galery = () => {
-  const [galeryData, setGaleryData] = useState([]);
-
-  useEffect(() => {
-    async function fetchData() {
-      const data = await fetchGaleryData({});
-      setGaleryData(data);
-    }
-    fetchData();
-  }, []);
+  
 
   return (
     <div className="wrapper">
       <section id="galery">
         <div className="grid">
-          {galeryData.map((galeria, index) => (
+          {galery.map((galeria, index) => (
             <a
               key={galeria.id}
               href={galeria.link}
