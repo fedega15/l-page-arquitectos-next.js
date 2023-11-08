@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 /* import { galeria } from '@/app/Arquitectura/page' */
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../../../styles/photopage.css"
 import { fetchArquitecturaData } from '../../../../lib/dataFetcher';
 
