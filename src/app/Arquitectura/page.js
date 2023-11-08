@@ -5,7 +5,7 @@ import { fetchArquitecturaData } from "../../../lib/dataFetcher";
 import "../../../styles/exhibicion.css"
 
 
-const page = () => {
+const Page = () => {
   const [arquitecturaData, setArquitecturaData] = useState([]);
 
   useEffect(() => {
@@ -52,4 +52,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
