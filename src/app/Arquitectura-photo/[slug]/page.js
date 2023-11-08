@@ -2,7 +2,8 @@ import Image from 'next/image'
 /* import { galeria } from '@/app/Arquitectura/page' */
 import React from "react";
 import "../../../../styles/photopage.css"
-import { fetchArquitecturaData } from "../../../lib/dataFetcher";
+import { fetchArquitecturaData } from '../../../../lib/dataFetcher';
+
 
 const PhotoPage = ({params: { slug }}) => {
   const [arquitecturaData, setArquitecturaData] = useState([]);
