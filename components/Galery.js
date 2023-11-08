@@ -1,13 +1,12 @@
 "use client"
 import "../styles/galery.css";
 import Image from "next/image";
- import { galery } from "./data";
+/* import { galery } from "./data"; */
 import React, { useEffect, useState } from "react";
-import "../styles/galery.css";
-/* import { fetchGaleryData } from "../lib/dataFetcher"; */
+import { fetchGaleryData } from "../lib/dataFetcher";
 
 const Galery = () => {
-/*   const [galeryData, setGaleryData] = useState([]);
+  const [galeryData, setGaleryData] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -15,19 +14,19 @@ const Galery = () => {
       setGaleryData(data);
     }
     fetchData();
-  }, []); */
+  }, []);
 
   return (
     <div className="wrapper">
       <section id="galery">
         <div className="grid">
-          {galery.map((galeria, index) => (
+          {galeryData.map((galeria, index) => (
             <a
               key={galeria.id}
               href={galeria.link}
               className={`active card card-${index}`}
             >
-              <div className={`card card-${index}`} key={galeria.id}>
+              <div className={`card card-${index}`}>
                 <Image
                   src={galeria.img}
                   alt={galeria.img}
@@ -37,9 +36,6 @@ const Galery = () => {
                 />
                 <div className="box">
                   <span className="star">
-                    {/*  {galeria.name === "ARQUITECTURA" && <button><i class="fa-solid fa-hand-pointer"></i></button>} */}
-                    {/*    <i className="fa-solid fa-star"></i>
-                {galeria.activites} */}
                   </span>
                   <div className="group">
                     <div className="text">
