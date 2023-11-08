@@ -4,6 +4,7 @@ import { motion, useAnimation } from "framer-motion";
 import Prensa from "../../../components/Prensa";
 import "../../../styles/acerca.css";
 import { prensa } from "../../../components/data";
+import PrensaComponent from "../../../components/prensa/PrensaComponent";
 
 
 const Page = () => {
@@ -50,33 +51,11 @@ const Page = () => {
   }, [scrollY, textAnimationControls]);
 
   return (
-    <section className="grid" id="galery">
-      <motion.div
-        initial={{ x: -100, opacity: 0 }}
-        animate={textAnimationControls}
-        transition={{ duration: 0.5 }}
-        className="heading"
-      >
-        <h1>PRENSA</h1>
-        <div className="horizontal-line-2"></div>
-      </motion.div>
-      <br />
-      <div className="press-grid">
-        {prensa.map((galeria, i) => (
-          <div key={i} className="press-article">
-            <Prensa
-              img={galeria.img}
-              number={galeria.number}
-              mes={galeria.mes}
-              año={galeria.año}
-              title={galeria.title}
-              tipo={galeria.tipo}
-              enlace={galeria.enlace}
-            />
-          </div>
-        ))}
-      </div>
-    </section>
+   <PrensaComponent
+   Prensa={Prensa}
+   prensa={prensa}
+   textAnimationControls={textAnimationControls}
+   />
   );
 };
 

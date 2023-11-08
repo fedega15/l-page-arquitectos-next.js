@@ -1,9 +1,22 @@
-import React from "react";
+"use client"
 import "../styles/galery.css";
 import Image from "next/image";
-import { galery } from "./data";
+ import { galery } from "./data";
+import React, { useEffect, useState } from "react";
+import "../styles/galery.css";
+/* import { fetchGaleryData } from "../lib/dataFetcher"; */
 
 const Galery = () => {
+/*   const [galeryData, setGaleryData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const data = await fetchGaleryData({});
+      setGaleryData(data);
+    }
+    fetchData();
+  }, []); */
+
   return (
     <div className="wrapper">
       <section id="galery">

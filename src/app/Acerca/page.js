@@ -1,15 +1,19 @@
 "use client";
-
-import { useEffect, useState,React } from "react";
+import { useEffect, useState, React } from "react";
 //Animation
-import {useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 //Styles
 import "../../../styles/acerca.css";
 // Data
 import { galeria, colab, colaboradores } from "../../../components/data";
 //componentes
 import Heading from "../../../components/nosotros/Heading";
-import {TeamMembers , StudioImages, StudioDescription , Advisors ,} from "../../../components/nosotros/NosotrosComponent";
+import {
+  TeamMembers,
+  StudioImages,
+  StudioDescription,
+  Advisors,
+} from "../../../components/nosotros/NosotrosComponent";
 
 const Page = () => {
   //states
@@ -25,13 +29,11 @@ const Page = () => {
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
   );
-
   // Función para manejar el evento de scroll
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.body.scrollHeight;
-
     // Ajusta los umbrales en función del ancho de la ventana
     let equipoThreshold = 300;
     let prensaThreshold = 1050;
@@ -39,24 +41,20 @@ const Page = () => {
       equipoThreshold = 990;
       prensaThreshold = 3700;
     }
-
     // Actualiza el scrollY
     setScrollY(scrollY);
-
     // Para la sección "NOSOTROS"
     if (scrollY <= 0 || scrollY >= documentHeight - windowHeight) {
       nosotrosTitleControls.start({ x: 0, opacity: 1 });
     } else if (scrollY >= 200) {
       nosotrosTitleControls.start({ x: -100, opacity: 0 });
     }
-
     // Para la sección "EQUIPO"
     if (scrollY >= equipoThreshold && scrollY < prensaThreshold) {
       equipoTitleControls.start({ x: 0, opacity: 1 });
     } else {
       equipoTitleControls.start({ x: -100, opacity: 0 });
     }
-
     // Para la sección "PRENSA"
     if (scrollY >= prensaThreshold) {
       prensaTitleControls.start({ x: 0, opacity: 1 });
@@ -64,32 +62,27 @@ const Page = () => {
       prensaTitleControls.start({ x: -100, opacity: 0 });
     }
   };
-
   // Función para manejar el evento de carga
   const handleLoad = () => {
     setIsLoaded(true);
   };
-
   // Función para manejar el evento de redimensionamiento de la ventana
   const handleResize = () => {
     setWindowWidth(window.innerWidth);
   };
-
   useEffect(() => {
     // Agrega los event listeners una sola vez
     window.addEventListener("scroll", handleScroll);
     window.addEventListener("load", handleLoad);
     window.addEventListener("resize", handleResize);
-
     // Limpia los event listeners cuando el componente se desmonta
     return () => {
       window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("load", handleLoad);
       window.removeEventListener("resize", handleResize);
     };
-  }, [scrollY, windowWidth,textAnimationControls,nosotrosTitleControls,equipoTitleControls,prensaTitleControls,
-      ]);
-
+  }, [scrollY,windowWidth,textAnimationControls,nosotrosTitleControls,equipoTitleControls,prensaTitleControls,
+  ]);
   // Efecto para manejar animaciones de texto
   useEffect(() => {
     if (isLoaded || scrollY < 200) {

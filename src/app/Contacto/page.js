@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import "../../../styles/contacto.css";
 import Link from "next/link";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { testimonials } from "../../../components/data";
+import Heading from "../../../components/nosotros/Heading";
 
 const Page = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -51,19 +51,7 @@ const Page = () => {
 
   return (
     <section id="testimonios">
-      <motion.div 
-      className="heading"
-      transition={{ duration: 0.5 }}
-      initial={{ x: -100, opacity: 0 }} // Estado inicial de la animación
-      animate={textAnimationControls} // Aplica la animación al h1
-      
-      >
-        <h1>
-          CONTACTO
-        </h1>
-
-        <div className="horizontal-line-2"></div>
-      </motion.div>
+      <Heading title="CONTACTO" animationControls={textAnimationControls} />
 
       <div className="img-container">
         <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
