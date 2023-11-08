@@ -21,7 +21,7 @@ const page = () => {
       <div className="grid">
         {arquitecturaData.map((galeria, index) => (
           <a key={galeria.id} href={`/Arquitectura-photo/${index}`} className="active">
-            <div className={`card card-${index}`} key={arquitecturaData.id}>
+            <div className={`card card-${index}`} >
               <Image
                 src={galeria.img}
                 alt={galeria.img}
