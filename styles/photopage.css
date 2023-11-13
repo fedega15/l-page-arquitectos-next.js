@@ -186,16 +186,16 @@
     flex-wrap: wrap;
     gap: 0px;
       background-color: #e0d9d9;   
-     height: 2000px;
       
   }
   @media (max-width: 1180px) {
     #testimonios {
+
       /* ...other styles remain the same... */
-      height: auto; /* Allow height to adjust based on content */
+      height: 2800px; /* Allow height to adjust based on content */
     }
     #testimonios .galeria {
-      margin-top: 0; /* Reset margin-top */
+      margin-top: -2400px; /* Reset margin-top */
       width: 100%; /* Occupy full width */
       display: flex;
       flex-wrap: wrap;
@@ -220,7 +220,7 @@
 
   #testimonios .slider {
     position: relative;
-    top: -40px;
+    top: -400px;
     flex: 1;
     min-width: 400px;
     margin-left: 0px;
