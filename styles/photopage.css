@@ -11,7 +11,26 @@
    height: 800px;
     
 }
+#testimonios .galeria{
+  display: flex;
+  width: 800px;
+  height: 500px;
+  margin-right: 60px;
+}
 
+#testimonios .galeria img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: .7s ease;
+}
+#testimonios .galeria img:hover{
+  width: 95%;
+  flex-grow: 1;
+  filter: brightness(130%);
+  
+}
 #testimonios .img-container {
   flex: 1;
   height: 300px;
@@ -170,6 +189,26 @@
      height: 2000px;
       
   }
+  @media (max-width: 1180px) {
+    #testimonios {
+      /* ...other styles remain the same... */
+      height: auto; /* Allow height to adjust based on content */
+    }
+    #testimonios .galeria {
+      margin-top: 0; /* Reset margin-top */
+      width: 100%; /* Occupy full width */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    #testimonios .galeria img {
+      width: 100%; /* Ensure images take full width of their container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Fill the container without stretching */
+      transition: none; /* Remove the transition effect for smaller screens */
+    }
+  }
+  
   #testimonios .img-container {
     flex: 1;
     height: 300px;

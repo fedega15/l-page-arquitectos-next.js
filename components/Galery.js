@@ -2,14 +2,13 @@
 import "../styles/galery.css";
 import Image from "next/image";
 import { galery } from "./data"; 
-import React, { useEffect, useState } from "react";
 
 const Galery = () => {
   
 
   return (
     <div className="wrapper">
-      <section id="galery">
+      <section id="galery"> 
         <div className="grid">
           {galery.map((galeria, index) => (
             <a
