@@ -17,7 +17,7 @@ const PhotoPage = ({params: { slug }}) => {
           </p>
         </div>
         <div className="img-container">
-          <Banner className="banner" />
+          <Banner />
         </div>
       </section>
   )

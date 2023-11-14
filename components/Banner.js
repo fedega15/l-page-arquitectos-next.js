@@ -1,16 +1,17 @@
 "use client"
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import React, { useRef, useState } from 'react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cube';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 
 
 // Import required modules
-import { EffectCube, Pagination } from 'swiper/modules';
+import { EffectCube, Pagination, Navigation } from 'swiper/modules';
 import "../styles/banner.css";
 
 const images = [
@@ -33,8 +34,11 @@ const Banner = () => {
             shadowOffset: 20,
             shadowScale: 0.94,
           }}
-          pagination={true}
-          modules={[EffectCube, Pagination]}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[EffectCube, Pagination, Navigation]}
           className="mySwiper"
         >
           {images.map((image, index) => (
