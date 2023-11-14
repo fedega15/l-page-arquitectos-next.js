@@ -1,245 +1,37 @@
 #testimonios {
-  width: 100%;
+  padding-top: 80px;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0px;
-  padding-left: 40px;
-  padding-top: 20px;
-    background-color: #e0d9d9;   
-   height: 800px;
-    
+  background-color: #e0d9d9; 
+  justify-content: space-between; /* Distribuye los elementos al inicio y al final del contenedor */
+  align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
-#testimonios .galeria{
-  display: flex;
-  width: 800px;
-  height: 500px;
-  margin-right: 60px;
+.slider {
+  margin-left: 110px;
+  width: 35%; /* Ajusta el ancho según tus necesidades */
+  padding: 10px; /* Agrega un poco de espacio interno */
 }
 
-#testimonios .galeria img{
-  width: 0px;
-  flex-grow: 1;
-  object-fit: cover;
-  filter: brightness(80%);
-  transition: .7s ease;
-}
-#testimonios .galeria img:hover{
-  width: 95%;
-  flex-grow: 1;
-  filter: brightness(130%);
-  
-}
-#testimonios .img-container {
-  flex: 1;
-  height: 300px;
-  width: 100px;
-  position: relative;
-  margin-bottom: 150px;
-  margin-top: -180px;
-  margin-right: 25px;
+.img-container {
+  margin-top: -20px;
+  width: 56%; /* Ajusta el ancho según tus necesidades */
+  padding: 10px; /* Agrega un poco de espacio interno */
 }
 
-#testimonios .slider {
-  position: relative;
-  top: -20px;
-  flex: 1;
-  min-width: 400px;
-  margin-left: 50px;
-
-  
-}
-#testimonios .slider h1, h2 {
-  padding-left: 30px;
-  
-}
-
-#testimonios .slider .crossed-lines {
-    position: relative;
-    display: inline-block;
-    padding-left: 30px; /* Ajusta el espaciado de la línea desde el texto */
-    padding-bottom: 30px; /* Ajusta el espaciado de la línea desde el texto */
-    width: 270px;
-  }
-  
-  #testimonios .slider .crossed-lines::before,
-  #testimonios .slider .crossed-lines::after {
-    content: "";
-    position: absolute;
-    background-color: green;
-  }
-  
-  #testimonios .slider .crossed-lines::before {
-    top: 50%; /* Coloca la línea izquierda en la mitad de la altura del párrafo */
-    left: -2px; /* Coloca la línea izquierda en el borde izquierdo */
-    height: 50%; /* Mitad de la altura del párrafo */
-    width: 2px; /* Ancho de la línea izquierda */
-    transform: translateY(-0%); /* Alinea verticalmente la línea izquierda */
-  }
-  
-  #testimonios .slider .crossed-lines::after {
-    bottom: 0; /* Coloca la línea inferior en el borde inferior */
-    left: 0;
-    width: 100%;
-    height: 2px; /* Ancho de la línea inferior */
-  }
-  #testimonios .line-bottom-right {
-    position: relative;
-    width: 100%;
-    height: 2px; /* Ancho de la línea en el margen inferior */
-    background-color: green;
-    margin-top: -22px; /* Espacio entre la línea y el contenido anterior */
-    margin-bottom: 20px; /* Espacio entre la línea y el contenido anterior */
-  }
-  
-  #testimonios .line-bottom-right::after {
-    content: "";
-    position: absolute;
-    width: 2px; /* Ancho de la línea en el margen derecho */
-    height: 100%;
-    background-color: green;
-    right: 0;
-  }
-  
-  
-#testimonios .card {
-  background: greenyellow;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid var(--border-color);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  gap: 20px;
-  box-shadow: 2px 20px 30px var(--shadow-color);
-  border-radius: 2%;
-}
-#testimonios .img-container img:hover {
-  transform: scale(1.08);
-}
-#testimonios .redes {
-  display: inline-block;
-  padding-left: 55px; /* Hacer que los elementos <a> sean en línea */
-  margin-right: 35px; /* Espacio entre elementos <a> */
-  font-size: 25px;
-  top: 0px;
-  position: relative;
-  color: rgb(32, 30, 30);
-}
-#testimonios .svg i {
-  position: absolute;
-  right: 2px;
-  top: 2px;
-  font-size: xxx-large;
-  color: rgb(8, 243, 27);
-  transition: transform 0.3s ease;
-}
-#testimonios .svg:hover i {
-  transform: rotate(90deg);
-}
-#testimonios .redes:hover {
-  color: rgb(8, 243, 27);
-}
-#testimonios .img-container img {
-  transition: all linear 0.5s;
-  margin-bottom: 25px;
-}
-
-#testimonios .avatar {
-  width: 100px;
-  min-width: 100px;
-  height: 100px;
-  border-radius: 30%;
-  overflow: hidden;
-  background: var(--secondary);
-}
-
-#testimonios .text {
-  flex: 1;
-  min-width: 200px;
-  align-items: self-start;
-  justify-content: first baseline;
-}
-#testimonios .text i {
-  color: black;
-  font-size: 1.2rem;
-}
-
-#testimonios .text p {
-  color: rgb(8, 8, 8);
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-}
-#testimonios .text strong {
-  color: #363636;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-@media (max-width: 1180px) {
+@media (max-width: 768px) {
+  /* Estilos para pantallas pequeñas */
   #testimonios {
+    flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
+  }
+
+  .slider{
+    margin-left: 40px;
+    width: 80%;
+  }
+  .img-container {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0px;
-      background-color: #e0d9d9;   
-      
   }
-  @media (max-width: 1180px) {
-    #testimonios {
-
-      /* ...other styles remain the same... */
-      height: 2800px; /* Allow height to adjust based on content */
-    }
-    #testimonios .galeria {
-      margin-top: -2400px; /* Reset margin-top */
-      width: 100%; /* Occupy full width */
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-    #testimonios .galeria img {
-      width: 100%; /* Ensure images take full width of their container */
-      height: auto; /* Maintain aspect ratio */
-      object-fit: cover; /* Fill the container without stretching */
-      transition: none; /* Remove the transition effect for smaller screens */
-    }
-  }
-  
-  #testimonios .img-container {
-    flex: 1;
-    height: 300px;
-    width: 100px;
-    position: relative;
-    top: 0px;
-    padding-bottom: 80px;
-  }
-
-  #testimonios .slider {
-    position: relative;
-    top: -400px;
-    flex: 1;
-    min-width: 400px;
-    margin-left: 0px;
-  }
-  #testimonios .slider,
-  #testimonios .img-container {
-    min-width: 200px;
-  }
-
-  #testimonios .redes {
-    display: inline-block;
-    padding-left: 35px; /* Hacer que los elementos <a> sean en línea */
-    margin-right: 15px; /* Espacio entre elementos <a> */
-    font-size: 15px;
-    top: 0px;
-    position: relative;
-    color: rgb(32, 30, 30);
-  }
-  #testimonios .redes:hover {
-    color: rgb(8, 243, 27);
+  .banner {
+    height: 100%;
   }
 }

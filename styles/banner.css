@@ -8,6 +8,20 @@
     width: 100%;
     height: 100%;
 }
+/* Agrega estilos para las flechas del Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ccc3c3; /* Cambia este valor al color que desees */
+}
+
+/* Agrega estilos adicionales si es necesario */
+.swiper-button-prev {
+  left: 10px; /* Ajusta la posición de la flecha izquierda */
+}
+
+.swiper-button-next {
+  right: 10px; /* Ajusta la posición de la flecha derecha */
+}
 
 .banner .box {
     max-width: 650px;
