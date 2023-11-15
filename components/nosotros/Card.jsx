@@ -9,8 +9,9 @@ const Card = ({ name, rol, descripcion, image }) => {
         src={image}
         alt={name}
         className="card-image"
-        width="100"
-        height="100"
+        width={420}
+        height={300}// Tamaño más grande
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <h3>{name}</h3>
       <span>{rol}</span>

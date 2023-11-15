@@ -63,8 +63,9 @@ const StudioImages = ({ galeria }) => (
                   src={proyecto.estudio}
                   alt={proyecto.name}
                   className="card-image"
-                  width={600} // Tamaño más grande
-                  height={400} // Tamaño más grande
+                  width={420}
+                  height={300}// Tamaño más grande
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
         </div>
       ))}

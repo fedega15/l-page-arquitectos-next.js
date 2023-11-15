@@ -4,8 +4,7 @@ import React from "react";
 import "../../../../styles/photopage.css"
 
 const PhotoPage = ({params: { slug }}) => {
-  console.log(galeria[slug].photo1)
-  console.log(galeria[slug].img)
+
       return (
         <section id="testimonios">
           
@@ -18,7 +17,9 @@ const PhotoPage = ({params: { slug }}) => {
           </div>
           <div className="img-container">
             <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-              <Image   src={galeria[slug].photo1} alt="sub" width={458} height={452} border={2} />
+              <Image   src={galeria[slug].photo1} alt="sub"  width={420}
+                height={300}// Tamaño más grande
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" border={2} />
             </a>
             <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
               <Image   src={galeria[slug].photo2} alt="sub" width={458} height={452} border={2} />

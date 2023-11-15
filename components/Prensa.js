@@ -8,8 +8,9 @@ const Card = ({ img, number, mes, año, title,tipo, enlace }) => {
     <Image
       src={img}
       alt={img}
-      width={200}
-      height={200}
+      width={420}
+      height={300}// Tamaño más grande
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
     <div className="article-header">
       <div className="date">

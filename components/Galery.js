@@ -20,8 +20,9 @@ const Galery = () => {
                 <Image
                   src={galeria.img}
                   alt={galeria.img}
-                  width={600}
-                  height={600}
+                  width={420}
+                  height={300}// Tamaño más grande
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="imagen-galeria"
                 />
                 <div className="box">

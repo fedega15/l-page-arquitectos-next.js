@@ -102,7 +102,9 @@ const Banner = () => {
         {images.map((image, index) => (
           <SwiperSlide key={index} onClick={() => openModal(image)}>
             <div className="slide-content">
-              <Image src={image} alt={image} width={1920} height={1280} priority />
+              <Image src={image} alt={image}width={420}
+        height={300}// Tamaño más grande
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"priority />
               <div className="overlay"></div>
               <div className="text-content">
                 <h1>Descripción(opcion)</h1>
