@@ -7,7 +7,7 @@ import Image from "next/image";
 const categories = [
   { name: "Proyectos", link: "/#galery" },
   { name: "Servicios", link: "/Servicios" },
-  { name: "Nosotros", link: "/Acerca" },
+  { name: "Nosotros", link: "/Nosotros" },
   { name: "Prensa", link: "/Prensa" },
   { name: "Contacto", link: "/Contacto" },
 ];
