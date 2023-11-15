@@ -12,13 +12,18 @@
 .swiper-button-prev,
 .swiper-button-next {
   color: #ccc3c3; /* Cambia este valor al color que desees */
+  size: 10px;
 }
-
+.swiper-pagination-bullet {
+    background-color: #100f0f; /* Cambia este valor al color que desees */
+  }
 /* Agrega estilos adicionales si es necesario */
 .swiper-button-prev {
   left: 10px; /* Ajusta la posición de la flecha izquierda */
 }
-
+.swiper-slide {
+    background-color: #ccc; /* Cambia este valor al color gris que desees */
+  }
 .swiper-button-next {
   right: 10px; /* Ajusta la posición de la flecha derecha */
 }

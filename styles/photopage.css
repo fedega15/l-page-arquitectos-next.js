@@ -29,9 +29,11 @@
   .slider{
     margin-left: 40px;
     width: 80%;
+    padding-bottom: 50px;
   }
   .img-container {
-    width: 100%;
+    margin-left: 17px;
+    width:87%;
   }
   .banner {
     height: 100%;

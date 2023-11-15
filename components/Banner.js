@@ -47,10 +47,12 @@ const Banner = () => {
                 <Image src={image} alt={image} width={1920} height={1280} priority />
                 <div className="overlay"></div>
                 <div className="text-content">
-                  <h1>Título de la Diapositiva</h1>
-                  <p>Descripción de la diapositiva. Puedes agregar información adicional aquí.</p>
+                  <h1>Descripción(opcion)</h1>
+                {/*   <p>Descripción de la diapositiva. Puedes agregar información adicional aquí.</p> */}
                 </div>
               </div>
+              <br/>
+              <br/>
             </SwiperSlide>
           ))}
         </Swiper>
