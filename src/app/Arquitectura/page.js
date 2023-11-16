@@ -8,13 +8,6 @@ export const galeria = Arquitectura
 const page = () => {
   return (
     <section id="galery">
-      {/*     <div className="heading">
-        <h2>Exibicon de arte</h2>
-        <p>
-          En esta galeria encontraras nuestras demostraciones de arte
-        </p>
-      </div> */}
-
       <div className="grid">
         {Arquitectura.map((galeria, index) => (
           <a key={galeria.id} href={`/Arquitectura-photo/${index}`} className="active">

@@ -258,7 +258,33 @@
   margin-left: 170px;
   width: 150px;
   height: 120px;
-  margin-top: -64px;
+}
+.studio-description {
+  position: relative;
+  font-size: 18px;
+  width: 1200px;
+  margin-top: -5px;
+}
+
+.studio-description h4 {
+  line-height: 1.1; /* Ajusta este valor según sea necesario para tu diseño */
+  margin: 0; /* Elimina el margen predeterminado del h3 */
+  margin-top: 10px;
+}
+
+.studio-info {
+  display: flex;
+  align-items: start;
+  margin-bottom: 20px; /* Espacio entre la descripción del estudio y las imágenes */
+}
+
+.studio-images {
+  margin-top: 20px;
+}
+
+.studio-image {
+  width: 175px;
+  margin-bottom: 10px;
 }
 @media (max-width: 768px) {
   #galery {

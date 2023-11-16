@@ -1,7 +1,7 @@
 "use client";
 import "../../../styles/servicios.css";
 import React, { useEffect, useState } from "react";
-import { motion, useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import ServComponent from "../../../components/servicios/ServComponent";
 import { servicios } from "../../../components/data";
 
