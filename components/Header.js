@@ -39,13 +39,10 @@ const Header = () => {
   }, []);
   return (
     <header
-      style={{
-        background:
-          visible || showMenu
-            ? "transparent"
-            : "transparent" /* ACA CAMBIE var(--bg-main) POR EL PRIMER TRANSPARENT */,
-        boxShadow: visible ? "none" : "none",
-      }}
+    style={{
+      background: visible || showMenu ? "rgba(255, 255, 255, 0.7)" : "rgba(255, 255, 255, 0.7)",
+      boxShadow: visible ? "none" : "none",
+    }}
     >
       <nav>
       <a href="/" className="logo">
