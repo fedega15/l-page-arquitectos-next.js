@@ -66,7 +66,7 @@ const Page = () => {
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
             <div className="text">
-              <a href={testimonial.href} className="redes">
+              <a href={testimonial.href} className="redes1">
                 <i className={testimonial.icon}></i>
               </a>
               <Link href={testimonial.link}>

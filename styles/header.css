@@ -81,75 +81,14 @@ header nav .menu_btn {
   color: var(--main);
   display: block;
 }
-header .box-redes {
-  margin-left: 25px;
-  top:  20px;
-}
+
 header .box-li {
   margin-top: 25px;
   margin-left: 10px;
 }
-.redes {
-  display: inline-block;
-  padding-left: 4px; /* Hacer que los elementos <a> sean en línea */
-  margin-right: 15px; /* Espacio entre elementos <a> */
-  font-size: 25px;
-  top: 30px;
-  position: relative;
-  color: rgb(243, 237, 237);
-}
-.redes:hover {
-  color:#9b017a;
-}
-
-/* esto tenia arriba lo modifique para que quede menu hamburgesa
-header nav {
-    width: 100%;
-    max-width: var(max-width);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-    padding: 15px 25px;
-}
-header ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .logo {
-    justify-content: flex-start;
-    left: 0px;   
-    font-size: 1.9rem;
-    color: var(--main);
-    font-weight: 900;
-   
-}
-
-header .logo {
-    color: rgb(40, 40, 70);
-}
 
 
-header ul li a {
-    font-size:  1.6rem;
-    justify-content: space-between;
-    margin:19px ;
-    color: var(--secondary);
-    transition: all ease 0.3s;
-    text-transform: capitalize;
-    display: block;
-}ºeader ul li a:is(:hover, .active) {
-    color: rgb(40, 40, 70);
-}
 
-header nav .menu_btn {
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: var(--main);
-    display: none;
-} */
 
 .logo {
 margin-top: -20px;
@@ -203,20 +142,15 @@ header ul i:hover{
   margin-top: 8px;
   
 }
-
   header .box-li {
     margin-top: 15px;
     margin-left: 0px;
   }
 
-  header .box-redes {
-    margin-left: 12px;
-    top:200px;
-  }
   .redes {
-    left: 14px;
+    left: 0px;
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 12px;
     margin-right: -5px; 
     margin-left: 10px;
     font-size:22px;
@@ -283,9 +217,9 @@ header ul i{
     top:30px;
   }
   .redes {
-    left: 16px;
+    left: 0px;
     display: inline-block;
-    padding-left: 7px;
+    padding-left: 8px;
     margin-right: 3px; 
     font-size:18px;
     top: 30px;
@@ -337,9 +271,8 @@ header ul li a {
     top:30px;
   }
   .redes {
-    
     display: inline-block;
-    padding-left: 7px;
+    padding-left: 9px;
     margin-right: 3px; 
     font-size:15px;
     top: 30px;
