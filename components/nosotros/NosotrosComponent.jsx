@@ -3,22 +3,24 @@ import Heading from "./Heading";
 const StudioDescription = () => (
     <div className="studio-description">
       {/* <h2>Estudio SSA</h2> */}
-      <h4>
+      <span>
          Somos un equipo interdisciplinario enfocado en el diseño y la
               arquitectura, con dedicación a proyectos de todo tipo de escala,
               diseño de mobiliario, objetos, sistemas modulares, y con activa
               participación a concursos nacionales e internacionales. 
-      </h4>
-      <h4> Nuestra
+      </span>
+      <br />
+      <span> Nuestra
               oficina está impulsada por jóvenes arquitectos, ingenieros,
               interioristas, diseñadores gráficos, industriales que diseñan y
               desarrollan conjuntamente proyectos desde los primeros bocetos hasta
               la supervisión final en obra. En nuestro proceso de trabajo aparece
-              el diseño sustentable como eje principal de nuestros proyectos.</h4>
-              <h4>El
+              el diseño sustentable como eje principal de nuestros proyectos.</span>
+              <br />
+              <span>El
               estudio de los nuevos sistemas de construcción, la transformación y
               evolución de las ciudades, la innovación tecnológica, y el diseño
-              eficiente es lo que nos motiva a seguir creciendo.</h4>
+              eficiente es lo que nos motiva a seguir creciendo.</span>
     </div>
   );
 

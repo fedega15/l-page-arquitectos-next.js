@@ -18,6 +18,8 @@ const ServComponent = ({ servicios, showMoreItems, toggleShowMore ,textAnimation
                 <p>{proyecto.descripcion2}</p>
                 <p>{proyecto.descripcion3}</p>
                 <p>{proyecto.descripcion4}</p>
+                <p>{proyecto.descripcion5}</p>
+                <p>{proyecto.descripcion6}</p>
               </div>
             ) : null}
             <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>

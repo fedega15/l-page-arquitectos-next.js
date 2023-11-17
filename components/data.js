@@ -1546,7 +1546,7 @@ export const servicios = [
       { name: "kado", link: "/ASD6" },
     ],
     descripcion:
-    `Diseñamos y fabricamos estructuras modulare, estas estructuras se prearman en una fabrica
+    `Diseñamos y fabricamos estructuras modulares, estas estructuras se prearman en una fabrica
     y van directamente armadas al terreno, donde deberan estar las instalaciones previas y los
     apoyos para recibir el modulo.
    `,
@@ -1569,19 +1569,23 @@ export const servicios = [
     descripcion3:`
     1. VELOCIDAD CONSTRUCTIVA
     La construcción modular logra optimizar los tiempos de ejecución de la obra y los plazos de
-    entrega gracias al proceso de fabricación o pre armado en taller o in situ.
+    entrega gracias al proceso de fabricación o pre armado en taller o in situ.`,
+    descripcion4:`
     2. FLEXIBILIDAD
     Una de las alternativas de este sistema es la versatilidad que ofrece, ya que permite su
     instalación en cualquier entorno y condición climática. Este sistemas tienen la virtud de
     poder ir creciendo libremente dependiendo de cada necesidad. Se pueden ir agregando
     módulos en el tiempo a medida que se requiera para ampliar o modificar lo existente en
     busca de nuevos espacios.
+    `,descripcion5:`
     3. COSTOS
     Por su grado de automatización alcanzar un costo exacto del precio final del producto, sin
-    riesgos de sobreprecios.
+    riesgos de sobreprecios.`,
+    descripcion5:`
     4. RESISTENCIA
     Estos módulos resisten en perfectas condiciones los movimientos de grúas, tano como izados,
-    traslados y descarga hasta su lugar de ensamblaje.
+    traslados y descarga hasta su lugar de ensamblaje.`,
+    descripcion6:`
     5. SUSTENTABILIDAD
     La construcción modular permite una disminución del impacto ambiental en el terreno,
     debido a que se produce una menor cantidad de desperdicios, también produce menos

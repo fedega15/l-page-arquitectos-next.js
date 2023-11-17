@@ -7,8 +7,7 @@
   flex-wrap: wrap;
   gap: 25px;
   padding-left: 110px;
-  background-color: #e0d9d9;
-  padding-bottom: 50px;
+  background-color: #ffffff;
 }
 
 #testimonios .main__action {
@@ -49,7 +48,6 @@
   margin-top: 110px;
   font-size: 120px;
   font-weight: 900;
-  color: rgb(255, 252, 252);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
@@ -72,7 +70,7 @@
 
 #testimonios .slider {
   position: relative;
-  top: -80px;
+  top: -140px;
   flex: 1;
   min-width: 400px;
   padding-left: 25px;
@@ -180,14 +178,14 @@
   }
   #testimonios .slider{
     min-width: 200px;
-    margin-left:-12px;
+    margin-left:-32px;
     margin-right: 66px;
-    margin-top: 80px;
+    margin-top: 40px;
   }
   #testimonios .img-container {
     margin-top: 60px;
     min-width: 320px;
-    margin-left: 0px;
+    margin-left: 20px;
     margin-right: 66px;
     flex-direction: column; 
   }

@@ -4,7 +4,7 @@
   overflow: hidden;
   padding: 110px;
   padding-bottom: 400px;
-  background-color: #e0d9d9;
+  background-color: #ffffff;
 }
 
 #galery .main__action {
@@ -47,7 +47,7 @@
 #galery .heading h1 {
   font-size: 120px;
   font-weight: 900;
-  color: rgb(255, 252, 252);
+  color: rgb(17, 13, 13);
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 .span {
@@ -366,10 +366,11 @@
   }
 
   .studio-description {
-    flex: none; /* Evita que la descripción ocupe todo el ancho */
     margin-bottom: 10px; /* Ajusta el espacio entre la descripción y las imágenes */
     position: relative;
     top: -15px;
+    margin-right: 20px;
+    width: 110%;
   }
 
   .studio-images {
