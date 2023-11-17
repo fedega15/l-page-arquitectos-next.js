@@ -1,5 +1,5 @@
 #testimonios {
-  padding-top: 80px;
+  padding-top: 120px;
   display: flex;
   background-color: #e0d9d9; 
   justify-content: space-between; /* Distribuye los elementos al inicio y al final del contenedor */
@@ -14,9 +14,9 @@
 }
 
 .img-container {
-  margin-right: 30px;
-  margin-top: -20px;
-  width: 50%; /* Ajusta el ancho según tus necesidades */
+  margin-right: 80px;
+  margin-top: -27px;
+  width: 44%; /* Ajusta el ancho según tus necesidades */
   padding: 10px; /* Agrega un poco de espacio interno */
 }
 
