@@ -52,16 +52,6 @@ const Page = () => {
   return (
     <section id="testimonios">
       <Heading title="CONTACTO" animationControls={textAnimationControls} />
-
-      <div className="img-container">
-        <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
-        <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-          <iframe
-            className="map"
-            src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F"
-          ></iframe>
-        </a>
-      </div>
       <div className="slider">
         {testimonials.map((testimonial) => (
           <div key={testimonial.id} className="card">
@@ -79,6 +69,16 @@ const Page = () => {
           </div>
         ))}
       </div>
+      <div className="img-container">
+        <h1 className="t1">Santa Fe 2144, Piso 3D. Rosario</h1>
+        <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
+          <iframe
+            className="map"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F"
+          ></iframe>
+        </a>
+      </div>
+     
     </section>
   );
 };
