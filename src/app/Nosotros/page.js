@@ -38,8 +38,8 @@ const Page = () => {
     let equipoThreshold = 300;
     let prensaThreshold = 1050;
     if (windowWidth <= 768) {
-      equipoThreshold = 990;
-      prensaThreshold = 3700;
+      equipoThreshold = 290;
+      prensaThreshold = 2200;
     }
     // Actualiza el scrollY
     setScrollY(scrollY);

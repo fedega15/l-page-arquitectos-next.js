@@ -10,7 +10,7 @@ const StudioDescription = () => (
               participación a concursos nacionales e internacionales. 
       </span>
       <br />
-      <span> Nuestra
+      {/* <span> Nuestra
               oficina está impulsada por jóvenes arquitectos, ingenieros,
               interioristas, diseñadores gráficos, industriales que diseñan y
               desarrollan conjuntamente proyectos desde los primeros bocetos hasta
@@ -20,7 +20,7 @@ const StudioDescription = () => (
               <span>El
               estudio de los nuevos sistemas de construcción, la transformación y
               evolución de las ciudades, la innovación tecnológica, y el diseño
-              eficiente es lo que nos motiva a seguir creciendo.</span>
+              eficiente es lo que nos motiva a seguir creciendo.</span> */}
     </div>
   );
 
@@ -61,15 +61,15 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls }) => (
 
 const StudioImages = ({ galeria }) => (
     <div className="studio-images">
-      {galeria.slice(0, 4).map((proyecto) => (
+      {galeria.slice(0, 1).map((proyecto) => (
         <div className="studio-image" key={proyecto.id}>
           <Image
                   src={proyecto.estudio}
                   alt={proyecto.name}
-                  className="card-image"
-                  width={420}
-                  height={300}// Tamaño más grande
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="-image"
+                  width={720}
+                  height={700}// Tamaño más grande
+                  /* sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" */
                 />
         </div>
       ))}

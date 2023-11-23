@@ -110,13 +110,16 @@
 /* Estilo para la sección de información del estudio */
 .studio-info {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px; /* Espacio entre la descripción del estudio y las imágenes */
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 20px;
 }
 
 .studio-description {
+  margin-left: 10px;
   flex: 1;
-  padding: 20px; /* Ajusta el espaciado interior según tus preferencias */
+  padding-right: 100px;
+  padding-bottom: 10px;
   text-align: left;
 }
 
@@ -126,20 +129,27 @@
 }
 
 .studio-images {
+  margin-left: -136px;
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* Centra las imágenes horizontalmente */
-  gap: 10px; /* Espacio entre las imágenes del estudio */
+  justify-content: center;
+  gap: 10px;
 }
 
 .studio-image {
-  flex-basis: calc(50% - 5px); /* 50% de ancho y espacio de 5px entre ellas */
-  width: 200px; /* Tamaño más grande para las imágenes */
-  height: 250px; /* Tamaño más grande para las imágenes */
-  /* Añade estilos para las imágenes del estudio aquí */
+  flex-basis: calc(73.33% - 0px);
+  height: 400px; /* Ajusta el ancho según el número de imágenes por fila */
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
+  max-width: 900px; /* Establece un ancho máximo para las imágenes */
 }
-/* Estilos para la sección de PRENSA */
 
+/* Ajusta el estilo según tus necesidades */
+.-image {
+  margin-right: 10px;
+  width: 100%;
+  max-width: 900px;
+}
 
 .press-article {
   flex-basis: calc(33.33% - 20px); /* Ancho de cada artículo de prensa (1/3) */
@@ -260,6 +270,7 @@
   height: 120px;
 }
 .studio-description {
+  padding-right: 380px;
   position: relative;
   font-size: 18px;
   width: 1200px;
@@ -287,6 +298,8 @@
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
+  
+ 
   #galery {
     padding: 40px;
     padding-bottom: 100px;
@@ -360,18 +373,18 @@
     margin-bottom: 20px;
   }
   .studio-info {
-    margin-left: -13px;
+   
     flex-direction: column; /* Cambia la dirección de la fila a columna */
     align-items: flex-start; /* Alinea los elementos al principio */
   }
-
   .studio-description {
-    margin-bottom: 10px; /* Ajusta el espacio entre la descripción y las imágenes */
+    padding-right: 900px;
+    margin-left: 10px;
     position: relative;
-    top: -15px;
-    margin-right: 20px;
-    width: 110%;
+    font-size: 18px;
+    margin-top: -5px;
   }
+
 
   .studio-images {
     margin-left: 15px;
