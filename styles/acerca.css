@@ -129,7 +129,7 @@
 }
 
 .studio-images {
-  margin-left: -136px;
+  margin-left: -140px;
   width: 100%; /* Usa el 100% del ancho del contenedor padre */
   display: flex;
   flex-wrap: wrap;
