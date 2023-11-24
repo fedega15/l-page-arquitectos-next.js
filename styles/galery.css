@@ -1,8 +1,6 @@
 #galery {
   padding-bottom: 20px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
+  padding-top: 50px;
   width: 100%;
   max-width: var(--max-width);
   overflow: hidden;
@@ -198,6 +196,5 @@
   }
   .card {
     padding: 2px;
-    padding-right: 8px;
   }
 }

@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header
     style={{
-      background: visible || showMenu ? /* "rgba(255, 255, 255, 0.7)" */ "transparent" :"transparent" /* "rgba(255, 255, 255, 0.7)" */,
+      background: visible || showMenu ? /* "rgba(255, 255, 255, 0.7)" */ "white" :"white" /* "rgba(255, 255, 255, 0.7)" */,
       boxShadow: visible ? "none" : "none",
     }}
     >
