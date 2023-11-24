@@ -172,6 +172,11 @@
 }
 
 @media (max-width: 560px) {
+  #galery {
+ 
+  padding-right: 35px;
+  
+}
   #galery .card-1 {
     grid-row: span 1;
   }
