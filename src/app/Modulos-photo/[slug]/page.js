@@ -3,11 +3,13 @@ import Image from 'next/image'
 import { galeria } from '@/app/Modulos/page'
 import React, { useState } from "react";
 import "../../../../styles/photopage.css"
+import Banner from '../../../../components/Banner';
 
 const PhotoPage = ({params: { slug }}) => {
+  const projectImages = galeria[slug].images;
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  console.log(galeria[slug].photo1)
-  console.log(galeria[slug].img)
+
       return (
         <section id="testimonios">
           
@@ -17,33 +19,9 @@ const PhotoPage = ({params: { slug }}) => {
             <p className='crossed-lines'>
               	{galeria[slug].descripcion}
             </p>
-          </div>
-          {/* <div className="img-container">
-            <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-              <Image   src={galeria[slug].photo1} alt="sub" width={458} height={452} border={2} />
-            </a>
-            <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-              <Image   src={galeria[slug].photo2} alt="sub" width={458} height={452} border={2} />
-            </a>
-          </div>
-          <div className="img-container">
-          <div className="line-bottom-right"></div>
-            <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-              <Image   src={galeria[slug].photo3}alt="sub" width={458} height={452} border={2} />
-            </a>
-            <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
-              <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2} />
-            </a>
-          </div> */}
-          <div className='galeria'>
-            <Image  src="/photo3.jpg" alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo2} alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2}/>
-            <Image  src={galeria[slug].photo4} alt={galeria[slug]}width={458} height={452} border={2}/>
-          </div>
+          </div> <div className="img-container">
+        <Banner className="banner" images={projectImages}  />
+        </div>
         </section>
   )
 }

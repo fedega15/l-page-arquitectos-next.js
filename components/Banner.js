@@ -12,7 +12,7 @@ import { EffectCube, Pagination, Navigation } from "swiper/modules";
 import "../styles/banner.css";
 
 
-const images = [
+/* const images = [
   { src: "/bn1.jpg", alt: "Description 1", number: 1 },
   { src: "/bn1.jpg", alt: "Description 2", number: 2 },
   { src: "/bn1.jpg", alt: "Description 3", number: 3 },
@@ -21,9 +21,9 @@ const images = [
   { src: "/bn1.jpg", alt: "Description 6", number: 6 },
   { src: "/bn1.jpg", alt: "Description 7", number: 7 },
   { src: "/bn1.jpg", alt: "Description 8", number: 8 },
-];
+]; */
 
-const Banner = () => {
+const Banner = ( {images}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
   const customStyles = {
@@ -114,11 +114,11 @@ const Banner = () => {
                 priority
               />
               <div className="overlay"></div>
-              <div className="text-content">
+             {/*  <div className="text-content">
                 <h1>Descripción(opcion)</h1>
                 <br></br>
                 <br></br>
-              </div>
+              </div> */}
             </div>
           </SwiperSlide>
         ))}

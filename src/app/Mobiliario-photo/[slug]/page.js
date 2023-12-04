@@ -5,8 +5,7 @@ import "../../../../styles/photopage.css"
 import Banner from '../../../../components/Banner';
 
 const PhotoPage = ({params: { slug }}) => {
-  console.log(galeria[slug].photo1)
-  console.log(galeria[slug].img)
+  const projectImages = galeria[slug].images;
       return (
         <section id="testimonios">
         <div className="slider">
@@ -17,7 +16,7 @@ const PhotoPage = ({params: { slug }}) => {
           </p>
         </div>
         <div className="img-container">
-          <Banner />
+        <Banner className="banner" images={projectImages}  />
         </div>
       </section>
   )
