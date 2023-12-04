@@ -178,36 +178,6 @@ export const info  = [
   // prensa
   export const prensa = [
     {
-      img: "/serv1.jpg",
-      number: 11,
-      mes: "Junio",
-      año: 2016,
-      title: " Construcción Sustentable U.T.N.",
-      tipo: "CHARLA",
-      enlace:
-        "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
-    },
-    {
-      img: "/photo3.jpg",
-      number: 28,
-      mes: "Agosto",
-      año: 2019,
-      title: " Revista Noticias",
-      tipo: "NOTA",
-      enlace:
-        "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
-    },
-    {
-      img: "/serv2.jpg",
-      number: 26,
-      mes: "Mayo",
-      año: 2020,
-      title: "D.Y Patil University (Pune-India)",
-      tipo: "LECTURE",
-      enlace:
-        "https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view",
-    },
-    {
       img: "/serv3.jpg",
       number: 16,
       mes: "Marzo",
@@ -215,7 +185,7 @@ export const info  = [
       title: "Terrenos y Quintas ",
       tipo: "NOTA",
       enlace:
-        "https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/",
+      "https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/",
     },
     {
       img: "/photo2.jpg",
@@ -226,7 +196,37 @@ export const info  = [
       tipo: "ENTREVISTA",
       enlace:
         "https://www.youtube.com/watch?v=AgZftXHh8G0",
+      },
+    {
+      img: "/serv2.jpg",
+      number: 26,
+      mes: "Mayo",
+      año: 2020,
+      title: "D.Y Patil University (Pune-India)",
+      tipo: "LECTURE",
+      enlace:
+      "https://drive.google.com/file/d/1VOTVjd2oSF_yYT8HyGO5b0-sTzZ10KRj/view",
     },
+    {
+      img: "/photo3.jpg",
+      number: 28,
+      mes: "Agosto",
+      año: 2019,
+      title: " Revista Noticias",
+      tipo: "NOTA",
+      enlace:
+      "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
+    },
+      {
+        img: "/serv1.jpg",
+        number: 11,
+        mes: "Junio",
+        año: 2016,
+        title: " Construcción Sustentable U.T.N.",
+        tipo: "CHARLA",
+        enlace:
+          "https://noticias.perfil.com/noticias/general/2019-09-18-santiago-semino-arquitectos-nuevas-formas-de-habitar.phtml",
+      },
     {
       img: "/WORDPRESS.jpg",
       number: 30,
