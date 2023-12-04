@@ -178,6 +178,16 @@ export const info  = [
   // prensa
   export const prensa = [
     {
+      img: "/photo2.jpg",
+      number: 30,
+      mes: "Junio",
+      año: 2023,
+      title: "Mundo Construcción",
+      tipo: "ENTREVISTA",
+      enlace:
+      "https://www.youtube.com/watch?v=AgZftXHh8G0",
+    },
+    {
       img: "/serv3.jpg",
       number: 16,
       mes: "Marzo",
@@ -187,16 +197,6 @@ export const info  = [
       enlace:
       "https://notas.terrenosyquintas.com/construccion-en-seco-la-tendencia-que-reduce-costos/",
     },
-    {
-      img: "/photo2.jpg",
-      number: 30,
-      mes: "Junio",
-      año: 2023,
-      title: "Mundo Construcción",
-      tipo: "ENTREVISTA",
-      enlace:
-        "https://www.youtube.com/watch?v=AgZftXHh8G0",
-      },
     {
       img: "/serv2.jpg",
       number: 26,
