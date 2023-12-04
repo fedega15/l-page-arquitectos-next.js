@@ -1,6 +1,6 @@
 const { default: Heading } = require("../nosotros/Heading");
 
-const ServComponent = ({ servicios, showMoreItems, toggleShowMore ,textAnimationControls }) => (
+const ServComponent = ({ servicios,/*  showMoreItems, toggleShowMore  */textAnimationControls }) => (
 
     <section id="galery">
     <Heading title="SERVICIOS" animationControls={textAnimationControls} />
@@ -12,7 +12,7 @@ const ServComponent = ({ servicios, showMoreItems, toggleShowMore ,textAnimation
           </div>
           <div className="item">
             <p>{proyecto.descripcion}</p>
-            {showMoreItems[proyecto.id] ? (
+      {/*       {showMoreItems[proyecto.id] ? (
               <div>
                 <p>{proyecto.descripcion1}</p>
                 <p>{proyecto.descripcion2}</p>
@@ -21,10 +21,10 @@ const ServComponent = ({ servicios, showMoreItems, toggleShowMore ,textAnimation
                 <p>{proyecto.descripcion5}</p>
                 <p>{proyecto.descripcion6}</p>
               </div>
-            ) : null}
-            <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>
+            ) : null} */}
+           {/*  <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>
               {showMoreItems[proyecto.id] ? "Leer Menos" : "Leer Más"}
-            </button>
+            </button> */}
             
           </div>
           <div className="item">

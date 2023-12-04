@@ -4,151 +4,159 @@ export const galeria = [
       id: 1,
       image: "/card1.jpg",
       estudio: "/serv3.jpg",
-      name: "Santiago Semmino",
-      rol: "[Arquitecto]",
+      name: "ARQ. Santiago Semmino",
+      rol: "@santiagosemino",
       descripcion: "Departamento Arquitectura",
     },
     {
       id: 2,
       image: "/card1.jpg",
       estudio: "/photo2.jpg",
-      name: "Fernando Fola",
-      rol: "[Maestro mayor de obras]",
+      name: "M.M.O Fernando Fola",
+      rol: "@fernandofola",
       descripcion: "Departamento Arquitectura",
     },
     {
       id: 3,
       image: "/card2.jpg",
       estudio: "/bn1.jpg",
-      name: "Jeremias Nolli",
-      rol: "[Maestro mayor de obras]",
+      name: "M.M.O Jeremias Nolli",
+      rol: "@jeremiasnoli",
       descripcion: "Departamento Arquitectura",
     },
   
     {
       id: 4,
       image: "/card2.jpg",
-      name: "Lucia Sanchez",
+      name: "ARQ. Lucia Sanchez",
       estudio: "/01.jpg",
-      rol: "[Arquitecta]",
+      rol: "@LuciaSanchez",
       descripcion: "Departamento Arquitectura",
     },
     {
       image: "/card5.jpg",
       id: 5,
-      name: "Agostina Selzer ",
-      rol: "[Diseñadora]",
+      name: "DIS. Agostina Selzer ",
+      rol: "@agos.selzer",
       descripcion: "Departamento Diseño",
     },
     {
       image: "/card1.jpg",
       id: 6,
-      name: "Luisina Viglione ",
-      rol: "[Administracion]",
+      name: "ADM. Luisina Viglione ",
+      rol: "@LuisinaViglione",
       descripcion: "Departamento Adminsitrativo",
     },
     {
       image: "/card1.jpg",
       id: 7,
       name: "Federico Galassi",
-      rol: "[Desarrollador Web]",
+      rol: "[Desarrollador Web] - @Federicogalassi_ ",
       descripcion: "Departamento Tecnologia",
     },
   ];
   export const colab = [
     {
       id: 1,
-      name: "Guillermina Garcia Cassis",
+      name: "Julieto Veron",
     },
     {
       id: 3,
-      name: "Carla Paone ",
+      name: "Fati Maranessi",
     },
     {
       id: 4,
-      name: "German Cardonato",
+      name: "Guillermina Garcia Cassis",
     },
     {
       id: 5,
-      name: "Emiliano Esmores",
+      name: "Carla Paone",
     },
     {
       id: 6,
-      name: "Mauro Canullo ",
+      name: "German Cardonatto",
     },
     {
       id: 7,
-      name: "Julieta Veron",
+      name: "Emiliano Esmores",
     },
     {
       id: 8,
-      name: "Franco Topa",
+      name: "Mauro Canullo",
     },
     {
       id: 9,
-      name: "Leandro Herrera",
+      name: "David Mussi",
     },
     {
       id: 10,
-      name: "Manuel Barbieri",
+      name: "Franco Topa",
     },
     {
       id: 11,
-      name: "Belen Pepe",
+      name: "Leandro Herrera",
     },
     {
       id: 12,
-      name: "Cecilia Mazza",
+      name: "Manuel Barbieri",
     },
     {
       id: 13,
-      name: "Ignacio Galoppo",
+      name: "Belen Pepe",
     },
     {
       id: 14,
-      name: "Eugenia Valvason",
+      name: "Cecilia Mazza",
     },
     {
       id: 15,
-      name: "Varinia Mateo",
+      name: "Ignacio Galoppo",
     },
     {
       id: 16,
-      name: "Dulce Scaldini",
+      name: "Eugenia Valvason",
+    },
+    {
+      id: 17,
+      name: "Varinia Mateo",
+    },
+    {
+      id: 18,
+      name: "Dulce Scladini",
     },
   ];
   export const colaboradores = [
     {
       id: 1,
-      name: "Ing. Omar Norris",
+      name: "Ing. Rita Campodonico",
     },
     {
       id: 3,
-      name: "Ing. Rita Campodónico ",
+      name: "Ing. Omar Norris ",
     },
     {
       id: 4,
-      name: "Ing. Fernando",
+      name: "Ing. Fernando Tettamanti (PLEXA)",
     },
     {
       id: 5,
-      name: "Renders - Yamila Baleani",
+      name: "Ing. Fernando Guardianelli",
     },
     {
       id: 6,
-      name: "Renders - Maxi Velazques ",
+      name: "Renders Yamila Baleani",
     },
     {
       id: 7,
-      name: "Dis Industrial - Alejandro Alfano",
+      name: "Renders Maximiliano Velazquez",
     },
     {
       id: 8,
-      name: "Dis Industrial - Mauricio Marinucci",
+      name: "Diseñador Industrial Alejandro Alfano Curbelo",
     },
     {
       id: 9,
-      name: "Gestión Municipal - Jorgelina Selle",
+      name: "Gestión Municipal Jorgelina Selle",
     },
   ];
 export const info  = [
@@ -218,6 +226,18 @@ export const info  = [
       tipo: "ENTREVISTA",
       enlace:
         "https://www.youtube.com/watch?v=AgZftXHh8G0",
+    },
+    {
+      img: "/WORDPRESS.jpg",
+      number: 30,
+      mes: "Noviembre",
+      año: 2010,
+      title: "CLUB IMPERIAL",
+      tipo: "WordPress",
+      enlace:
+        "https://clubimperialrosario.wordpress.com/",
+      enlace2:
+        "https://www.pagina12.com.ar/diario/suplementos/rosario/12-23767-2010-05-29.html",
     },
   ];
 
@@ -1462,38 +1482,8 @@ export const servicios = [
     ],
     descripcion: `Diseñamos proyectos de arquitectura a medida, como viviendas, edificios en altura, edificios comerciales,
     edificios de usos múltiples, proyectos de urbanismo y paisajismo. La sustentabilidad y el diseño eficiente
-    aparecen en nuestros primeros bocetos, como parte conjunta de nuestro proceso.Los proyectos están divididos en 4 diferentes etapas:`,
-    descripcion1: `1. ESTUDIO PRELIMINAR
-    Es el estudio inicial del proyecto, donde analizamos el pedido del cliente, y empezamos a diseñarlo.
-    De estos primeros bocetos podemos empezar a estimar que sistema constructivo es más eficiente
-    según el pedido del cliente, cantidad de metros cubiertos, etc.
-    con estos primeros datos podemos hacer un costo estimado de obra, y empezar a definir el
-    programa de necesidades junto con el cliente.`,
-    descripcion2: `2. ANTEPROYECTO
-    Una vez definida la primera etapa, pasamos al anteproyecto, donde empezaremos a diseñar el
-    proyecto requerido. En esta etapa entra la parte sustentable, y empieza a mezclarse con el diseño
-    del proyecto. En esta etapa se le empieza a mostrar al cliente, cierta planimetría y una maqueta
-    digital, donde se podrá ver la volumetría propuesta, junto con la estructura, y algunos espacios
-    exteriores e interiores. En esta etapa ajustamos el presupuesto de obra estimativo, para que el
-    cliente vaya tomando dimensión del mismo. El Anteproyecto debe cumplir con las disposiciones del
-    Reglamento de Edificación vigente de la ciudad donde se va a implantar el proyecto.`,
-    descripcion3: `3. LEGAJO EJECUTIVO
-    En esta etapa vamos a poder definir, instalaciones generales, terminaciones finales, la materialidad y
-    las terminaciones interiores, y es cuando empezamos a diseñar el mobiliario. Una vez terminada esta
-    etapa, se le entrega al cliente una carpeta con toda la planimetría, junto con un cómputo metrico y
-    un presupuesto ajustado al cómputo correspondiente. Esta carpeta cumplirá con las disposiciones
-    del Reglamento de Edificación e incluirá toda la información necesaria para que el constructor
-    confeccione los planos de ejecución correspondientes a la ingeniería de detalle.`,
-    descripcion4: `4. GESTIÓN MUNICIPAL
-    Permiso de Edificación:
-    Para la habilitación y/o permiso de edificación el arquitecto a cargo deberá presentar el
-    legajo correspondiente en el colegio de arquitectos y pagar sus respectivos aportes, una vez
-    hecho este trámite, deberá presentar el legajo municipal, el cual deberá incluir toda la
-    información requerida por el municipio correspondiente.
-    Final de Obra
-    Este trámite se gestionará y presentará una vez finalizada la obra, presentando las
-    correcciones o planos adicionales correspondientes según la reglamentación de cada
-    municipio.`,
+    aparecen en nuestros primeros bocetos, como parte conjunta de nuestro proceso.`,
+ 
   },
   {
     id: 2,
@@ -1504,17 +1494,10 @@ export const servicios = [
       { name: "kado", link: "/ASD6" },
     ],
     descripcion: `Nos encargamos del servicio Gestión, Planificación y Dirección de Obras de todo tipo de
-    escala y complejidad, coordinando y haciendo el control de calidad de las tareas de los
-    diferentes contratistas, semanalmente presentamos un informe con la certificacion semanal
-    de la obra.
+    escala y complejidad, entregando informes semanales, coordinando y haciendo el control de
+    calidad de las tareas de los diferentes contratistas.
     `,
-    descripcion1: `(PRUEBA) semanalmente presentamos un informe con la certificacion semanal
-    de la obra.`,
-    /* descripcion2: `Todos los presupuestos aprobados de la obra se deberán entregar al Director de Obra, quien
-    actualiza la planilla de Cómputo y Presupuesto y deberá presentar la certificación semanal de la
-    obra.
-    `,
-    descripcion3: `LA TAREA DEL DIRECTOR DE OBRA ES EL CONTROL Y LA COORDINACIÓN DE LAS TAREAS`, */
+   
   },
   {
     id: 3,
@@ -1525,16 +1508,16 @@ export const servicios = [
       { name: "kado", link: "/ASD6" },
     ],
     descripcion:
-    `Diseñamos el mobiliario de cocina con los sistemas de apertura de vanguardia, los muebles
-    para baños, y los muebles a medida que el proyecto requiera. Estamos desarrollando una marca de mobiliario y objetos, diseñados y fabricados con el
-    concepto del diseño sustentable, estos muebles estan fabricados con materiales que
-    provienen del proceso del reciclado.`,
-    descripcion1:
-    `ES POR ESO QUE BUSCAMOS LA OPTIMIZACIÓN DEL PROCESO, EXPLORANDO NUEVOS
-    MATERIALES QUE PROVIENEN DEL PROCESO DEL RECICLADO, CON UNA GRAN
-    VERSATILIDAD EN SUS COLORES Y TEXTURAS.
-    NUESTRA MISIÓN ES PODER CONCIENTIZAR DESDE EL DISEÑO Y EL PROCESO DEL
-    RECICLADO A COLABORAR CON EL CUIDADO DEL MEDIO AMBIENTE.
+    `Diseñamos el mobiliario de todos los ambientes interiores del proyecto, estudiando cada uno
+    de sus materiales y sistemas de apertura de vanguardia.
+    Nuestro radio de diseño abarca, para las viviendas: consolas, aparadores, interiores de
+    placard, muebles de cocina, mesas de comedor, etc. En los proyectos comerciales, mesas de
+    trabajo, mesas de reuniones, archivos, muebles de recepción, etc.
+    Conjuntamente estamos desarrollando una línea de mobiliario y objetos, diseñados y
+    fabricados desde el concepto del diseño sustentable. Estudiando los procesos constructivos
+    efectivos, y estudiando materiales que provienen del proceso del reciclado.
+    En este proyecto nuestra mision es poder concientizar desde el diseño y el proceso del
+    reciclado a colaborar con el cuidado del medioambiente.
     `,
   },
   {
@@ -1546,53 +1529,17 @@ export const servicios = [
       { name: "kado", link: "/ASD6" },
     ],
     descripcion:
-    `Diseñamos y fabricamos estructuras modulares, estas estructuras se prearman en una fabrica
-    y van directamente armadas al terreno, donde deberan estar las instalaciones previas y los
-    apoyos para recibir el modulo.
+    `Dentro de nuestro estudio estamos desarrollando un sistema constructivo en estructuras
+    modulares y transportables. Estas estructuras se prearman en una fábrica y van directamente
+    armadas al terreno. Estos sistemas modulares, logra generar un menor impacto ambiental
+    que el que genera una construcción tradicional, ya que se generan menos residuos, menos
+    ruido en el terreno, y menor consumo de recursos naturales. Estos sistemas pueden instalarse
+    sobre cualquier terreno, son flexibles, de bajo mantenimiento, y reemplazan los sistemas
+    constructivos tradicionales, por obras más limpias, más rápidas, eficaces y sustentables, con
+    sistemas de instalaciones de servicios de vanguardia, estos módulos pueden generar su
+    propia energía y reutilizar el agua de lluvia.
    `,
-    descripcion1:
-    `
-    Estos sistemas modulares, tienen muy buena eficiencia acústica y térmica interior, este
-    sistema constructivo logra generar un menor impacto ambiental que el que genera una
-    construcción tradicional, ya que se generan menos residuos, menos ruido en el terreno, y
-    menor consumo de recursos naturales. Estos sistemas pueden instalarse sobre cualquier
-    terreno, son flexibles, de bajo mantenimiento, y reemplazan los sistemas constructivos
-    tradicionales, por obras más limpias, más rápidas, eficaces y sustentables, con sistemas de
-    instalaciones de servicios de vanguardia, estos módulos pueden generar su propia energía y
-    reutilizar el agua de lluvia.`,
-    descripcion2:
-    `
-    
-    La prefabricación de estos módulos logra optimizar los recursos durante la fase de
-    construcción, y así reducir los costos al mínimo, sin la posibilidad de que haya sobreprecios.
-    `,
-    descripcion3:`
-    1. VELOCIDAD CONSTRUCTIVA
-    La construcción modular logra optimizar los tiempos de ejecución de la obra y los plazos de
-    entrega gracias al proceso de fabricación o pre armado en taller o in situ.`,
-    descripcion4:`
-    2. FLEXIBILIDAD
-    Una de las alternativas de este sistema es la versatilidad que ofrece, ya que permite su
-    instalación en cualquier entorno y condición climática. Este sistemas tienen la virtud de
-    poder ir creciendo libremente dependiendo de cada necesidad. Se pueden ir agregando
-    módulos en el tiempo a medida que se requiera para ampliar o modificar lo existente en
-    busca de nuevos espacios.
-    `,descripcion5:`
-    3. COSTOS
-    Por su grado de automatización alcanzar un costo exacto del precio final del producto, sin
-    riesgos de sobreprecios.`,
-    descripcion5:`
-    4. RESISTENCIA
-    Estos módulos resisten en perfectas condiciones los movimientos de grúas, tano como izados,
-    traslados y descarga hasta su lugar de ensamblaje.`,
-    descripcion6:`
-    5. SUSTENTABILIDAD
-    La construcción modular permite una disminución del impacto ambiental en el terreno,
-    debido a que se produce una menor cantidad de desperdicios, también produce menos
-    ruidos. La construcción modular es también reciclable, ya que se puede trasladar y reubicar
-    en otro terreno.
    
-    `,
   },
   
 ];

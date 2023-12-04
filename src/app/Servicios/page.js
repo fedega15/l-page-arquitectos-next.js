@@ -48,7 +48,7 @@ const Page = () => {
     }
   }, [scrollY, textAnimationControls]);
 
-  const [showMoreItems, setShowMoreItems] = useState({}); // Estado para controlar qué elementos se muestran
+  /* const [showMoreItems, setShowMoreItems] = useState({}); */ // Estado para controlar qué elementos se muestran
 
   // Define el umbral de desplazamiento en el que deseas aplicar la animación
   const scrollThreshold = 200; // Ajusta esto según tus necesidades
@@ -64,18 +64,18 @@ const Page = () => {
     }
   }, [isLoaded, scrollY, textAnimationControls]);
 
-  const toggleShowMore = (itemId) => {
+ /*  const toggleShowMore = (itemId) => {
     setShowMoreItems((prevItems) => ({
       ...prevItems,
       [itemId]: !prevItems[itemId],
     }));
-  };
+  }; */
   return (
     <ServComponent
       servicios={servicios}
       textAnimationControls={textAnimationControls}
-      showMoreItems={showMoreItems}
-      toggleShowMore={toggleShowMore}
+   /*    showMoreItems={showMoreItems} */
+      /* toggleShowMore={toggleShowMore} */
     />
   );
 };
