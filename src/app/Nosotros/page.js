@@ -11,7 +11,6 @@ import Heading from "../../../components/nosotros/Heading";
 import {
   TeamMembers,
   StudioImages,
-  StudioDescription,
   Advisors,
 } from "../../../components/nosotros/NosotrosComponent";
 
@@ -96,7 +95,7 @@ const Page = () => {
     <section id="galery">
       <Heading title="NOSOTROS" animationControls={textAnimationControls} />
       <div className="studio-info">
-        <StudioDescription />
+      {/*   <StudioDescription /> */}
         <StudioImages galeria={galeria} />
       </div>
       <TeamMembers

@@ -12,6 +12,7 @@ header {
   
 }
 header nav {
+  height: 50px;
   justify-content: space-between;
   width: 100%;
   max-width: var(max-width);
@@ -19,12 +20,13 @@ header nav {
   align-items: center;
 }
 header .logo {
-  width: 140px;
-  height: 42px;
-  margin-top:5px;
+  width: 120px;
+  height: 32px;
+/*   background-color:red; */
+  margin-top:7px;
   margin-bottom: 19px;
   justify-content: flex-start;
-    font-size: 1.2rem;
+    font-size: 1rem;
   font-weight: 700;
   margin-left: 2px;
 }
@@ -62,13 +64,13 @@ header ul li a:hover {
     background-color:#019b21;
 }
 .menu-d {
-    width: 90px;
-    height:39px ;
-    background-color:green;
+    width: 60px;
+    height:30px ;
     color: black;
-    font-size: large;
+    font-size: 13.5px;
     margin-right: 17px;
-    margin-top: 0px;
+    margin-top: 5px;
+
     margin-bottom: 10px;
     
 }
@@ -88,10 +90,8 @@ header .box-li {
 }
 
 
-
-
-.logo {
-margin-top: -20px;
+.logo  {
+margin-top: -10px;
 margin-bottom: -20px;
 }
 @media (min-width: 1150px) {
@@ -133,11 +133,10 @@ header ul i:hover{
   }
   
 .menu-d {
-  width: 90px;
-  height:45px ;
-  background-color: green;/* rgb(244, 250, 243); */
+  width: 70px;
+  height:34px ;
   color: black;
-  font-size: large;
+  font-size: 16.5px;
   margin-right:17px;
   margin-top: 5px;
   

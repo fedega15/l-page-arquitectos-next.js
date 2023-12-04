@@ -1,6 +1,6 @@
 #galery {
   padding-bottom: 20px;
-  padding-top: 50px;
+  padding-top: 41px;
   width: 100%;
   max-width: var(--max-width);
   overflow: hidden;
@@ -56,6 +56,8 @@
   transition: all linear 0.5s;
   /*  filter: grayscale(100%);  */
 }
+
+
 
 #galery .card:hover .box {
   background: rgba(238, 123, 29, 0.7);

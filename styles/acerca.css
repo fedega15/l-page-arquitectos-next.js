@@ -6,7 +6,10 @@
   padding-bottom: 50px;
   background-color: #ffffff;
 }
-
+.fa-solid {
+  color: white;
+  font-size:28px
+}
 #galery .main__action {
   position: fixed;
   bottom: 20px;
@@ -135,6 +138,37 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+}
+.studio-image-container {
+  position: relative;
+  margin-left: 0px;
+  width: 100%; /* Usa el 100% del ancho del contenedor padre */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.studio-image-overlay {
+  position: absolute;
+  left:170px;
+
+   bottom: 30px;
+  width: 73%;
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido al inicio del contenedor */
+  justify-content: center;
+  text-align: center;
+  max-width: 500px; /* Ancho máximo para el overlay */
+}
+
+.studio-image-text {
+  
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px; /* Ajusta el margen según sea necesario */
+  text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .studio-image {
@@ -298,8 +332,42 @@
   margin-bottom: 10px;
 }
 @media (max-width: 768px) {
+  .fa-solid {
+    color: white;
+    font-size:18px;
+    padding-left:3px;
+    margin-right:-7px
+  }
+  .studio-image-container {
+    position: relative;
+    margin-left: -10px;
+    width: 100%; /* Usa el 100% del ancho del contenedor padre */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
   
+.studio-image-overlay {
+  position: absolute;
+  left:0px;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start; /* Alinea el contenido al inicio del contenedor */
+  justify-content: center;
+  text-align: center;
+  max-width: 500px; /* Ancho máximo para el overlay */
+}
  
+.studio-image-text {
+  
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px; /* Ajusta el margen según sea necesario */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
   #galery {
     padding: 40px;
     padding-bottom: 100px;

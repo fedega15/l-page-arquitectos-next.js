@@ -58,19 +58,26 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls }) => (
     </section>
   );
   import Image from "next/image";
-
-const StudioImages = ({ galeria }) => (
+  const StudioImages = ({ galeria }) => (
     <div className="studio-images">
       {galeria.slice(0, 1).map((proyecto) => (
-        <div className="studio-image" key={proyecto.id}>
+        <div className="studio-image-container" key={proyecto.id}>
+          <div className="studio-image-overlay">
+          <i class="fa-solid fa-quote-right"></i>
+            <span className="studio-image-text">
+            Somos un equipo interdisciplinario enfocado en el diseño y la
+              arquitectura, con dedicación a proyectos de todo tipo de escala,
+              diseño de mobiliario, objetos, sistemas modulares, y con activa
+              participación a concursos nacionales e internacionales. 
+            </span>
+          </div>
           <Image
-                  src={proyecto.estudio}
-                  alt={proyecto.name}
-                  className="-image"
-                  width={720}
-                  height={700}// Tamaño más grande
-                  /* sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" */
-                />
+            src={proyecto.estudio}
+            alt={proyecto.name}
+            className="studio-image"
+            width={720}
+            height={700}
+          />
         </div>
       ))}
     </div>
