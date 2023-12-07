@@ -606,7 +606,7 @@ export const info  = [
         { src: "/Biaggiotti2.jpg", alt: "Description 2" },
         { src: "/Biaggiotti3.jpg", alt: "Description 2" },
         { src: "/Biaggiotti4.jpg", alt: "Description 2" },
-        { src: "/Biaggiotti.jpg", alt: "Description 2" },
+        { src: "/Biaggiotti.JPEG", alt: "Description 2" },
       ],
       activites: 10,
       places: 12,
