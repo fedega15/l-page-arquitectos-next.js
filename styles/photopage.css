@@ -1,7 +1,7 @@
 #testimonios {
   padding-top: 120px;
   display: flex;
-  background-color: #e0d9d9; 
+/*   background-color: #e0d9d9;  */
   justify-content: space-between; /* Distribuye los elementos al inicio y al final del contenedor */
   align-items: flex-start; /* Alinea los elementos en la parte superior del contenedor */
   flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
@@ -12,10 +12,13 @@
   width: 35%; /* Ajusta el ancho según tus necesidades */
   padding: 10px; /* Agrega un poco de espacio interno */
 }
+.slide-content {
+  height: 400px;
 
+}
 .img-container {
   margin-right: 80px;
-  margin-top: -27px;
+  margin-top: 17px;
   width: 44%; /* Ajusta el ancho según tus necesidades */
   padding: 10px; /* Agrega un poco de espacio interno */
 }

@@ -10,7 +10,7 @@ const PhotoPage = ({params: { slug }}) => {
       return (
         <section id="testimonios">
         <div className="slider">
-          <h2>{galeria[slug].name}</h2>
+          <h2>{galeria[slug].proyect}</h2>
           <h1>{galeria[slug].ubi}</h1>
           <p className='crossed-lines'>
             {galeria[slug].descripcion}

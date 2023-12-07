@@ -261,4 +261,7 @@
   letter-spacing: 1px;
   font-size: 12.6px;
 }
+#testimonios .card {
+  margin-bottom: -30px;
+}
 }

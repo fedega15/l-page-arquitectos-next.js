@@ -24,7 +24,7 @@ import "../styles/banner.css";
 ]; */
 
 const Banner = ( {images}) => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+ /*  const [modalIsOpen, setModalIsOpen] = useState(false); */
   const [selectedImage, setSelectedImage] = useState("");
   const customStyles = {
     overlay: {
@@ -73,7 +73,7 @@ const Banner = ( {images}) => {
       borderRadius: "0", // Elimina el radio de la esquina para que ocupe toda la pantalla
     };
   }
-  const openModal = (image) => {
+/*   const openModal = (image) => {
     setSelectedImage(image);
     console.log(image)
     setModalIsOpen(true);
@@ -82,7 +82,7 @@ const Banner = ( {images}) => {
   const closeModal = () => {
     setSelectedImage("");
     setModalIsOpen(false);
-  };
+  }; */
 
   return (
     <>
@@ -103,7 +103,7 @@ const Banner = ( {images}) => {
         className="mySwiper"
       >
         {images.map((image, index) => (
-          <SwiperSlide key={index} onClick={() => openModal(image) }>
+          <SwiperSlide key={index} /* onClick={() => openModal(image) } */>
             <div className="slide-content">
               <Image
                 src={image.src}
@@ -124,7 +124,7 @@ const Banner = ( {images}) => {
         ))}
       </Swiper>
       {/* Modal */}
-      <Modal
+      {/* <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         contentLabel="Imagen Ampliada"
@@ -155,8 +155,7 @@ const Banner = ( {images}) => {
                 src={image.src}
                 alt={image.slt}
                 width={654}
-                height={466} // Tamaño más grande
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                height={466} 
                 priority
               />
               <div className="overlay"></div>
@@ -166,7 +165,7 @@ const Banner = ( {images}) => {
           </SwiperSlide>
         ))}
       </Swiper>
-      </Modal>
+      </Modal> */}
     </>
   );
 };

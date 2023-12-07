@@ -29,7 +29,7 @@ const page = () => {
                     <strong>{galeria.name}</strong>
                       {" "}
                       <h3>
-                        <i className="fas fa-map-marker-alt"> </i> -{" "}
+                        <i className="fas fa-map-marker-alt"> </i> {" "}
                         {galeria.ubi}
                       </h3>
                     </span>
