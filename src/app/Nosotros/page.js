@@ -5,7 +5,7 @@ import { useAnimation } from "framer-motion";
 //Styles
 import "../../../styles/acerca.css";
 // Data
-import { galeria, colab, colaboradores } from "../../../components/data";
+import { galeria, colab, colaboradores, colab2 } from "../../../components/data";
 //componentes
 import Heading from "../../../components/nosotros/Heading";
 import {
@@ -13,6 +13,7 @@ import {
   StudioImages,
   Advisors,
 } from "../../../components/nosotros/NosotrosComponent";
+import Image from "next/image";
 
 const Page = () => {
   //states
@@ -95,8 +96,40 @@ const Page = () => {
     <section id="galery">
       <Heading title="NOSOTROS" animationControls={textAnimationControls} />
       <div className="studio-info">
-      {/*   <StudioDescription /> */}
-        <StudioImages galeria={galeria} />
+        <div className="studio-description">
+         {/*  <h2>Estudio SSA</h2> */}
+         <br />
+          <span>
+          Somos un equipo interdisciplinario enfocado en el diseño y la arquitectura, con dedicación a proyectos de todo tipo de escala,
+      diseño de mobiliario, objetos, sistemas modulares, y con activa participación a concursos nacionales e internacionales.
+          </span>
+           <br></br>
+        <br></br>
+          <span>
+          Nuestra oficina está impulsada por jóvenes arquitectos, ingenieros, interioristas, diseñadores gráficos, industriales que diseñan y
+      desarrollan conjuntamente proyectos desde los primeros bocetos hasta la supervisión final en obra. En nuestro proceso de trabajo aparece
+      el diseño sustentable como eje principal de nuestros proyectos.
+          </span>
+          <br></br>
+          <br></br>
+          <span>
+          El estudio de los nuevos sistemas de construcción, la transformación y evolución de las ciudades, la innovación tecnológica,
+      y el diseño eficiente es lo que nos motiva a seguir creciendo.
+          </span>
+        </div>
+        <div className="studio-images">
+          {galeria.slice(0, 1).map((proyecto) => (
+            <div className="studio-image" key={proyecto.id}>
+              <Image
+                src={proyecto.estudio}
+                alt={proyecto.name}
+                className="card-image"
+                width={600} // Tamaño más grande
+                height={400} // Tamaño más grande
+              />
+            </div>
+          ))}
+        </div>
       </div>
       <TeamMembers
         galeria={galeria}
@@ -105,6 +138,7 @@ const Page = () => {
       <Advisors
         colaboradores={colaboradores}
         colab={colab}
+        colab2={colab2}
         prensaTitleControls={prensaTitleControls}
       />
     </section>

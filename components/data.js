@@ -55,39 +55,7 @@ export const galeria = [
       descripcion: "Departamento Tecnologia",
     },
   ];
-  export const colab = [
-    {
-      id: 1,
-      name: "Julieto Veron",
-    },
-    {
-      id: 3,
-      name: "Fati Maranessi",
-    },
-    {
-      id: 4,
-      name: "Guillermina Garcia Cassis",
-    },
-    {
-      id: 5,
-      name: "Carla Paone",
-    },
-    {
-      id: 6,
-      name: "German Cardonatto",
-    },
-    {
-      id: 7,
-      name: "Emiliano Esmores",
-    },
-    {
-      id: 8,
-      name: "Mauro Canullo",
-    },
-    {
-      id: 9,
-      name: "David Mussi",
-    },
+  export const colab2 = [
     {
       id: 10,
       name: "Franco Topa",
@@ -124,6 +92,44 @@ export const galeria = [
       id: 18,
       name: "Dulce Scladini",
     },
+  ];
+
+  export const colab = [
+    
+    {
+      id: 1,
+      name: "Julieto Veron",
+    },
+    {
+      id: 3,
+      name: "Fati Maranessi",
+    },
+    {
+      id: 4,
+      name: "Guillermina Garcia Cassis",
+    },
+    {
+      id: 5,
+      name: "Carla Paone",
+    },
+    {
+      id: 6,
+      name: "German Cardonatto",
+    },
+    {
+      id: 7,
+      name: "Emiliano Esmores",
+    },
+    {
+      id: 8,
+      name: "Mauro Canullo",
+    },
+    {
+      id: 9,
+      name: "David Mussi",
+    },
+  
+    
   ];
   export const colaboradores = [
     {

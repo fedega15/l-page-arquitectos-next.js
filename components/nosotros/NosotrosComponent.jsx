@@ -24,7 +24,7 @@ const StudioDescription = () => (
     </div>
   );
 
-const Advisors = ({ colaboradores, colab, prensaTitleControls }) => (
+const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
     <section className="grid" id="prensa">
       <Heading title="ASESORES" animationControls={prensaTitleControls} />
       <div className="grid1">
@@ -53,36 +53,68 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls }) => (
               ))}
             </ul>
           </div>
+          <div className="item3">
+            <br />
+            <ul>
+              {colab2.map((enlace, i) => (
+                <li key={i}>
+                  <p className="span" href={enlace.name}>
+                    {enlace.name}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
   );
   import Image from "next/image";
+
   const StudioImages = ({ galeria }) => (
     <div className="studio-images">
       {galeria.slice(0, 1).map((proyecto) => (
         <div className="studio-image-container" key={proyecto.id}>
           <div className="studio-image-overlay">
-          <i className="fa-solid fa-quote-right"></i>
             <span className="studio-image-text">
-            Somos un equipo interdisciplinario enfocado en el diseño y la
-              arquitectura, con dedicación a proyectos de todo tipo de escala,
-              diseño de mobiliario, objetos, sistemas modulares, y con activa
-              participación a concursos nacionales e internacionales. 
-              
+            <span>
+      Somos un equipo interdisciplinario enfocado en el diseño y la arquitectura, con dedicación a proyectos de todo tipo de escala,
+      diseño de mobiliario, objetos, sistemas modulares, y con activa participación a concursos nacionales e internacionales.
+    </span>
+    <br />
+    <br />
+    <span>
+      Nuestra oficina está impulsada por jóvenes arquitectos, ingenieros, interioristas, diseñadores gráficos, industriales que diseñan y
+      desarrollan conjuntamente proyectos desde los primeros bocetos hasta la supervisión final en obra. En nuestro proceso de trabajo aparece
+      el diseño sustentable como eje principal de nuestros proyectos.
+    </span>
+    <br />
+    <br />
+    <span>
+      El estudio de los nuevos sistemas de construcción, la transformación y evolución de las ciudades, la innovación tecnológica,
+      y el diseño eficiente es lo que nos motiva a seguir creciendo.
+    </span>
             </span>
           </div>
-          <Image
-            src={proyecto.estudio}
-            alt={proyecto.name}
-            className="studio-image"
-            width={720}
-            height={700}
-          />
+          <div className="studio-image-wrapper">
+            <Image
+              src={proyecto.estudio}
+              alt={proyecto.name}
+              className="studio-image"
+              layout="responsive"
+              width={1920} // Ancho original de la imagen
+              height={1280} // Altura original de la imagen
+            />
+          </div>
         </div>
       ))}
+      
     </div>
+    
+    
   );
+
+  
 
   import Card from "./Card";
   
@@ -98,7 +130,9 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls }) => (
               descripcion={proyecto.descripcion}
             />
           </div>
+          
         ))}
+        
       </section>
     );
   
