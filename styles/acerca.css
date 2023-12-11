@@ -339,7 +339,7 @@
     width: 95%;
   }
   .press-article:hover {
-     background: rgba(238, 123, 29, 0.7);
+    background: #cfcaca;
   }
   #galery .main__action {
     position: fixed;
