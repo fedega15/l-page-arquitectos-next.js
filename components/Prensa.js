@@ -22,13 +22,13 @@ const Card = ({ img, number, mes, año, title,tipo, enlace }) => {
         <h2>{title}</h2>
         <p>{tipo}</p>
 
-        <a
+      {/*   <a
           target="_blank"
           href={enlace}
           className="press-link"
         >
           Leer más
-        </a>
+        </a> */}
       </div>
     </div>
     </div>

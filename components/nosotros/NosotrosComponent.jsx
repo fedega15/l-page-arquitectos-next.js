@@ -128,6 +128,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
               name={proyecto.name}
               rol={proyecto.rol}
               descripcion={proyecto.descripcion}
+              link={proyecto.link}
             />
           </div>
           

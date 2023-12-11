@@ -8,6 +8,10 @@ const PrensaComponent = ({ Prensa, prensa, textAnimationControls  }) => (
 <div className="press-grid">
   {prensa.map((galeria, i) => (
     <div key={i} className="press-article">
+      <a
+      key={galeria.id}
+      href={galeria.enlace}
+      >
       <Prensa
         img={galeria.img}
         number={galeria.number}
@@ -16,10 +20,12 @@ const PrensaComponent = ({ Prensa, prensa, textAnimationControls  }) => (
         title={galeria.title}
         tipo={galeria.tipo}
         enlace={galeria.enlace}
-      />
+        />
+        </a>
     </div>
   ))}
 </div>
+
 </section>
  );
  export default PrensaComponent

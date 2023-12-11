@@ -1,8 +1,9 @@
 // Card.js
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const Card = ({ name, rol, descripcion, image }) => {
+const Card = ({ link , name, rol, descripcion, image,   }) => {
   return (
     <div className="card">
       <Image
@@ -14,7 +15,9 @@ const Card = ({ name, rol, descripcion, image }) => {
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <h3>{name}</h3>
-      <span>{rol}</span>
+      <div>
+      <Link href={link}>{rol} </Link>
+      </div>
       <br/>
       <span>{descripcion}</span>
     </div>
