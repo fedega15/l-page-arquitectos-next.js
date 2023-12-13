@@ -1914,7 +1914,7 @@ export const galery = [
     id: 1,
     proyect: "Arquitectura",
     name: "Arquitectura",
-    img: "/g5.jpg",
+    img: "/g51.jpg",
     activites: 10,
    /*  places: 32, */
     days: "1week",
@@ -1948,7 +1948,7 @@ export const galery = [
     id: 4,
     proyect: "ARQUITECTURA MODULAR",
     name: "Modulos",
-    img: "/g7.jpg",
+    img: "/g71.jpg",
     activites: 10,
     /* places: 200, */
     days: "1week",
@@ -1959,7 +1959,7 @@ export const galery = [
     proyect: "MOBILE",
     name: "Mobile ",
     
-    img: "/g2.jpg",
+    img: "/g21.jpg",
     id: 5,
     activites: 45,
     /* places: 46, */
