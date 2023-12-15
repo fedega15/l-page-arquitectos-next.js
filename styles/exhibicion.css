@@ -38,6 +38,7 @@
 }
 
 #galery .card img{
+    padding-top: 20px;
     transition: all linear 0.5s;
 }
 
