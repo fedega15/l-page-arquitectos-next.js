@@ -80,35 +80,12 @@
     123,
     29,
     0.7
-  ); /* Cambia el valor de rgba para ajustar el color y la opacidad */
+  ); 
 }
 
 #galery .card:hover img {
   transform: scale(1.08);
-} /*  filter: grayscale(0%); 
-    /* 
-    #galery .card-1:hover img{
-        background-color: rgb(53, 51, 175);
-        
-    }
-    #galery .card-2:hover img{
-       background-color: #D3D3D3 
-       
-    }
-    #galery .card-3:hover img{
-        / background-color: #edda2f  
-        
-       
-    }
-    #galery .card-4:hover img{
-        background-color: rgb(76, 146, 85);
-    }
-    #galery .card-0:hover img{
-        background-color: #EE7B1D
-    }
-    #galery .card-5:hover img{
-        background-color: rgb(238, 17, 17);
-    } */
+} 
 
 #galery .box {
   position: absolute;
@@ -196,7 +173,6 @@
     text-transform: capitalize;
     color: #f7eeee;
   }
-  .card {
-    padding: 2px;
-  }
+ /*  .card {
+     padding: 2px;  } */
 }
