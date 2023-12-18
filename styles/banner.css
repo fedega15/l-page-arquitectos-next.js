@@ -123,6 +123,26 @@
   }
   
 @media(max-width:600px)  {
+ /*  .overlay {
+    position: fixed;
+    width: 120%;
+    height: 90%;
+    z-index: 1000;
+  } */
+  .slide-content{
+    object-fit: cover;
+    height: 110%;
+    margin-left: -30px;
+    width: 117%;
+  }
+  .slide-content img{
+    height: 250px;
+    object-fit: fill;
+    
+  }
+  
+
+
     .banner .box {
         margin: 0 30px;
     }
