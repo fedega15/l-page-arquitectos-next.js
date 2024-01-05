@@ -9,6 +9,7 @@ const PrensaComponent = ({ Prensa, prensa, textAnimationControls  }) => (
   {prensa.map((galeria, i) => (
     <div key={i} className="press-article">
       <a
+      target="_blank"
       key={galeria.id}
       href={galeria.enlace}
       >

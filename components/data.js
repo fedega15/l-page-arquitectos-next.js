@@ -7,7 +7,9 @@ export const galeria = [
       name: "ARQ. Santiago Semmino",
       rol: "@santiagosemino",
       link:"//www.instagram.com/ssa_estudio/",
-      descripcion: "Departamento Arquitectura",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
+      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases",
     },
     {
       id: 2,
@@ -15,6 +17,8 @@ export const galeria = [
       estudio: "/photo2.jpg",
       name: "M.M.O Fernando Fola",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@fernandofola",
       descripcion: "Departamento Arquitectura",
     },
@@ -24,6 +28,8 @@ export const galeria = [
       estudio: "/bn1.jpg",
       name: "M.M.O Jeremias Nolli",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@jeremiasnoli",
       descripcion: "Departamento Arquitectura",
     },
@@ -33,6 +39,8 @@ export const galeria = [
       image: "/card2.jpg",
       name: "ARQ. Lucia Sanchez",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       estudio: "/01.jpg",
       rol: "@LuciaSanchez",
       descripcion: "Departamento Arquitectura",
@@ -42,6 +50,8 @@ export const galeria = [
       id: 5,
       name: "DIS. Agostina Selzer ",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@agos.selzer",
       descripcion: "Departamento Diseño",
     },
@@ -50,6 +60,8 @@ export const galeria = [
       id: 6,
       name: "ADM. Luisina Viglione ",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@LuisinaViglione",
       descripcion: "Departamento Adminsitrativo",
     },
@@ -58,6 +70,8 @@ export const galeria = [
       id: 7,
       name: "PROG. Federico Galassi",
       link:"//www.instagram.com/ssa_estudio/",
+      mail:"santiagosemino@ssaestudio.com",
+      linkemail:"//mailto:santiagosemino@gmail.com",
       rol: " @Federicogalassi_ ",
       descripcion: "Departamento Tecnologia",
     },
@@ -175,18 +189,20 @@ export const galeria = [
 export const info  = [
   {
     title: "Estudio SSA",
-    descripcion: ` Somos un equipo interdisciplinario enfocado en el diseño y la
-    arquitectura, con dedicación a proyectos de todo tipo de escala,
-    diseño de mobiliario, objetos, sistemas modulares, y con activa
-    participación a concursos nacionales e internacionales. Nuestra
-    oficina está impulsada por jóvenes arquitectos, ingenieros,
-    interioristas, diseñadores gráficos, industriales que diseñan y
-    desarrollan conjuntamente proyectos desde los primeros bocetos hasta
-    la supervisión final en obra. En nuestro proceso de trabajo aparece
-    el diseño sustentable como eje principal de nuestros proyectos. El
-    estudio de los nuevos sistemas de construcción, la transformación y
-    evolución de las ciudades, la innovación tecnológica, y el diseño
-    eficiente es lo que nos motiva a seguir creciendo.`
+    descripcion: `”Somos un equipo interdisciplinario enfocado en el diseño y la
+    arquitectura, nos dedicamos al diseño de todo tipo de proyectos de
+    diferentes escalas, diseño de mobiliario y objetos, sistemas modulares,
+    y a concursos nacionales e internacionales.
+    Nuestra oficina está impulsada por arquitectos, ingenieros,
+    interioristas, diseñadores industriales, y diseñadores gráficos, que
+    diseñan y desarrollan conjuntamente proyectos desde los primeros
+    bocetos hasta la supervisión final en obra. En nuestro proceso de
+    trabajo aparece el diseño y la sustentabilidad como eje principal de
+    nuestros proyectos.
+    El estudio de los nuevos sistemas constructivos, la evolución y
+    transformación de las ciudades, la innovación tecnológica, y el diseño
+    eficiente es lo que nos motiva a seguir creciendo…”
+    `
   },]
   // prensa
   export const prensa = [
@@ -1993,31 +2009,26 @@ export const servicios = [
       { name: "Fun Factory Múnich", link: "/ASD5" },
       { name: "kado", link: "/ASD6" },
     ],
-    descripcion: `Nos encargamos del servicio Gestión, Planificación y Dirección de Obras de todo tipo de
-    escala y complejidad, entregando informes semanales, coordinando y haciendo el control de
-    calidad de las tareas de los diferentes contratistas.
+    descripcion: `Nos encargamos del servicio de Gestión, Planificación y Dirección de todo tipo de obras, de
+    diferentes escalas y complejidad.
+    Coordinamos el proceso diario de la dirección de obras, haciendo el control de calidad de los
+    materiales y de las diferentes tareas de los contratistas involucrados.
     `,
    
   },
   {
     id: 3,
-    name: "DISEÑO DE MOBILIARIO",
+    name: " DISEÑO Y FABRICACIÓN DE MOBILIARIO",
     links: [
       { name: "Hotel Nhow Berlín", link: "/ASD4" },
       { name: "Fun Factory Múnich", link: "/ASD5" },
       { name: "kado", link: "/ASD6" },
     ],
     descripcion:
-    `Diseñamos el mobiliario de todos los ambientes interiores del proyecto, estudiando cada uno
-    de sus materiales y sistemas de apertura de vanguardia.
-    Nuestro radio de diseño abarca, para las viviendas: consolas, aparadores, interiores de
-    placard, muebles de cocina, mesas de comedor, etc. En los proyectos comerciales, mesas de
-    trabajo, mesas de reuniones, archivos, muebles de recepción, etc.
-    Conjuntamente estamos desarrollando una línea de mobiliario y objetos, diseñados y
-    fabricados desde el concepto del diseño sustentable. Estudiando los procesos constructivos
-    efectivos, y estudiando materiales que provienen del proceso del reciclado.
-    En este proyecto nuestra mision es poder concientizar desde el diseño y el proceso del
-    reciclado a colaborar con el cuidado del medioambiente.
+    `Diseñamos y fabricamos muebles y objetos de diseño.
+    Para nosotros es muy importante el diseño del mobiliario de nuestros proyectos de
+    arquitectura, es por eso que diseñamos conjuntamente el mobiliario para todos los
+    ambientes interiores del proyecto, estudiando cada detalle y materiales.
     `,
   },
   {
@@ -2029,15 +2040,11 @@ export const servicios = [
       { name: "kado", link: "/ASD6" },
     ],
     descripcion:
-    `Dentro de nuestro estudio estamos desarrollando un sistema constructivo en estructuras
-    modulares y transportables. Estas estructuras se prearman en una fábrica y van directamente
-    armadas al terreno. Estos sistemas modulares, logra generar un menor impacto ambiental
-    que el que genera una construcción tradicional, ya que se generan menos residuos, menos
-    ruido en el terreno, y menor consumo de recursos naturales. Estos sistemas pueden instalarse
-    sobre cualquier terreno, son flexibles, de bajo mantenimiento, y reemplazan los sistemas
-    constructivos tradicionales, por obras más limpias, más rápidas, eficaces y sustentables, con
-    sistemas de instalaciones de servicios de vanguardia, estos módulos pueden generar su
-    propia energía y reutilizar el agua de lluvia.
+    `Diseñamos estructuras modulares y transportables, para diferentes tipos de usos, tales como:
+    locales comerciales, módulos de marca, habitaciones de hotel, viviendas, oficinas,
+    laboratorios, etc. Estos módulos se pueden instalar en cualquier tipo de terreno y clima, están
+    preparados para soportar los traslados, generan su propia energía y almacenan el agua de
+    lluvia.
    `,
    
   },

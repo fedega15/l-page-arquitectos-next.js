@@ -30,7 +30,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
       <div className="grid1">
         <div className="cont1">
           <div className="item">
-            <h3>Asesores</h3>
+            <br />
             <ul>
               {colaboradores.map((enlace, i) => (
                 <li key={i}>
@@ -129,6 +129,8 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
               rol={proyecto.rol}
               descripcion={proyecto.descripcion}
               link={proyecto.link}
+              mail={proyecto.mail}
+              linkemail={proyecto.linkemail}
             />
           </div>
           

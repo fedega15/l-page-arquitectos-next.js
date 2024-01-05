@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Card = ({ link , name, rol, descripcion, image,   }) => {
+const Card = ({ link , name, rol, descripcion, image, mail, linkemail }) => {
   return (
     <div className="card">
       <Image
@@ -16,7 +16,10 @@ const Card = ({ link , name, rol, descripcion, image,   }) => {
       />
       <h3>{name}</h3>
       <div>
-      <Link href={link}>{rol} </Link>
+      <Link target="_blank" href={link}>{rol} </Link>
+      </div>
+      <div>
+      <Link target="_blank" href={linkemail}>{mail} </Link>
       </div>
       <br/>
       <span>{descripcion}</span>
