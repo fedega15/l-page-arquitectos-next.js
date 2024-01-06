@@ -21,7 +21,6 @@ const Card = ({ link, name, rol, descripcion, image, mail, linkemail }) => {
       />
       <h3>{name}</h3>
 
-      <br />
       <span>
         {showFullDescription ? (
           <>
