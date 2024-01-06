@@ -118,7 +118,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
 
   import Card from "./Card";
   
-  const TeamMembers = ({ galeria, equipoTitleControls }) => (
+  const TeamMembers = ({ galeria, equipoTitleControls, showMoreItems, toggleShowMore }) => (
       <section className="grid" id="equipo">
         <Heading title="EQUIPO" animationControls={equipoTitleControls} />
         {galeria.map((proyecto) => (
