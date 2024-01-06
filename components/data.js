@@ -20,7 +20,7 @@ export const galeria = [
       mail:"santiagosemino@ssaestudio.com",
       linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@fernandofola",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ export const galeria = [
       mail:"santiagosemino@ssaestudio.com",
       linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@jeremiasnoli",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
   
     {
@@ -43,7 +43,7 @@ export const galeria = [
       linkemail:"//mailto:santiagosemino@gmail.com",
       estudio: "/01.jpg",
       rol: "@LuciaSanchez",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
     {
       image: "/card5.jpg",
@@ -53,7 +53,7 @@ export const galeria = [
       mail:"santiagosemino@ssaestudio.com",
       linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@agos.selzer",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
     {
       image: "/card1.jpg",
@@ -63,7 +63,7 @@ export const galeria = [
       mail:"santiagosemino@ssaestudio.com",
       linkemail:"//mailto:santiagosemino@gmail.com",
       rol: "@LuisinaViglione",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
     {
       image: "/card1.jpg",
@@ -73,7 +73,7 @@ export const galeria = [
       mail:"federico.galassi9@gmail.com",
       linkemail:"//mailto:santiagosemino@gmail.com",
       rol: " @Federicogalassi_ ",
-      descripcion: "Mi nombre es Santiago Semino, nací en Rosario, Argentina, en el año 1978. Soy arquitecto egresadode la Universidad Nacional de Rosario, en el año 2008. En el año 2008 fui socio fundador de 7MArquitectura, en el 2009 hice un posgrado sobre Diseño Sustentable en la Universidad de Palermo.En el año 2013 funde SSA estudio, tratando de fusionar la arquitectura y el diseño en todas sus fases"
+      descripcion: ""
     },
   ];
   export const colab2 = [
