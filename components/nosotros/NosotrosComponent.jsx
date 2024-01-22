@@ -1,5 +1,5 @@
 import Heading from "./Heading";
-
+import Image from "next/image";
 const StudioDescription = () => (
     <div className="studio-description">
       {/* <h2>Estudio SSA</h2> */}
@@ -69,7 +69,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
       </div>
     </section>
   );
-  import Image from "next/image";
+
 
   const StudioImages = ({ galeria }) => (
     <div className="studio-images">

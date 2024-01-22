@@ -84,7 +84,7 @@
   flex-wrap: wrap; /* Cambia a flex-wrap para envolver las tarjetas */
   justify-content: flex-start;
   gap: 5px; /* Espacio entre las tarjetas */
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .card {
@@ -154,6 +154,7 @@
   margin-right: -300px; /* Elimina el margen derecho */
   width: 200%; /* Ancho completo en pantallas pequeñas */
 }
+
 
 .studio-image {
   margin-right: -30px;
@@ -403,7 +404,7 @@
 
   .card {
     width: 275px;
-    margin-left: -12px;
+    /* margin-left: -12px; */
     margin-bottom: 20px;
   }
   .studio-info {

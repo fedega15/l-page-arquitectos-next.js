@@ -1992,9 +1992,9 @@ export const servicios = [
     id: 1,
     name: "PROYECTOS DE ARQUITECTURA",
     links: [
-      { name: "Hotel Nhow Berlín", link: "/ASD4" },
-      { name: "Fun Factory Múnich", link: "/ASD5" },
-      { name: "kado", link: "/ASD6" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
     ],
     descripcion: `Diseñamos proyectos de arquitectura a medida, como viviendas, edificios en altura, edificios comerciales,
     edificios de usos múltiples, proyectos de urbanismo y paisajismo. La sustentabilidad y el diseño eficiente
@@ -2005,9 +2005,9 @@ export const servicios = [
     id: 2,
     name: "GESTIÓN, PLANIFICACIÓN Y DIRECCIÓN DE OBRAS",
     links: [
-      { name: "Hotel Nhow Berlín", link: "/ASD4" },
-      { name: "Fun Factory Múnich", link: "/ASD5" },
-      { name: "kado", link: "/ASD6" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
     ],
     descripcion: `Nos encargamos del servicio de Gestión, Planificación y Dirección de todo tipo de obras, de
     diferentes escalas y complejidad.
@@ -2020,9 +2020,9 @@ export const servicios = [
     id: 3,
     name: " DISEÑO Y FABRICACIÓN DE MOBILIARIO",
     links: [
-      { name: "Hotel Nhow Berlín", link: "/ASD4" },
-      { name: "Fun Factory Múnich", link: "/ASD5" },
-      { name: "kado", link: "/ASD6" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
     ],
     descripcion:
     `Diseñamos y fabricamos muebles y objetos de diseño.
@@ -2035,9 +2035,9 @@ export const servicios = [
     id: 4,
     name: "DISEÑO DE ESTRUCTURAS MODULARES",
     links: [
-      { name: "Hotel Nhow Berlín", link: "/ASD4" },
-      { name: "Fun Factory Múnich", link: "/ASD5" },
-      { name: "kado", link: "/ASD6" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
     ],
     descripcion:
     `Diseñamos estructuras modulares y transportables, para diferentes tipos de usos, tales como:

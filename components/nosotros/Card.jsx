@@ -28,12 +28,12 @@ const Card = ({ link, name, rol, descripcion, image, mail, linkemail }) => {
             <div>
               <br />
               <Link target="_blank" href={linkemail}>
-                <h1>{mail}</h1>
+                <h1>  <i className="fa fa-envelope"></i> {mail}</h1>
               </Link>
             </div>
             <div>
               <Link target="_blank" href={link}>
-                <h1>{rol}</h1>
+            <h1><i className="fa-brands fa-instagram"></i>  {rol}</h1>
               </Link>
             </div>
           </>

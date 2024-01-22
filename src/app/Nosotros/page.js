@@ -8,9 +8,7 @@ import "../../../styles/acerca.css";
 import { galeria, colab, colaboradores, colab2 } from "../../../components/data";
 //componentes
 import Heading from "../../../components/nosotros/Heading";
-import {
-  TeamMembers,
-  StudioImages,
+import {TeamMembers,
   Advisors,
 } from "../../../components/nosotros/NosotrosComponent";
 import Image from "next/image";
@@ -93,7 +91,7 @@ const Page = () => {
   }, [isLoaded, scrollY, textAnimationControls]);
 
   return (
-    <section id="galery">
+    <section id="galery" className="nosotros">
       <Heading title="NOSOTROS" animationControls={textAnimationControls} />
       <div className="studio-info">
         <div className="studio-description">
