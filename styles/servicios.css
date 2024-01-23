@@ -154,15 +154,22 @@
   }
 
   #galery .item {
+    margin-top: -20px;
     padding: 10px; /* Reduce el espacio de relleno de los elementos */
   }
 
   #galery .item h1 {
-    font-size: 16px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
+    font-size: 19px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
+    margin-bottom: 5px; /* Reduce el espacio inferior */
+  }
+
+  #galery .item h2 {
+    font-size: 30px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
     margin-bottom: 5px; /* Reduce el espacio inferior */
   }
 
   #galery .item p {
+    margin-top: -5px;
     font-size: 12px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
   }
 }

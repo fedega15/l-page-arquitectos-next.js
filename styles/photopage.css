@@ -26,6 +26,7 @@
 @media (max-width: 768px) {
   /* Estilos para pantallas pequeñas */
   #testimonios {
+    margin: 2px;
     flex-direction: column; /* Cambia la dirección del flexbox a columna en pantallas pequeñas */
   }
 
