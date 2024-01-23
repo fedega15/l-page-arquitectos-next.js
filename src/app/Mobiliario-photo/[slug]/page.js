@@ -13,6 +13,7 @@ const PhotoPage = ({ params: { slug } }) => {
         <h2>{galeria[slug].name}</h2>
         <h1>{galeria[slug].ubi}</h1>
         <p className="crossed-lines">{galeria[slug].descripcion}</p>
+        <br />
         <Link href="/Mobiliario">&larr; Volver a la galería</Link>
       </div>
       <div className="img-container">
