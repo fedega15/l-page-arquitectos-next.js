@@ -26,10 +26,12 @@ const StudioDescription = () => (
 
 const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
     <section className="grid" id="prensa">
-      <Heading title="ASESORES" animationControls={prensaTitleControls} />
+     {/*  <Heading title="ASESORES" animationControls={prensaTitleControls} /> */}
       <div className="grid1">
         <div className="cont1">
           <div className="item">
+            <br />
+            <span>Asesores externos </span>
             <br />
             <ul>
               {colaboradores.map((enlace, i) => (
@@ -55,6 +57,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
           </div>
           <div className="item3">
             <br />
+            
             <ul>
               {colab2.map((enlace, i) => (
                 <li key={i}>
@@ -80,17 +83,9 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
             <span>
       Somos un equipo interdisciplinario enfocado en el diseño y la arquitectura, con dedicación a proyectos de todo tipo de escala,
       diseño de mobiliario, objetos, sistemas modulares, y con activa participación a concursos nacionales e internacionales.
-    </span>
-    <br />
-    <br />
-    <span>
       Nuestra oficina está impulsada por jóvenes arquitectos, ingenieros, interioristas, diseñadores gráficos, industriales que diseñan y
       desarrollan conjuntamente proyectos desde los primeros bocetos hasta la supervisión final en obra. En nuestro proceso de trabajo aparece
       el diseño sustentable como eje principal de nuestros proyectos.
-    </span>
-    <br />
-    <br />
-    <span>
       El estudio de los nuevos sistemas de construcción, la transformación y evolución de las ciudades, la innovación tecnológica,
       y el diseño eficiente es lo que nos motiva a seguir creciendo.
     </span>
@@ -120,7 +115,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
   
   const TeamMembers = ({ galeria, equipoTitleControls, showMoreItems, toggleShowMore }) => (
       <section className="grid" id="equipo">
-        <Heading title="EQUIPO" animationControls={equipoTitleControls} />
+        {/* <Heading title="EQUIPO" animationControls={equipoTitleControls} /> */}
         {galeria.map((proyecto) => (
           <div className="cont" key={proyecto.id}>
             <Card

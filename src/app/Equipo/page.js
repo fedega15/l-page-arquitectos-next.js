@@ -92,7 +92,7 @@ const Page = () => {
 
   return (
     <section id="galery" className="nosotros">
-      <Heading title="NOSOTROS" animationControls={textAnimationControls} />
+      <Heading title="EQUIPO" animationControls={textAnimationControls} />
       <div className="studio-info">
         <div className="studio-description">
          {/*  <h2>Estudio SSA</h2> */}
@@ -101,7 +101,7 @@ const Page = () => {
           Somos un equipo interdisciplinario enfocado en el diseño y la arquitectura, con dedicación a proyectos de todo tipo de escala,
       diseño de mobiliario, objetos, sistemas modulares, y con activa participación a concursos nacionales e internacionales.
           </span>
-           <br></br>
+        <br></br>
         <br></br>
           <span>
           Nuestra oficina está impulsada por jóvenes arquitectos, ingenieros, interioristas, diseñadores gráficos, industriales que diseñan y
@@ -115,7 +115,7 @@ const Page = () => {
       y el diseño eficiente es lo que nos motiva a seguir creciendo.
           </span>
         </div>
-        <div className="studio-images">
+        {/* <div className="studio-images">
           {galeria.slice(0, 1).map((proyecto) => (
             <div className="studio-image" key={proyecto.id}>
               <Image
@@ -127,7 +127,7 @@ const Page = () => {
               />
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
       <TeamMembers
         galeria={galeria}

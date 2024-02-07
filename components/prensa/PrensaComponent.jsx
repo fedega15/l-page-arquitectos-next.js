@@ -3,7 +3,7 @@ const { default: Heading } = require("../nosotros/Heading");
 const PrensaComponent = ({ Prensa, prensa, textAnimationControls  }) => (
 
     <section className="grid" id="galery">
-    <Heading title="PRENSA" animationControls={textAnimationControls} />
+    <Heading title="NOVEDADES" animationControls={textAnimationControls} />
 <br />
 <div className="press-grid">
   {prensa.map((galeria, i) => (
