@@ -23,9 +23,23 @@ const Card = ({ link, name, rol, descripcion, image, mail, linkemail }) => {
 
       <span>
         {showFullDescription ? (
-          <>
+          <><div>
+          <br />
+          <Link target="_blank" href={linkemail}>
+            <h1>  <i className="fa fa-envelope"></i> {mail}</h1>
+          </Link>
+        </div>
+        <div>
+          <Link target="_blank" href={link}>
+        <h1><i className="fa-brands fa-instagram"></i>  {rol}</h1>
+          </Link>
+        </div>
             {descripcion}
-            <div>
+            
+          </>
+        ) : (
+          <>
+          <div>
               <br />
               <Link target="_blank" href={linkemail}>
                 <h1>  <i className="fa fa-envelope"></i> {mail}</h1>
@@ -36,9 +50,6 @@ const Card = ({ link, name, rol, descripcion, image, mail, linkemail }) => {
             <h1><i className="fa-brands fa-instagram"></i>  {rol}</h1>
               </Link>
             </div>
-          </>
-        ) : (
-          <>
             {`${descripcion.slice(0, 150)}...`}
        
           </>
