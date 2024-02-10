@@ -73,6 +73,7 @@
 }
 
 #galery .grid {
+  margin-top: 50px;
   width: 100%;
   display: grid;
   grid-gap: 20px; /* Espacio entre cada fila */

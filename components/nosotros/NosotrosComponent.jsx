@@ -31,7 +31,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
         <div className="cont1">
           <div className="item">
             <br />
-            <span>Asesores externos </span>
+            <h3>Asesores externos </h3>
             <br />
             <ul>
               {colaboradores.map((enlace, i) => (
@@ -44,21 +44,11 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
             </ul>
           </div>
           <div className="item">
-            <span>Han colaborado con nosotros desde 2014 </span>
-            <ul>
-              {colab.map((enlace, i) => (
-                <li key={i}>
-                  <p className="span" href={enlace.name}>
-                    {enlace.name}
-                  </p>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="item3">
             <br />
             
+            <span>Han colaborado con nosotros desde 2014 </span>
             <ul>
+              <br />
               {colab2.map((enlace, i) => (
                 <li key={i}>
                   <p className="span" href={enlace.name}>
@@ -68,6 +58,7 @@ const Advisors = ({ colaboradores, colab, prensaTitleControls, colab2 }) => (
               ))}
             </ul>
           </div>
+         
         </div>
       </div>
     </section>
