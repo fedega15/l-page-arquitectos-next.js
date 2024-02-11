@@ -190,8 +190,14 @@
   #galery .card-4 {
     grid-row: span 1  ;
     margin-top: 0px;
-    height: 600px;
+    height: 480px
   }
+  
+  #galery .card-4 .box {
+    grid-row: span 1  ;
+    height: 102%;
+  }
+
   #galery .card-3 {
     grid-column: 1;
   }
