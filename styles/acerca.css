@@ -497,6 +497,11 @@
     margin-bottom: 5px; /* Reduce el espacio inferior */
   }
 
+  .press-article img {
+    max-width: 250px; 
+    height: 155px;/* Ajusta el ancho máximo de la imagen según tus preferencias */
+    margin-right: 0px; /* Agrega un margen derecho entre la imagen y el contenido */
+  }
   #galery .item3 p {
     font-size: 12px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
   }
