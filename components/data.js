@@ -279,8 +279,8 @@ export const info  = [
    
     {
       id: 6,
-      proyect: "STAND MERCADO DEL PATIO",
-      name: "STAND MERCADO DEL PATIO",
+      proyect: "Stand Mercado Del Patio",
+      name: "Stand Mercado Del Patio",
       ubi: "Rosario, Santa Fe (ARG)",
       img: "/stand4.jpg",
       descripcion:"  ...",
@@ -298,8 +298,8 @@ export const info  = [
     },
     {
       id: 11,
-      proyect: "SALON DE USOS MULTIPLES",
-      name: "SALON DE USOS MULTIPLES",
+      proyect: "Estancia Paraiso - Urbanizacion Sustentable",
+      name: "Estancia Paraiso - Urbanizacion Sustentable",
       img: "/epportada.jpg",
       ubi:"Concordia, Entre Rios(ARG)",
       descripcion:"  ...",
@@ -321,8 +321,8 @@ export const info  = [
     },
     {
       id: 5,
-      proyect: "REFORMA VESTUARIO",
-      name: "REFORMA VESTUARIO",
+      proyect: "Reforma Vestuario",
+      name: "Reforma Vestuario",
       ubi: "Fisherton, Santa Fe(ARG)",
       img: "/jcr1.jpg",
       descripcion:"  ...",
@@ -346,8 +346,8 @@ export const info  = [
    
     {
       id: 7,
-      proyect: "INFINITE RIDE",
-      name: "INFINITE RIDE",
+      proyect: "Infinite Ride",
+      name: "Infinite Ride",
       ubi: "Perez, Santa Fe(ARG)",
       img: "/IFPORTADA.jpg",
       descripcion:" ...",
@@ -372,10 +372,10 @@ export const info  = [
   
     {
       id: 9,
-      proyect: "VIVIENDA MULTIFAMILIAR",
-      name: "VIVIENDA MULTIFAMILIAR",
+      proyect: "Balneario Uruguay",
+      name: "Balneario Uruguay",
       img: "/BPORTADA.jpg",
-      ubi:"Balneario Buenos Aires, Uruguay (UY)",
+      ubi:"Buenos Aires, Uruguay (UY)",
       descripcion:"....",
       images: [
         { src: "/B1.jpg", alt: "Description 1" },
@@ -394,8 +394,8 @@ export const info  = [
     
     {
       id: 4,
-      proyect: "VIVIENDA MULTIFAMILIAR",
-      name: "VIVIENDA MULTIFAMILIAR",
+      proyect: "Vivienda Multifamiliar",
+      name: "Vivienda Multifamiliar",
       ubi: "Mar Azul, Provincia de Buenos Aires (ARG)",
       img: "/polli3.jpg",
       descripcion:"  Esta vivienda esta ubicada en Mar Azul, un pueblo sobre el mar Atlantico.el desafio de este proyecto era desarrollar la vivienda sin tocar los arboles y un terreno con una geografia que su parte posterior estaba por debajo del nivel de calle, o sea con una cota descendente desde el frente hacia el fondo del mismo.La vivienda era para una familia con hijos que ya empezaban a rtener su independencia,y nevesitaban que la vivienda esta separada en 2 unidades con ingreso privado.En la planta del nivel de calle se diseño la vivienda proincipal con cocina, comedor, estar, 2 habitaciones y un baño compartido.En el nivel inferior, descendiendo por el lateral, se accedia a la unidad secundaria ",
@@ -442,8 +442,8 @@ export const info  = [
     },
     {
       id: 11,
-      proyect: "CLUB IMPERIAL",
-      name: "CLUB IMPERIAL",
+      proyect: "Club Imperial",
+      name: "Club Imperial",
       img: "/CB14.jpg",
       ubi:"Rosario, Santa Fe (ARG)",
       descripcion:" La propuesta de este proyecto era diseñar un club de musica, en un entorno muy intimos donde el artista pueda dar un show en contacto y relacion directa con el publico.Despues de buscar varios lugares, dimos con la Mision del Marinero, un lugar con mucha historia en el centro de la ciudad de Rosario.Esta vieja casona junto con su Iglesia Evangelica, recibia y brindaba hospedaje a marineros extranjeros, en los años 50.El programa incluia mantener la casona original y conectarse a ellaa travez de una cubierta metalica que funcionaba como quinta fachada, ya que desde la Av. Belgrano se podia ver esa cubierta. La idea fue fasetar el techo, ya que esos quiebres nos darian planos irregulares y servirian al interior en la parte acustica.En el interior se propusieron materiales con mucha absorcion sonora, como los telones que funcionaban para cerrar la sala, alfombra en el piso, y sus paredes y cielorasos revestirlos con placas de madera. La Sala contaba con 220 butacas, con una mesa de apoyobebidascada 2 butacas. ",
