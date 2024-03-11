@@ -8,6 +8,23 @@ export const galeria = modulos
 const page = () => {
   return (
     <section id="galery">
+       <div
+        className="grid"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          fontSize: "24px",
+          fontWeight: "bold",
+          color: "#ff6600", // Puedes cambiar el color según tu preferencia
+          backgroundColor: "#f2f2f2", // Puedes cambiar el color de fondo según tu preferencia
+          textAlign: "center",
+          padding: "20px",
+        }}
+      >
+        ¡Sitio en construcción! Estamos trabajando para mejorar tu experiencia.
+      </div>
       {/*     <div className="heading">
         <h2>Exibicon de arte</h2>
         <p>
@@ -15,7 +32,7 @@ const page = () => {
         </p>
       </div> */}
 
-      <div className="grid">
+      {/* <div className="grid">
         {modulos.map((galeria, index) => (
           <a key={galeria.id} href={`/Modulos-photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
@@ -45,7 +62,7 @@ const page = () => {
             </div>
           </a>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };

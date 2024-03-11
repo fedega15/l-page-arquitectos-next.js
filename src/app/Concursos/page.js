@@ -1,14 +1,32 @@
 import React from "react";
-import "../../../styles/exhibicion.css"
+import "../../../styles/exhibicion.css";
 import Image from "next/image";
 import { concursos } from "../../../components/data";
 
-export const galeria = concursos
+export const galeria = concursos;
 
 const page = () => {
   return (
     <section id="galery">
-      <div className="grid">
+      <div
+        className="grid"
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "100vh",
+          fontSize: "24px",
+          fontWeight: "bold",
+          color: "#ff6600", // Puedes cambiar el color según tu preferencia
+          backgroundColor: "#f2f2f2", // Puedes cambiar el color de fondo según tu preferencia
+          textAlign: "center",
+          padding: "20px",
+        }}
+      >
+        ¡Sitio en construcción! Estamos trabajando para mejorar tu experiencia.
+      </div>
+
+      {/* <div className="grid">
         {concursos.map((galeria, index) => (
           <a key={galeria.id} href={`/Concursos-photo/${index}`} className="active">
             <div className={`card card-${index}`} key={galeria.id}>
@@ -40,7 +58,7 @@ const page = () => {
             </div>
           </a>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 };
