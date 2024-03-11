@@ -1547,9 +1547,9 @@ export const servicios = [
     id: 1,
     name: "PROYECTOS DE ARQUITECTURA",
     links: [
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/6" },
+      { name: "Vivienda Multifamiliar", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/5" },
+      { name: "Balneario Uruguay", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/4" },
     ],
     descripcion: `Diseñamos proyectos de arquitectura a medida, como viviendas, edificios en altura, edificios comerciales,
     edificios de usos múltiples, proyectos de urbanismo y paisajismo. La sustentabilidad y el diseño eficiente
@@ -1560,9 +1560,9 @@ export const servicios = [
     id: 2,
     name: "GESTIÓN, PLANIFICACIÓN Y DIRECCIÓN DE OBRAS",
     links: [
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Infinite Ride", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/3" },
+      { name: "Reforma Vestuario", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/2" },
+      { name: "Estancia Paraiso ", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/1" },
     ],
     descripcion: `Nos encargamos del servicio de Gestión, Planificación y Dirección de todo tipo de obras, de
     diferentes escalas y complejidad.
@@ -1575,9 +1575,9 @@ export const servicios = [
     id: 3,
     name: " DISEÑO Y FABRICACIÓN DE MOBILIARIO",
     links: [
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
-      { name: "Housing San Eduardo", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/0" },
+      { name: "Club Imperial", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/7" },
+      { name: "Gimnasio al aire libre JCR", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/8" },
+      { name: "Balneario Uruguay", link: "https://ssaarquitectos.vercel.app/Arquitectura-photo/4" },
     ],
     descripcion:
     `Diseñamos y fabricamos muebles y objetos de diseño.
