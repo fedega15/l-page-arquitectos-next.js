@@ -306,7 +306,7 @@ export const info  = [
       images: [
         { src: "/ep1.jpg", alt: "Description 1" },
         { src: "/ep2.jpg", alt: "Description 1" },
-        { src: "/ep3.jpg", alt: "Description 1" },
+        { src: "/ep3.JPG", alt: "Description 1" },
         { src: "/epportada.jpg", alt: "Description 1" },
         { src: "/ep4.jpg", alt: "Description 1" },
         { src: "/ep5.jpg", alt: "Description 1" },
