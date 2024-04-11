@@ -151,7 +151,7 @@ padding: 10px;
 @media (max-width: 560px) {
   
   #galery {
-    padding-bottom: 140px;
+    padding-bottom: 50px;
     }
   #galery .card-1 {
     grid-row: span 1;
