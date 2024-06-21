@@ -8,7 +8,9 @@ import Link from "next/link";
 const PhotoPage = ({ params: { slug } }) => {
   const projectImages = galeria[slug].images;
   return (
+    
     <section id="testimonios">
+      
       <div className="slider">
         <h2>{galeria[slug].proyect}</h2>
         <h1>{galeria[slug].ubi}</h1>
@@ -19,6 +21,7 @@ const PhotoPage = ({ params: { slug } }) => {
       <div className="img-container">
         <Banner className="banner" images={projectImages} />
       </div>
+      
     </section>
   );
 };
