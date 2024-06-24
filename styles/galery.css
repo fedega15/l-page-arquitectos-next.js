@@ -1,43 +1,47 @@
+:root {
+  --max-width: 1400px;
+  --margin: 0 auto;
+  --gap: 19px;
+  --transition-speed: 0.5s;
+  --font-color: #f8f2f2;
+  --font-color-secondary: #f8f4f4;
+  --card-hover-scale: 1.08;
+}
+
 #galery {
   width: 100%;
   max-width: var(--max-width);
   margin: var(--margin);
   overflow: hidden;
+  padding-bottom: 12px; /* Añadir un padding bottom global */
 }
 
-/* Rejilla */
 #galery .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); /* Cada columna tiene un mínimo de 420px */
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); /* Cada columna tiene un mínimo de 430px */
   grid-auto-flow: dense;
-  grid-gap: 19px; /* Espacio entre tarjetas */
-  padding: 0;
-  margin-left: 18px;
-  padding-right: 36px;
-  padding-top: 55px;
+  gap: var(--gap);
+  padding: 55px 36px 0 18px; /* Top, Right, Bottom, Left */
 }
 
 /* Estilo de la tarjeta */
 #galery .card {
   width: 100%;
-  border-radius: 0px;
+  border-radius: 0;
   overflow: hidden;
   position: relative;
   user-select: none;
   cursor: pointer;
-  transition: all linear 0.5s;
+  transition: transform var(--transition-speed);
 }
-
-/* Efecto Hover en las tarjetas */
 #galery .card img {
-  transition: all linear 0.5s;
+  transition: transform var(--transition-speed);
 }
 
 #galery .card:hover img {
-  transform: scale(1.08);
+  transform: scale(var(--card-hover-scale));
 }
-
 /* Estilo de la superposición de la tarjeta */
 #galery .box {
   position: absolute;
@@ -51,6 +55,7 @@
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(231, 225, 225, 0.6) 0%);
 }
+
 
 /* Tarjeta destacada que ocupa dos columnas en ancho */
 #galery .card-0 {
@@ -73,17 +78,15 @@
   height: 235px; /* Altura específica para esta tarjeta */
 }
 
-#galery .card-3 {
+#galery .card-2, 
+#galery .card-3  {
   margin-top: -70px;
   grid-row-start: auto;
   grid-row-end: span 1; /* Ocupa una fila */
   height: 235px; /* Altura específica para esta tarjeta */
 }
-
 #galery .card-4 {
-  grid-row-start: auto;
-  grid-row-end: span 1; /* Ocupa una fila */
-  height: 165px; /* Altura específica para esta tarjeta */
+  height: 165px;
 }
 
 /* Grupo de texto */
@@ -92,19 +95,19 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  color: #fff;
+  color: var(--font-color);
 }
+
 
 #galery .group .text strong {
   display: block;
   font-size: 1.9rem;
   font-weight: 900;
-  color: #f8f2f2;
+  color: var(--font-color);
 }
-
 #galery .group .text span {
   font-size: 0.8rem;
-  color: #f8f4f4;
+  color: var(--font-color-secondary);
   font-weight: 900;
   letter-spacing: 1px;
   text-transform: capitalize;
@@ -130,24 +133,35 @@ margin-top: 0px;
 /* Estilo de la tarjeta para móviles */
 @media (max-width: 911px) {
   #galery {
-    padding-bottom: 12px;
+    padding: 0; /* Eliminar padding en pantallas pequeñas */
+    margin: 0; /* Eliminar el margen global en pantallas pequeñas */
   }
 
-  #galery .card-0 {
-    margin-bottom: 1px;
+  #galery .grid {
+    padding: 0; /* Eliminar padding en la cuadrícula */
+    grid-template-columns: 1fr; /* Cada tarjeta ocupa una columna completa */
+    gap: var(--gap); /* Mantener el espacio entre las tarjetas */
   }
-  #galery .card-1 {
-    margin-bottom:70px;
-  }
-  #galery .card-2 {
-    margin-bottom:70px;
-  }
+
   #galery .card {
-    grid-column: span 1; /* Cada tarjeta ocupa una columna completa en móviles */
+    grid-column: span 1; /* Cada tarjeta ocupa una columna completa */
     grid-row-start: auto;
     grid-row-end: span 1; /* Ocupa una fila */
+    height: 350px; /* Establecer la misma altura para todas las tarjetas */
   }
 
+  /* Ajustar márgenes específicos para las tarjetas en pantallas pequeñas */
+  #galery .card-1, 
+  #galery .card-2, 
+  #galery .card-3, 
+  #galery .card-4 {
+    margin: 0 0 0px 0; /* Eliminar márgenes laterales y establecer un margen inferior */
+  }
+  #galery .card-0 {
+    margin: 50px 0 0 0; /* Eliminar márgenes laterales y establecer un margen inferior */
+  }
+
+  /* Ajuste adicional para el texto */
   #galery .group .text strong {
     font-size: 2.5rem;
     color: #f7eeee;
