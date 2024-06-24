@@ -1490,18 +1490,6 @@ export const galery = [
     price: 1.2,
     link: "/Arquitectura",
   },
-  
-  {
-    id: 3,
-    proyect: "DISEÑO MOBILIARIO",
-    name: "Mobiliario",
-    img: "/g1.jpg",
-    activites: 23,
-   /*  places: 54, */
-    days: "1week",
-    price: 1.2,
-    link: "/Mobiliario",
-  },
   {
     id: 2,
     proyect: "CONCURSOS",
@@ -1514,6 +1502,18 @@ export const galery = [
     price: 1.2,
     link: "/Concursos",
   },
+  {
+    id: 3,
+    proyect: "DISEÑO MOBILIARIO",
+    name: "Mobiliario",
+    img: "/g1.jpg",
+    activites: 23,
+   /*  places: 54, */
+    days: "1week",
+    price: 1.2,
+    link: "/Mobiliario",
+  },
+
   {
     id: 4,
     proyect: "ARQUITECTURA MODULAR",

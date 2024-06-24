@@ -3,85 +3,42 @@
   max-width: var(--max-width);
   margin: var(--margin);
   overflow: hidden;
-
 }
 
-
-@keyframes bounce_513 {
-  0%,
-  100% {
-    transform: translateY(-25%);
-    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
-  }
-
-  50% {
-    transform: translateY(0);
-    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
-  }
-}
-
+/* Rejilla */
 #galery .grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  grid-auto-rows: 285px;
+  grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); /* Cada columna tiene un mínimo de 420px */
   grid-auto-flow: dense;
-  grid-gap: 19px;
-  margin: 10px 0;
-  padding: 0px;
+  grid-gap: 19px; /* Espacio entre tarjetas */
+  padding: 0;
+  margin-left: 18px;
+  padding-right: 36px;
+  padding-top: 55px;
 }
-#galery .text {
-width: 320px;
-padding: 10px;
-}
+
+/* Estilo de la tarjeta */
 #galery .card {
   width: 100%;
-  height: 100%;
   border-radius: 0px;
   overflow: hidden;
   position: relative;
   user-select: none;
   cursor: pointer;
+  transition: all linear 0.5s;
 }
 
+/* Efecto Hover en las tarjetas */
 #galery .card img {
   transition: all linear 0.5s;
-  /* filter: grayscale(0%); */  
 }
-#galery .card:hover img {
-  transition: all linear 0.5s;
-/*   filter: grayscale(100%);   */
-}
-
 
 #galery .card:hover img {
   transform: scale(1.08);
-/*   filter: grayscale(100%); */
-} /*  filter: grayscale(0%); 
-    /* 
-    #galery .card-1:hover img{
-        background-color: rgb(53, 51, 175);
-        
-    }
-    #galery .card-2:hover img{
-       background-color: #D3D3D3 
-       
-    }
-    #galery .card-3:hover img{
-        / background-color: #edda2f  
-        
-       
-    }
-    #galery .card-4:hover img{
-        background-color: rgb(76, 146, 85);
-    }
-    #galery .card-0:hover img{
-        background-color: #EE7B1D
-    }
-    #galery .card-5:hover img{
-        background-color: rgb(238, 17, 17);
-    } */
+}
 
+/* Estilo de la superposición de la tarjeta */
 #galery .box {
   position: absolute;
   top: 0;
@@ -94,15 +51,42 @@ padding: 10px;
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(231, 225, 225, 0.6) 0%);
 }
- 
+
+/* Tarjeta destacada que ocupa dos columnas en ancho */
 #galery .card-0 {
-  grid-column: span 2;
+  grid-column: span 2; /* Ocupa dos columnas */
+  grid-row-start: auto;
+  grid-row-end: span 1; /* Ocupa una fila */
+  height: 300px; /* Altura específica para esta tarjeta */
 }
 
-/*   #galery .card-3 {
-        grid-column: span 2;
-    } */
+/* Tarjeta que ocupa dos columnas en alto (dos filas) */
+#galery .card-1 {
+  grid-row-start: auto;
+  height: 370px; /* Altura específica para esta tarjeta */
+}
 
+#galery .card-2 {
+  margin-top: -70px;
+  grid-row-start: auto;
+  grid-row-end: span 1; /* Ocupa una fila */
+  height: 235px; /* Altura específica para esta tarjeta */
+}
+
+#galery .card-3 {
+  margin-top: -70px;
+  grid-row-start: auto;
+  grid-row-end: span 1; /* Ocupa una fila */
+  height: 235px; /* Altura específica para esta tarjeta */
+}
+
+#galery .card-4 {
+  grid-row-start: auto;
+  grid-row-end: span 1; /* Ocupa una fila */
+  height: 165px; /* Altura específica para esta tarjeta */
+}
+
+/* Grupo de texto */
 #galery .group {
   width: 100%;
   display: flex;
@@ -110,32 +94,14 @@ padding: 10px;
   align-items: flex-end;
   color: #fff;
 }
-/*    #galery .box .text, .group {
-        display: block;
-        opacity: 0;
-        transform: translateX(-100%);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-    } */
-/*  #galery .card:hover .box .text, .group {
-        opacity: 1;
-        transform: translateX(0);
-    } */
 
 #galery .group .text strong {
   display: block;
   font-size: 3rem;
   font-weight: 900;
-  background-position: left;
-  list-style-position: initial;
-  /* text-transform: capitalize; */
   color: #f8f2f2;
- /*  background:   rgba(
-      238,
-      123,
-      29,
-      0.7
-    );  */
 }
+
 #galery .group .text span {
   font-size: 0.8rem;
   color: #f8f4f4;
@@ -143,38 +109,52 @@ padding: 10px;
   letter-spacing: 1px;
   text-transform: capitalize;
 }
-#galery .group .price {
-  font-size: 1.3rem;
-  font-weight: 700;
+@media (max-width: 1369px) {
+  #galery .card-1 {
+    height: 330px; /* Reducir la altura para una sola fila */
+  }
+  #galery .card-0 {
+    margin-bottom: 70px; /* Reducir la altura para una sola fila */
+  }
 }
+@media (min-width: 1237px) and (max-width: 1375px) {
+  #galery .grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste de tamaño mínimo y máxima fracción */
+  }
 
-@media (max-width: 560px) {
-  
+  #galery .card-1 {
+    height: 330px; /* Ajuste intermedio de altura */
+  }
+  #galery .card-0 {
+margin-bottom: 70px;
+  }
+  #galery .card-4 {
+margin-top: -40px;
+  }
+}
+/* Estilo de la tarjeta para móviles */
+@media (max-width: 911px) {
   #galery {
     padding-bottom: 12px;
-    }
-  #galery .card-1 {
-    grid-row: span 1;
-  }
-  #galery .card-3 {
-    grid-column: 1;
   }
 
   #galery .card-0 {
-    grid-column: 1;
+    margin-bottom: 1px;
   }
+  #galery .card-1 {
+    margin-bottom:70px;
+  }
+  #galery .card-2 {
+    margin-bottom:70px;
+  }
+  #galery .card {
+    grid-column: span 1; /* Cada tarjeta ocupa una columna completa en móviles */
+    grid-row-start: auto;
+    grid-row-end: span 1; /* Ocupa una fila */
+  }
+
   #galery .group .text strong {
-    display: block;
     font-size: 2.5rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-    text-transform: capitalize;
     color: #f7eeee;
   }
-  
-  #galery .group .text strong {
-      font-size: 2.5rem;
-      font-weight: 900;
-      color: #f7eeee;
-    }
 }
