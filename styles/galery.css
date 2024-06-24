@@ -110,9 +110,7 @@
   text-transform: capitalize;
 }
 @media (max-width: 1369px) {
-  #galery .card-1 {
-    height: 330px; /* Reducir la altura para una sola fila */
-  }
+  
   #galery .card-0 {
     margin-bottom: 70px; /* Reducir la altura para una sola fila */
   }
@@ -122,14 +120,11 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste de tamaño mínimo y máxima fracción */
   }
 
-  #galery .card-1 {
-    height: 330px; /* Ajuste intermedio de altura */
-  }
   #galery .card-0 {
 margin-bottom: 70px;
   }
   #galery .card-4 {
-margin-top: -40px;
+margin-top: 0px;
   }
 }
 /* Estilo de la tarjeta para móviles */
