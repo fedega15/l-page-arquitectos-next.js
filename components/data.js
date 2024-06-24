@@ -1502,10 +1502,22 @@ export const galery = [
     price: 1.2,
     link: "/Concursos",
   },
+  
   {
     id: 3,
+    proyect: "ARQUITECTURA MODULAR",
+    name: "Block-Modulos",
+    img: "/g71.jpg",
+    activites: 10,
+    /* places: 200, */
+    days: "1week",
+    price: 1.2,
+    link: "/Modulos",
+  },
+  {
+    id: 4,
     proyect: "DISEÑO MOBILIARIO",
-    name: "Mobiliario",
+    name: "Ecomobile",
     img: "/g1.jpg",
     activites: 23,
    /*  places: 54, */
@@ -1514,18 +1526,6 @@ export const galery = [
     link: "/Mobiliario",
   },
 
-  {
-    id: 4,
-    proyect: "ARQUITECTURA MODULAR",
-    name: "Modulos",
-    img: "/g71.jpg",
-    activites: 10,
-    /* places: 200, */
-    days: "1week",
-    price: 1.2,
-    link: "/Modulos",
-  },
-  
   {
     proyect: "MOBILE",
     name: "Mobile ",
