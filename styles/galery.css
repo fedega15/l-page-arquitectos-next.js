@@ -22,7 +22,7 @@
   grid-template-columns: repeat(auto-fit, minmax(430px, 1fr)); /* Cada columna tiene un mínimo de 430px */
   grid-auto-flow: dense;
   gap: var(--gap);
-  padding: 55px 36px 0 18px; /* Top, Right, Bottom, Left */
+  padding: 41px 20px 0px 20px; /* Top, Right, Bottom, Left */
 }
 
 /* Estilo de la tarjeta */
