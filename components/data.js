@@ -104,7 +104,7 @@ export const galeria = [
     {
       id: 8,
       name: "Mauro Canullo",
-    },
+    }, 
     {
       id: 9,
       name: "David Mussi",
@@ -113,6 +113,10 @@ export const galeria = [
       id: 10,
       name: "Franco Topa",
     },
+   
+  ];
+  export const colab3 = [
+   
     {
       id: 11,
       name: "Leandro Herrera",
@@ -145,9 +149,6 @@ export const galeria = [
       id: 18,
       name: "Dulce Scladini",
     },
-  ];
-  export const colab3 = [
-
   ]
   export const colab = [
     

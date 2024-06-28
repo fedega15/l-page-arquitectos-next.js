@@ -1,74 +1,81 @@
+:root {
+  --max-width: 1400px;
+  --gap: 20px;
+  --main-color: #019b21;
+  --font-color: #000;
+  --heading-font-size-large: 100px;
+  --heading-font-size-small: 50px;
+  --item-padding: 20px;
+}
+
 #galery {
-  
   width: 100%;
   max-width: var(--max-width);
   overflow: hidden;
   padding: 110px;
   padding-bottom: 100px;
   background-color: #ffffff;
-}/* Estilos para el botón de scroll */
+}
 
+/* Botón de acción principal */
 #galery .main__action {
   position: fixed;
   bottom: 20px;
   right: 70px;
-  z-index: 999; /* Asegura que el botón esté sobre otros elementos */
-  animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
+  z-index: 999;
+  animation: scroll-down 1.5s infinite;
 }
-/* ... Otros estilos ... */
 
-/* Animate scroll icon */
+/* Animación para el icono de desplazamiento */
 @keyframes scroll-down {
   0%, 100% {
-    transform: translateY(0rem);
+    transform: translateY(0);
     opacity: 1;
   }
-
   35% {
     transform: translateY(1rem);
     opacity: 0;
   }
-
   70% {
     transform: translateY(-1rem);
     opacity: 0;
   }
 }
+
 .btn {
-  color: #019b21;
+  color: var(--main-color);
 }
+
 #galery h1 {
   width: 105%;
 }
 
 #galery .heading {
-  width: 100%; /* Cambia el ancho a 100% para ocupar todo el ancho en pantallas pequeñas */
-  text-align: start; /* Centra el texto en todas las pantallas */
+  width: 100%;
+  text-align: start;
 }
 
 #galery .heading h1 {
-  font-size: 100px;
+  font-size: var(--heading-font-size-large);
   font-weight: 900;
-/*   color: rgb(255, 252, 252); */
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
-
 }
-
 
 #galery .horizontal-line {
   margin-top: 70px;
   height: 2px;
   width: 20%;
-  background-color: #019b21;
+  background-color: var(--main-color);
   margin-left: 20px;
 }
+
 #galery .horizontal-line-2 {
   margin-bottom: 20px;
   height: 2px;
   width: 22%;
-  background-color: #019b21;
-  top: 10px;
+  background-color: var(--main-color);
   position: relative;
+  top: 10px;
   margin-left: 30px;
 }
 
@@ -76,17 +83,17 @@
   margin-top: 50px;
   width: 100%;
   display: grid;
-  grid-gap: 20px; /* Espacio entre cada fila */
+  grid-gap: var(--gap);
 }
 
 #galery .cont {
   display: grid;
-  grid-template-columns: repeat(3, 400px); /* 3 columnas iguales */
-  grid-gap: 40px; /* Espacio entre las columnas */
+  grid-template-columns: repeat(3, 1fr); /* Distribuye uniformemente 3 columnas */
+  grid-gap: 40px;
 }
 
 #galery .item {
-  padding: 20px;
+  padding: var(--item-padding);
 }
 
 #galery .item h1 {
@@ -94,83 +101,74 @@
   margin-bottom: 10px;
 }
 
+#galery .item h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
 #galery .item p {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #galery .link-destacado {
-  color: #019b21;
+  color: var(--main-color);
   text-decoration: none;
   font-weight: bold;
 }
 
+/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   #galery {
     padding: 40px;
     margin-left: 0;
-    padding-bottom: 100px;
     padding-top: 84px;
+    padding-bottom: 100px;
   }
   
   #galery .main__action {
-    position: fixed;
+    right: 20px;
     bottom: 20px;
-    right: 0px;
-    z-index: 999; /* Asegura que el botón esté sobre otros elementos */
-    animation: scroll-down 1.5s infinite; /* Agrega la animación aquí */
   }
 
-  #galery  .horizontal-line-2 {
-    height: 2px;
+  #galery .horizontal-line-2 {
     width: 48%;
-    background-color: #019b21;
     margin-left: 15px;
-    position: relative;
     margin-top: -4px;
   }
-  #galery .heading {
-    
-    width: 100%;
-    text-align: start;
-    height: 100px;
-    position: relative;
-    margin-top: 25x;
 
+  #galery .heading {
+    height: 100px;
+    margin-top: 25px;
   }
 
   #galery .heading h1 {
-    font-size: 50px;
+    font-size: var(--heading-font-size-small);
     line-height: 1.2;
-
   }
 
   #galery .grid {
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
+    gap: var(--gap); /* Mantener el espacio entre las tarjetas */
   }
 
   #galery .cont {
-    margin-left: -5px;
+    margin-top: -20px;
     grid-template-columns: 1fr; /* Cambia a una sola columna en pantallas pequeñas */
-    grid-gap: 10px; /* Reduce el espacio entre elementos */
+    grid-gap: 20px; /* Ajusta el espacio entre elementos */
+    margin-left: 0;
   }
 
   #galery .item {
-    margin-top: -20px;
     padding: 10px; /* Reduce el espacio de relleno de los elementos */
   }
 
-  #galery .item h1 {
-    font-size: 19px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
-    margin-bottom: 5px; /* Reduce el espacio inferior */
-  }
-
+  #galery .item h1, 
   #galery .item h2 {
-    font-size: 30px; /* Ajusta el tamaño de fuente del nombre en pantallas pequeñas */
+    font-size: 24px; /* Ajusta el tamaño de fuente del título en pantallas pequeñas */
     margin-bottom: 5px; /* Reduce el espacio inferior */
   }
 
   #galery .item p {
-    margin-top: -5px;
-    font-size: 12px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
+    font-size: 14px; /* Ajusta el tamaño de fuente de la descripción en pantallas pequeñas */
   }
 }

@@ -474,7 +474,6 @@
 
   #galery .item {
     width: 100%;
-    padding: 10px; /* Reduce el espacio de relleno de los elementos */
   }
 
   #galery .item h1 {
@@ -487,9 +486,8 @@
   }
   #galery .item3 {
     margin-bottom: 50px;
-    margin-top: -50px;
+    margin-top: -70px;
     width: 100%;
-    padding: 10px; /* Reduce el espacio de relleno de los elementos */
   }
 
   #galery .item3 h1 {

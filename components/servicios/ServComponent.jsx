@@ -1,8 +1,10 @@
 const { default: Heading } = require("../nosotros/Heading");
 
-const ServComponent = ({ servicios,/*  showMoreItems, toggleShowMore  */textAnimationControls }) => (
-
-    <section id="galery">
+const ServComponent = ({
+  servicios,
+  /*  showMoreItems, toggleShowMore  */ textAnimationControls,
+}) => (
+  <section id="galery">
     <Heading title="SERVICIOS" animationControls={textAnimationControls} />
     <div className="grid">
       {servicios.map((proyecto, index) => (
@@ -12,20 +14,6 @@ const ServComponent = ({ servicios,/*  showMoreItems, toggleShowMore  */textAnim
           </div>
           <div className="item">
             <p>{proyecto.descripcion}</p>
-      {/*       {showMoreItems[proyecto.id] ? (
-              <div>
-                <p>{proyecto.descripcion1}</p>
-                <p>{proyecto.descripcion2}</p>
-                <p>{proyecto.descripcion3}</p>
-                <p>{proyecto.descripcion4}</p>
-                <p>{proyecto.descripcion5}</p>
-                <p>{proyecto.descripcion6}</p>
-              </div>
-            ) : null} */}
-           {/*  <button className="btn" onClick={() => toggleShowMore(proyecto.id)}>
-              {showMoreItems[proyecto.id] ? "Leer Menos" : "Leer Más"}
-            </button> */}
-            
           </div>
           <div className="item">
             <h1>Links Destacados:</h1>
@@ -39,11 +27,10 @@ const ServComponent = ({ servicios,/*  showMoreItems, toggleShowMore  */textAnim
               ))}
             </ul>
           </div>
-          <hr/>
-
+          <hr />
         </div>
       ))}
     </div>
-    </section>
- );
- export default ServComponent
+  </section>
+);
+export default ServComponent;
