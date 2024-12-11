@@ -1484,7 +1484,7 @@ export const galery = [
     id: 1,
     proyect: "Arquitectura",
     name: "Arquitectura",
-    img: "/g51.jpg",
+    img: "/e2.jpg",
     activites: 10,
    /*  places: 32, */
     days: "1week",
