@@ -9,9 +9,9 @@
 }
 
 body {
-  padding: 25px;
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Ajustar el color de fondo del cuerpo */
 }
 
 .wrapper {
@@ -26,7 +26,20 @@ body {
   }
 
   body {
-    padding: 10px; /* Reducir el padding en pantallas grandes */
+    padding: 0; /* Eliminar el padding en pantallas grandes */
+  }
+
+  #banner {
+    margin-top: 400px; /* Añadir margen superior para centrar el banner */
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; /* Ajustar el color de fondo del banner */
+    overflow: hidden;
+    margin-bottom: 100px;
+    padding: 0; /* Eliminar padding a los costados */
   }
 
   #galery .grid {
@@ -35,14 +48,15 @@ body {
 }
 
 #banner {
-  margin-top: 100px;
+  margin-top: 150px; /* Añadir margen superior para centrar el banner */
   position: relative;
   height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white; /* Color de fondo de reserva */
+  background-color: #ffffff; /* Ajustar el color de fondo del banner */
   overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .banner-content {
@@ -82,6 +96,24 @@ body {
   line-height: 1.5;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px; /* Ajustar la redondez de los botones */
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
 .image-container {
   width: 50%;
   position: relative;
@@ -97,12 +129,22 @@ body {
   z-index: 1;
 }
 
+.experience-text {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(66, 182, 85, 0.8); /* Fondo semitransparente */
+  color: white !important; /* Asegurar que el color sea blanco */
+  padding: 10px;
+  border-radius: 5px;
+}
+
 .arrow-down {
-  padding-top: 20px;
   display: block;
   margin: 10px auto 0;
   font-size: 44px;
-  color: #555;
+  color: black;
   text-align: center;
   animation: bounce 1.5s infinite;
 }
@@ -120,7 +162,7 @@ body {
 }
 
 #galery {
-  padding-top:100px;
+  padding-top: 100px;
   width: 100%;
   max-width: var(--max-width);
   margin: var(--margin);
@@ -295,15 +337,17 @@ body {
 @media (max-width: 911px) {
 
   #banner {
-    padding-top: 10px;
     height: auto; /* Ajustar la altura del banner en móviles */
     flex-direction: column; /* Cambiar la dirección del flex a columna */
   }
+  .banner-content {
+    padding-top:60px
+  }
   .arrow-down {
-    margin-top: -35px;
+    margin-top: 5px;
     display: block;
     font-size: 21px;
-    color: #555;
+    color: black;
     text-align: center;
     animation: bounce 1.5s infinite;
   }
