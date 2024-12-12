@@ -12,7 +12,7 @@ header {
   
 }
 header nav {
-  height: 50px;
+  height: 100px;
   justify-content: space-between;
   width: 100%;
   max-width: var(max-width);

@@ -34,6 +34,12 @@ const Galery = () => {
           <h5>25 años de experiencia y +100 obras</h5>
         </div>
       </section>
+
+      {/* Texto verde relacionado con la arquitectura sustentable */}
+      <section className="sustainable-architecture">
+      <h4>Comprometidos con la arquitectura sustentable<br />y el diseño ecológico.</h4>
+      </section>
+
       <section id="galery">
         <div className="grid">
           {galery.map((galeria, index) => (

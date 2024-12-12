@@ -66,8 +66,8 @@ body {
     padding: 0; /* Eliminar el padding en pantallas grandes */
   }
 
-  #banner {
-    margin-top: 0; /* Eliminar margen superior */
+  .banner {
+    margin-top: 200px; /* Eliminar margen superior */
     height: 1200px; /* Aumentar la altura del banner */
     padding: 0; /* Eliminar padding en los costados */
   }
@@ -86,7 +86,7 @@ body {
 }
 
 #banner {
-  margin-top: 90px; /* Añadir margen superior para centrar el banner */
+  margin-top: 80px; /* Añadir margen superior para centrar el banner */
   position: relative;
   height: 500px;
   display: flex;
@@ -94,7 +94,7 @@ body {
   justify-content: center;
   background-color: #ffffff; /* Ajustar el color de fondo del banner */
   overflow: hidden;
-  margin-bottom: 150px;
+  margin-bottom: 40px;
 }
 
 .banner-content {
@@ -200,7 +200,7 @@ body {
 }
 
 #galery {
-  padding-top: 100px;
+  padding-top: 30px;
   width: 100%;
   max-width: var(--max-width);
   margin: var(--margin);
@@ -351,6 +351,17 @@ body {
   z-index: 3;
 }
 
+.sustainable-architecture {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #42b655; /* Color verde */
+}
+
 @media (max-width: 1369px) {
   #galery .card-0 {
     margin-bottom: 70px; /* Reducir la altura para una sola fila */
@@ -375,7 +386,7 @@ body {
 @media (max-width: 911px) {
 
   #banner {
-    top: -10px;
+    top: 30px;
     height: auto; /* Ajustar la altura del banner en móviles */
     flex-direction: column; /* Cambiar la dirección del flex a columna */
   }
@@ -422,7 +433,16 @@ body {
     height: 500px; /* Aumentar la altura de la imagen */
     position: relative;
   }
-
+  .sustainable-architecture {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #42b655; /* Color verde */
+  }
   .background-image {
     position: absolute;
     top: 0;
@@ -453,7 +473,6 @@ body {
   #galery {
     padding: 0; /* Eliminar padding en pantallas pequeñas */
     margin: 0; /* Eliminar el margen global en pantallas pequeñas */
-    margin-top: -150px; /* Acercar la galería al botón verde */
   }
 
   #galery .grid {
