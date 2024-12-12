@@ -35,7 +35,6 @@ const Galery = () => {
         <h5>25 años de experiencia y +100 obras</h5>
         </div>
       </section>
-
       <section id="galery">
         <div className="grid">
           {galery.map((galeria, index) => (

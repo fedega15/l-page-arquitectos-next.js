@@ -150,13 +150,13 @@
   font-size: 1.5rem;
 }
 
-  #testimonios .map {
-    width: 80%;
-    margin-left: 3px;
-    height: 400px;
-  }
+#testimonios .map {
+  width: 80%;
+  margin-left: 20px; /* Ajustar el margen izquierdo para separar el mapa del borde */
+  height: 400px;
+}
+
 @media (max-width: 888px) {
-  
   #testimonios .text {
     flex: 1;
     min-width: 200px;
@@ -175,7 +175,7 @@
     align-items: start; /* Centrar elementos en pantallas más pequeñas */
     padding-left: 70px; /* Reducir el espacio a la izquierda en pantallas más pequeñas */
   }
-  #testimonios .slider{
+  #testimonios .slider {
     min-width: 200px;
     margin-left: -15px;
     margin-right: 66px;
@@ -208,7 +208,7 @@
     color: #019b21;
   }
   
-  #testimonios  .horizontal-line-2 {
+  #testimonios .horizontal-line-2 {
     height: 2px;
     width: 48%;
     background-color: #019b21;
@@ -217,7 +217,6 @@
     top: -10px;
   }
   #testimonios .heading {
-    
     width: 100%;
     text-align: start;
     height: 100px;
@@ -231,37 +230,43 @@
     font-size: 50px;
     line-height: 1.2;
     margin-left: -60px;
-
   }
 
-  #testimonios .img-container  h1 { 
+  #testimonios .img-container h1 { 
     width: 92%;
-   
   }
   
-#testimonios .text {
-  flex: 1;
-  min-width: 200px;
-  align-items: self-start;
-  justify-content: first baseline;
-}
-#testimonios .text i {
-  color: black;
-  font-size: 1.5rem;
+  #testimonios .text {
+    flex: 1;
+    min-width: 200px;
+    align-items: self-start;
+    justify-content: first baseline;
+  }
+  #testimonios .text i {
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  #testimonios .text p {
+    color: rgb(8, 8, 8);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  #testimonios .text strong {
+    color: #363636;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 12.6px;
+  }
+  #testimonios .card {
+    margin-bottom: -30px;
+  }
 }
 
-#testimonios .text p {
-  color: rgb(8, 8, 8);
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-}
-#testimonios .text strong {
-  color: #363636;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-size: 12.6px;
-}
-#testimonios .card {
-  margin-bottom: -30px;
-}
+@media (min-width: 889px) {
+  #testimonios .map {
+    width: 90%;
+    height: 500px; /* Aumentar la altura del mapa en pantallas grandes */
+    margin-left: -60px; /* Ajustar el margen izquierdo para separar el mapa del borde */
+  }
 }

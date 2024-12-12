@@ -74,11 +74,10 @@ const Page = () => {
         <a href="https://maps.app.goo.gl/3oR6RPvDhTtfmDm79">
           <iframe
             className="map"
-            src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F"
+            src="https://www.google.com/maps/d/u/0/embed?mid=1ZGjr2UZKzuxve0Nb3F4A0IwOuOFTktQ&ehbc=2E312F&z=15" // Ajustar el nivel de zoom con el parámetro 'z'
           ></iframe>
         </a>
       </div>
-     
     </section>
   );
 };
