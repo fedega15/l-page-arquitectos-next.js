@@ -7,15 +7,94 @@
   --font-color-secondary: #f8f4f4;
   --card-hover-scale: 1.01;
 }
-.banner-content .arrow-down {
-  display: inline-block;
-  margin-top: 10px; /* Espacio entre la descripción y la flecha */
-  font-size: 44px; /* Tamaño de la flecha */
-  color: #555; /* Color de la flecha */
-  animation: bounce 1.5s infinite; /* Animación para que la flecha se mueva */
+
+body {
+  padding: 25px;
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Animación para que la flecha rebote */
+.wrapper {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: var(--margin);
+}
+
+#banner {
+  margin-top:50px;
+  position: relative;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white; /* Color de fondo de reserva */
+  overflow: hidden;
+}
+
+.banner-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.text-overlay {
+  width: 50%; /* Ajusta este valor según tus necesidades */
+  height: auto; /* Ajusta la altura según tus necesidades */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centrar el contenido horizontalmente */
+  padding: 20px;
+  background-color: rgba(66, 182, 85, 0.8); /* Fondo semitransparente */
+  color: white;
+  z-index: 2;
+  margin: auto 0; /* Centrar verticalmente */
+}
+
+.text-overlay.right {
+  margin-left: auto;
+}
+
+.text-overlay h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.text-overlay p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.image-container {
+  width: 50%;
+  position: relative;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+
+
+.arrow-down {
+  padding-top: 20px;
+  display: block;
+  margin: 10px auto 0;
+  font-size: 44px;
+  color: #555;
+  text-align: center;
+  animation: bounce 1.5s infinite;
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -27,31 +106,6 @@
     transform: translateY(5px);
   }
 }
-
-#banner {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-}
-.banner-content .logo {
-  width: 200px; 
-  margin-top: 20px;
-  height: auto; 
-}
-
-.banner-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.banner-content .description {
-  font-size: 26px;
-  color: #555;
-  max-width: 800px;
-  line-height: 1.5;
-}
-
 
 #galery {
   width: 100%;
@@ -80,6 +134,7 @@
   cursor: pointer;
   transition: transform var(--transition-speed);
 }
+
 #galery .card img {
   transition: transform var(--transition-speed);
 }
@@ -87,6 +142,7 @@
 #galery .card:hover img {
   transform: scale(var(--card-hover-scale));
 }
+
 /* Estilo de la superposición de la tarjeta */
 #galery .box {
   position: absolute;
@@ -100,7 +156,6 @@
   justify-content: space-between;
   background: linear-gradient(180deg, rgba(231, 225, 225, 0.6) 0%);
 }
-
 
 /* Tarjeta destacada que ocupa dos columnas en ancho */
 #galery .card-0 {
@@ -130,9 +185,11 @@
   grid-row-end: span 1; /* Ocupa una fila */
   height: 335px; /* Altura específica para esta tarjeta */
 }
+
 #galery .card-4 {
   height: 265px;
 }
+
 /* Estilo para la superposición (overlay) */
 #galery .card .overlay {
   position: absolute;
@@ -172,13 +229,13 @@
   color: var(--font-color);
 }
 
-
 #galery .group .text strong {
   display: block;
   font-size: 1.9rem;
   font-weight: 900;
   color: var(--font-color);
 }
+
 #galery .group .text span {
   font-size: 0.8rem;
   color: var(--font-color-secondary);
@@ -186,26 +243,117 @@
   letter-spacing: 1px;
   text-transform: capitalize;
 }
+
+/* Título encima de la imagen */
+#galery .title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 3;
+}
+
 @media (max-width: 1369px) {
-  
   #galery .card-0 {
     margin-bottom: 70px; /* Reducir la altura para una sola fila */
   }
 }
+
 @media (min-width: 1237px) and (max-width: 1375px) {
   #galery .grid {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Ajuste de tamaño mínimo y máxima fracción */
   }
 
   #galery .card-0 {
-margin-bottom: 70px;
+    margin-bottom: 70px;
   }
+
   #galery .card-4 {
-margin-top: 0px;
+    margin-top: 0px;
   }
 }
+
 /* Estilo de la tarjeta para móviles */
 @media (max-width: 911px) {
+
+  #banner {
+    padding-top: 10px;
+    height: auto; /* Ajustar la altura del banner en móviles */
+    flex-direction: column; /* Cambiar la dirección del flex a columna */
+  }
+  .arrow-down {
+    margin-top:-35px;
+    display: block;
+    font-size: 21px;
+    color: #555;
+    text-align: center;
+    animation: bounce 1.5s infinite;
+  }
+  
+  .banner-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .text-overlay {
+    width: 100%;
+    padding: 10px;
+    margin: 0; /* Eliminar el margen */
+    text-align: center; /* Centrar el texto */
+    background-color: rgba(66, 182, 85, 0.8); /* Fondo semitransparente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .text-overlay h1 {
+    font-size: 1.5rem; /* Reducir el tamaño del texto */
+  }
+
+  .text-overlay p {
+    font-size: 0.9rem; /* Reducir el tamaño del texto */
+  }
+
+  .image-container {
+    width: 100%;
+    height: 500px; /* Aumentar la altura de la imagen */
+    position: relative;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .section-title {
+    width: 100%;
+    padding: 10px;
+    margin: 0; /* Eliminar el margen */
+    text-align: center; /* Centrar el texto */
+    background-color: rgba(66, 182, 85, 0.8); /* Fondo semitransparente */
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .section-title h5 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
   #galery {
     padding: 0; /* Eliminar padding en pantallas pequeñas */
     margin: 0; /* Eliminar el margen global en pantallas pequeñas */
@@ -231,6 +379,7 @@ margin-top: 0px;
   #galery .card-4 {
     margin: 0 0 0px 0; /* Eliminar márgenes laterales y establecer un margen inferior */
   }
+
   #galery .card-0 {
     margin: 50px 0 0 0; /* Eliminar márgenes laterales y establecer un margen inferior */
   }

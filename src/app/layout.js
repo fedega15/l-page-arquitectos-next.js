@@ -1,18 +1,17 @@
-
 import Header from "../../components/Header";
-import "../../styles/globals.css"
-import { Outfit } from "next/font/google"
+import "../../styles/globals.css";
+import { Outfit } from "next/font/google";
+import { FaWhatsapp } from "react-icons/fa";
 
 const inter = Outfit({
   subsets: ["latin-ext"],
   style: ["normal"],
-  weight: ["300", "400", "500", "700",  ],
+  weight: ["300", "400", "500", "700"],
 });
 
 export const metadata = {
   title: "SSA-Arquitectos",
-  description:
-    "Somos un grupo de arquitectos apasionados por nuestra profesion",
+  description: "Somos un grupo de arquitectos apasionados por nuestra profesion",
 };
 
 export default function RootLayout({ children }) {
@@ -29,8 +28,16 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/mineral.png "></link>
       </head>
       <body className={inter.className}>
-        <Header/>
+        <Header />
         {children}
+        <a
+          href="https://wa.me/543416622170"
+          className="whatsapp-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaWhatsapp size={44} />
+        </a>
       </body>
     </html>
   );
