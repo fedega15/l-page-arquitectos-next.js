@@ -16,9 +16,8 @@ const Galery = () => {
               soluciones sostenibles y diseños personalizados. Descubre a continuación nuestra galería de proyectos destacados.
             </p>
             <div className="buttons-container">
-            <a href="#galery"  className="button">Galeria de arquitectura</a>
+              <a href="#galery" className="button">Galeria de arquitectura  <a href="#galery" className="arrow-down">↓</a></a>
             </div>
-            <a href="#galery" className="arrow-down">↓</a> {/* Flecha clickeable */}
           </div>
 
           <div className="image-container">
@@ -32,7 +31,7 @@ const Galery = () => {
           </div>
         </div>
         <div className="experience-text">
-        <h5>25 años de experiencia y +100 obras</h5>
+          <h5>25 años de experiencia y +100 obras</h5>
         </div>
       </section>
       <section id="galery">
