@@ -337,11 +337,12 @@ body {
 @media (max-width: 911px) {
 
   #banner {
+    top: -50px;
     height: auto; /* Ajustar la altura del banner en móviles */
     flex-direction: column; /* Cambiar la dirección del flex a columna */
   }
   .banner-content {
-    padding-top:60px
+    padding-top: 60px;
   }
   .arrow-down {
     margin-top: 5px;
@@ -414,6 +415,7 @@ body {
   #galery {
     padding: 0; /* Eliminar padding en pantallas pequeñas */
     margin: 0; /* Eliminar el margen global en pantallas pequeñas */
+    margin-top: -150px; /* Acercar la galería al botón verde */
   }
 
   #galery .grid {
@@ -438,7 +440,7 @@ body {
   }
 
   #galery .card-0 {
-    margin: 50px 0 0 0; /* Eliminar márgenes laterales y establecer un margen inferior */
+    margin: 20px 0 0 0; /* Eliminar márgenes laterales y establecer un margen inferior */
   }
 
   /* Ajuste adicional para el texto */

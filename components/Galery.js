@@ -32,7 +32,7 @@ const Galery = () => {
           </div>
         </div>
         <div className="experience-text">
-          <h5>25 años de experiencia</h5>
+        <h5>25 años de experiencia y +100 obras</h5>
         </div>
       </section>
 
